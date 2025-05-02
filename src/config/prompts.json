@@ -1,0 +1,156 @@
+{
+  "query_enhancement": {
+    "system_prompt": "You are an expert recruiter and search specialist. Your job is to generate highly effective search queries for finding the best candidates.",
+    "user_prompt_template": "Generate 5 highly effective search queries to find the best candidates for: \"{job_category}\"\n\nConsider:\n- Specific job titles and roles\n- Required qualifications and certifications\n- Industry-specific keywords\n- Experience levels and specializations\n- Professional credentials\n\nReturn ONLY a JSON array of 5 optimized search queries, no explanation:\n[\"query1\", \"query2\", \"query3\", \"query4\", \"query5\"]",
+    "temperature": 0.3,
+    "max_tokens": 500
+  },
+  "candidate_reranking": {
+    "system_prompt": "You are an expert recruiter evaluating candidates. Your job is to rerank candidates from BEST FIT to WORST FIT based on job requirements.",
+    "user_prompt_template": "Analyze these candidates for the role: \"{job_category}\"\n\nEvaluate based on:\n1. Relevant experience and qualifications\n2. Required certifications/licenses\n3. Industry expertise\n4. Career progression\n5. Specialization alignment\n\nCandidates:\n{candidates_text}\n\nReturn ONLY a JSON array of candidate IDs in BEST to WORST order:\n[\"{example_id_1}\", \"{example_id_2}\", ...]\n\nInclude all provided candidate IDs, reordered by relevance.",
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "hard_filter_extraction": {
+    "system_prompt": "You are an expert at extracting hard requirements from job descriptions. Extract must-have qualifications that can be used for filtering.",
+    "user_prompt_template": "Extract hard requirements from this job category: \"{job_category}\"\n\nReturn a JSON object with:\n{\n  \"education_requirements\": [\"JD\", \"MD\", \"PhD\", etc.],\n  \"experience_requirements\": [\"3+ years\", \"licensed\", etc.],\n  \"certifications\": [\"board certified\", \"PE license\", etc.],\n  \"keywords_must_have\": [\"essential keywords\"],\n  \"keywords_exclude\": [\"disqualifying terms\"]\n}",
+    "temperature": 0.2,
+    "max_tokens": 400
+  },
+  "domain_specific_queries": {
+    "tax_lawyer": [
+      "tax attorney experienced corporate law IRS representation",
+      "certified tax lawyer litigation audit defense",
+      "tax specialist legal counsel CPA attorney",
+      "corporate tax attorney with JD certification",
+      "tax advisory lawyer professional experience"
+    ],
+    "junior_corporate_lawyer": [
+      "junior corporate attorney M&A securities law",
+      "associate lawyer business transactions legal",
+      "entry level corporate counsel experience",
+      "junior legal counsel corporate law firm",
+      "associate attorney securities corporate law"
+    ],
+    "radiology": [
+      "board certified radiologist MD physician",
+      "diagnostic radiology doctor medical imaging",
+      "radiologist physician hospital practice MD",
+      "medical imaging specialist radiology resident",
+      "certified radiologist diagnostic physician"
+    ],
+    "doctors_md": [
+      "licensed physician MD medical doctor",
+      "practicing physician primary care MD",
+      "board certified medical doctor physician",
+      "internal medicine physician MD degree",
+      "family medicine doctor licensed physician"
+    ],
+    "biology_expert": [
+      "PhD biologist molecular research scientist",
+      "biology professor university research PhD",
+      "research scientist biology molecular PhD",
+      "molecular biologist research experience PhD",
+      "biology expert professor research scientist"
+    ],
+    "anthropology": [
+      "anthropologist PhD cultural research professor",
+      "cultural anthropology professor university research",
+      "social anthropologist field research PhD",
+      "anthropological research professor academic",
+      "anthropology professor university PhD research"
+    ],
+    "mathematics_phd": [
+      "mathematics professor PhD university research",
+      "PhD mathematician academic professor research",
+      "mathematical research professor university PhD",
+      "applied mathematics professor PhD academic",
+      "mathematics doctorate professor research academic"
+    ],
+    "quantitative_finance": [
+      "quantitative analyst financial modeling mathematician",
+      "quant researcher derivatives pricing financial",
+      "financial engineer quantitative analyst modeling",
+      "quantitative finance PhD mathematical modeling",
+      "mathematical finance analyst quant researcher"
+    ],
+    "bankers": [
+      "investment banker financial services professional",
+      "commercial banking professional financial advisor",
+      "financial advisor wealth management banker",
+      "banking analyst credit specialist financial",
+      "senior banker loan officer financial services"
+    ],
+    "mechanical_engineers": [
+      "mechanical engineer design manufacturing professional",
+      "PE licensed mechanical engineer professional",
+      "senior mechanical engineer manufacturing design",
+      "mechanical engineering consultant professional PE",
+      "professional engineer mechanical design manufacturing"
+    ]
+  },
+  "bm25_keywords": {
+    "tax_lawyer": ["tax", "attorney", "lawyer", "IRS", "certified", "CPA", "legal", "JD"],
+    "junior_corporate_lawyer": ["lawyer", "attorney", "corporate", "legal", "associate", "junior", "JD"],
+    "radiology": ["radiologist", "radiology", "MD", "physician", "medical", "imaging", "board certified"],
+    "doctors_md": ["physician", "doctor", "MD", "medical", "licensed", "board certified"],
+    "biology_expert": ["biologist", "biology", "PhD", "research", "molecular", "professor", "scientist"],
+    "anthropology": ["anthropologist", "anthropology", "PhD", "cultural", "research", "professor"],
+    "mathematics_phd": ["mathematician", "mathematics", "PhD", "professor", "research", "academic"],
+    "quantitative_finance": ["quantitative", "quant", "finance", "analyst", "financial", "modeling"],
+    "bankers": ["banker", "banking", "financial", "investment", "commercial", "advisor"],
+    "mechanical_engineers": ["engineer", "engineering", "mechanical", "PE", "professional", "design"]
+  },
+  "hard_filters": {
+    "tax_lawyer": {
+      "must_have": ["JD", "attorney", "lawyer", "legal"],
+      "preferred": ["tax", "CPA", "certified", "IRS"],
+      "exclude": ["paralegal", "intern"]
+    },
+    "junior_corporate_lawyer": {
+      "must_have": ["JD", "attorney", "lawyer", "legal"],
+      "preferred": ["corporate", "associate", "junior", "2-4 years"],
+      "exclude": ["paralegal", "intern", "senior partner"]
+    },
+    "radiology": {
+      "must_have": ["MD", "physician", "doctor", "medical"],
+      "preferred": ["radiology", "radiologist", "board certified", "imaging"],
+      "exclude": ["nurse", "technician", "resident"]
+    },
+    "doctors_md": {
+      "must_have": ["MD", "physician", "doctor", "medical", "licensed"],
+      "preferred": ["board certified", "primary care", "internal medicine"],
+      "exclude": ["nurse", "PA", "resident", "student"]
+    },
+    "biology_expert": {
+      "must_have": ["PhD", "biologist", "biology"],
+      "preferred": ["professor", "research", "molecular", "scientist"],
+      "exclude": ["undergraduate", "technician", "assistant"]
+    },
+    "anthropology": {
+      "must_have": ["PhD", "anthropologist", "anthropology"],
+      "preferred": ["professor", "research", "cultural", "academic"],
+      "exclude": ["undergraduate", "assistant", "intern"]
+    },
+    "mathematics_phd": {
+      "must_have": ["PhD", "mathematician", "mathematics"],
+      "preferred": ["professor", "research", "academic", "applied"],
+      "exclude": ["undergraduate", "tutor", "assistant"]
+    },
+    "quantitative_finance": {
+      "must_have": ["quantitative", "finance", "analyst"],
+      "preferred": ["quant", "modeling", "mathematical", "derivatives"],
+      "exclude": ["intern", "associate", "junior"]
+    },
+    "bankers": {
+      "must_have": ["banker", "banking", "financial"],
+      "preferred": ["investment", "commercial", "advisor", "services"],
+      "exclude": ["teller", "clerk", "intern"]
+    },
+    "mechanical_engineers": {
+      "must_have": ["engineer", "engineering", "mechanical"],
+      "preferred": ["PE", "professional", "design", "manufacturing"],
+      "exclude": ["technician", "intern", "student"]
+    }
+  }
+} 
