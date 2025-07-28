@@ -10,8 +10,8 @@ from pymongo import MongoClient
 import certifi
 
 # --- Hardcoded API Keys ---
-VOYAGE_API_KEY = "***REMOVED***"
-TURBOPUFFER_API_KEY = "***REMOVED***"
+VOYAGE_API_KEY = "pa-vNEmoJfc5evP_SSvpxIAj3uFzs9dfppEZkpx-3kOFZy"
+TURBOPUFFER_API_KEY = "tpuf_dQHBpZEvl612XAdP0MvrQY5dbS0omPMy"
 OPENAI_API_KEY = "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"
 
 # Setup logging
@@ -26,7 +26,7 @@ TURBOPUFFER_REGION = "aws-us-west-2"
 COLLECTION_NAME = "linkedin_data_subset"
 DB_NAME = "interview_data"
 MONGO_URL = "os.getenv("MONGO_URL")"
-TPUF_NAMESPACE_NAME = "***REMOVED***"
+TPUF_NAMESPACE_NAME = "bhaumik_tandan_tpuf_key"
 
 # Init Turbopuffer
 tpuf = turbopuffer.Turbopuffer(api_key=TURBOPUFFER_API_KEY, region=TURBOPUFFER_REGION)
