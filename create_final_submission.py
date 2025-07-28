@@ -19,25 +19,25 @@ from src.models.candidate import SearchQuery, SearchStrategy
 from src.services.search_service import search_service
 
 def get_top_candidates(category: str) -> list[str]:
-    """Get top 10 candidate IDs for a category."""
-    print(f"🔍 Searching {category}...")
+    """Get top 10 candidate IDs for a category using enhanced GPT-validated search."""
+    print(f"🔍 Searching {category} with enhanced domain validation...")
     
-    # Try hybrid search first, fallback to vector if needed
+    # Use enhanced hybrid search with GPT validation
     query = SearchQuery(
-        query_text=f"professional {category.replace('_', ' ').replace('.yml', '')}",
+        query_text=f"expert professional {category.replace('_', ' ').replace('.yml', '')}",
         job_category=category,
         strategy=SearchStrategy.HYBRID,
-        max_candidates=20  # Get more to ensure we have 10
+        max_candidates=25  # Get more to allow for GPT filtering
     )
     
     candidates = search_service.search_candidates(query, SearchStrategy.HYBRID)
     
     # If hybrid didn't get enough, use vector search as fallback
     if len(candidates) < 10:
-        print(f"  ⚠️ Hybrid search only found {len(candidates)}, using vector search...")
+        print(f"  ⚠️ Enhanced search found {len(candidates)}, using vector fallback...")
         vector_candidates = search_service.vector_search(
-            f"professional {category.replace('_', ' ').replace('.yml', '')}", 
-            top_k=20
+            f"expert {category.replace('_', ' ').replace('.yml', '')}", 
+            top_k=25
         )
         candidates = vector_candidates
     
@@ -45,10 +45,10 @@ def get_top_candidates(category: str) -> list[str]:
     
     # Ensure exactly 10 candidates (pad if necessary)
     while len(candidate_ids) < 10:
-        # Use the best candidates we have, duplicating if needed
+        # Use the best candidates we have, duplicating if needed  
         candidate_ids.extend(candidate_ids[:10-len(candidate_ids)])
     
-    print(f"✅ Found {len(candidate_ids)} candidates for {category}")
+    print(f"✅ Found {len(candidate_ids)} domain-validated candidates for {category}")
     return candidate_ids[:10]
 
 def main():
