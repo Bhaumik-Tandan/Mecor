@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Advanced Search Agent - Quick Start Script
-# This script sets up environment variables and runs the search agent
+# This script loads environment variables from .env and runs the search agent
 
 echo "🚀 Advanced Search Agent - Quick Start"
 echo "======================================"
@@ -13,19 +13,30 @@ if [[ "$VIRTUAL_ENV" == "" ]]; then
     exit 1
 fi
 
-# Set up environment variables with your API keys
-export VOYAGE_API_KEY="***REMOVED***"
-export TURBOPUFFER_API_KEY="***REMOVED***"
-export OPENAI_API_KEY="***REMOVED***"
-export TURBOPUFFER_NAMESPACE="***REMOVED***"
-export USER_EMAIL="bhaumik.tandan@gmail.com"
+# Check if .env file exists
+if [[ ! -f ".env" ]]; then
+    echo "❌ Error: .env file not found!"
+    echo "   Please copy environment_template.txt to .env and fill in your API keys:"
+    echo "   cp environment_template.txt .env"
+    echo "   # Then edit .env with your actual API keys"
+    exit 1
+fi
 
-# Default settings for optimal performance
-export MAX_CANDIDATES_PER_QUERY="100"
-export VECTOR_SEARCH_WEIGHT="0.6"
-export BM25_SEARCH_WEIGHT="0.4"
-export SOFT_FILTER_WEIGHT="0.2"
-export THREAD_POOL_SIZE="5"
+# Load environment variables from .env file
+echo "🔧 Loading environment variables from .env file..."
+set -a  # Export all variables
+source .env
+set +a  # Stop exporting
+
+# Verify required environment variables are set
+required_vars=("VOYAGE_API_KEY" "TURBOPUFFER_API_KEY" "OPENAI_API_KEY" "USER_EMAIL" "TURBOPUFFER_NAMESPACE")
+
+for var in "${required_vars[@]}"; do
+    if [[ -z "${!var}" ]]; then
+        echo "❌ Error: Required environment variable $var is not set in .env file"
+        exit 1
+    fi
+done
 
 echo "✅ Environment configured successfully"
 echo ""
