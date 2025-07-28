@@ -155,9 +155,11 @@ class SearchService:
         
         for keyword in keywords:
             try:
+                # Ensure top_k is within valid range (1-1200)
+                keyword_top_k = max(1, min(top_k // len(keywords), 1200))
                 results = self.namespace.query(
                     rank_by=["rerank_summary", "BM25", keyword],
-                    top_k=top_k // len(keywords),
+                    top_k=keyword_top_k,
                     include_attributes=["id", "name", "email", "rerank_summary"]
                 )
                 
@@ -240,8 +242,10 @@ class SearchService:
             domain_queries = self.get_domain_queries(query.job_category)
             all_vector_queries = [query.query_text] + domain_queries
             
+            # Use reasonable top_k for vector search (max 100 per query)
+            vector_top_k = min(100, max(10, query.max_candidates))
             vector_tasks = [
-                lambda q=q: self.vector_search(q, search_config.max_candidates // 2)
+                lambda q=q: self.vector_search(q, vector_top_k)
                 for q in all_vector_queries
             ]
             
@@ -264,7 +268,8 @@ class SearchService:
             
             # 2. BM25 Search
             keywords = self.get_bm25_keywords(query.job_category)
-            bm25_candidates = self.bm25_search(keywords, search_config.max_candidates)
+            bm25_top_k = min(100, max(10, query.max_candidates))
+            bm25_candidates = self.bm25_search(keywords, bm25_top_k)
             
             for j, candidate in enumerate(bm25_candidates):
                 score = 1.0 / (j + 1)  # Position-based scoring
@@ -306,8 +311,8 @@ class SearchService:
                 reverse=True
             )
             
-            # 6. Retrieve full candidate profiles
-            top_candidate_ids = [cs.candidate_id for cs in sorted_scores[:search_config.max_candidates]]
+            # 6. Retrieve full candidate profiles  
+            top_candidate_ids = [cs.candidate_id for cs in sorted_scores[:query.max_candidates]]
             final_candidates = self._get_candidate_profiles(top_candidate_ids)
             
             # 7. Apply hard filters if enabled
