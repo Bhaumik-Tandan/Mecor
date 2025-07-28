@@ -24,6 +24,7 @@ export USER_EMAIL="bhaumik.tandan@gmail.com"
 export MAX_CANDIDATES_PER_QUERY="100"
 export VECTOR_SEARCH_WEIGHT="0.6"
 export BM25_SEARCH_WEIGHT="0.4"
+export SOFT_FILTER_WEIGHT="0.2"
 export THREAD_POOL_SIZE="5"
 
 echo "✅ Environment configured successfully"

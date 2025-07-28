@@ -37,6 +37,22 @@ class CandidateProfile:
                 return False
         
         return True
+    
+    def calculate_soft_filter_score(self, preferred_keywords: List[str]) -> float:
+        """Calculate soft filter boost score based on preferred keywords."""
+        if not preferred_keywords:
+            return 0.0
+        
+        search_text = f"{self.name} {self.summary or ''}".lower()
+        
+        # Count matches and calculate weighted score
+        matches = 0
+        for keyword in preferred_keywords:
+            if keyword.lower() in search_text:
+                matches += 1
+        
+        # Return score as percentage of preferred keywords matched
+        return matches / len(preferred_keywords) if preferred_keywords else 0.0
 
 
 @dataclass
@@ -93,13 +109,28 @@ class CandidateScores:
     vector_score: float = 0.0
     bm25_score: float = 0.0
     gpt_score: float = 0.0
+    soft_filter_score: float = 0.0
     combined_score: float = 0.0
     
-    def calculate_combined_score(self, vector_weight: float = 0.6, bm25_weight: float = 0.4) -> float:
-        """Calculate weighted combined score."""
-        self.combined_score = (self.vector_score * vector_weight + 
-                             self.bm25_score * bm25_weight)
+    def calculate_combined_score(
+        self, 
+        vector_weight: float = 0.6, 
+        bm25_weight: float = 0.4, 
+        soft_filter_weight: float = 0.2
+    ) -> float:
+        """Calculate weighted combined score including soft filter boost."""
+        # Normalize weights to sum to 1
+        total_weight = vector_weight + bm25_weight + soft_filter_weight
+        vector_weight = vector_weight / total_weight
+        bm25_weight = bm25_weight / total_weight
+        soft_filter_weight = soft_filter_weight / total_weight
+        
+        self.combined_score = (
+            self.vector_score * vector_weight + 
+            self.bm25_score * bm25_weight +
+            self.soft_filter_score * soft_filter_weight
+        )
         return self.combined_score
     
     def __str__(self) -> str:
-        return f"CandidateScores({self.candidate_id}, combined={self.combined_score:.3f})" 
+        return f"CandidateScores({self.candidate_id}, combined={self.combined_score:.3f}, soft={self.soft_filter_score:.3f})" 

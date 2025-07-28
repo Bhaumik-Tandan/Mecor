@@ -58,6 +58,7 @@ class SearchConfig:
     thread_pool_size: int
     vector_search_weight: float
     bm25_search_weight: float
+    soft_filter_weight: float
     
     @classmethod
     def from_env(cls) -> 'SearchConfig':
@@ -69,7 +70,8 @@ class SearchConfig:
             request_timeout=int(os.getenv('REQUEST_TIMEOUT', '30')),
             thread_pool_size=int(os.getenv('THREAD_POOL_SIZE', '5')),
             vector_search_weight=float(os.getenv('VECTOR_SEARCH_WEIGHT', '0.6')),
-            bm25_search_weight=float(os.getenv('BM25_SEARCH_WEIGHT', '0.4'))
+            bm25_search_weight=float(os.getenv('BM25_SEARCH_WEIGHT', '0.4')),
+            soft_filter_weight=float(os.getenv('SOFT_FILTER_WEIGHT', '0.2'))
         )
 
 

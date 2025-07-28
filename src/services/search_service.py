@@ -274,25 +274,43 @@ class SearchService:
                 
                 candidate_scores[candidate.id].bm25_score += score
             
-            # 3. Calculate combined scores
+            # 3. Apply Soft Filters (Preference Scoring)
+            hard_filters = self.get_hard_filters(query.job_category)
+            preferred_keywords = hard_filters.get("preferred", [])
+            
+            if preferred_keywords:
+                # Get all unique candidate IDs for soft filtering
+                all_candidate_ids = list(candidate_scores.keys())
+                candidates_for_soft_filtering = self._get_candidate_profiles(all_candidate_ids)
+                
+                # Calculate soft filter scores
+                for candidate in candidates_for_soft_filtering:
+                    if candidate.id in candidate_scores:
+                        soft_score = candidate.calculate_soft_filter_score(preferred_keywords)
+                        candidate_scores[candidate.id].soft_filter_score = soft_score
+                        
+                logger.info(f"Applied soft filters with {len(preferred_keywords)} preferred keywords")
+            
+            # 4. Calculate combined scores with soft filters
             for candidate_score in candidate_scores.values():
                 candidate_score.calculate_combined_score(
-                    search_config.vector_weight,
-                    search_config.bm25_weight
+                    config.search.vector_search_weight,
+                    config.search.bm25_search_weight,
+                    config.search.soft_filter_weight
                 )
             
-            # 4. Get top candidates
+            # 5. Get top candidates by combined score
             sorted_scores = sorted(
                 candidate_scores.values(),
                 key=lambda x: x.combined_score,
                 reverse=True
             )
             
-            # 5. Retrieve full candidate profiles
+            # 6. Retrieve full candidate profiles
             top_candidate_ids = [cs.candidate_id for cs in sorted_scores[:search_config.max_candidates]]
             final_candidates = self._get_candidate_profiles(top_candidate_ids)
             
-            # 6. Apply hard filters if enabled
+            # 7. Apply hard filters if enabled
             if search_config.use_hard_filters:
                 hard_filters = self.get_hard_filters(query.job_category)
                 final_candidates = self.apply_hard_filters(final_candidates, hard_filters)
