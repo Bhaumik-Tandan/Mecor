@@ -103,19 +103,19 @@
   },
   "hard_filters": {
     "tax_lawyer": {
-      "must_have": ["JD", "attorney", "lawyer", "legal"],
-      "preferred": ["tax", "CPA", "certified", "IRS"],
-      "exclude": ["paralegal", "intern"]
+      "must_have": ["JD", "attorney", "lawyer", "legal", "law school"],
+      "preferred": ["tax", "CPA", "certified", "IRS", "audit", "corporate tax", "federal tax", "tax compliance", "tax structuring"],
+      "exclude": ["paralegal", "intern", "student"]
     },
     "junior_corporate_lawyer": {
-      "must_have": ["JD", "attorney", "lawyer", "legal"],
-      "preferred": ["corporate", "associate", "junior", "2-4 years"],
-      "exclude": ["paralegal", "intern", "senior partner"]
+      "must_have": ["JD", "attorney", "lawyer", "legal", "law school"],
+      "preferred": ["corporate", "M&A", "mergers", "acquisitions", "contracts", "international", "regulatory", "due diligence", "2-4 years"],
+      "exclude": ["paralegal", "intern", "senior partner", "15+ years"]
     },
     "radiology": {
-      "must_have": ["MD", "physician", "doctor", "medical"],
-      "preferred": ["radiology", "radiologist", "board certified", "imaging"],
-      "exclude": ["nurse", "technician", "resident"]
+      "must_have": ["MD", "physician", "doctor", "medical school"],
+      "preferred": ["radiology", "radiologist", "board certified", "ABR", "FRCR", "CT", "MRI", "X-ray", "ultrasound", "diagnostic", "imaging", "AI imaging"],
+      "exclude": ["nurse", "technician", "resident", "student"]
     },
     "doctors_md": {
       "must_have": ["MD", "physician", "doctor", "medical", "licensed"],
