@@ -3,6 +3,7 @@
 from dataclasses import dataclass
 from typing import List, Dict, Any, Optional
 from enum import Enum
+import re
 
 
 @dataclass
@@ -13,6 +14,9 @@ class CandidateProfile:
     email: Optional[str] = None
     summary: Optional[str] = None
     linkedin_url: Optional[str] = None
+    linkedin_id: Optional[str] = None
+    country: Optional[str] = None
+    experience_years: Optional[int] = None
     
     def __str__(self) -> str:
         return f"Candidate({self.id}, {self.name})"
@@ -21,6 +25,57 @@ class CandidateProfile:
         """Check if candidate profile contains a specific keyword."""
         search_text = f"{self.name} {self.summary or ''}".lower()
         return keyword.lower() in search_text
+    
+    def is_linkedin_valid(self) -> bool:
+        """Validate LinkedIn profile completeness."""
+        if not self.linkedin_url and not self.linkedin_id:
+            return False
+        
+        if self.linkedin_url:
+            # Check if LinkedIn URL format is valid
+            linkedin_pattern = r'https?://(www\.)?linkedin\.com/in/[\w\-]+'
+            return bool(re.match(linkedin_pattern, self.linkedin_url))
+        
+        return bool(self.linkedin_id)
+    
+    def estimate_experience_years(self) -> int:
+        """Estimate years of experience from summary text."""
+        if self.experience_years:
+            return self.experience_years
+        
+        if not self.summary:
+            return 0
+        
+        summary_lower = self.summary.lower()
+        
+        # Look for explicit year mentions
+        year_patterns = [
+            r'(\d+)\+?\s*years?\s+(?:of\s+)?(?:experience|exp)',
+            r'(\d+)\+?\s*yrs?\s+(?:of\s+)?(?:experience|exp)',
+            r'over\s+(\d+)\s+years?',
+            r'more\s+than\s+(\d+)\s+years?',
+            r'(\d+)\+\s*years?'
+        ]
+        
+        for pattern in year_patterns:
+            matches = re.findall(pattern, summary_lower)
+            if matches:
+                try:
+                    return max(int(match) for match in matches)
+                except ValueError:
+                    continue
+        
+        # Rough estimation based on career progression keywords
+        if any(word in summary_lower for word in ['senior', 'lead', 'principal', 'director']):
+            return 8
+        elif any(word in summary_lower for word in ['manager', 'supervisor']):
+            return 6
+        elif any(word in summary_lower for word in ['specialist', 'analyst']):
+            return 4
+        elif any(word in summary_lower for word in ['junior', 'associate', 'intern']):
+            return 2
+        
+        return 3  # Default assumption
     
     def satisfies_hard_filters(self, must_have: List[str], exclude: List[str]) -> bool:
         """Check if candidate satisfies hard filter requirements."""
@@ -51,8 +106,46 @@ class CandidateProfile:
             if keyword.lower() in search_text:
                 matches += 1
         
-        # Return score as percentage of preferred keywords matched
-        return matches / len(preferred_keywords) if preferred_keywords else 0.0
+        # Calculate percentage and scale to 0-1
+        base_score = matches / len(preferred_keywords)
+        
+        # Apply bonus for LinkedIn profile completeness
+        linkedin_bonus = 0.1 if self.is_linkedin_valid() else 0.0
+        
+        # Apply experience bonus for relevant roles
+        experience_bonus = min(0.1, self.estimate_experience_years() / 100.0)
+        
+        return min(1.0, base_score + linkedin_bonus + experience_bonus)
+    
+    def calculate_quality_score(self) -> float:
+        """Calculate overall candidate quality score."""
+        score = 0.0
+        
+        # LinkedIn completeness (30%)
+        if self.is_linkedin_valid():
+            score += 0.3
+        
+        # Profile completeness (20%)
+        completeness_factors = [
+            bool(self.name),
+            bool(self.email),
+            bool(self.summary and len(self.summary) > 50),
+            bool(self.country)
+        ]
+        score += 0.2 * (sum(completeness_factors) / len(completeness_factors))
+        
+        # Experience relevance (30%)
+        exp_years = self.estimate_experience_years()
+        if exp_years >= 2:
+            score += 0.3 * min(1.0, exp_years / 10.0)
+        
+        # Summary quality (20%)
+        if self.summary:
+            summary_len = len(self.summary)
+            if summary_len > 100:
+                score += 0.2 * min(1.0, summary_len / 500.0)
+        
+        return min(1.0, score)
 
 
 @dataclass

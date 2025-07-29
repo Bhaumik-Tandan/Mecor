@@ -123,7 +123,7 @@ class SearchService:
             results = self.namespace.query(
                 rank_by=["vector", "ANN", embedding],
                 top_k=top_k,
-                include_attributes=["id", "name", "email", "rerank_summary"]
+                include_attributes=["id", "name", "email", "rerank_summary", "linkedin_id", "country"]
             )
             
             candidates = []
@@ -133,7 +133,9 @@ class SearchService:
                         id=getattr(row, 'id', ''),
                         name=getattr(row, 'name', ''),
                         email=getattr(row, 'email', ''),
-                        summary=getattr(row, 'rerank_summary', '')
+                        summary=getattr(row, 'rerank_summary', ''),
+                        linkedin_id=getattr(row, 'linkedin_id', ''),
+                        country=getattr(row, 'country', '')
                     )
                     candidates.append(candidate)
             
@@ -166,7 +168,7 @@ class SearchService:
                 results = self.namespace.query(
                     rank_by=["rerank_summary", "BM25", keyword],
                     top_k=keyword_top_k,
-                    include_attributes=["id", "name", "email", "rerank_summary"]
+                    include_attributes=["id", "name", "email", "rerank_summary", "linkedin_id", "country"]
                 )
                 
                 for row in results.rows:
@@ -175,7 +177,9 @@ class SearchService:
                             id=getattr(row, 'id', ''),
                             name=getattr(row, 'name', ''),
                             email=getattr(row, 'email', ''),
-                            summary=getattr(row, 'rerank_summary', '')
+                            summary=getattr(row, 'rerank_summary', ''),
+                            linkedin_id=getattr(row, 'linkedin_id', ''),
+                            country=getattr(row, 'country', '')
                         )
                         all_candidates.append(candidate)
                         
@@ -378,7 +382,7 @@ class SearchService:
                     rank_by=["vector", "ANN", dummy_vector],
                     top_k=1,
                     filters=["id", "Eq", candidate_id],
-                    include_attributes=["id", "name", "email", "rerank_summary"]
+                    include_attributes=["id", "name", "email", "rerank_summary", "linkedin_id", "country"]
                 )
                 
                 if results.rows:
@@ -387,7 +391,9 @@ class SearchService:
                         id=getattr(row, 'id', ''),
                         name=getattr(row, 'name', ''),
                         email=getattr(row, 'email', ''),
-                        summary=getattr(row, 'rerank_summary', '')
+                        summary=getattr(row, 'rerank_summary', ''),
+                        linkedin_id=getattr(row, 'linkedin_id', ''),
+                        country=getattr(row, 'country', '')
                     )
                     candidates.append(candidate)
                     

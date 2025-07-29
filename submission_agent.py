@@ -21,6 +21,7 @@ from src.config.settings import config
 from src.models.candidate import SearchQuery, SearchStrategy, CandidateProfile
 from src.services.search_service import search_service
 from src.services.gpt_service import gpt_service
+from src.agents.enhanced_validation_agent import EnhancedValidationAgent
 from src.utils.logger import setup_logger
 
 logger = setup_logger("ai_submission_agent_eval", level="INFO")
@@ -31,6 +32,7 @@ class SubmissionAgent:
     def __init__(self):
         self.search_service = search_service
         self.gpt_service = gpt_service
+        self.validation_agent = EnhancedValidationAgent()
         self.eval_endpoint = "https://mercor-dev--search-eng-interview.modal.run/evaluate"
         self.user_email = config.api.user_email
         
@@ -47,7 +49,7 @@ class SubmissionAgent:
         
         payload = {
             "config_path": config_path,
-            "object_ids": candidate_ids[:10]  # Max 10 candidates
+            "object_ids": candidate_ids
         }
         
         try:
@@ -67,7 +69,7 @@ class SubmissionAgent:
             return {"error": str(e), "overallScore": 0.0}
     
     def search_with_criteria(self, category: str, max_candidates: int = 50) -> List[CandidateProfile]:
-        """Search candidates using multiple strategies."""
+        """Search candidates using multiple strategies with quality filtering."""
         logger.info(f"Searching {category} with multiple strategies...")
         
         strategies_to_try = [
@@ -105,7 +107,54 @@ class SubmissionAgent:
                 unique_candidates.append(candidate)
         
         logger.info(f"Total unique candidates: {len(unique_candidates)}")
-        return unique_candidates[:max_candidates]
+        
+        # Apply quality filtering
+        quality_filtered = self._apply_quality_filtering(unique_candidates, category)
+        logger.info(f"After quality filtering: {len(quality_filtered)} candidates")
+        
+        return quality_filtered[:max_candidates]
+    
+    def _apply_quality_filtering(self, candidates: List[CandidateProfile], category: str) -> List[CandidateProfile]:
+        """Apply quality filtering to candidates."""
+        if not candidates:
+            return candidates
+        
+        logger.info(f"Applying quality filtering to {len(candidates)} candidates...")
+        
+        # Calculate quality scores for all candidates
+        scored_candidates = []
+        for candidate in candidates:
+            quality_validation = self.validation_agent.validate_candidate_quality(candidate)
+            quality_score = quality_validation["enhanced_score"]
+            
+            scored_candidates.append({
+                "candidate": candidate,
+                "quality_score": quality_score,
+                "quality_level": quality_validation["quality_level"],
+                "validation": quality_validation
+            })
+        
+        # Sort by quality score descending
+        scored_candidates.sort(key=lambda x: x["quality_score"], reverse=True)
+        
+        # Filter out poor quality candidates
+        min_quality_threshold = self.validation_agent.quality_thresholds['acceptable']
+        filtered_candidates = [
+            item["candidate"] for item in scored_candidates 
+            if item["quality_score"] >= min_quality_threshold
+        ]
+        
+        # If we filtered out too many, relax the threshold slightly
+        if len(filtered_candidates) < max(5, len(candidates) * 0.3):
+            relaxed_threshold = min_quality_threshold * 0.8
+            logger.info(f"Relaxing quality threshold to {relaxed_threshold:.3f}")
+            filtered_candidates = [
+                item["candidate"] for item in scored_candidates 
+                if item["quality_score"] >= relaxed_threshold
+            ]
+        
+        logger.info(f"Quality filtering: {len(candidates)} -> {len(filtered_candidates)} candidates")
+        return filtered_candidates
     
     def iterative_improvement(
         self, 
@@ -131,6 +180,25 @@ class SubmissionAgent:
             if current_score > best_evaluation.get("overallScore", 0.0):
                 best_evaluation = evaluation
                 logger.info(f"New best score: {current_score:.3f}")
+            
+            # Validate candidates with enhanced validation agent
+            quality_validation = self.validation_agent.validate_candidate_list(
+                best_candidates[:10], category
+            )
+            avg_quality = quality_validation["average_quality_score"]
+            
+            # Check if we should rerun search
+            should_rerun, reason = self.validation_agent.should_rerun_search(
+                current_score, avg_quality
+            )
+            
+            if should_rerun and iteration < max_iterations - 1:
+                logger.info(f"Rerunning search: {reason}")
+                # Try to get better candidates
+                new_candidates = self.search_with_criteria(category, max_candidates=75)
+                if len(new_candidates) > len(initial_candidates):
+                    best_candidates = new_candidates[:15]
+                    continue
             
             if current_score >= target_score:
                 logger.info(f"Target score reached: {current_score:.3f}")
