@@ -33,15 +33,7 @@ class SearchService:
         logger.info(f"Initialized SearchService with namespace: {config.turbopuffer.namespace}")
     def get_domain_queries(self, job_category: str) -> List[str]:
         """Get domain-specific queries for a job category."""
-        try:
-            from src.services.gpt_service import gpt_service
-            if gpt_service.is_available():
-                enhanced_queries = gpt_service.generate_enhanced_domain_queries(job_category)
-                if enhanced_queries:
-                    logger.info(f"Using {len(enhanced_queries)} GPT-enhanced queries for {job_category}")
-                    return enhanced_queries
-        except Exception as e:
-            logger.warning(f"GPT query generation failed for {job_category}: {e}")
+        # DISABLED GPT for faster performance
         category_name = job_category.replace("_", " ").replace(".yml", "")
         domain_queries = self.prompts_config.get("domain_specific_queries", {})
         static_queries = domain_queries.get(category_name, [f"professional {category_name}"])
@@ -241,26 +233,8 @@ class SearchService:
             )
             top_candidate_ids = [cs.candidate_id for cs in sorted_scores[:query.max_candidates]]
             final_candidates = self._get_candidate_profiles(top_candidate_ids)
-            try:
-                from src.services.gpt_service import gpt_service
-                if gpt_service.is_available() and len(final_candidates) > 0:
-                    logger.info(f"Applying GPT domain validation for {query.job_category}")
-                    domain_scores = gpt_service.score_candidate_batch_for_domain(
-                        final_candidates, query.job_category
-                    )
-                    domain_threshold = 0.3
-                    validated_candidates = []
-                    for candidate in final_candidates:
-                        domain_score = domain_scores.get(candidate.id, 0.5)
-                        if domain_score >= domain_threshold:
-                            validated_candidates.append(candidate)
-                            logger.debug(f"✅ {candidate.name}: domain_score={domain_score:.2f}")
-                        else:
-                            logger.info(f"❌ Filtered out {candidate.name}: domain_score={domain_score:.2f} (below {domain_threshold})")
-                    final_candidates = validated_candidates
-                    logger.info(f"GPT validation: {len(final_candidates)} candidates passed domain threshold")
-            except Exception as e:
-                logger.warning(f"GPT domain validation failed: {e}")
+            # DISABLED GPT domain validation for faster performance
+            logger.info(f"Skipping GPT domain validation for {query.job_category}")
             if search_config.use_hard_filters:
                 hard_filters = self.get_hard_filters(query.job_category)
                 final_candidates = self.apply_hard_filters(final_candidates, hard_filters)
