@@ -67,7 +67,7 @@ def evaluate_candidates(category: str, candidate_ids: list):
         
         if response.status_code == 200:
             data = response.json()
-            overall_score = data.get('overallScore', 0)
+            overall_score = data.get('average_final_score', 0)
             
             print(f"\n📊 EVALUATION RESULTS:")
             print(f"Category: {category}")

@@ -35,6 +35,7 @@ class MCPFastAgent:
             MCP Context: Optimize search for {category}
             Base query: {base_query}
             Task: Generate 5-8 precise search terms for maximum candidate relevance
+            Focus on hard requirements: JD for lawyers, MD for doctors, PhD for researchers
             Return: Space-separated keywords only
             """
             
@@ -92,7 +93,7 @@ class MCPFastAgent:
             
             if response.status_code == 200:
                 data = response.json()
-                score = data.get('overallScore', 0)
+                score = data.get('average_final_score', 0)
                 self.mcp_context["category_insights"][category] = {
                     "evaluation_score": score,
                     "candidates_evaluated": len(candidate_ids[:5])
@@ -118,16 +119,16 @@ def main():
     agent = MCPFastAgent()
     
     categories = {
-        "tax_lawyer.yml": "tax attorney lawyer legal IRS",
-        "junior_corporate_lawyer.yml": "corporate lawyer attorney legal M&A",
-        "radiology.yml": "radiologist physician doctor imaging",
-        "doctors_md.yml": "doctor physician MD medical clinical",
-        "biology_expert.yml": "biology researcher PhD genetics molecular",
-        "anthropology.yml": "anthropologist PhD cultural sociology",
-        "mathematics_phd.yml": "mathematician PhD statistics research",
-        "quantitative_finance.yml": "quantitative finance financial modeling",
-        "bankers.yml": "banker investment finance advisory",
-        "mechanical_engineers.yml": "mechanical engineer design CAD"
+        "tax_lawyer.yml": "JD attorney tax lawyer legal IRS audit corporate",
+        "junior_corporate_lawyer.yml": "JD attorney corporate lawyer M&A legal counsel",
+        "radiology.yml": "MD radiologist physician doctor imaging diagnostic board certified",
+        "doctors_md.yml": "MD doctor physician medical clinical practice board certified",
+        "biology_expert.yml": "PhD biology researcher genetics molecular university professor",
+        "anthropology.yml": "PhD anthropologist cultural sociology research university professor",
+        "mathematics_phd.yml": "PhD mathematician statistics research university professor",
+        "quantitative_finance.yml": "MBA finance quantitative financial modeling analyst",
+        "bankers.yml": "MBA banker investment finance advisory analyst",
+        "mechanical_engineers.yml": "engineer mechanical design CAD development manufacturing"
     }
     
     submission = {"config_candidates": {}}

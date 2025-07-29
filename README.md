@@ -81,18 +81,18 @@ if response.status_code == 200:
 
 | Category | Score | Candidates |
 |----------|--------|------------|
-| tax_lawyer.yml | 0.000 | 10 |
+| tax_lawyer.yml | 30.000 | 10 |
 | junior_corporate_lawyer.yml | 0.000 | 10 |
 | radiology.yml | 0.000 | 10 |
 | doctors_md.yml | 0.000 | 10 |
 | biology_expert.yml | 0.000 | 10 |
 | anthropology.yml | 0.000 | 10 |
-| mathematics_phd.yml | 0.000 | 10 |
+| mathematics_phd.yml | 15.000 | 10 |
 | quantitative_finance.yml | 0.000 | 10 |
 | bankers.yml | 0.000 | 10 |
-| mechanical_engineers.yml | 0.000 | 10 |
+| mechanical_engineers.yml | 66.000 | 10 |
 
-**Average Score**: 0.000
+**Average Score**: 11.100
 
 ## Approach Summary
 
