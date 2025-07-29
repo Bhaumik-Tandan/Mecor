@@ -1,13 +1,9 @@
 #!/usr/bin/env python3
 """
-Enhanced AI Submission Agent with Real-Time Evaluation
-=====================================================
+Submission Agent with Evaluation Integration
+==========================================
 
-Advanced AI agent that:
-- Uses soft criteria and hard filters from official spreadsheet
-- Calls Mercor evaluation endpoint during processing
-- Iteratively improves results based on evaluation feedback
-- Fetches more candidates when quality is low
+Candidate search system with real-time evaluation feedback.
 """
 
 import os
@@ -29,8 +25,8 @@ from src.utils.logger import setup_logger
 
 logger = setup_logger("ai_submission_agent_eval", level="INFO")
 
-class EnhancedSubmissionAgentWithEval:
-    """Enhanced AI agent that uses Mercor evaluation endpoint for validation."""
+class SubmissionAgent:
+    """Candidate search agent with evaluation endpoint integration."""
     
     def __init__(self):
         self.search_service = search_service
@@ -38,21 +34,12 @@ class EnhancedSubmissionAgentWithEval:
         self.eval_endpoint = "https://mercor-dev--search-eng-interview.modal.run/evaluate"
         self.user_email = config.api.user_email
         
-        logger.info("🤖 Enhanced Submission Agent with Evaluation initialized")
-        logger.info(f"🧠 GPT Available: {self.gpt_service.is_available()}")
-        logger.info(f"📧 User Email: {self.user_email}")
+        logger.info("Submission Agent initialized")
+        logger.info(f"GPT Available: {self.gpt_service.is_available()}")
+        logger.info(f"User Email: {self.user_email}")
     
     def call_evaluation_endpoint(self, config_path: str, candidate_ids: List[str]) -> Dict[str, Any]:
-        """
-        Call Mercor evaluation endpoint to get quality score.
-        
-        Args:
-            config_path: YAML config file name (e.g., "tax_lawyer.yml")
-            candidate_ids: List of candidate IDs to evaluate
-            
-        Returns:
-            Evaluation response with score and feedback
-        """
+        """Call Mercor evaluation endpoint."""
         headers = {
             "Content-Type": "application/json",
             "Authorization": self.user_email
@@ -64,45 +51,35 @@ class EnhancedSubmissionAgentWithEval:
         }
         
         try:
-            logger.info(f"🔍 Evaluating {len(candidate_ids)} candidates for {config_path}")
+            logger.info(f"Evaluating {len(candidate_ids)} candidates for {config_path}")
             response = requests.post(self.eval_endpoint, json=payload, headers=headers)
             
             if response.status_code == 200:
                 result = response.json()
-                logger.info(f"✅ Evaluation score: {result.get('overallScore', 'N/A')}")
+                logger.info(f"Evaluation score: {result.get('overallScore', 'N/A')}")
                 return result
             else:
-                logger.error(f"❌ Evaluation failed: {response.status_code} - {response.text}")
+                logger.error(f"Evaluation failed: {response.status_code} - {response.text}")
                 return {"error": f"HTTP {response.status_code}", "overallScore": 0.0}
                 
         except Exception as e:
-            logger.error(f"❌ Evaluation endpoint error: {e}")
+            logger.error(f"Evaluation endpoint error: {e}")
             return {"error": str(e), "overallScore": 0.0}
     
-    def search_with_enhanced_criteria(self, category: str, max_candidates: int = 50) -> List[CandidateProfile]:
-        """
-        Search with enhanced criteria matching official spreadsheet requirements.
+    def search_with_criteria(self, category: str, max_candidates: int = 50) -> List[CandidateProfile]:
+        """Search candidates using multiple strategies."""
+        logger.info(f"Searching {category} with multiple strategies...")
         
-        Args:
-            category: Job category (e.g., "tax_lawyer.yml")
-            max_candidates: Maximum candidates to find
-            
-        Returns:
-            List of candidate profiles
-        """
-        logger.info(f"🔍 Enhanced search for {category} with official criteria...")
-        
-        # Enhanced search strategies based on official criteria
         strategies_to_try = [
-            (SearchStrategy.HYBRID, "Hybrid (Vector + BM25 + Soft)"),
-            (SearchStrategy.VECTOR_ONLY, "Vector Only"),
-            (SearchStrategy.BM25_ONLY, "BM25 Only")
+            (SearchStrategy.HYBRID, "Hybrid"),
+            (SearchStrategy.VECTOR_ONLY, "Vector"),
+            (SearchStrategy.BM25_ONLY, "BM25")
         ]
         
         all_candidates = []
         
         for strategy, strategy_name in strategies_to_try:
-            logger.info(f"  📊 Trying {strategy_name} strategy...")
+            logger.info(f"Trying {strategy_name} strategy...")
             
             query = SearchQuery(
                 query_text=f"expert professional {category.replace('_', ' ').replace('.yml', '')}",
@@ -113,14 +90,13 @@ class EnhancedSubmissionAgentWithEval:
             
             candidates = self.search_service.search_candidates(query, strategy)
             
-            # Add strategy info to candidates
             for candidate in candidates:
                 candidate.search_strategy = strategy_name
                 
             all_candidates.extend(candidates)
-            logger.info(f"    ✅ Found {len(candidates)} candidates")
+            logger.info(f"Found {len(candidates)} candidates")
         
-        # Remove duplicates while preserving order
+        # Remove duplicates
         seen_ids = set()
         unique_candidates = []
         for candidate in all_candidates:
@@ -128,37 +104,25 @@ class EnhancedSubmissionAgentWithEval:
                 seen_ids.add(candidate.id)
                 unique_candidates.append(candidate)
         
-        logger.info(f"  ✅ Total unique candidates: {len(unique_candidates)}")
+        logger.info(f"Total unique candidates: {len(unique_candidates)}")
         return unique_candidates[:max_candidates]
     
-    def iterative_improvement_with_evaluation(
+    def iterative_improvement(
         self, 
         category: str, 
         initial_candidates: List[CandidateProfile],
         target_score: float = 0.8,
         max_iterations: int = 3
     ) -> tuple[List[CandidateProfile], Dict[str, Any]]:
-        """
-        Iteratively improve candidate selection using evaluation endpoint feedback.
-        
-        Args:
-            category: Job category
-            initial_candidates: Initial candidate list
-            target_score: Target evaluation score
-            max_iterations: Maximum improvement iterations
-            
-        Returns:
-            Tuple of (best_candidates, best_evaluation)
-        """
-        logger.info(f"🔄 Iterative improvement for {category} (target: {target_score})")
+        """Improve candidate selection using evaluation feedback."""
+        logger.info(f"Starting iterative improvement for {category} (target: {target_score})")
         
         best_candidates = initial_candidates[:10]
         best_evaluation = {"overallScore": 0.0}
         
         for iteration in range(max_iterations):
-            logger.info(f"  📊 Iteration {iteration + 1}/{max_iterations}")
+            logger.info(f"Iteration {iteration + 1}/{max_iterations}")
             
-            # Test current candidates
             candidate_ids = [c.id for c in best_candidates[:10]]
             evaluation = self.call_evaluation_endpoint(category, candidate_ids)
             
@@ -166,18 +130,15 @@ class EnhancedSubmissionAgentWithEval:
             
             if current_score > best_evaluation.get("overallScore", 0.0):
                 best_evaluation = evaluation
-                logger.info(f"    ✅ New best score: {current_score:.3f}")
+                logger.info(f"New best score: {current_score:.3f}")
             
-            # If we've reached target, stop iterating
             if current_score >= target_score:
-                logger.info(f"    🎯 Target score reached: {current_score:.3f}")
+                logger.info(f"Target score reached: {current_score:.3f}")
                 break
             
-            # Try different candidate combinations
             if iteration < max_iterations - 1:
-                logger.info(f"    🔄 Score {current_score:.3f} below target, trying variations...")
+                logger.info(f"Score {current_score:.3f} below target, trying variations...")
                 
-                # Try different top-k selections
                 for top_k in [15, 20, 25]:
                     if len(initial_candidates) >= top_k:
                         test_candidates = initial_candidates[:top_k]
@@ -188,10 +149,10 @@ class EnhancedSubmissionAgentWithEval:
                         if test_score > best_evaluation.get("overallScore", 0.0):
                             best_candidates = test_candidates[:10]
                             best_evaluation = test_eval
-                            logger.info(f"      ✅ Improved with top-{top_k}: {test_score:.3f}")
+                            logger.info(f"Improved with top-{top_k}: {test_score:.3f}")
         
         final_score = best_evaluation.get("overallScore", 0.0)
-        logger.info(f"  🏆 Final score for {category}: {final_score:.3f}")
+        logger.info(f"Final score for {category}: {final_score:.3f}")
         
         return best_candidates, best_evaluation
     
@@ -235,7 +196,7 @@ class EnhancedSubmissionAgentWithEval:
                     candidates.extend(candidates[:10-len(candidates)])
             
             # Step 2: Iterative improvement with evaluation endpoint
-            best_candidates, evaluation_result = self.iterative_improvement_with_evaluation(
+            best_candidates, evaluation_result = self.iterative_improvement(
                 category, candidates, target_score=0.8, max_iterations=3
             )
             
@@ -271,13 +232,13 @@ class EnhancedSubmissionAgentWithEval:
 def main():
     """Main execution function."""
     
-    print("🤖 ENHANCED AI SUBMISSION AGENT WITH EVALUATION")
-    print("=" * 80)
-    print("Using: Official Criteria + Evaluation Endpoint + Iterative Improvement")
+    print("SUBMISSION AGENT WITH EVALUATION")
+    print("=" * 40)
+    print("Using evaluation endpoint for candidate optimization")
     print()
     
-    # Initialize enhanced AI agent
-    agent = EnhancedSubmissionAgentWithEval()
+    # Initialize agent
+    agent = SubmissionAgent()
     
     # Generate submission with evaluation feedback
     start_time = time.time()
@@ -300,43 +261,43 @@ def main():
     total_candidates = sum(len(ids) for ids in submission["config_candidates"].values())
     avg_score = metadata["overall_evaluation_score"]
     
-    print(f"\n🎉 ENHANCED SUBMISSION COMPLETED!")
-    print(f"📁 Submission file: final_submission.json")
-    print(f"📊 Categories: {len(submission['config_candidates'])}")
-    print(f"👥 Total candidates: {total_candidates}")
-    print(f"🔍 Evaluation endpoint: ✅ Used for validation")
-    print(f"📈 Average evaluation score: {avg_score:.3f}")
-    print(f"⏱️ Duration: {duration:.1f}s")
+    print(f"\nSUBMISSION COMPLETED!")
+    print(f"Submission file: final_submission.json")
+    print(f"Categories: {len(submission['config_candidates'])}")
+    print(f"Total candidates: {total_candidates}")
+    print(f"Evaluation endpoint: Used for validation")
+    print(f"Average evaluation score: {avg_score:.3f}")
+    print(f"Duration: {duration:.1f}s")
     
     # Quality assessment based on actual evaluation scores
     if avg_score >= 0.9:
-        quality = "🏆 EXCELLENT"
+        quality = "EXCELLENT"
     elif avg_score >= 0.8:
-        quality = "✅ GOOD"
+        quality = "GOOD"
     elif avg_score >= 0.7:
-        quality = "⚠️ FAIR"
+        quality = "FAIR"
     else:
-        quality = "❌ NEEDS IMPROVEMENT"
+        quality = "NEEDS IMPROVEMENT"
     
-    print(f"🎯 Overall Quality: {quality}")
+    print(f"Overall Quality: {quality}")
     
     # Show category scores
-    print(f"\n📊 Category Evaluation Scores:")
+    print(f"\nCategory Evaluation Scores:")
     for category, details in metadata["category_details"].items():
         score = details.get("overallScore", 0.0)
         print(f"  {category}: {score:.3f}")
     
     if total_candidates == 100:
-        print("\n✅ Submission format validated: Exactly 100 candidates")
-        print(f"\n🚀 READY FOR MERCOR FINAL SUBMISSION!")
+        print("\nSubmission format validated: Exactly 100 candidates")
+        print(f"\nREADY FOR MERCOR FINAL SUBMISSION!")
         print(f"curl -H 'Authorization: {config.api.user_email}' \\")
         print(f"     -H 'Content-Type: application/json' \\")
         print(f"     -d @final_submission.json \\")
         print(f"     'https://mercor-dev--search-eng-interview.modal.run/grade'")
     else:
-        print(f"⚠️ Warning: Expected 100 candidates, got {total_candidates}")
+        print(f"Warning: Expected 100 candidates, got {total_candidates}")
     
-    print(f"\n📄 Detailed evaluation report: evaluation_validation_report.json")
+    print(f"\nDetailed evaluation report: evaluation_validation_report.json")
 
 if __name__ == "__main__":
     main() 

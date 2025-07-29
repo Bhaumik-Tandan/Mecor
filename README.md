@@ -1,305 +1,176 @@
-# 🚀 Intelligent Search Agent - Mercor Assignment
+# Candidate Search System - Mercor Assignment
 
-**Advanced AI-powered candidate search system with intelligent validation, domain-specific matching, and automated optimization.**
+A sophisticated candidate search system that combines vector search, BM25 keyword matching, and soft filtering to deliver highly relevant candidate matches for specific job categories.
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue)
-![AI Powered](https://img.shields.io/badge/AI-Powered-green)
-![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
+## Environment Setup
 
-## 🎯 Overview
+1. **Clone and Setup**
+```bash
+git clone <repository>
+cd mercor_task
+```
 
-This project implements an advanced, AI-powered candidate search system that combines vector search, BM25 keyword matching, and GPT-based validation to deliver highly relevant candidate matches. The system features intelligent orchestration agents that automatically validate outputs, optimize performance, and maintain code quality.
+2. **Virtual Environment**
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-### ✨ Key Features
+3. **Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
 
-- **🧠 Intelligent AI Orchestration**: Master AI agent coordinates entire search process
-- **🔍 Hybrid Search Engine**: Combines vector similarity + BM25 + soft filtering
-- **🤖 GPT-Powered Validation**: Real-time domain validation prevents cross-contamination  
-- **🎯 Domain-Specific Matching**: Prevents biology PhDs from matching math positions
-- **⚡ Parallel Processing**: Threaded execution for optimal performance
-- **🔧 Auto-Optimization**: Self-improving search quality with iteration
-- **📊 Comprehensive Validation**: Multi-dimensional quality scoring
-- **🧹 Intelligent Cleanup**: Automated project structure optimization
+4. **Environment Configuration**
+```bash
+cp environment_template.txt .env
+# Edit .env with your API keys:
+# - VOYAGE_API_KEY
+# - TURBOPUFFER_API_KEY  
+# - OPENAI_API_KEY (optional)
+# - USER_EMAIL
+# - TURBOPUFFER_NAMESPACE
+```
 
-## 🏗️ Architecture
+## Setup Script (init.py)
+
+The `init.py` script migrates data from MongoDB to Turbopuffer vector database:
+
+```bash
+# Run the setup/migration script
+python3 init.py migrate
+
+# Optional: Clear existing data first
+python3 init.py delete
+```
+
+**Configuration Options:**
+- `--batch_size`: Number of documents per batch (default: 10000)
+- `--threads`: Number of parallel workers (default: 10)
+
+## Retrieval Logic
+
+The main retrieval system (`submission_agent.py`) implements:
+
+### Core Components:
+- **Vector Search**: Uses voyage-3 embeddings for semantic similarity
+- **BM25 Search**: Keyword-based text matching
+- **Soft Filtering**: Preference scoring based on job-specific criteria
+- **Hard Filtering**: Must-have requirements filtering
+
+### Usage:
+```bash
+# Generate final submission with evaluation feedback
+python3 submission_agent.py
+```
+
+### Key Functions:
+- `search_with_criteria()`: Multi-strategy candidate search
+- `call_evaluation_endpoint()`: Real-time Mercor evaluation
+- `iterative_improvement()`: Score-based optimization
+
+## Evaluation API Integration
+
+The system calls the Mercor evaluation endpoint during processing:
+
+```python
+# Example evaluation call
+headers = {"Authorization": "your_email@example.com", "Content-Type": "application/json"}
+payload = {"config_path": "tax_lawyer.yml", "object_ids": ["candidate_id_1", ...]}
+response = requests.post("https://mercor-dev--search-eng-interview.modal.run/evaluate", 
+                        json=payload, headers=headers)
+print(f"Overall Score: {response.json()['average_final_score']}")
+```
+
+## Approach Summary
+
+### Data Exploration
+1. **Schema Analysis**: Analyzed MongoDB structure (193,796 documents)
+2. **Field Selection**: Used embedding, rerankSummary, name, email, linkedinId, country
+3. **Embedding Strategy**: Leveraged pre-computed voyage-3 embeddings
+
+### Indexing Strategy
+- **Vector Database**: Turbopuffer for scalable similarity search
+- **Schema Design**: Optimized for full-text search on summary field
+- **Distance Metric**: Cosine similarity for vector comparisons
+
+### Retrieval Approach
+1. **Hybrid Search**: Combines vector similarity (60%) + BM25 (40%) + soft filters (20%)
+2. **Domain-Specific Queries**: Tailored search terms per job category
+3. **Hard Filtering**: Must-have requirements (JD degree, experience years)
+4. **Soft Criteria**: Preference scoring (IRS experience, M&A background, etc.)
+
+### Validation & Analysis
+- **Real-time Evaluation**: Integration with Mercor endpoint during search
+- **Iterative Improvement**: Automatic retry with different strategies if scores are low
+- **Domain Validation**: Prevents cross-contamination (biology PhDs in math roles)
+- **Performance Metrics**: Track precision, relevance, and evaluation scores
+
+### Key Innovations
+1. **Evaluation-Driven Search**: Uses Mercor feedback to improve results in real-time
+2. **Multi-Strategy Fallback**: Tries different approaches if initial results are poor
+3. **Soft Criteria Matching**: Sophisticated preference scoring beyond basic keyword matching
+
+## Project Structure
 
 ```
 mercor_task/
-├── 🤖 ai_orchestrator.py          # Master AI coordination agent
-├── 🚀 create_final_submission.py  # Optimized submission generator
-├── 📁 src/
-│   ├── agents/                    # AI Agent System
-│   │   ├── validation_agent.py    # Search quality validation
-│   │   └── project_cleaner.py     # Structure optimization
-│   ├── config/                    # Configuration Management
-│   │   ├── settings.py           # Environment-based config
-│   │   └── prompts.json          # GPT prompts & domain data
-│   ├── models/                    # Type-Safe Data Models
-│   │   └── candidate.py          # Candidate & search models
-│   ├── services/                  # Core Business Logic
-│   │   ├── search_service.py     # Hybrid search engine
-│   │   ├── gpt_service.py        # GPT integration & validation
-│   │   ├── embedding_service.py   # Vector embeddings (Voyage-3)
-│   │   └── evaluation_service.py  # Mercor API integration
-│   └── utils/                     # Utilities & Helpers
-│       ├── logger.py             # Colored logging system
-│       └── helpers.py            # Performance & retry logic
-├── 📄 requirements.txt            # Dependencies
-├── ⚙️ .env                       # Secure environment variables
-└── 📋 README.md                  # This file
+├── init.py                     # Setup/migration script
+├── submission_agent.py         # Main retrieval logic with evaluation
+├── simple_submission.py        # Basic submission generator
+├── requirements.txt            # Dependencies
+├── environment_template.txt    # Environment variables template
+├── src/
+│   ├── config/
+│   │   ├── settings.py        # Configuration management
+│   │   └── prompts.json       # Job-specific criteria
+│   ├── models/
+│   │   └── candidate.py       # Data models
+│   ├── services/
+│   │   ├── search_service.py  # Core search logic
+│   │   ├── gpt_service.py     # GPT integration
+│   │   ├── embedding_service.py
+│   │   └── evaluation_service.py
+│   └── utils/
+│       ├── logger.py          # Logging utilities
+│       └── helpers.py         # Helper functions
+└── README.md                  # This file
 ```
 
-## 🚀 Quick Start
+## Performance Results
 
-### 1. Environment Setup
+The system achieves strong performance across job categories:
+
+### Sample Evaluation Scores:
+- **Tax Lawyers**: Hard criteria (70% JD compliance, 100% experience)
+- **Soft Criteria**: 8.35/10 legal writing, 8.3/10 IRS audit experience
+- **Domain Specificity**: Effective filtering prevents cross-domain contamination
+
+### Technical Performance:
+- **Search Speed**: ~10-30 seconds per category
+- **Accuracy**: High relevance scores with domain-specific filtering
+- **Scalability**: Handles 193K+ candidate database efficiently
+
+## Final Submission
+
+To generate the final submission:
 
 ```bash
-# Clone and setup
-git clone <repository>
-cd mercor_task
+# Run the main submission agent
+python3 submission_agent.py
 
-# Activate virtual environment
-source venv/bin/activate
-
-# Install dependencies  
-pip install -r requirements.txt
-
-# Configure environment
-cp environment_template.txt .env
-# Edit .env with your API keys
+# This creates final_submission.json with exactly 100 candidates (10 per category)
 ```
 
-### 2. Run AI Orchestrator (Recommended)
-
+Submit to Mercor:
 ```bash
-# Run the master AI agent for complete optimization
-python3 ai_orchestrator.py
-```
-
-This will:
-- ✅ Clean project structure and remove useless files
-- ✅ Validate search quality across all domains  
-- ✅ Generate optimized final submission
-- ✅ Provide comprehensive assessment and grade
-
-### 3. Manual Submission Generation
-
-```bash
-# Alternative: Generate submission directly
-python3 create_final_submission.py
-```
-
-### 4. Submit to Mercor
-
-```bash
-curl -H 'Authorization: bhaumik.tandan@gmail.com' \
+curl -H 'Authorization: your_email@example.com' \
      -H 'Content-Type: application/json' \
      -d @final_submission.json \
      'https://mercor-dev--search-eng-interview.modal.run/grade'
 ```
 
-## 🧠 AI Agent System
-
-### Master Orchestrator Agent
-- **Coordinates** entire optimization process
-- **Validates** search quality in real-time
-- **Triggers** improvements automatically  
-- **Monitors** performance and provides grades
-- **Maintains** professional code standards
-
-### Validation Agent
-- **Analyzes** candidate quality using GPT
-- **Scores** relevance across multiple dimensions
-- **Filters** cross-domain contamination
-- **Iterates** search strategies automatically
-- **Reports** detailed performance metrics
-
-### Project Cleaner Agent
-- **Identifies** and removes useless files
-- **Organizes** professional folder structure
-- **Eliminates** duplicate and temporary files
-- **Maintains** clean, submission-ready codebase
-
-## 🔍 Advanced Search Features
-
-### Hybrid Search Engine
-```python
-# Combines multiple search strategies
-1. Vector Search (Voyage-3 embeddings)
-2. BM25 Keyword Search  
-3. Soft Filtering (preference scoring)
-4. Hard Filtering (must-have/exclusions)
-5. GPT Domain Validation
-```
-
-### Domain-Specific Intelligence
-- **Mathematics PhDs**: Pure math, applied math, number theory, topology
-- **Biology Experts**: Molecular biology, genomics, biotechnology
-- **Radiologists**: Medical imaging, diagnostic radiology, DICOM
-- **Tax Lawyers**: Tax law, IRS representation, tax counsel
-
-### Quality Validation Metrics
-- **Domain Relevance**: 0-1 score for field alignment
-- **Educational Background**: Degree relevance assessment
-- **Professional Experience**: Career progression indicators
-- **Profile Completeness**: Data quality scoring
-
-## 🎯 Problem Solved
-
-### Before Enhancement
-❌ Biology PhD candidates appeared in mathematics searches  
-❌ Cross-domain contamination reduced search quality  
-❌ Generic keywords matched irrelevant candidates  
-
-### After AI Enhancement  
-✅ **Domain-specific validation** prevents mismatches  
-✅ **GPT-powered filtering** ensures relevance  
-✅ **Enhanced keywords** improve precision  
-✅ **Intelligent orchestration** optimizes automatically  
-
-## 📊 Performance Features
-
-### Intelligent Optimization
-- **Auto-iteration**: Retries with improved strategies
-- **Performance monitoring**: Real-time quality scoring  
-- **Strategy adaptation**: Vector → BM25 → Hybrid fallbacks
-- **Threshold filtering**: Removes candidates below 0.3 relevance
-
-### Parallel Processing
-- **Threaded search**: Multiple queries simultaneously
-- **Batch GPT validation**: Efficient candidate scoring
-- **Concurrent embedding**: Parallel vector generation
-- **Async API calls**: Non-blocking external requests
-
-## 🔧 Configuration
-
-### Environment Variables (.env)
-```bash
-# API Keys
-VOYAGE_API_KEY=your_voyage_key
-TURBOPUFFER_API_KEY=your_turbopuffer_key  
-OPENAI_API_KEY=your_openai_key
-
-# Search Configuration
-VECTOR_SEARCH_WEIGHT=0.6
-BM25_SEARCH_WEIGHT=0.4
-SOFT_FILTER_WEIGHT=0.2
-THREAD_POOL_SIZE=5
-```
-
-### Domain Customization
-Edit `src/config/prompts.json` to:
-- Add new job categories
-- Customize search keywords
-- Define hard filters
-- Configure GPT prompts
-
-## 🏆 Submission Format
-
-The system generates the exact JSON format required by Mercor:
-
-```json
-{
-  "config_candidates": {
-    "mathematics_phd.yml": ["id1", "id2", ..., "id10"],
-    "biology_expert.yml": ["id1", "id2", ..., "id10"],
-    "radiology.yml": ["id1", "id2", ..., "id10"],
-    ...
-  }
-}
-```
-
-**Guaranteed**: Exactly 10 candidates per category, validated for domain relevance.
-
-## 🔬 Validation Results
-
-### Test Categories
-- ✅ **Mathematics PhDs**: Returns actual mathematicians
-- ✅ **Biology Experts**: Molecular/cell biologists only  
-- ✅ **Radiologists**: Medical imaging specialists
-- ✅ **Tax Lawyers**: Tax law attorneys with JD
-
-### Quality Metrics
-- **Domain Accuracy**: 90%+ relevance scores
-- **Cross-contamination**: Eliminated
-- **Profile Completeness**: 85%+ complete profiles
-- **Response Time**: <30 seconds for full submission
-
-## 🛠️ Development
-
-### Project Structure
-```bash
-src/
-├── agents/          # AI orchestration & validation
-├── config/          # Settings & domain configuration  
-├── models/          # Type-safe data structures
-├── services/        # Core business logic
-└── utils/           # Helpers & utilities
-```
-
-### Key Components
-- **Search Service**: Hybrid search implementation
-- **GPT Service**: AI validation & enhancement
-- **Validation Agent**: Quality monitoring & optimization
-- **Project Cleaner**: Structure maintenance
-
-## 📈 Performance Improvements
-
-### Search Quality
-- **Before**: Generic keyword matching, cross-domain contamination
-- **After**: AI-validated, domain-specific, high-precision results
-
-### Code Quality  
-- **Professional structure**: Modular, type-safe, well-documented
-- **Security**: Environment variables, no hardcoded secrets
-- **Performance**: Parallel processing, efficient algorithms
-- **Maintenance**: Clean structure, automated optimization
-
-## 🤝 Technical Specifications
-
-### Technologies Used
-- **Python 3.8+**: Core implementation
-- **Voyage-3**: Vector embeddings
-- **Turbopuffer**: Vector database
-- **OpenAI GPT-4.1-nano**: Domain validation & enhancement
-- **MongoDB**: Source candidate data
-- **BM25**: Keyword search algorithm
-
-### API Integrations
-- **Voyage AI**: High-quality embeddings
-- **Turbopuffer**: Scalable vector search
-- **OpenAI**: Intelligent validation
-- **Mercor**: Evaluation & submission
-
-## 🎓 Assignment Completion
-
-### Requirements Met
-✅ **Environment setup** instructions (README)  
-✅ **Setup script** (migrate_to_turbo.py)  
-✅ **Retrieval logic** (hybrid search system)  
-✅ **Evaluation API** integration  
-✅ **Approach summary** (this README + AI reports)  
-✅ **Performance improvements** (32%+ enhancement)  
-✅ **Professional code structure**  
-✅ **Clean git history** (secrets removed)  
-
-### Advanced Features Added
-🚀 **AI Orchestration** system  
-🚀 **Intelligent validation** with GPT  
-🚀 **Domain-specific filtering**  
-🚀 **Auto-optimization** capabilities  
-🚀 **Comprehensive testing** framework  
-
-## 📞 Contact & Submission
-
-**Developer**: Bhaumik Tandan  
-**Email**: bhaumik.tandan@gmail.com  
-**Assignment**: Mercor Search Engineer Take-Home  
-
 ---
 
-## 🎉 Ready for Submission!
-
-This intelligent search agent represents a production-ready, AI-powered candidate matching system with advanced validation, optimization, and quality assurance capabilities. The system automatically prevents common issues like cross-domain contamination while delivering highly relevant, validated candidates for each job category.
-
-**Run `python3 ai_orchestrator.py` to experience the full AI-powered optimization process!**
+**Author**: Bhaumik Tandan  
+**Email**: bhaumik.tandan@gmail.com
