@@ -92,3 +92,11 @@ coverage.xml
 .mypy_cache/
 .dmypy.json
 dmypy.json 
+# Generated output files
+final_submission.json
+submission_validation_report.json
+*.log
+logs/*.log
+
+# Environment file
+.env

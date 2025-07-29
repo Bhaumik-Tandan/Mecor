@@ -20,14 +20,27 @@ class GPTService:
             logger.warning("OpenAI API key not found. GPT features will be disabled.")
             self.client = None
             return
+        
+        try:
+            self.client = OpenAI(api_key=config.api.openai_api_key)
+            self.model = "gpt-4o-mini"  # Use a more standard model
             
-        self.client = OpenAI(api_key=config.api.openai_api_key)
-        self.model = "gpt-4.1-nano-2025-04-14"  # Use the available model
-        
-        # Load prompts configuration
-        self.prompts_config = load_json_file("src/config/prompts.json")
-        
-        logger.info("Initialized GPTService with OpenAI API")
+            # Test the API key with a simple call
+            test_response = self.client.chat.completions.create(
+                model=self.model,
+                messages=[{"role": "user", "content": "test"}],
+                max_tokens=5
+            )
+            
+            # Load prompts configuration
+            self.prompts_config = load_json_file("src/config/prompts.json")
+            
+            logger.info("Initialized GPTService with OpenAI API")
+            
+        except Exception as e:
+            logger.warning(f"OpenAI API key invalid or API unavailable: {e}")
+            logger.warning("GPT features will be disabled.")
+            self.client = None
     
     @retry_with_backoff(max_retries=3, base_delay=1.0, backoff_factor=2.0)
     def _make_gpt_request(

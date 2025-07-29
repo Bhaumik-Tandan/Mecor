@@ -1,5 +1,5 @@
 # Core API clients
-turbopuffer==1.0.0
+turbopuffer==0.5.16
 openai>=1.0.0
 requests>=2.28.0
 
