@@ -285,8 +285,8 @@ class SubmissionAgent:
         final_result["evaluation_metadata"] = {
             "initial_evaluation_score": avg_evaluation_score,
             "final_evaluation_score": final_result["validation_metadata"]["average_final_score"],
-            "categories_processed": len(categories),
-            "category_details": evaluation_metadata,
+                "categories_processed": len(categories),
+                "category_details": evaluation_metadata,
             "total_candidates": sum(len(ids) for ids in final_result["config_candidates"].values()),
             "strategy": "Enhanced AI with MongoDB+GPT Validation",
             "validation_completed": True,

@@ -23,7 +23,7 @@ class GPTService:
         
         try:
             self.client = OpenAI(api_key=config.api.openai_api_key)
-            self.model = "gpt-4o-mini"  # Use a more standard model
+            self.model = "gpt-4.1-nano-2025-04-14"  # Updated per Mercor team instructions
             
             # Test the API key with a simple call
             test_response = self.client.chat.completions.create(

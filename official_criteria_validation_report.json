@@ -2099,29 +2099,6 @@
           ]
         },
         {
-          "candidate_id": "679603bf0db3e792567dfdcb",
-          "candidate_name": "Vijay Easwar",
-          "category": "bankers.yml",
-          "hard_criteria_score": 1.0,
-          "soft_criteria_score": 0.6,
-          "overall_compliance": 0.8799999999999999,
-          "required_keywords_found": [
-            "MBA",
-            "banking",
-            "investment",
-            "finance"
-          ],
-          "preferred_keywords_found": [
-            "investment banking",
-            "M&A",
-            "transactions"
-          ],
-          "excluded_keywords_found": [],
-          "hard_criteria_details": [],
-          "soft_criteria_details": [],
-          "recommendations": []
-        },
-        {
           "candidate_id": "679775733e76d5b5873a5e03",
           "candidate_name": "Nisha Gaba",
           "category": "bankers.yml",
@@ -2143,12 +2120,12 @@
           "recommendations": []
         },
         {
-          "candidate_id": "67961fd60db3e792567f17e4",
-          "candidate_name": "Tejas Gorasia",
+          "candidate_id": "67955c0b3e76d5b5872765e9",
+          "candidate_name": "Faisal Khalid",
           "category": "bankers.yml",
           "hard_criteria_score": 1.0,
-          "soft_criteria_score": 0.8,
-          "overall_compliance": 0.94,
+          "soft_criteria_score": 1.0,
+          "overall_compliance": 1.0,
           "required_keywords_found": [
             "MBA",
             "banking",
@@ -2158,6 +2135,7 @@
           "preferred_keywords_found": [
             "investment banking",
             "M&A",
+            "healthcare",
             "private equity",
             "transactions"
           ],
@@ -2190,6 +2168,73 @@
           "recommendations": []
         },
         {
+          "candidate_id": "679603bf0db3e792567dfdcb",
+          "candidate_name": "Vijay Easwar",
+          "category": "bankers.yml",
+          "hard_criteria_score": 1.0,
+          "soft_criteria_score": 0.6,
+          "overall_compliance": 0.8799999999999999,
+          "required_keywords_found": [
+            "MBA",
+            "banking",
+            "investment",
+            "finance"
+          ],
+          "preferred_keywords_found": [
+            "investment banking",
+            "M&A",
+            "transactions"
+          ],
+          "excluded_keywords_found": [],
+          "hard_criteria_details": [],
+          "soft_criteria_details": [],
+          "recommendations": []
+        },
+        {
+          "candidate_id": "67961fd60db3e792567f17e4",
+          "candidate_name": "Tejas Gorasia",
+          "category": "bankers.yml",
+          "hard_criteria_score": 1.0,
+          "soft_criteria_score": 0.8,
+          "overall_compliance": 0.94,
+          "required_keywords_found": [
+            "MBA",
+            "banking",
+            "investment",
+            "finance"
+          ],
+          "preferred_keywords_found": [
+            "investment banking",
+            "M&A",
+            "private equity",
+            "transactions"
+          ],
+          "excluded_keywords_found": [],
+          "hard_criteria_details": [],
+          "soft_criteria_details": [],
+          "recommendations": []
+        },
+        {
+          "candidate_id": "6795732a0db3e79256787c20",
+          "candidate_name": "Stanrose Menachery",
+          "category": "bankers.yml",
+          "hard_criteria_score": 0.75,
+          "soft_criteria_score": 0.0,
+          "overall_compliance": 0.5249999999999999,
+          "required_keywords_found": [
+            "MBA",
+            "banking",
+            "finance"
+          ],
+          "preferred_keywords_found": [],
+          "excluded_keywords_found": [],
+          "hard_criteria_details": [],
+          "soft_criteria_details": [],
+          "recommendations": [
+            "Limited relevant experience indicators"
+          ]
+        },
+        {
           "candidate_id": "679502b88d90554e60672289",
           "candidate_name": "Pranshu Bansal",
           "category": "bankers.yml",
@@ -2208,6 +2253,30 @@
             "Missing key required qualifications",
             "Limited relevant experience indicators"
           ]
+        },
+        {
+          "candidate_id": "6796ab678d90554e60769b4b",
+          "candidate_name": "Hein Broerse",
+          "category": "bankers.yml",
+          "hard_criteria_score": 1.0,
+          "soft_criteria_score": 0.8,
+          "overall_compliance": 0.94,
+          "required_keywords_found": [
+            "MBA",
+            "banking",
+            "investment",
+            "finance"
+          ],
+          "preferred_keywords_found": [
+            "investment banking",
+            "M&A",
+            "healthcare",
+            "transactions"
+          ],
+          "excluded_keywords_found": [],
+          "hard_criteria_details": [],
+          "soft_criteria_details": [],
+          "recommendations": []
         },
         {
           "candidate_id": "67969c3ef9f986ea7fc4a6b8",
@@ -2230,78 +2299,11 @@
           "hard_criteria_details": [],
           "soft_criteria_details": [],
           "recommendations": []
-        },
-        {
-          "candidate_id": "6796f2e50db3e7925686ecf7",
-          "candidate_name": "Konstantinos Varkas",
-          "category": "bankers.yml",
-          "hard_criteria_score": 0.0,
-          "soft_criteria_score": 0.0,
-          "overall_compliance": 0.0,
-          "required_keywords_found": [],
-          "preferred_keywords_found": [],
-          "excluded_keywords_found": [],
-          "hard_criteria_details": [],
-          "soft_criteria_details": [],
-          "recommendations": [
-            "Missing key required qualifications",
-            "Limited relevant experience indicators"
-          ]
-        },
-        {
-          "candidate_id": "67955c0b3e76d5b5872765e9",
-          "candidate_name": "Faisal Khalid",
-          "category": "bankers.yml",
-          "hard_criteria_score": 1.0,
-          "soft_criteria_score": 1.0,
-          "overall_compliance": 1.0,
-          "required_keywords_found": [
-            "MBA",
-            "banking",
-            "investment",
-            "finance"
-          ],
-          "preferred_keywords_found": [
-            "investment banking",
-            "M&A",
-            "healthcare",
-            "private equity",
-            "transactions"
-          ],
-          "excluded_keywords_found": [],
-          "hard_criteria_details": [],
-          "soft_criteria_details": [],
-          "recommendations": []
-        },
-        {
-          "candidate_id": "67951c1a8a14699f16038082",
-          "candidate_name": "Pierre De Pauw",
-          "category": "bankers.yml",
-          "hard_criteria_score": 0.75,
-          "soft_criteria_score": 0.4,
-          "overall_compliance": 0.4449999999999999,
-          "required_keywords_found": [
-            "banking",
-            "investment",
-            "finance"
-          ],
-          "preferred_keywords_found": [
-            "M&A",
-            "transactions"
-          ],
-          "excluded_keywords_found": [
-            "bachelor"
-          ],
-          "hard_criteria_details": [],
-          "soft_criteria_details": [],
-          "recommendations": [
-            "Contains exclusion keywords: bachelor"
-          ]
         }
       ],
-      "average_compliance": 0.6605,
-      "passing_candidates": 7,
-      "failing_candidates": 3
+      "average_compliance": 0.7625,
+      "passing_candidates": 8,
+      "failing_candidates": 2
     },
     "mechanical_engineers.yml": {
       "category": "mechanical_engineers.yml",
@@ -2569,7 +2571,7 @@
       "failing_candidates": 5
     }
   },
-  "overall_compliance": 0.4408833333333333,
+  "overall_compliance": 0.4510833333333332,
   "categories_passing": 3,
   "categories_failing": 7,
   "summary": {
@@ -2578,7 +2580,7 @@
     "top_performing_categories": [
       [
         "bankers.yml",
-        0.6605
+        0.7625
       ],
       [
         "mechanical_engineers.yml",
