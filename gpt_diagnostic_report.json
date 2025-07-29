@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-07-30T01:02:54.068051",
+  "diagnostics": {
+    "environment_variables": true,
+    "api_key_format_valid": true,
+    "direct_api_test": false,
+    "openai_library_test": false,
+    "gpt_service_test": false
+  },
+  "api_key_info": {
+    "found_in_env": true,
+    "length": 170,
+    "format": "valid"
+  },
+  "recommendations": [
+    "API key is invalid or expired - get new key from OpenAI",
+    "CRITICAL: No GPT integration working - verify API key"
+  ]
+}
