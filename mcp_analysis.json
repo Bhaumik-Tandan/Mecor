@@ -1,0 +1,407 @@
+{
+  "submission": {
+    "config_candidates": {
+      "tax_lawyer.yml": [
+        "679693590db3e79256832858",
+        "6796e2448d90554e6078b443",
+        "6795193f52a365d1167cfc65",
+        "6794efe38d90554e60668291",
+        "67951c70a1a09a48feaba64a",
+        "679607640db3e792567e24eb",
+        "6794a0fd7e0084c5fa6d58dd",
+        "6794ed820db3e79256739288",
+        "6796aa2f3e76d5b587338108",
+        "6794fdb28d90554e6066f761"
+      ],
+      "junior_corporate_lawyer.yml": [
+        "6795719973bf14921fae1a92",
+        "679706137e0084c5fa8452e8",
+        "67970a2e3eff0c142a8d0504",
+        "6795e1083eff0c142a8266f9",
+        "67969d5d3e76d5b58733071a",
+        "679511573eff0c142a7b8aa1",
+        "6795f52952a365d116854be2",
+        "6795719973bf14921fae1a92",
+        "679706137e0084c5fa8452e8",
+        "67970a2e3eff0c142a8d0504"
+      ],
+      "radiology.yml": [
+        "6794a5a68d90554e6063a2ca",
+        "67952db4a1a09a48feac51da",
+        "6795eb083e76d5b5872ca4ae",
+        "6794a5a68d90554e6063a2ca",
+        "67952db4a1a09a48feac51da",
+        "6795eb083e76d5b5872ca4ae",
+        "6794a5a68d90554e6063a2ca",
+        "67952db4a1a09a48feac51da",
+        "6795eb083e76d5b5872ca4ae",
+        "6794a5a68d90554e6063a2ca"
+      ],
+      "doctors_md.yml": [
+        "6795cbca52a365d11683fdb3",
+        "6795545a52a365d1167f3a9f",
+        "6796cc22f9f986ea7fc67849",
+        "6795cb6ff9f986ea7fbd7add",
+        "6795e2f373bf14921fb31205",
+        "67961e3d73bf14921fb533bd",
+        "6795d5cbf9f986ea7fbdca07",
+        "6796724ef9f986ea7fc369a7",
+        "6796a7aa3eff0c142a89c82f",
+        "67954c68f9f986ea7fb8c244"
+      ],
+      "biology_expert.yml": [
+        "67957a2ba1a09a48feaf38a8",
+        "6794c0b33eff0c142a794af7",
+        "679686587e0084c5fa7f2ac3",
+        "67970e3b52a365d1168f7aee",
+        "679518310db3e792567540fc",
+        "6794e4120db3e79256732731",
+        "6795f0657e0084c5fa79e0a0",
+        "67970da3f9f986ea7fc8d674",
+        "679512f68a14699f160334e2",
+        "6795bea773bf14921fb1a38b"
+      ],
+      "anthropology.yml": [
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac"
+      ],
+      "mathematics_phd.yml": [
+        "67962bcd3e76d5b5872ee4ae",
+        "679621a98a14699f160c7112",
+        "6795d72173bf14921fb292b6",
+        "6796a077a1a09a48feba604e",
+        "6794c7a78a14699f16009892",
+        "6796b0e80db3e7925684560e",
+        "6796a783f9f986ea7fc51811",
+        "67954b01a1a09a48fead6390",
+        "6796a5cbf9f986ea7fc5062a",
+        "679511e6f9f986ea7fb69ec3"
+      ],
+      "quantitative_finance.yml": [
+        "67957d39a1a09a48feaf555a",
+        "6795f30bf9f986ea7fbed9a7",
+        "67948f4f3eff0c142a778340",
+        "6794bbe73eff0c142a7929c8",
+        "67967cec8d90554e6074ebdc",
+        "6794dfa48d90554e6065f0e1",
+        "67970f383e76d5b58736f72c",
+        "679580ac8d90554e606bc7a3",
+        "6794c48e8a14699f16007ec4",
+        "679732f73e76d5b587383b0d"
+      ],
+      "bankers.yml": [
+        "67949c3df9f986ea7fb2c01c",
+        "6795fa6352a365d116857eec",
+        "67973ffbf9f986ea7fca4c1a",
+        "6794e6af8a14699f1601b576",
+        "67949c3df9f986ea7fb2c01c",
+        "6795fa6352a365d116857eec",
+        "67973ffbf9f986ea7fca4c1a",
+        "67949c3df9f986ea7fb2c01c",
+        "6795fa6352a365d116857eec",
+        "67973ffbf9f986ea7fca4c1a"
+      ],
+      "mechanical_engineers.yml": [
+        "6796d0d43eff0c142a8b4ebf",
+        "67967aaa52a365d11689b753",
+        "679756cb3e76d5b58739773f",
+        "679585f3a1a09a48feafaf62",
+        "6794cd99f9f986ea7fb46de5",
+        "6794ed4a52a365d1167b8e5d",
+        "6794c5083e76d5b58722598d",
+        "6795cace3eff0c142a819b94",
+        "6795b147f9f986ea7fbc70f0",
+        "6795862c73bf14921faf7b8b"
+      ]
+    }
+  },
+  "mcp_context": {
+    "search_patterns": {
+      "tax_lawyer.yml": {
+        "original_query": "tax attorney lawyer legal IRS",
+        "enhanced_query": "tax attorney IRS legal counsel tax law firm tax advisor tax litigation tax resolution",
+        "candidates_found": 15
+      },
+      "junior_corporate_lawyer.yml": {
+        "original_query": "corporate lawyer attorney legal M&A",
+        "enhanced_query": "junior corporate lawyer legal M&A compliance contracts drafting negotiation regulatory law firm entry-level corporate attorney",
+        "candidates_found": 7
+      },
+      "doctors_md.yml": {
+        "original_query": "doctor physician MD medical clinical",
+        "enhanced_query": "doctor physician MD medical specialist clinic healthcare provider primary care cardiologist dermatologist neurologist pediatrician surgeon radiologist endocrinologist",
+        "candidates_found": 10
+      },
+      "biology_expert.yml": {
+        "original_query": "biology researcher PhD genetics molecular",
+        "enhanced_query": "biology researcher PhD genetics molecular biology expert geneticist genomics gene expression DNA RNA cell biology developmental biology biomedical research",
+        "candidates_found": 15
+      },
+      "mathematics_phd.yml": {
+        "original_query": "mathematician PhD statistics research",
+        "enhanced_query": "mathematician PhD statistics research probability modeling data analysis academic publications advanced mathematics doctoral thesis",
+        "candidates_found": 15
+      },
+      "radiology.yml": {
+        "original_query": "radiologist physician doctor imaging",
+        "enhanced_query": "radiology imaging diagnosis medical radiologist physician specialist healthcare radiology report",
+        "candidates_found": 3
+      },
+      "quantitative_finance.yml": {
+        "original_query": "quantitative finance financial modeling",
+        "enhanced_query": "quantitative finance financial modeling risk analysis valuation algorithms statistical methods time series analysis predictive modeling financial engineering",
+        "candidates_found": 15
+      },
+      "anthropology.yml": {
+        "original_query": "anthropologist PhD cultural sociology",
+        "enhanced_query": "anthropologist PhD cultural sociology research methods ethnography fieldwork academic publications",
+        "candidates_found": 1
+      },
+      "mechanical_engineers.yml": {
+        "original_query": "mechanical engineer design CAD",
+        "enhanced_query": "mechanical engineer CAD design engineering specifications manufacturing prototyping technical drawings",
+        "candidates_found": 15
+      },
+      "bankers.yml": {
+        "original_query": "banker investment finance advisory",
+        "enhanced_query": "banker investment finance advisory firm wealth management private banking financial planning investment strategies banking careers",
+        "candidates_found": 4
+      }
+    },
+    "enhancement_cache": {
+      "tax_lawyer.yml:tax attorney lawyer legal IRS": "tax attorney IRS legal counsel tax law firm tax advisor tax litigation tax resolution",
+      "junior_corporate_lawyer.yml:corporate lawyer attorney legal M&A": "junior corporate lawyer legal M&A compliance contracts drafting negotiation regulatory law firm entry-level corporate attorney",
+      "doctors_md.yml:doctor physician MD medical clinical": "doctor physician MD medical specialist clinic healthcare provider primary care cardiologist dermatologist neurologist pediatrician surgeon radiologist endocrinologist",
+      "radiology.yml:radiologist physician doctor imaging": "radiology imaging diagnosis medical radiologist physician specialist healthcare radiology report",
+      "anthropology.yml:anthropologist PhD cultural sociology": "anthropologist PhD cultural sociology research methods ethnography fieldwork academic publications",
+      "biology_expert.yml:biology researcher PhD genetics molecular": "biology researcher PhD genetics molecular biology expert geneticist genomics gene expression DNA RNA cell biology developmental biology biomedical research",
+      "mathematics_phd.yml:mathematician PhD statistics research": "mathematician PhD statistics research probability modeling data analysis academic publications advanced mathematics doctoral thesis",
+      "quantitative_finance.yml:quantitative finance financial modeling": "quantitative finance financial modeling risk analysis valuation algorithms statistical methods time series analysis predictive modeling financial engineering",
+      "bankers.yml:banker investment finance advisory": "banker investment finance advisory firm wealth management private banking financial planning investment strategies banking careers",
+      "mechanical_engineers.yml:mechanical engineer design CAD": "mechanical engineer CAD design engineering specifications manufacturing prototyping technical drawings"
+    },
+    "category_insights": {
+      "tax_lawyer.yml": {
+        "evaluation_score": 0,
+        "candidates_evaluated": 5
+      },
+      "junior_corporate_lawyer.yml": {
+        "evaluation_score": 0,
+        "candidates_evaluated": 5
+      },
+      "doctors_md.yml": {
+        "evaluation_score": 0,
+        "candidates_evaluated": 5
+      },
+      "mathematics_phd.yml": {
+        "evaluation_score": 0,
+        "candidates_evaluated": 5
+      },
+      "biology_expert.yml": {
+        "evaluation_score": 0,
+        "candidates_evaluated": 5
+      },
+      "radiology.yml": {
+        "evaluation_score": 0,
+        "candidates_evaluated": 5
+      },
+      "anthropology.yml": {
+        "evaluation_score": 0,
+        "candidates_evaluated": 5
+      },
+      "quantitative_finance.yml": {
+        "evaluation_score": 0,
+        "candidates_evaluated": 5
+      },
+      "mechanical_engineers.yml": {
+        "evaluation_score": 0,
+        "candidates_evaluated": 5
+      },
+      "bankers.yml": {
+        "evaluation_score": 0,
+        "candidates_evaluated": 5
+      }
+    }
+  },
+  "mcp_results": [
+    {
+      "category": "tax_lawyer.yml",
+      "candidates": [
+        "679693590db3e79256832858",
+        "6796e2448d90554e6078b443",
+        "6795193f52a365d1167cfc65",
+        "6794efe38d90554e60668291",
+        "67951c70a1a09a48feaba64a",
+        "679607640db3e792567e24eb",
+        "6794a0fd7e0084c5fa6d58dd",
+        "6794ed820db3e79256739288",
+        "6796aa2f3e76d5b587338108",
+        "6794fdb28d90554e6066f761"
+      ],
+      "mcp_score": 0,
+      "mcp_enhanced": "tax attorney IRS legal counsel tax law firm tax advisor tax litigation tax resolution"
+    },
+    {
+      "category": "junior_corporate_lawyer.yml",
+      "candidates": [
+        "6795719973bf14921fae1a92",
+        "679706137e0084c5fa8452e8",
+        "67970a2e3eff0c142a8d0504",
+        "6795e1083eff0c142a8266f9",
+        "67969d5d3e76d5b58733071a",
+        "679511573eff0c142a7b8aa1",
+        "6795f52952a365d116854be2",
+        "6795719973bf14921fae1a92",
+        "679706137e0084c5fa8452e8",
+        "67970a2e3eff0c142a8d0504"
+      ],
+      "mcp_score": 0,
+      "mcp_enhanced": "junior corporate lawyer legal M&A compliance contracts drafting negotiation regulatory law firm entry-level corporate attorney"
+    },
+    {
+      "category": "radiology.yml",
+      "candidates": [
+        "6794a5a68d90554e6063a2ca",
+        "67952db4a1a09a48feac51da",
+        "6795eb083e76d5b5872ca4ae",
+        "6794a5a68d90554e6063a2ca",
+        "67952db4a1a09a48feac51da",
+        "6795eb083e76d5b5872ca4ae",
+        "6794a5a68d90554e6063a2ca",
+        "67952db4a1a09a48feac51da",
+        "6795eb083e76d5b5872ca4ae",
+        "6794a5a68d90554e6063a2ca"
+      ],
+      "mcp_score": 0,
+      "mcp_enhanced": "radiology imaging diagnosis medical radiologist physician specialist healthcare radiology report"
+    },
+    {
+      "category": "doctors_md.yml",
+      "candidates": [
+        "6795cbca52a365d11683fdb3",
+        "6795545a52a365d1167f3a9f",
+        "6796cc22f9f986ea7fc67849",
+        "6795cb6ff9f986ea7fbd7add",
+        "6795e2f373bf14921fb31205",
+        "67961e3d73bf14921fb533bd",
+        "6795d5cbf9f986ea7fbdca07",
+        "6796724ef9f986ea7fc369a7",
+        "6796a7aa3eff0c142a89c82f",
+        "67954c68f9f986ea7fb8c244"
+      ],
+      "mcp_score": 0,
+      "mcp_enhanced": "doctor physician MD medical specialist clinic healthcare provider primary care cardiologist dermatologist neurologist pediatrician surgeon radiologist endocrinologist"
+    },
+    {
+      "category": "biology_expert.yml",
+      "candidates": [
+        "67957a2ba1a09a48feaf38a8",
+        "6794c0b33eff0c142a794af7",
+        "679686587e0084c5fa7f2ac3",
+        "67970e3b52a365d1168f7aee",
+        "679518310db3e792567540fc",
+        "6794e4120db3e79256732731",
+        "6795f0657e0084c5fa79e0a0",
+        "67970da3f9f986ea7fc8d674",
+        "679512f68a14699f160334e2",
+        "6795bea773bf14921fb1a38b"
+      ],
+      "mcp_score": 0,
+      "mcp_enhanced": "biology researcher PhD genetics molecular biology expert geneticist genomics gene expression DNA RNA cell biology developmental biology biomedical research"
+    },
+    {
+      "category": "anthropology.yml",
+      "candidates": [
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac",
+        "6796afe97e0084c5fa810bac"
+      ],
+      "mcp_score": 0,
+      "mcp_enhanced": "anthropologist PhD cultural sociology research methods ethnography fieldwork academic publications"
+    },
+    {
+      "category": "mathematics_phd.yml",
+      "candidates": [
+        "67962bcd3e76d5b5872ee4ae",
+        "679621a98a14699f160c7112",
+        "6795d72173bf14921fb292b6",
+        "6796a077a1a09a48feba604e",
+        "6794c7a78a14699f16009892",
+        "6796b0e80db3e7925684560e",
+        "6796a783f9f986ea7fc51811",
+        "67954b01a1a09a48fead6390",
+        "6796a5cbf9f986ea7fc5062a",
+        "679511e6f9f986ea7fb69ec3"
+      ],
+      "mcp_score": 0,
+      "mcp_enhanced": "mathematician PhD statistics research probability modeling data analysis academic publications advanced mathematics doctoral thesis"
+    },
+    {
+      "category": "quantitative_finance.yml",
+      "candidates": [
+        "67957d39a1a09a48feaf555a",
+        "6795f30bf9f986ea7fbed9a7",
+        "67948f4f3eff0c142a778340",
+        "6794bbe73eff0c142a7929c8",
+        "67967cec8d90554e6074ebdc",
+        "6794dfa48d90554e6065f0e1",
+        "67970f383e76d5b58736f72c",
+        "679580ac8d90554e606bc7a3",
+        "6794c48e8a14699f16007ec4",
+        "679732f73e76d5b587383b0d"
+      ],
+      "mcp_score": 0,
+      "mcp_enhanced": "quantitative finance financial modeling risk analysis valuation algorithms statistical methods time series analysis predictive modeling financial engineering"
+    },
+    {
+      "category": "bankers.yml",
+      "candidates": [
+        "67949c3df9f986ea7fb2c01c",
+        "6795fa6352a365d116857eec",
+        "67973ffbf9f986ea7fca4c1a",
+        "6794e6af8a14699f1601b576",
+        "67949c3df9f986ea7fb2c01c",
+        "6795fa6352a365d116857eec",
+        "67973ffbf9f986ea7fca4c1a",
+        "67949c3df9f986ea7fb2c01c",
+        "6795fa6352a365d116857eec",
+        "67973ffbf9f986ea7fca4c1a"
+      ],
+      "mcp_score": 0,
+      "mcp_enhanced": "banker investment finance advisory firm wealth management private banking financial planning investment strategies banking careers"
+    },
+    {
+      "category": "mechanical_engineers.yml",
+      "candidates": [
+        "6796d0d43eff0c142a8b4ebf",
+        "67967aaa52a365d11689b753",
+        "679756cb3e76d5b58739773f",
+        "679585f3a1a09a48feafaf62",
+        "6794cd99f9f986ea7fb46de5",
+        "6794ed4a52a365d1167b8e5d",
+        "6794c5083e76d5b58722598d",
+        "6795cace3eff0c142a819b94",
+        "6795b147f9f986ea7fbc70f0",
+        "6795862c73bf14921faf7b8b"
+      ],
+      "mcp_score": 0,
+      "mcp_enhanced": "mechanical engineer CAD design engineering specifications manufacturing prototyping technical drawings"
+    }
+  ],
+  "average_score": 0.0
+}
