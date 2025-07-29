@@ -1,14 +1,9 @@
 """Configuration settings for the search agent application."""
-
 import os
 from dataclasses import dataclass
 from typing import List, Dict, Any
 from pathlib import Path
-
-# Use custom env loader that always reads from .env file
 from ..utils.env_loader import env_loader
-
-
 @dataclass
 class APIConfig:
     """API configuration settings."""
@@ -17,7 +12,6 @@ class APIConfig:
     openai_api_key: str
     eval_endpoint: str
     user_email: str
-    
     @classmethod
     def from_env(cls) -> 'APIConfig':
         """Create APIConfig from .env file directly."""
@@ -28,14 +22,11 @@ class APIConfig:
             eval_endpoint=env_loader.get('EVAL_ENDPOINT', 'https://mercor-dev--search-eng-interview.modal.run/evaluate'),
             user_email=env_loader.get('USER_EMAIL', '')
         )
-
-
 @dataclass
 class TurbopufferConfig:
     """Turbopuffer configuration settings."""
     region: str
     namespace: str
-    
     @classmethod
     def from_env(cls) -> 'TurbopufferConfig':
         """Create TurbopufferConfig from .env file directly."""
@@ -43,8 +34,6 @@ class TurbopufferConfig:
             region=env_loader.get('TURBOPUFFER_REGION', 'aws-us-west-2'),
             namespace=env_loader.get('TURBOPUFFER_NAMESPACE', 'default_namespace')
         )
-
-
 @dataclass
 class SearchConfig:
     """Search configuration settings."""
@@ -56,7 +45,6 @@ class SearchConfig:
     vector_search_weight: float
     bm25_search_weight: float
     soft_filter_weight: float
-    
     @classmethod
     def from_env(cls) -> 'SearchConfig':
         """Create SearchConfig from .env file directly."""
@@ -70,18 +58,13 @@ class SearchConfig:
             bm25_search_weight=float(env_loader.get('BM25_SEARCH_WEIGHT', '0.4')),
             soft_filter_weight=float(env_loader.get('SOFT_FILTER_WEIGHT', '0.2'))
         )
-
-
 @dataclass
 class ApplicationConfig:
     """Main application configuration."""
     api: APIConfig
     turbopuffer: TurbopufferConfig
     search: SearchConfig
-    
-    # Job categories to evaluate
     job_categories: List[str] = None
-    
     def __post_init__(self):
         if self.job_categories is None:
             self.job_categories = [
@@ -96,7 +79,6 @@ class ApplicationConfig:
                 "bankers.yml",
                 "mechanical_engineers.yml"
             ]
-    
     @classmethod
     def load(cls) -> 'ApplicationConfig':
         """Load configuration from environment variables."""
@@ -105,7 +87,4 @@ class ApplicationConfig:
             turbopuffer=TurbopufferConfig.from_env(),
             search=SearchConfig.from_env()
         )
-
-
-# Global configuration instance
 config = ApplicationConfig.load() 

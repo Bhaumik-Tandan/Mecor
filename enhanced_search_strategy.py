@@ -1,29 +1,19 @@
-#!/usr/bin/env python3
 """
 Enhanced Search Strategy for Low-Performing Categories
 ====================================================
-
 Targeted improvements for categories failing official Mercor criteria.
 """
-
 import os
 import sys
 import json
-
-# Add src to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
-
 from src.config.settings import config
 from src.models.candidate import SearchQuery, SearchStrategy
 from src.services.search_service import search_service
-
 class TargetedSearchStrategy:
     """Enhanced search for categories failing official criteria."""
-    
     def __init__(self):
         self.search_service = search_service
-        
-        # Enhanced queries based on official Mercor criteria failures
         self.enhanced_queries = {
             "biology_expert.yml": [
                 "PhD biology molecular genetics research university",
@@ -68,22 +58,16 @@ class TargetedSearchStrategy:
                 "finance MBA quantitative trading financial"
             ]
         }
-    
     def enhanced_search_for_category(self, category: str, max_candidates: int = 50):
         """Perform enhanced search for a specific category."""
         print(f"🎯 Enhanced search for {category}")
-        
         if category not in self.enhanced_queries:
             print(f"No enhanced strategy for {category}")
             return []
-        
         all_candidates = []
         queries = self.enhanced_queries[category]
-        
         for i, query_text in enumerate(queries):
             print(f"  Query {i+1}/{len(queries)}: {query_text}")
-            
-            # Try multiple search strategies
             for strategy in [SearchStrategy.VECTOR_ONLY, SearchStrategy.HYBRID, SearchStrategy.BM25_ONLY]:
                 query = SearchQuery(
                     query_text=query_text,
@@ -91,26 +75,20 @@ class TargetedSearchStrategy:
                     strategy=strategy,
                     max_candidates=max_candidates // len(queries)
                 )
-                
                 candidates = self.search_service.search_candidates(query, strategy)
                 all_candidates.extend(candidates)
-        
-        # Remove duplicates
         seen_ids = set()
         unique_candidates = []
         for candidate in all_candidates:
             if candidate.id not in seen_ids:
                 seen_ids.add(candidate.id)
                 unique_candidates.append(candidate)
-        
         print(f"  Found {len(unique_candidates)} unique candidates")
         return unique_candidates[:max_candidates]
-    
     def generate_enhanced_submission(self):
         """Generate submission with enhanced search for failing categories."""
         print("🚀 GENERATING ENHANCED SUBMISSION FOR FAILING CATEGORIES")
         print("=" * 60)
-        
         failing_categories = [
             "biology_expert.yml",
             "tax_lawyer.yml", 
@@ -119,53 +97,35 @@ class TargetedSearchStrategy:
             "mathematics_phd.yml",
             "quantitative_finance.yml"
         ]
-        
         enhanced_submission = {}
-        
         for category in failing_categories:
             candidates = self.enhanced_search_for_category(category, max_candidates=20)
-            
-            # Select top 10 candidates
             top_candidates = candidates[:10]
             if len(top_candidates) < 10:
-                # Pad with duplicates if needed
                 while len(top_candidates) < 10:
                     top_candidates.extend(candidates[:10-len(top_candidates)])
-            
             enhanced_submission[category] = [c.id for c in top_candidates[:10]]
             print(f"✅ {category}: {len(enhanced_submission[category])} candidates selected")
-        
-        # Load existing submission for other categories
         try:
             with open("final_submission.json", "r") as f:
                 existing_submission = json.load(f)
-            
-            # Keep good performing categories
             good_categories = ["bankers.yml", "mechanical_engineers.yml", "radiology.yml", "anthropology.yml"]
             for category in good_categories:
                 if category in existing_submission["config_candidates"]:
                     enhanced_submission[category] = existing_submission["config_candidates"][category]
                     print(f"✅ {category}: Kept existing high-performing candidates")
-        
         except Exception as e:
             print(f"Warning: Could not load existing submission: {e}")
-        
-        # Save enhanced submission
         final_submission = {"config_candidates": enhanced_submission}
-        
         with open("enhanced_final_submission.json", "w") as f:
             json.dump(final_submission, f, indent=2)
-        
         print(f"\n🎉 Enhanced submission saved to: enhanced_final_submission.json")
         print(f"📊 Total categories: {len(enhanced_submission)}")
         print(f"👥 Total candidates: {sum(len(ids) for ids in enhanced_submission.values())}")
-        
         return enhanced_submission
-
 def main():
     """Main function to generate enhanced submission."""
     strategy = TargetedSearchStrategy()
     strategy.generate_enhanced_submission()
-
 if __name__ == "__main__":
     main() 
