@@ -249,6 +249,73 @@ curl -H 'Authorization: your_email@example.com' \
      'https://mercor-dev--search-eng-interview.modal.run/grade'
 ```
 
+## 🎯 Final Validation System
+
+### Two-Phase Validation Process
+
+**Phase 1: Initial Search & Evaluation**
+- Multi-strategy candidate search with quality filtering
+- Real-time Mercor evaluation endpoint integration
+- Iterative improvement based on evaluation scores
+
+**Phase 2: MongoDB + GPT Final Validation**
+- **Complete Data Extraction**: Fetches full candidate profiles from MongoDB source
+- **GPT Validation**: Each candidate evaluated by GPT against specific job requirements
+- **Iterative Correction**: Unsuitable candidates automatically replaced
+- **Loop Until Perfect**: Process continues until both Mercor evaluation and GPT validation pass
+
+### Final Validation Features
+
+#### 🗄️ MongoDB Data Extraction
+```python
+# Extracts comprehensive candidate data including:
+candidate_data = {
+    "name", "email", "summary", "linkedin_id", "country",
+    "full_profile", "experience", "education", "skills", 
+    "position", "company", "location", "industry"
+}
+```
+
+#### 🤖 GPT Validation Criteria
+- **Strict Evaluation Standards**: Only marks candidates as suitable if they genuinely fit
+- **Multi-Dimensional Scoring**: Experience match, skills match, education match
+- **Detailed Reasoning**: Provides specific feedback on why candidates pass/fail
+- **Job-Specific Requirements**: Tailored criteria for each of the 10 job categories
+
+#### 🔄 Automatic Correction Loop
+```python
+# Validation thresholds for candidate acceptance:
+if (gpt_validation["is_suitable"] and 
+    gpt_validation["overall_score"] >= 0.6 and
+    gpt_validation["confidence"] >= 0.7):
+    # Candidate accepted
+else:
+    # Find replacement candidate and retry
+```
+
+#### 📊 Comprehensive Statistics
+- **Before/After Scores**: Shows evaluation improvement from initial to final
+- **Correction Counts**: Tracks how many candidates were replaced per category
+- **Validation Metrics**: MongoDB checks, GPT validations, successful corrections
+
+### Sample Output
+```
+Phase 1: Initial candidate search and evaluation
+✅ Found 50 candidates for tax_lawyer.yml
+Initial evaluation score: 0.743
+
+Phase 2: Final validation and correction with MongoDB + GPT
+❌ Candidate 507f1f77bcf86cd799439011 not suitable: Lacks required JD degree
+🔄 Trying replacement candidate 507f1f77bcf86cd799439012
+✅ Candidate 507f1f77bcf86cd799439012 validated successfully
+
+Final Results:
+- Total corrections: 23
+- Categories corrected: 7
+- Final evaluation score: 0.847
+- Quality Improvement: +0.104 (14.0%)
+```
+
 ---
 
 **Author**: Bhaumik Tandan  
