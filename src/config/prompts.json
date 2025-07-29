@@ -103,54 +103,54 @@
   },
   "hard_filters": {
     "tax_lawyer": {
-      "must_have": ["JD", "attorney", "lawyer", "legal", "law school"],
-      "preferred": ["tax", "CPA", "certified", "IRS", "audit", "corporate tax", "federal tax", "tax compliance", "tax structuring"],
-      "exclude": ["paralegal", "intern", "student"]
+      "must_have": ["JD", "attorney", "lawyer", "legal", "law school", "juris doctor"],
+      "preferred": ["tax", "IRS", "audit", "corporate tax", "federal tax", "tax compliance", "tax structuring", "tax law"],
+      "exclude": ["paralegal", "intern", "student", "undergraduate"]
     },
     "junior_corporate_lawyer": {
-      "must_have": ["JD", "attorney", "lawyer", "legal", "law school"],
-      "preferred": ["corporate", "M&A", "mergers", "acquisitions", "contracts", "international", "regulatory", "due diligence", "2-4 years"],
-      "exclude": ["paralegal", "intern", "senior partner", "15+ years"]
+      "must_have": ["JD", "attorney", "lawyer", "legal", "corporate", "law school"],
+      "preferred": ["M&A", "mergers", "acquisitions", "contracts", "due diligence", "international law", "corporate transactions"],
+      "exclude": ["paralegal", "intern", "student", "undergraduate"]
     },
     "radiology": {
-      "must_have": ["MD", "physician", "doctor", "medical school"],
-      "preferred": ["radiology", "radiologist", "board certified", "ABR", "FRCR", "CT", "MRI", "X-ray", "ultrasound", "diagnostic", "imaging", "AI imaging"],
-      "exclude": ["nurse", "technician", "resident", "student"]
+      "must_have": ["MD", "doctor", "physician", "medical", "radiology", "radiologist"],
+      "preferred": ["CT", "MRI", "X-ray", "ultrasound", "DICOM", "imaging", "diagnostic", "board certified"],
+      "exclude": ["nurse", "technician", "student", "undergraduate"]
     },
     "doctors_md": {
-      "must_have": ["MD", "physician", "doctor", "medical", "licensed"],
-      "preferred": ["board certified", "primary care", "internal medicine"],
-      "exclude": ["nurse", "PA", "resident", "student"]
+      "must_have": ["MD", "doctor", "physician", "medical", "clinical", "practice"],
+      "preferred": ["GP", "general practitioner", "primary care", "family medicine", "EHR", "telemedicine"],
+      "exclude": ["nurse", "technician", "student", "undergraduate"]
     },
     "biology_expert": {
-      "must_have": ["PhD", "biology", "biological"],
-      "preferred": ["molecular biology", "cell biology", "genomics", "biotechnology", "life sciences", "biologist"],
-      "exclude": ["mathematics", "physics", "chemistry", "engineering", "computer science", "undergraduate", "technician", "assistant"]
+      "must_have": ["PhD", "biology", "research", "university", "doctorate"],
+      "preferred": ["molecular biology", "genetics", "cell biology", "CRISPR", "PCR", "sequencing", "publications", "peer-reviewed"],
+      "exclude": ["undergraduate", "bachelor", "student", "masters"]
     },
     "anthropology": {
-      "must_have": ["PhD", "anthropology", "anthropological"],
-      "preferred": ["cultural anthropology", "ethnography", "social anthropology", "anthropologist"],
-      "exclude": ["biology", "mathematics", "physics", "psychology", "sociology", "undergraduate", "assistant", "intern"]
+      "must_have": ["PhD", "anthropology", "sociology", "research", "doctorate"],
+      "preferred": ["ethnographic", "fieldwork", "cultural", "social", "migration", "labor", "publications", "conference"],
+      "exclude": ["undergraduate", "bachelor", "student", "masters"]
     },
     "mathematics_phd": {
-      "must_have": ["PhD", "mathematics", "mathematical"],
-      "preferred": ["pure mathematics", "applied mathematics", "mathematical analysis", "number theory", "topology", "algebra", "mathematician"],
-      "exclude": ["biology", "chemistry", "anthropology", "medicine", "radiology", "plant", "molecular", "undergraduate", "tutor", "assistant"]
+      "must_have": ["PhD", "mathematics", "statistics", "research", "university", "doctorate"],
+      "preferred": ["mathematical modeling", "probability", "statistics", "algorithms", "publications", "pure mathematics", "applied mathematics"],
+      "exclude": ["undergraduate", "bachelor", "student", "masters"]
     },
     "quantitative_finance": {
-      "must_have": ["quantitative", "finance", "analyst"],
-      "preferred": ["quant", "modeling", "mathematical", "derivatives"],
-      "exclude": ["intern", "associate", "junior"]
+      "must_have": ["MBA", "finance", "quantitative", "financial"],
+      "preferred": ["risk modeling", "algorithmic trading", "Python", "portfolio optimization", "derivatives", "investment", "financial engineering"],
+      "exclude": ["undergraduate", "bachelor", "student"]
     },
     "bankers": {
-      "must_have": ["banker", "banking", "financial"],
-      "preferred": ["investment", "commercial", "advisor", "services"],
-      "exclude": ["teller", "clerk", "intern"]
+      "must_have": ["MBA", "banking", "investment", "finance"],
+      "preferred": ["investment banking", "M&A", "healthcare", "private equity", "transactions", "advisory"],
+      "exclude": ["undergraduate", "bachelor", "student"]
     },
     "mechanical_engineers": {
-      "must_have": ["engineer", "engineering", "mechanical"],
-      "preferred": ["PE", "professional", "design", "manufacturing"],
-      "exclude": ["technician", "intern", "student"]
+      "must_have": ["engineering", "mechanical", "design", "development"],
+      "preferred": ["CAD", "SolidWorks", "AutoCAD", "ANSYS", "COMSOL", "thermal", "fluid dynamics", "mechatronics", "product development"],
+      "exclude": ["undergraduate", "bachelor", "student"]
     }
   }
 } 

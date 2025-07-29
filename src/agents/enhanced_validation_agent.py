@@ -67,7 +67,7 @@ class EnhancedValidationAgent:
     def validate_candidate_with_mongodb(self, candidate: CandidateProfile) -> Dict[str, Any]:
         """Cross-validate candidate against original MongoDB data."""
         collection = self.get_mongo_collection()
-        if not collection:
+        if collection is None:
             return {"validated": False, "error": "MongoDB not available"}
         
         try:
@@ -467,7 +467,7 @@ class EnhancedValidationAgent:
     def get_full_candidate_data_from_mongodb(self, candidate_id: str) -> Optional[Dict[str, Any]]:
         """Extract complete candidate data from MongoDB."""
         collection = self.get_mongo_collection()
-        if not collection:
+        if collection is None:
             logger.error("MongoDB not available for data extraction")
             return None
         
