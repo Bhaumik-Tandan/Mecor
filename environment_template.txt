@@ -5,6 +5,9 @@ VOYAGE_API_KEY=your_voyage_api_key_here
 TURBOPUFFER_API_KEY=your_turbopuffer_api_key_here
 OPENAI_API_KEY=your_openai_api_key_here
 
+# Database Configuration
+MONGO_URL=your_mongodb_connection_string_here
+
 # Turbopuffer Configuration
 TURBOPUFFER_REGION=aws-us-west-2
 TURBOPUFFER_NAMESPACE=your_namespace_here

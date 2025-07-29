@@ -8,11 +8,15 @@ import os
 import traceback
 from pymongo import MongoClient
 import certifi
+from dotenv import load_dotenv
 
-# --- Hardcoded API Keys ---
-VOYAGE_API_KEY = "pa-vNEmoJfc5evP_SSvpxIAj3uFzs9dfppEZkpx-3kOFZy"
-TURBOPUFFER_API_KEY = "tpuf_dQHBpZEvl612XAdP0MvrQY5dbS0omPMy"
-OPENAI_API_KEY = "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"
+# Load environment variables from .env file
+load_dotenv()
+
+# --- API Keys from Environment Variables ---
+VOYAGE_API_KEY = os.getenv('VOYAGE_API_KEY')
+TURBOPUFFER_API_KEY = os.getenv('TURBOPUFFER_API_KEY')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
@@ -22,11 +26,17 @@ logger = logging.getLogger(__name__)
 DEFAULT_BATCH_SIZE = 10000
 DEFAULT_NUM_THREADS = 10
 MAX_RETRIES = 10
-TURBOPUFFER_REGION = "aws-us-west-2"
+TURBOPUFFER_REGION = os.getenv('TURBOPUFFER_REGION', 'aws-us-west-2')
 COLLECTION_NAME = "linkedin_data_subset"
 DB_NAME = "interview_data"
-MONGO_URL = "os.getenv("MONGO_URL")"
-TPUF_NAMESPACE_NAME = "bhaumik_tandan_tpuf_key"
+MONGO_URL = os.getenv('MONGO_URL')
+TPUF_NAMESPACE_NAME = os.getenv('TURBOPUFFER_NAMESPACE', 'bhaumik_tandan_tpuf_key')
+
+# Validate required environment variables
+if not TURBOPUFFER_API_KEY:
+    raise ValueError("TURBOPUFFER_API_KEY environment variable is required")
+if not MONGO_URL:
+    raise ValueError("MONGO_URL environment variable is required")
 
 # Init Turbopuffer
 tpuf = turbopuffer.Turbopuffer(api_key=TURBOPUFFER_API_KEY, region=TURBOPUFFER_REGION)
