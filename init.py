@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+"""
+Data Migration Script - MongoDB to Turbopuffer
+==============================================
+
+Migrates candidate data from MongoDB to Turbopuffer vector database.
+"""
+
 import turbopuffer
 import time
 import concurrent.futures

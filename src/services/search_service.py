@@ -44,16 +44,7 @@ class SearchService:
         logger.info(f"Initialized SearchService with namespace: {config.turbopuffer.namespace}")
     
     def get_domain_queries(self, job_category: str) -> List[str]:
-        """
-        Get domain-specific queries for a job category.
-        Uses GPT to generate enhanced, highly specific queries.
-        
-        Args:
-            job_category: Job category name (e.g., "tax_lawyer")
-            
-        Returns:
-            List of domain-specific query strings
-        """
+        """Get domain-specific queries for a job category."""
         # Try GPT-enhanced queries first
         try:
             from src.services.gpt_service import gpt_service

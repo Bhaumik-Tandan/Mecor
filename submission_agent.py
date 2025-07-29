@@ -157,14 +157,9 @@ class SubmissionAgent:
         return best_candidates, best_evaluation
     
     def generate_validated_submission_with_eval(self) -> Dict[str, Any]:
-        """
-        Generate final submission using evaluation endpoint for validation.
-        
-        Returns:
-            Complete submission with evaluation metadata
-        """
-        logger.info("🎯 GENERATING VALIDATED SUBMISSION WITH EVALUATION")
-        logger.info("=" * 70)
+        """Generate final submission using evaluation endpoint for validation."""
+        logger.info("GENERATING VALIDATED SUBMISSION WITH EVALUATION")
+        logger.info("=" * 50)
         
         categories = [
             "tax_lawyer.yml",
@@ -184,26 +179,21 @@ class SubmissionAgent:
         overall_scores = []
         
         for category in categories:
-            logger.info(f"\n📋 Processing: {category}")
+            logger.info(f"Processing: {category}")
             
-            # Step 1: Enhanced search with multiple strategies
-            candidates = self.search_with_enhanced_criteria(category, max_candidates=50)
+            candidates = self.search_with_criteria(category, max_candidates=50)
             
             if len(candidates) < 10:
-                logger.warning(f"  ⚠️ Only found {len(candidates)} candidates")
-                # Pad with available candidates
+                logger.warning(f"Only found {len(candidates)} candidates")
                 while len(candidates) < 10 and candidates:
                     candidates.extend(candidates[:10-len(candidates)])
             
-            # Step 2: Iterative improvement with evaluation endpoint
             best_candidates, evaluation_result = self.iterative_improvement(
                 category, candidates, target_score=0.8, max_iterations=3
             )
             
-            # Step 3: Final candidate selection
             final_candidate_ids = [c.id for c in best_candidates[:10]]
             
-            # Ensure exactly 10 candidates
             while len(final_candidate_ids) < 10:
                 final_candidate_ids.extend(final_candidate_ids[:10-len(final_candidate_ids)])
             
@@ -213,7 +203,7 @@ class SubmissionAgent:
             score = evaluation_result.get("overallScore", 0.0)
             overall_scores.append(score)
             
-            logger.info(f"  ✅ Final: {len(final_candidate_ids)} candidates, score: {score:.3f}")
+            logger.info(f"Final: {len(final_candidate_ids)} candidates, score: {score:.3f}")
         
         # Calculate overall quality
         avg_evaluation_score = sum(overall_scores) / len(overall_scores) if overall_scores else 0.0

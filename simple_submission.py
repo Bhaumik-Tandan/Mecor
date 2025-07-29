@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """
-Simple Final Submission JSON Generator (No GPT Required)
-========================================================
+Simple Submission Generator
+===========================
 
-This script creates the exact JSON format required for Mercor submission.
-Uses basic vector search without OpenAI dependency.
+Basic candidate search using vector search only (no GPT required).
 """
 
 import os
@@ -19,32 +18,26 @@ from src.models.candidate import SearchQuery, SearchStrategy
 from src.services.search_service import search_service
 
 def get_top_candidates_basic(category: str) -> list[str]:
-    """Get top 10 candidate IDs for a category using basic vector search only."""
-    print(f"🔍 Searching {category} with basic vector search...")
+    """Get top 10 candidate IDs for a category using basic vector search."""
+    print(f"Searching {category} with vector search...")
     
-    # Create a simple search query without GPT enhancement
     search_text = f"expert professional {category.replace('_', ' ').replace('.yml', '')}"
     
     try:
-        # Use direct vector search without GPT features
         candidates = search_service.vector_search(search_text, top_k=15)
         
-        # If vector search didn't get enough results, try a broader search
         if len(candidates) < 10:
-            print(f"  ⚠️ Found only {len(candidates)}, trying broader search...")
+            print(f"Found only {len(candidates)}, trying broader search...")
             broad_search = f"{category.replace('_', ' ').replace('.yml', '')} professional"
             candidates = search_service.vector_search(broad_search, top_k=15)
         
-        # Get candidate IDs
         candidate_ids = [candidate.id for candidate in candidates[:10]]
         
-        # Ensure exactly 10 candidates (pad with the best ones if needed)
         if len(candidate_ids) < 10:
-            # Repeat the best candidates to reach 10
             while len(candidate_ids) < 10:
                 candidate_ids.extend(candidate_ids[:10-len(candidate_ids)])
         
-        print(f"✅ Found {len(candidate_ids[:10])} candidates for {category}")
+        print(f"Found {len(candidate_ids[:10])} candidates for {category}")
         return candidate_ids[:10]
         
     except Exception as e:
