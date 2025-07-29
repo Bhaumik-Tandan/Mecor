@@ -81,31 +81,31 @@ if response.status_code == 200:
 
 | Category | Score | Candidates |
 |----------|--------|------------|
-| tax_lawyer.yml | 30.000 | 10 |
-| junior_corporate_lawyer.yml | 0.000 | 10 |
+| tax_lawyer.yml | 69.333 | 10 |
+| junior_corporate_lawyer.yml | 48.000 | 10 |
 | radiology.yml | 0.000 | 10 |
-| doctors_md.yml | 0.000 | 10 |
-| biology_expert.yml | 0.000 | 10 |
-| anthropology.yml | 0.000 | 10 |
+| doctors_md.yml | 13.000 | 10 |
+| biology_expert.yml | 18.000 | 10 |
+| anthropology.yml | 80.000 | 10 |
 | mathematics_phd.yml | 15.000 | 10 |
 | quantitative_finance.yml | 0.000 | 10 |
-| bankers.yml | 0.000 | 10 |
-| mechanical_engineers.yml | 66.000 | 10 |
+| bankers.yml | 33.333 | 10 |
+| mechanical_engineers.yml | 68.667 | 10 |
 
-**Average Score**: 11.100
+**Average Score**: 34.533
 
 ## Approach Summary
 
 ### Data Exploration & Strategy Selection
-1. **Flow Comparison**: Tested 3 approaches:
-   - Simple Submission: 0.86 candidates/sec (WINNER)
-   - GPT Enhanced: 0.58 candidates/sec
-   - Complex Agent: 0.12 candidates/sec
+1. **Evaluation Criteria Analysis**: Used official [evaluation spreadsheet](https://docs.google.com/spreadsheets/d/1BggMRCZ0BBRhrhOJWAQqE_3FPO85E7fMVKF3I1d_S0Q/edit?gid=0#gid=0) to identify:
+   - **Hard Criteria**: Must-have requirements (JD, MD, PhD degrees, experience years)
+   - **Soft Criteria**: Preferred qualifications (specializations, tools, certifications)
+   - **Score Improvement**: 3x better results by targeting exact criteria
 
 2. **Strategy Analysis**: 
-   - Vector-only search proved most efficient
-   - Hybrid approaches added latency without significant quality gains
-   - Parallel processing essential for performance
+   - Criteria-based search queries proved most effective
+   - Targeted hard requirements essential for non-zero scores
+   - Specific experience years and credentials critical for evaluation
 
 ### Indexing & Retrieval Strategy
 - **Embedding Service**: Uses OpenAI embeddings for semantic search
