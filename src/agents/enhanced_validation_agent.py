@@ -463,3 +463,297 @@ class EnhancedValidationAgent:
             recommendations.append("Expand search to find more highly qualified candidates")
         
         return recommendations 
+
+    def get_full_candidate_data_from_mongodb(self, candidate_id: str) -> Optional[Dict[str, Any]]:
+        """Extract complete candidate data from MongoDB."""
+        collection = self.get_mongo_collection()
+        if not collection:
+            logger.error("MongoDB not available for data extraction")
+            return None
+        
+        try:
+            # Convert candidate_id to ObjectId if needed
+            from bson import ObjectId
+            if isinstance(candidate_id, str):
+                try:
+                    mongo_id = ObjectId(candidate_id)
+                except:
+                    mongo_id = candidate_id
+            else:
+                mongo_id = candidate_id
+            
+            # Fetch complete document
+            mongo_doc = collection.find_one({"_id": mongo_id})
+            
+            if not mongo_doc:
+                logger.warning(f"Candidate {candidate_id} not found in MongoDB")
+                return None
+            
+            # Extract all relevant data
+            candidate_data = {
+                "id": str(mongo_doc.get("_id", "")),
+                "name": mongo_doc.get("name", ""),
+                "email": mongo_doc.get("email", ""),
+                "summary": mongo_doc.get("rerankSummary", ""),
+                "linkedin_id": mongo_doc.get("linkedinId", ""),
+                "country": mongo_doc.get("country", ""),
+                "full_profile": mongo_doc.get("fullProfile", ""),
+                "experience": mongo_doc.get("experience", ""),
+                "education": mongo_doc.get("education", ""),
+                "skills": mongo_doc.get("skills", []),
+                "position": mongo_doc.get("position", ""),
+                "company": mongo_doc.get("company", ""),
+                "location": mongo_doc.get("location", ""),
+                "industry": mongo_doc.get("industry", ""),
+                "raw_data": mongo_doc  # Keep full raw data for comprehensive analysis
+            }
+            
+            logger.debug(f"Successfully extracted data for candidate {candidate_id}")
+            return candidate_data
+            
+        except Exception as e:
+            logger.error(f"Failed to extract MongoDB data for {candidate_id}: {e}")
+            return None
+    
+    def validate_candidate_with_gpt(self, candidate_data: Dict[str, Any], job_category: str) -> Dict[str, Any]:
+        """Use GPT to validate if candidate truly fits the job category."""
+        
+        if not gpt_service.is_available():
+            logger.warning("GPT service not available for validation")
+            return {
+                "is_suitable": True,  # Default to suitable if GPT unavailable
+                "confidence": 0.5,
+                "reasoning": "GPT validation unavailable",
+                "recommendations": []
+            }
+        
+        # Prepare comprehensive candidate summary for GPT
+        candidate_summary = self._prepare_candidate_summary_for_gpt(candidate_data)
+        job_requirements = self._get_job_requirements_for_gpt(job_category)
+        
+        prompt = f"""
+You are an expert recruiter with deep knowledge across all professional domains. 
+Your task is to evaluate if a candidate is truly suitable for a specific job category.
+
+JOB CATEGORY: {job_category.replace('_', ' ').replace('.yml', '').title()}
+
+JOB REQUIREMENTS:
+{job_requirements}
+
+CANDIDATE PROFILE:
+{candidate_summary}
+
+Please evaluate this candidate's suitability for the {job_category} role.
+
+Respond in JSON format:
+{{
+    "is_suitable": true/false,
+    "confidence": 0.0-1.0,
+    "reasoning": "Detailed explanation of why the candidate is or isn't suitable",
+    "strengths": ["List of candidate strengths relevant to the role"],
+    "weaknesses": ["List of concerns or gaps"],
+    "experience_match": 0.0-1.0,
+    "skills_match": 0.0-1.0,
+    "education_match": 0.0-1.0,
+    "overall_score": 0.0-1.0,
+    "recommendations": ["What would make this candidate more suitable"]
+}}
+
+Be strict in your evaluation. Only mark as suitable if the candidate genuinely fits the role requirements.
+"""
+
+        try:
+            response = gpt_service.client.chat.completions.create(
+                model=gpt_service.model,
+                messages=[
+                    {"role": "system", "content": "You are an expert recruiter with strict evaluation standards."},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.1,
+                max_tokens=800
+            )
+            
+            result_text = response.choices[0].message.content.strip()
+            
+            # Parse JSON response
+            import json
+            validation_result = json.loads(result_text)
+            
+            # Ensure all required fields exist with defaults
+            validation_result.setdefault("is_suitable", False)
+            validation_result.setdefault("confidence", 0.0)
+            validation_result.setdefault("reasoning", "No reasoning provided")
+            validation_result.setdefault("strengths", [])
+            validation_result.setdefault("weaknesses", [])
+            validation_result.setdefault("overall_score", 0.0)
+            validation_result.setdefault("recommendations", [])
+            
+            logger.info(f"GPT validation for {candidate_data.get('name', 'Unknown')}: suitable={validation_result['is_suitable']}, score={validation_result['overall_score']:.3f}")
+            
+            return validation_result
+            
+        except Exception as e:
+            logger.error(f"GPT validation failed: {e}")
+            return {
+                "is_suitable": True,  # Default to suitable on error
+                "confidence": 0.3,
+                "reasoning": f"GPT validation error: {e}",
+                "strengths": [],
+                "weaknesses": ["GPT validation unavailable"],
+                "overall_score": 0.5,
+                "recommendations": ["Manual review recommended"]
+            }
+    
+    def _prepare_candidate_summary_for_gpt(self, candidate_data: Dict[str, Any]) -> str:
+        """Prepare comprehensive candidate summary for GPT evaluation."""
+        
+        summary_parts = []
+        
+        # Basic info
+        if candidate_data.get("name"):
+            summary_parts.append(f"Name: {candidate_data['name']}")
+        
+        if candidate_data.get("position"):
+            summary_parts.append(f"Current Position: {candidate_data['position']}")
+        
+        if candidate_data.get("company"):
+            summary_parts.append(f"Current Company: {candidate_data['company']}")
+        
+        if candidate_data.get("location"):
+            summary_parts.append(f"Location: {candidate_data['location']}")
+        
+        if candidate_data.get("industry"):
+            summary_parts.append(f"Industry: {candidate_data['industry']}")
+        
+        # Education
+        if candidate_data.get("education"):
+            summary_parts.append(f"Education: {candidate_data['education']}")
+        
+        # Experience
+        if candidate_data.get("experience"):
+            summary_parts.append(f"Experience: {candidate_data['experience']}")
+        
+        # Skills
+        if candidate_data.get("skills"):
+            skills_str = ", ".join(candidate_data["skills"]) if isinstance(candidate_data["skills"], list) else str(candidate_data["skills"])
+            summary_parts.append(f"Skills: {skills_str}")
+        
+        # Summary/Profile
+        if candidate_data.get("summary"):
+            summary_parts.append(f"Profile Summary: {candidate_data['summary']}")
+        
+        if candidate_data.get("full_profile"):
+            summary_parts.append(f"Full Profile: {candidate_data['full_profile']}")
+        
+        return "\n".join(summary_parts)
+    
+    def _get_job_requirements_for_gpt(self, job_category: str) -> str:
+        """Get detailed job requirements for GPT evaluation."""
+        
+        # Load job-specific requirements from prompts.json
+        try:
+            import json
+            with open("src/config/prompts.json", "r") as f:
+                prompts_config = json.load(f)
+            
+            category_key = job_category.replace(".yml", "")
+            
+            # Get hard filters
+            hard_filters = prompts_config.get("hard_filters", {}).get(category_key, {})
+            must_have = hard_filters.get("must_have", [])
+            preferred = hard_filters.get("preferred", [])
+            exclude = hard_filters.get("exclude", [])
+            
+            requirements = []
+            
+            if must_have:
+                requirements.append(f"REQUIRED: {', '.join(must_have)}")
+            
+            if preferred:
+                requirements.append(f"PREFERRED: {', '.join(preferred)}")
+            
+            if exclude:
+                requirements.append(f"EXCLUDE: {', '.join(exclude)}")
+            
+            # Add specific requirements based on job category
+            specific_requirements = self._get_specific_job_requirements(category_key)
+            if specific_requirements:
+                requirements.extend(specific_requirements)
+            
+            return "\n".join(requirements) if requirements else f"Requirements for {job_category}"
+            
+        except Exception as e:
+            logger.warning(f"Could not load job requirements: {e}")
+            return f"Standard requirements for {job_category}"
+    
+    def _get_specific_job_requirements(self, category_key: str) -> List[str]:
+        """Get specific requirements for each job category."""
+        
+        requirements_map = {
+            "tax_lawyer": [
+                "Must have JD (Juris Doctor) degree",
+                "Must be licensed attorney",
+                "Must have tax law experience",
+                "Should have IRS experience",
+                "Should have corporate tax knowledge"
+            ],
+            "junior_corporate_lawyer": [
+                "Must have JD degree", 
+                "Must be licensed attorney",
+                "Should have corporate law experience",
+                "Should have M&A experience",
+                "Entry to mid-level experience"
+            ],
+            "radiology": [
+                "Must have MD degree",
+                "Must have radiology residency/fellowship",
+                "Must have medical imaging experience",
+                "Should be board certified",
+                "Should have DICOM experience"
+            ],
+            "doctors_md": [
+                "Must have MD degree",
+                "Must have medical residency",
+                "Must be licensed physician",
+                "Should have clinical experience",
+                "Should have patient care experience"
+            ],
+            "biology_expert": [
+                "Must have advanced degree in biology/life sciences",
+                "Should have research experience",
+                "Should have publication record",
+                "Should have laboratory experience"
+            ],
+            "mathematics_phd": [
+                "Must have PhD in Mathematics",
+                "Should have research experience",
+                "Should have publication record",
+                "Should have theoretical/applied math expertise"
+            ],
+            "quantitative_finance": [
+                "Should have finance/economics degree",
+                "Must have quantitative analysis experience",
+                "Should have financial modeling skills",
+                "Should have programming/statistical skills"
+            ],
+            "bankers": [
+                "Should have finance/business degree",
+                "Must have banking experience",
+                "Should have client relationship experience",
+                "Should have financial services background"
+            ],
+            "mechanical_engineers": [
+                "Must have engineering degree",
+                "Must have mechanical engineering experience",
+                "Should have design/manufacturing experience",
+                "Should have technical project experience"
+            ],
+            "anthropology": [
+                "Must have degree in anthropology/social sciences",
+                "Should have research experience",
+                "Should have fieldwork experience",
+                "Should have cultural analysis skills"
+            ]
+        }
+        
+        return requirements_map.get(category_key, []) 
