@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/bhaumiktandan/mercor_task/main.py", line 6, in <module>
-    import requests
-ModuleNotFoundError: No module named 'requests'

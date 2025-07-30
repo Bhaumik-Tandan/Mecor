@@ -1,7 +1,9 @@
 """Search service for candidate retrieval using vector and BM25 search."""
 import turbopuffer
+import time
+import threading
 from typing import List, Dict, Any, Optional, Tuple
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from ..config.settings import config
 from ..models.candidate import (
@@ -12,7 +14,9 @@ from ..utils.logger import get_logger
 from ..utils.helpers import (
     load_json_file, execute_parallel_tasks, calculate_weighted_score, PerformanceTimer
 )
+
 logger = get_logger(__name__)
+
 @dataclass
 class SearchConfig:
     """Configuration for individual search operations."""
@@ -21,8 +25,10 @@ class SearchConfig:
     vector_weight: float = 0.6
     bm25_weight: float = 0.4
     use_hard_filters: bool = True
+
 class SearchService:
     """Service for searching candidates using multiple strategies."""
+    
     def __init__(self):
         self.tpuf = turbopuffer.Turbopuffer(
             api_key=config.api.turbopuffer_api_key,
@@ -31,30 +37,37 @@ class SearchService:
         self.namespace = self.tpuf.namespace(config.turbopuffer.namespace)
         self.prompts_config = load_json_file("src/config/prompts.json")
         logger.info(f"Initialized SearchService with namespace: {config.turbopuffer.namespace}")
+
     def get_domain_queries(self, job_category: str) -> List[str]:
         """Get domain-specific queries for a job category."""
         # DISABLED GPT for faster performance
         category_name = job_category.replace("_", " ").replace(".yml", "")
         domain_queries = self.prompts_config.get("domain_specific_queries", {})
         static_queries = domain_queries.get(category_name, [f"professional {category_name}"])
-        logger.info(f"Using {len(static_queries)} static queries for {job_category}")
+        logger.debug(f"Using {len(static_queries)} static queries for {job_category}")
         return static_queries
+
     def get_bm25_keywords(self, job_category: str) -> List[str]:
         """
         Get BM25 keywords for a job category.
+        
         Args:
             job_category: Job category name
+        
         Returns:
             List of BM25 search keywords
         """
         category_name = job_category.replace("_", " ").replace(".yml", "")
         bm25_keywords = self.prompts_config.get("bm25_keywords", {})
         return bm25_keywords.get(category_name, category_name.split())
+
     def get_hard_filters(self, job_category: str) -> Dict[str, List[str]]:
         """
         Get hard filter criteria for a job category.
+        
         Args:
             job_category: Job category name
+        
         Returns:
             Dictionary with must_have, preferred, and exclude criteria
         """
@@ -65,6 +78,7 @@ class SearchService:
             "preferred": [],
             "exclude": []
         })
+
     def vector_search(
         self, 
         query: str, 
@@ -72,13 +86,19 @@ class SearchService:
     ) -> List[CandidateProfile]:
         """
         Perform vector similarity search.
+        
         Args:
             query: Search query text
             top_k: Number of top results to return
+        
         Returns:
             List of candidate profiles
         """
-        logger.debug(f"Performing vector search: {query[:100]}...")
+        thread_id = threading.get_ident()
+        logger.debug(f"🧵 Thread {thread_id}: Vector search for '{query[:50]}...' (top_k={top_k})")
+        
+        search_start = time.time()
+        
         with PerformanceTimer(f"Vector search for '{query[:50]}...'"):
             embedding = embedding_service.generate_embedding(query)
             results = self.namespace.query(
@@ -86,6 +106,7 @@ class SearchService:
                 top_k=top_k,
                 include_attributes=["id", "name", "email", "rerank_summary", "linkedin_id", "country"]
             )
+            
             candidates = []
             for row in results.rows:
                 if hasattr(row, 'id'):
@@ -98,31 +119,46 @@ class SearchService:
                         country=getattr(row, 'country', '')
                     )
                     candidates.append(candidate)
-            logger.debug(f"Vector search returned {len(candidates)} candidates")
+            
+            search_time = time.time() - search_start
+            logger.debug(f"🧵 Thread {thread_id}: Vector search returned {len(candidates)} candidates in {search_time:.2f}s")
             return candidates
-    def bm25_search(
+
+    def bm25_search_parallel(
         self, 
         keywords: List[str], 
         top_k: int = 100
     ) -> List[CandidateProfile]:
         """
-        Perform BM25 text search.
+        Perform BM25 text search with parallel keyword processing.
+        
         Args:
             keywords: List of keywords to search for
             top_k: Number of top results to return
+        
         Returns:
             List of candidate profiles
         """
-        logger.debug(f"Performing BM25 search with keywords: {keywords}")
-        all_candidates = []
-        for keyword in keywords:
+        thread_id = threading.get_ident()
+        logger.debug(f"🧵 Thread {thread_id}: BM25 search with {len(keywords)} keywords: {keywords[:3]}...")
+        
+        search_start = time.time()
+        
+        def search_single_keyword(keyword: str) -> List[CandidateProfile]:
+            """Search for a single keyword."""
+            inner_thread_id = threading.get_ident()
             try:
                 keyword_top_k = max(1, min(top_k // len(keywords), 1200))
+                logger.debug(f"🧵 Thread {inner_thread_id}: Searching keyword '{keyword}' (top_k={keyword_top_k})")
+                
+                keyword_start = time.time()
                 results = self.namespace.query(
                     rank_by=["rerank_summary", "BM25", keyword],
                     top_k=keyword_top_k,
                     include_attributes=["id", "name", "email", "rerank_summary", "linkedin_id", "country"]
                 )
+                
+                candidates = []
                 for row in results.rows:
                     if hasattr(row, 'id'):
                         candidate = CandidateProfile(
@@ -133,17 +169,65 @@ class SearchService:
                             linkedin_id=getattr(row, 'linkedin_id', ''),
                             country=getattr(row, 'country', '')
                         )
-                        all_candidates.append(candidate)
+                        candidates.append(candidate)
+                
+                keyword_time = time.time() - keyword_start
+                logger.debug(f"🧵 Thread {inner_thread_id}: Keyword '{keyword}' returned {len(candidates)} candidates in {keyword_time:.2f}s")
+                return candidates
+                
             except Exception as e:
-                logger.warning(f"BM25 search failed for keyword '{keyword}': {e}")
+                logger.warning(f"🧵 Thread {inner_thread_id}: BM25 search failed for keyword '{keyword}': {e}")
+                return []
+        
+        # Use parallel execution for keyword searches
+        max_keyword_workers = min(len(keywords), config.search.thread_pool_size)
+        logger.debug(f"🧵 Thread {thread_id}: Using {max_keyword_workers} workers for {len(keywords)} keywords")
+        
+        all_candidates = []
+        with ThreadPoolExecutor(max_workers=max_keyword_workers) as executor:
+            future_to_keyword = {
+                executor.submit(search_single_keyword, keyword): keyword
+                for keyword in keywords
+            }
+            
+            for future in as_completed(future_to_keyword):
+                keyword = future_to_keyword[future]
+                try:
+                    candidates = future.result()
+                    all_candidates.extend(candidates)
+                    logger.debug(f"🧵 Thread {thread_id}: Completed keyword '{keyword}' - {len(candidates)} candidates")
+                except Exception as e:
+                    logger.warning(f"🧵 Thread {thread_id}: Failed to get results for keyword '{keyword}': {e}")
+        
+        # Deduplicate candidates
         seen = set()
         unique_candidates = []
         for candidate in all_candidates:
             if candidate.id not in seen:
                 seen.add(candidate.id)
                 unique_candidates.append(candidate)
-        logger.debug(f"BM25 search returned {len(unique_candidates)} unique candidates")
+        
+        search_time = time.time() - search_start
+        logger.debug(f"🧵 Thread {thread_id}: BM25 parallel search completed: {len(unique_candidates)} unique candidates in {search_time:.2f}s")
         return unique_candidates[:top_k]
+
+    def bm25_search(
+        self, 
+        keywords: List[str], 
+        top_k: int = 100
+    ) -> List[CandidateProfile]:
+        """
+        Perform BM25 text search - delegates to parallel implementation.
+        
+        Args:
+            keywords: List of keywords to search for
+            top_k: Number of top results to return
+        
+        Returns:
+            List of candidate profiles
+        """
+        return self.bm25_search_parallel(keywords, top_k)
+
     def apply_hard_filters(
         self, 
         candidates: List[CandidateProfile], 
@@ -151,49 +235,73 @@ class SearchService:
     ) -> List[CandidateProfile]:
         """
         Apply hard filters to candidate list.
+        
         Args:
             candidates: List of candidates to filter
             hard_filters: Dictionary with filtering criteria
+        
         Returns:
             Filtered list of candidates
         """
         if not hard_filters:
             return candidates
+
+        thread_id = threading.get_ident()
+        filter_start = time.time()
+        
         must_have = hard_filters.get("must_have", [])
         exclude = hard_filters.get("exclude", [])
+        
         filtered_candidates = []
         for candidate in candidates:
             if candidate.satisfies_hard_filters(must_have, exclude):
                 filtered_candidates.append(candidate)
-        logger.info(f"Hard filters reduced candidates from {len(candidates)} to {len(filtered_candidates)}")
+        
+        filter_time = time.time() - filter_start
+        logger.info(f"🧵 Thread {thread_id}: Hard filters reduced candidates from {len(candidates)} to {len(filtered_candidates)} in {filter_time:.2f}s")
         return filtered_candidates
-    def hybrid_search(
+
+    def hybrid_search_enhanced(
         self, 
         query: SearchQuery, 
         search_config: SearchConfig
     ) -> List[CandidateProfile]:
         """
-        Perform hybrid search combining vector and BM25 results.
+        Perform enhanced hybrid search with better parallelization.
+        
         Args:
             query: Search query object
             search_config: Search configuration
+        
         Returns:
             List of ranked candidates
         """
-        logger.info(f"Starting hybrid search for: {query.job_category}")
+        thread_id = threading.get_ident()
+        logger.info(f"🧵 Thread {thread_id}: Starting enhanced hybrid search for: {query.job_category}")
+        
+        search_start = time.time()
         candidate_scores: Dict[str, CandidateScores] = {}
-        with PerformanceTimer(f"Hybrid search for {query.job_category}"):
+        
+        with PerformanceTimer(f"Enhanced hybrid search for {query.job_category}"):
+            # Phase 1: Parallel vector searches
+            logger.debug(f"🧵 Thread {thread_id}: Phase 1 - Vector searches")
+            vector_start = time.time()
+            
             domain_queries = self.get_domain_queries(query.job_category)
             all_vector_queries = [query.query_text] + domain_queries
             vector_top_k = min(100, max(10, query.max_candidates))
+            
             vector_tasks = [
                 lambda q=q: self.vector_search(q, vector_top_k)
                 for q in all_vector_queries
             ]
+            
             vector_results = execute_parallel_tasks(
                 vector_tasks, 
-                max_workers=config.search.thread_pool_size
+                max_workers=min(len(all_vector_queries), config.search.thread_pool_size)
             )
+            
+            # Process vector results
             for i, candidates in enumerate(vector_results):
                 if candidates:
                     weight = 1.0 / (i + 1)  # Decreasing weight for additional queries
@@ -202,54 +310,111 @@ class SearchService:
                         if candidate.id not in candidate_scores:
                             candidate_scores[candidate.id] = CandidateScores(candidate.id)
                         candidate_scores[candidate.id].vector_score += score
+            
+            vector_time = time.time() - vector_start
+            logger.debug(f"🧵 Thread {thread_id}: Vector searches completed in {vector_time:.2f}s")
+            
+            # Phase 2: Parallel BM25 search
+            logger.debug(f"🧵 Thread {thread_id}: Phase 2 - BM25 search")
+            bm25_start = time.time()
+            
             keywords = self.get_bm25_keywords(query.job_category)
             bm25_top_k = min(100, max(10, query.max_candidates))
-            bm25_candidates = self.bm25_search(keywords, bm25_top_k)
+            bm25_candidates = self.bm25_search_parallel(keywords, bm25_top_k)
+            
+            # Process BM25 results
             for j, candidate in enumerate(bm25_candidates):
                 score = 1.0 / (j + 1)  # Position-based scoring
                 if candidate.id not in candidate_scores:
                     candidate_scores[candidate.id] = CandidateScores(candidate.id)
                 candidate_scores[candidate.id].bm25_score += score
+            
+            bm25_time = time.time() - bm25_start
+            logger.debug(f"🧵 Thread {thread_id}: BM25 search completed in {bm25_time:.2f}s")
+            
+            # Phase 3: Soft filtering
+            logger.debug(f"🧵 Thread {thread_id}: Phase 3 - Soft filtering")
+            soft_filter_start = time.time()
+            
             hard_filters = self.get_hard_filters(query.job_category)
             preferred_keywords = hard_filters.get("preferred", [])
+            
             if preferred_keywords:
                 all_candidate_ids = list(candidate_scores.keys())
-                candidates_for_soft_filtering = self._get_candidate_profiles(all_candidate_ids)
+                candidates_for_soft_filtering = self._get_candidate_profiles_batch(all_candidate_ids)
+                
                 for candidate in candidates_for_soft_filtering:
                     if candidate.id in candidate_scores:
                         soft_score = candidate.calculate_soft_filter_score(preferred_keywords)
                         candidate_scores[candidate.id].soft_filter_score = soft_score
-                logger.info(f"Applied soft filters with {len(preferred_keywords)} preferred keywords")
+                
+                soft_filter_time = time.time() - soft_filter_start
+                logger.debug(f"🧵 Thread {thread_id}: Soft filters applied with {len(preferred_keywords)} keywords in {soft_filter_time:.2f}s")
+            
+            # Phase 4: Score calculation and ranking
+            logger.debug(f"🧵 Thread {thread_id}: Phase 4 - Scoring and ranking")
+            scoring_start = time.time()
+            
             for candidate_score in candidate_scores.values():
                 candidate_score.calculate_combined_score(
                     config.search.vector_search_weight,
                     config.search.bm25_search_weight,
                     config.search.soft_filter_weight
                 )
+            
             sorted_scores = sorted(
                 candidate_scores.values(),
                 key=lambda x: x.combined_score,
                 reverse=True
             )
+            
             top_candidate_ids = [cs.candidate_id for cs in sorted_scores[:query.max_candidates]]
-            final_candidates = self._get_candidate_profiles(top_candidate_ids)
-            # DISABLED GPT domain validation for faster performance
-            logger.info(f"Skipping GPT domain validation for {query.job_category}")
+            final_candidates = self._get_candidate_profiles_batch(top_candidate_ids)
+            
+            scoring_time = time.time() - scoring_start
+            logger.debug(f"🧵 Thread {thread_id}: Scoring completed in {scoring_time:.2f}s")
+            
+            # Phase 5: Hard filtering
             if search_config.use_hard_filters:
+                logger.debug(f"🧵 Thread {thread_id}: Phase 5 - Hard filtering")
                 hard_filters = self.get_hard_filters(query.job_category)
                 final_candidates = self.apply_hard_filters(final_candidates, hard_filters)
-            logger.info(f"Hybrid search completed: {len(final_candidates)} candidates")
+            
+            total_search_time = time.time() - search_start
+            logger.info(f"🧵 Thread {thread_id}: Enhanced hybrid search completed: {len(final_candidates)} candidates in {total_search_time:.2f}s")
+            
             return final_candidates[:query.max_candidates]
-    def _get_candidate_profiles(self, candidate_ids: List[str]) -> List[CandidateProfile]:
+
+    def hybrid_search(
+        self, 
+        query: SearchQuery, 
+        search_config: SearchConfig
+    ) -> List[CandidateProfile]:
         """
-        Retrieve full candidate profiles for given IDs.
+        Perform hybrid search - delegates to enhanced implementation.
+        """
+        return self.hybrid_search_enhanced(query, search_config)
+
+    def _get_candidate_profiles_batch(self, candidate_ids: List[str]) -> List[CandidateProfile]:
+        """
+        Retrieve full candidate profiles for given IDs with batch processing.
+        
         Args:
             candidate_ids: List of candidate IDs
+        
         Returns:
             List of candidate profiles
         """
-        candidates = []
-        for candidate_id in candidate_ids:
+        if not candidate_ids:
+            return []
+        
+        thread_id = threading.get_ident()
+        batch_start = time.time()
+        
+        logger.debug(f"🧵 Thread {thread_id}: Retrieving {len(candidate_ids)} candidate profiles")
+        
+        def get_single_profile(candidate_id: str) -> Optional[CandidateProfile]:
+            """Get a single candidate profile."""
             try:
                 dummy_vector = [0.0] * 1024
                 results = self.namespace.query(
@@ -258,6 +423,7 @@ class SearchService:
                     filters=["id", "Eq", candidate_id],
                     include_attributes=["id", "name", "email", "rerank_summary", "linkedin_id", "country"]
                 )
+                
                 if results.rows:
                     row = results.rows[0]
                     candidate = CandidateProfile(
@@ -268,10 +434,42 @@ class SearchService:
                         linkedin_id=getattr(row, 'linkedin_id', ''),
                         country=getattr(row, 'country', '')
                     )
-                    candidates.append(candidate)
+                    return candidate
+                return None
             except Exception as e:
-                logger.warning(f"Failed to retrieve candidate {candidate_id}: {e}")
+                logger.warning(f"🧵 Thread {threading.get_ident()}: Failed to retrieve candidate {candidate_id}: {e}")
+                return None
+        
+        # Use parallel processing for batch retrieval
+        max_profile_workers = min(len(candidate_ids), config.search.thread_pool_size)
+        candidates = []
+        
+        with ThreadPoolExecutor(max_workers=max_profile_workers) as executor:
+            future_to_id = {
+                executor.submit(get_single_profile, candidate_id): candidate_id
+                for candidate_id in candidate_ids
+            }
+            
+            for future in as_completed(future_to_id):
+                candidate_id = future_to_id[future]
+                try:
+                    candidate = future.result()
+                    if candidate:
+                        candidates.append(candidate)
+                except Exception as e:
+                    logger.warning(f"🧵 Thread {thread_id}: Failed to get profile for {candidate_id}: {e}")
+        
+        batch_time = time.time() - batch_start
+        logger.debug(f"🧵 Thread {thread_id}: Retrieved {len(candidates)} profiles in {batch_time:.2f}s")
+        
         return candidates
+
+    def _get_candidate_profiles(self, candidate_ids: List[str]) -> List[CandidateProfile]:
+        """
+        Retrieve full candidate profiles - delegates to batch implementation.
+        """
+        return self._get_candidate_profiles_batch(candidate_ids)
+
     def search_candidates(
         self, 
         query: SearchQuery, 
