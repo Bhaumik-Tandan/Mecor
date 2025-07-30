@@ -42,47 +42,64 @@
       "emergency radiology physician MD residency board certified imaging"
     ],
     "doctors_md": [
-      "licensed physician MD medical doctor",
-      "practicing physician primary care MD",
-      "board certified medical doctor physician",
-      "internal medicine physician MD degree",
-      "family medicine doctor licensed physician"
+      "Harvard Johns Hopkins Stanford Mayo Clinic physician MD board certified",
+      "emergency medicine physician MD residency board certified hospital",
+      "internal medicine physician MD primary care board certified clinic",
+      "cardiology physician MD fellowship board certified heart specialist",
+      "surgery physician MD residency board certified surgeon hospital",
+      "pediatrics physician MD board certified children hospital medical center",
+      "family medicine physician MD board certified primary care practice",
+      "psychiatry physician MD board certified mental health hospital",
+      "radiology physician MD fellowship board certified imaging specialist",
+      "anesthesiology physician MD residency board certified surgery hospital"
     ],
     "biology_expert": [
-      "molecular biology PhD researcher postdoc publications Nature Science Cell",
-      "cell biology genetics genomics CRISPR gene editing PhD scientist",
-      "computational biology bioinformatics PhD machine learning systems biology",
-      "biochemistry structural biology protein crystallography PhD research",
-      "cancer biology oncology tumor immunotherapy PhD researcher publications",
-      "neuroscience neurobiology brain research PhD postdoc faculty position",
-      "developmental biology stem cell research embryology PhD scientist",
-      "microbiology virology infectious disease PhD researcher laboratory",
-      "biotechnology bioengineering synthetic biology PhD industry research",
-      "marine biology ecology evolution PhD field research publications"
+      "Harvard MIT Stanford biology PhD postdoc Nature Science Cell publications",
+      "pharmaceutical research scientist PhD biology drug discovery clinical trials",
+      "biotech research scientist PhD molecular biology genetics genomics industry",
+      "NIH postdoc researcher PhD biology government research laboratory grants",
+      "clinical research scientist PhD biology medical device pharmaceutical company",
+      "computational biology scientist PhD bioinformatics machine learning genomics",
+      "cancer research scientist PhD oncology tumor biology immunotherapy biotech",
+      "neuroscience researcher PhD biology brain research academic medical center",
+      "biotechnology company scientist PhD biology synthetic biology engineering",
+      "academic professor PhD biology university research publications tenure"
     ],
     "anthropology": [
-      "anthropologist PhD cultural research professor",
-      "cultural anthropology professor university research",
-      "social anthropologist field research PhD",
-      "anthropological research professor academic",
-      "anthropology professor university PhD research"
+      "UX researcher anthropology PhD user experience design technology company",
+      "market researcher anthropology PhD consumer behavior cultural analysis",
+      "cultural consultant anthropology PhD diversity inclusion organizational development",
+      "user researcher anthropology PhD product design human computer interaction",
+      "social researcher anthropology PhD sociology psychology market research",
+      "design researcher anthropology PhD user centered design ethnographic research",
+      "consumer insights researcher anthropology PhD market research cultural analysis",
+      "diversity consultant anthropology PhD organizational culture change management",
+      "academic anthropologist PhD professor university research cultural studies",
+      "field researcher anthropology PhD ethnographic research cultural documentation"
     ],
     "mathematics_phd": [
-      "mathematics professor PhD university research",
-      "PhD mathematician academic professor research",
-      "mathematical research professor university PhD",
-      "applied mathematics professor PhD academic",
-      "mathematics doctorate professor research academic"
+      "data scientist PhD mathematics machine learning artificial intelligence tech",
+      "quantitative researcher PhD mathematics statistics financial modeling hedge fund",
+      "machine learning engineer PhD mathematics AI research computer science",
+      "statistician PhD mathematics biostatistics pharmaceutical clinical trials research",
+      "AI researcher PhD mathematics deep learning neural networks tech company",
+      "actuary PhD mathematics insurance risk modeling financial services",
+      "research scientist PhD mathematics operations research optimization algorithms",
+      "applied mathematician PhD statistics data science analytics tech industry",
+      "academic mathematician PhD professor university pure mathematics research",
+      "quant developer PhD mathematics algorithmic trading financial engineering"
     ],
     "quantitative_finance": [
-      "quantitative analyst hedge fund derivatives pricing mathematical modeling PhD",
-      "quant researcher algorithmic trading Python R financial engineering PhD",
-      "financial engineer risk modeling portfolio optimization mathematics PhD MBA",
-      "quantitative finance researcher stochastic calculus Monte Carlo PhD",
-      "mathematical finance analyst derivatives options pricing PhD CQF FRM",
-      "quantitative risk analyst VaR credit risk modeling PhD mathematics",
-      "algorithmic trading quant developer high frequency trading PhD",
-      "portfolio manager quantitative strategies factor modeling PhD CFA"
+      "hedge fund quant trader PhD mathematics derivatives algorithmic trading",
+      "prop trading quantitative analyst PhD physics mathematical modeling",
+      "investment bank quant researcher PhD mathematics derivatives pricing",
+      "asset management quantitative researcher PhD statistics portfolio optimization",
+      "market maker quantitative trader PhD mathematics high frequency trading",
+      "risk analyst quantitative modeling PhD mathematics VaR credit risk",
+      "financial engineer PhD mathematics stochastic calculus Monte Carlo",
+      "quantitative portfolio manager PhD mathematics factor modeling strategies",
+      "algorithmic trading developer PhD mathematics Python C++ systematic trading",
+      "derivatives trader quantitative analyst PhD physics options pricing"
     ],
     "bankers": [
       "investment banker financial services professional",
@@ -103,11 +120,11 @@
     "tax_lawyer": ["tax attorney", "tax lawyer", "tax law", "IRS", "tax counsel", "CPA attorney", "JD tax"],
     "junior_corporate_lawyer": ["corporate attorney", "corporate lawyer", "M&A lawyer", "securities attorney", "business law", "JD corporate"],
     "radiology": ["radiologist", "diagnostic radiology", "interventional radiology", "neuroradiology", "medical imaging", "radiologic", "DICOM", "CT scan", "MRI", "ultrasound", "board certified radiology", "radiology fellowship", "imaging specialist"],
-    "doctors_md": ["physician", "medical doctor", "practicing physician", "board certified physician", "clinical medicine", "MD license"],
-    "biology_expert": ["molecular biologist", "cell biology", "genomics", "biotechnology", "life sciences", "biological research", "PhD biology", "postdoc biology", "research scientist biology", "computational biology", "bioinformatics", "biochemistry", "neuroscience", "cancer biology", "developmental biology", "microbiology", "marine biology"],
-    "anthropology": ["anthropologist", "cultural anthropology", "ethnography", "anthropological research", "PhD anthropology", "social anthropology"],
-    "mathematics_phd": ["pure mathematics", "applied mathematics", "mathematical analysis", "number theory", "topology", "algebra", "PhD mathematics"],
-    "quantitative_finance": ["quantitative analyst", "quant researcher", "financial modeling", "derivatives pricing", "risk modeling", "mathematical finance", "algorithmic trading", "portfolio optimization", "financial engineering", "stochastic calculus", "Monte Carlo", "VaR modeling", "credit risk", "hedge fund", "quantitative strategies"],
+    "doctors_md": ["physician", "medical doctor", "board certified physician", "MD residency", "hospital", "medical center", "clinic", "emergency medicine", "internal medicine", "cardiology", "surgery", "pediatrics", "family medicine", "psychiatry", "anesthesiology"],
+    "biology_expert": ["molecular biologist", "cell biology", "genomics", "biotechnology", "life sciences", "biological research", "PhD biology", "postdoc biology", "research scientist biology", "computational biology", "bioinformatics", "biochemistry", "neuroscience", "cancer biology", "pharmaceutical", "biotech", "clinical research"],
+    "anthropology": ["anthropologist", "cultural anthropology", "ethnography", "anthropological research", "PhD anthropology", "social anthropology", "UX researcher", "user researcher", "market researcher", "cultural consultant", "diversity consultant", "design researcher", "consumer insights", "sociology", "psychology"],
+    "mathematics_phd": ["pure mathematics", "applied mathematics", "mathematical analysis", "number theory", "topology", "algebra", "PhD mathematics", "data scientist", "machine learning", "artificial intelligence", "statistician", "actuary", "quantitative analyst", "AI researcher", "biostatistics"],
+    "quantitative_finance": ["quantitative analyst", "quant researcher", "financial modeling", "derivatives pricing", "risk modeling", "mathematical finance", "algorithmic trading", "portfolio optimization", "financial engineering", "stochastic calculus", "Monte Carlo", "VaR modeling", "credit risk", "hedge fund", "quantitative strategies", "prop trading", "market maker", "high frequency trading"],
     "bankers": ["investment banker", "commercial banker", "banking analyst", "loan officer", "credit analyst", "wealth management"],
     "mechanical_engineers": ["mechanical engineer", "mechanical design", "manufacturing engineer", "PE license", "HVAC engineer", "automotive engineer"]
   },
@@ -128,28 +145,28 @@
       "exclude": ["nurse", "technician", "student", "undergraduate", "radiologic technologist"]
     },
     "doctors_md": {
-      "must_have": ["MD", "doctor", "physician", "medical", "clinical", "practice"],
-      "preferred": ["GP", "general practitioner", "primary care", "family medicine", "EHR", "telemedicine"],
-      "exclude": ["nurse", "technician", "student", "undergraduate"]
+      "must_have": ["MD", "doctor", "physician", "medical"],
+      "preferred": ["board certified", "residency", "fellowship", "hospital", "medical center", "clinic", "Harvard", "Johns Hopkins", "Mayo Clinic", "Stanford", "emergency medicine", "internal medicine", "cardiology", "surgery", "pediatrics", "family medicine"],
+      "exclude": ["nurse", "technician", "student", "undergraduate", "medical student"]
     },
     "biology_expert": {
-      "must_have": ["PhD", "biology", "research", "university", "doctorate"],
-      "preferred": ["molecular biology", "genetics", "cell biology", "CRISPR", "PCR", "sequencing", "publications", "peer-reviewed", "postdoc", "bioinformatics", "biochemistry", "neuroscience", "computational biology", "biotechnology", "Nature", "Science", "Cell", "laboratory"],
+      "must_have": ["PhD", "biology", "research"],
+      "preferred": ["molecular biology", "genetics", "cell biology", "genomics", "biotechnology", "pharmaceutical", "biotech", "postdoc", "bioinformatics", "biochemistry", "neuroscience", "computational biology", "Nature", "Science", "Cell", "laboratory", "clinical research", "drug discovery"],
       "exclude": ["undergraduate", "bachelor", "student", "masters", "high school"]
     },
     "anthropology": {
-      "must_have": ["PhD", "anthropology", "sociology", "research", "doctorate"],
-      "preferred": ["ethnographic", "fieldwork", "cultural", "social", "migration", "labor", "publications", "conference"],
-      "exclude": ["undergraduate", "bachelor", "student", "masters"]
+      "must_have": ["anthropology", "research"],
+      "preferred": ["PhD", "cultural", "ethnographic", "UX researcher", "user researcher", "market researcher", "cultural consultant", "diversity consultant", "design researcher", "consumer insights", "sociology", "psychology", "user experience", "product design"],
+      "exclude": ["undergraduate", "bachelor", "student", "high school"]
     },
     "mathematics_phd": {
-      "must_have": ["PhD", "mathematics", "statistics", "research", "university", "doctorate"],
-      "preferred": ["mathematical modeling", "probability", "statistics", "algorithms", "publications", "pure mathematics", "applied mathematics"],
-      "exclude": ["undergraduate", "bachelor", "student", "masters"]
+      "must_have": ["mathematics", "PhD"],
+      "preferred": ["mathematical modeling", "statistics", "data scientist", "machine learning", "artificial intelligence", "AI researcher", "quantitative analyst", "statistician", "actuary", "applied mathematics", "pure mathematics", "algorithms", "optimization", "biostatistics"],
+      "exclude": ["undergraduate", "bachelor", "student", "masters", "high school"]
     },
     "quantitative_finance": {
-      "must_have": ["quantitative", "financial", "mathematics", "modeling"],
-      "preferred": ["PhD", "quant", "derivatives", "risk modeling", "algorithmic trading", "Python", "R", "portfolio optimization", "financial engineering", "stochastic", "Monte Carlo", "VaR", "hedge fund", "investment", "CQF", "FRM", "CFA"],
+      "must_have": ["quantitative", "financial", "mathematics"],
+      "preferred": ["PhD", "quant", "derivatives", "hedge fund", "prop trading", "algorithmic trading", "market maker", "high frequency trading", "financial modeling", "risk modeling", "portfolio optimization", "financial engineering", "stochastic", "Monte Carlo", "VaR", "investment bank", "CQF", "FRM", "CFA"],
       "exclude": ["undergraduate", "bachelor", "student", "sales", "retail banking"]
     },
     "bankers": {
