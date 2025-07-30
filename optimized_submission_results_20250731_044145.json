@@ -1,0 +1,149 @@
+{
+  "metadata": {
+    "timestamp": "20250731_044145",
+    "approach": "Optimized search configurations",
+    "average_score": 30.861111111111114,
+    "total_score": 246.8888888888889,
+    "successful_categories": 8
+  },
+  "results": {
+    "biology_expert.yml": {
+      "score": 8.000000000000002,
+      "candidate_ids": [
+        "67950089f9f986ea7fb60a1c",
+        "67968dcb3e76d5b5873270f6",
+        "6796cb9273bf14921fbb4e04",
+        "6795ea717e0084c5fa79a9ad",
+        "6795e1b98a14699f160a6aaa",
+        "67961c9a7e0084c5fa7b554d",
+        "679591227e0084c5fa767cbc",
+        "6795807f3eff0c142a7ef483",
+        "6795736a3e76d5b587284702",
+        "6794b45d0db3e7925671b7ac"
+      ]
+    },
+    "quantitative_finance.yml": {
+      "score": 8.666666666666668,
+      "candidate_ids": [
+        "67957d39a1a09a48feaf555a",
+        "67949f677e0084c5fa6d4b5e",
+        "6795e9167e0084c5fa799c56",
+        "6795beca0db3e792567b7333",
+        "67967cec8d90554e6074ebdc",
+        "67966a590db3e7925681fc4d",
+        "6794c2658a14699f160069b6",
+        "67950ec77e0084c5fa719044",
+        "6795fbef52a365d1168588ce",
+        "67948f4f3eff0c142a778340"
+      ]
+    },
+    "radiology.yml": {
+      "score": 41.38888888888889,
+      "candidate_ids": [
+        "6795c9ca8d90554e606e81b3",
+        "6794ae287e0084c5fa6dd54d",
+        "6795fef38d90554e607054ae",
+        "679675fc3eff0c142a87e393",
+        "67951d578d90554e60682528",
+        "67952db4a1a09a48feac51da"
+      ]
+    },
+    "mechanical_engineers.yml": {
+      "score": 40.5,
+      "candidate_ids": [
+        "6794d2d87e0084c5fa6f508b",
+        "6797023af9f986ea7fc8628d",
+        "679500788d90554e60670f04",
+        "6796d7e573bf14921fbbca14",
+        "679661b57e0084c5fa7db3c7",
+        "6796583152a365d11688708f",
+        "6797032273bf14921fbd5aae",
+        "67948eb63e76d5b587208cf5",
+        "679597cd52a365d11681cadc",
+        "67977faf3e76d5b5873abf49"
+      ]
+    },
+    "tax_lawyer.yml": {
+      "score": 61.66666666666667,
+      "candidate_ids": [
+        "679661d68a14699f160ea541",
+        "67967bac8a14699f160f9d8e",
+        "67951c70a1a09a48feaba64a",
+        "67966fbd3eff0c142a87b724",
+        "679540ee3eff0c142a7d2d03",
+        "67963f6a3eff0c142a8612e7",
+        "6796882052a365d1168a3d88",
+        "6796e2448d90554e6078b443",
+        "67960baf3eff0c142a842753",
+        "6794e7878a14699f1601bcab"
+      ]
+    },
+    "junior_corporate_lawyer.yml": {
+      "score": 34.333333333333336,
+      "candidate_ids": [
+        "679515280db3e79256752066",
+        "6795719973bf14921fae1a92",
+        "679706137e0084c5fa8452e8",
+        "67966ce77e0084c5fa7e13bb",
+        "6794b8f152a365d11679b3f4",
+        "679691c40db3e79256831a12",
+        "679677768d90554e6074b241",
+        "6796e30f7e0084c5fa82ecff",
+        "679689c473bf14921fb907a5",
+        "67959b988d90554e606cc76d"
+      ]
+    },
+    "doctors_md.yml": {
+      "score": 8.0,
+      "candidate_ids": [
+        "6796851b7e0084c5fa7f1ae5",
+        "67969fed3eff0c142a898797",
+        "67961e3d73bf14921fb533bd",
+        "6795d2eb0db3e792567c497d",
+        "67969b6b8a14699f1610c540",
+        "67952ff652a365d1167dde11",
+        "6796c50c0db3e79256853379",
+        "6795545a52a365d1167f3a9f",
+        "679528f9f9f986ea7fb790de",
+        "6795315f7e0084c5fa72ede0"
+      ]
+    },
+    "anthropology.yml": {
+      "score": 0.0,
+      "candidate_ids": [
+        "6796afe97e0084c5fa810bac",
+        "67949c597e0084c5fa6d2b66"
+      ]
+    },
+    "mathematics_phd.yml": {
+      "score": 0.0,
+      "candidate_ids": [
+        "679514f38d90554e6067d318",
+        "67958ab8a1a09a48feafdf2b",
+        "6796bfa20db3e7925684f567",
+        "6795ee388d90554e606fb5e6",
+        "67968cbca1a09a48feb99ca7",
+        "679671e9a1a09a48feb87fff",
+        "679660303e76d5b58730bb36",
+        "6795b83573bf14921fb16bc8",
+        "67954b01a1a09a48fead6390",
+        "6794b78273bf14921fa70644"
+      ]
+    },
+    "bankers.yml": {
+      "score": 44.333333333333336,
+      "candidate_ids": [
+        "679682a6f9f986ea7fc4068f",
+        "67958e223eff0c142a7f6ce7",
+        "67967cb73eff0c142a881525",
+        "67955c0b3e76d5b5872765e9",
+        "679504548d90554e606732b1",
+        "6794a6938d90554e6063ade1",
+        "6795bf108d90554e606e1a10",
+        "679703fa8a14699f16146fdf",
+        "6796005ca1a09a48feb43c55",
+        "67959c1b7e0084c5fa76dbc7"
+      ]
+    }
+  }
+}

@@ -3,13 +3,13 @@ import argparse
 import sys
 from typing import List, Dict, Any, Optional
 from pathlib import Path
-from .config.settings import config
-from .models.candidate import SearchQuery, SearchStrategy, CandidateProfile
-from .services.search_service import search_service
-from .services.evaluation_service import evaluation_service
-from .services.gpt_service import gpt_service
-from .utils.logger import get_logger, setup_logger
-from .utils.helpers import (
+from src.config.settings import config
+from src.models.candidate import SearchQuery, SearchStrategy, CandidateProfile
+from src.services.search_service import search_service
+from src.services.evaluation_service import evaluation_service
+from src.services.gpt_service import gpt_service
+from src.utils.logger import get_logger, setup_logger
+from src.utils.helpers import (
     PerformanceTimer, save_results_to_csv, format_performance_metrics,
     execute_parallel_tasks
 )

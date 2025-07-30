@@ -33,11 +33,13 @@
       "associate attorney securities corporate law"
     ],
     "radiology": [
-      "board certified radiologist MD physician",
-      "diagnostic radiology doctor medical imaging",
-      "radiologist physician hospital practice MD",
-      "medical imaging specialist radiology resident",
-      "certified radiologist diagnostic physician"
+      "board certified radiologist diagnostic imaging MD fellowship",
+      "radiology resident fellowship interventional neuroradiology MD physician",
+      "diagnostic radiology physician MRI CT ultrasound board certified",
+      "medical imaging specialist radiologist DICOM PACS MD degree",
+      "interventional radiology fellowship trained physician MD board certified",
+      "pediatric radiology specialist fellowship MD board certified physician",
+      "emergency radiology physician MD residency board certified imaging"
     ],
     "doctors_md": [
       "licensed physician MD medical doctor",
@@ -47,11 +49,16 @@
       "family medicine doctor licensed physician"
     ],
     "biology_expert": [
-      "PhD biologist molecular research scientist",
-      "biology professor university research PhD",
-      "research scientist biology molecular PhD",
-      "molecular biologist research experience PhD",
-      "biology expert professor research scientist"
+      "molecular biology PhD researcher postdoc publications Nature Science Cell",
+      "cell biology genetics genomics CRISPR gene editing PhD scientist",
+      "computational biology bioinformatics PhD machine learning systems biology",
+      "biochemistry structural biology protein crystallography PhD research",
+      "cancer biology oncology tumor immunotherapy PhD researcher publications",
+      "neuroscience neurobiology brain research PhD postdoc faculty position",
+      "developmental biology stem cell research embryology PhD scientist",
+      "microbiology virology infectious disease PhD researcher laboratory",
+      "biotechnology bioengineering synthetic biology PhD industry research",
+      "marine biology ecology evolution PhD field research publications"
     ],
     "anthropology": [
       "anthropologist PhD cultural research professor",
@@ -68,11 +75,14 @@
       "mathematics doctorate professor research academic"
     ],
     "quantitative_finance": [
-      "quantitative analyst financial modeling mathematician",
-      "quant researcher derivatives pricing financial",
-      "financial engineer quantitative analyst modeling",
-      "quantitative finance PhD mathematical modeling",
-      "mathematical finance analyst quant researcher"
+      "quantitative analyst hedge fund derivatives pricing mathematical modeling PhD",
+      "quant researcher algorithmic trading Python R financial engineering PhD",
+      "financial engineer risk modeling portfolio optimization mathematics PhD MBA",
+      "quantitative finance researcher stochastic calculus Monte Carlo PhD",
+      "mathematical finance analyst derivatives options pricing PhD CQF FRM",
+      "quantitative risk analyst VaR credit risk modeling PhD mathematics",
+      "algorithmic trading quant developer high frequency trading PhD",
+      "portfolio manager quantitative strategies factor modeling PhD CFA"
     ],
     "bankers": [
       "investment banker financial services professional",
@@ -92,12 +102,12 @@
   "bm25_keywords": {
     "tax_lawyer": ["tax attorney", "tax lawyer", "tax law", "IRS", "tax counsel", "CPA attorney", "JD tax"],
     "junior_corporate_lawyer": ["corporate attorney", "corporate lawyer", "M&A lawyer", "securities attorney", "business law", "JD corporate"],
-    "radiology": ["radiologist", "diagnostic radiology", "medical imaging", "radiologic", "DICOM", "CT scan", "MRI", "board certified radiology"],
+    "radiology": ["radiologist", "diagnostic radiology", "interventional radiology", "neuroradiology", "medical imaging", "radiologic", "DICOM", "CT scan", "MRI", "ultrasound", "board certified radiology", "radiology fellowship", "imaging specialist"],
     "doctors_md": ["physician", "medical doctor", "practicing physician", "board certified physician", "clinical medicine", "MD license"],
-    "biology_expert": ["molecular biologist", "cell biology", "genomics", "biotechnology", "life sciences", "biological research", "PhD biology"],
+    "biology_expert": ["molecular biologist", "cell biology", "genomics", "biotechnology", "life sciences", "biological research", "PhD biology", "postdoc biology", "research scientist biology", "computational biology", "bioinformatics", "biochemistry", "neuroscience", "cancer biology", "developmental biology", "microbiology", "marine biology"],
     "anthropology": ["anthropologist", "cultural anthropology", "ethnography", "anthropological research", "PhD anthropology", "social anthropology"],
     "mathematics_phd": ["pure mathematics", "applied mathematics", "mathematical analysis", "number theory", "topology", "algebra", "PhD mathematics"],
-    "quantitative_finance": ["quantitative analyst", "quant researcher", "financial modeling", "derivatives pricing", "risk modeling", "mathematical finance"],
+    "quantitative_finance": ["quantitative analyst", "quant researcher", "financial modeling", "derivatives pricing", "risk modeling", "mathematical finance", "algorithmic trading", "portfolio optimization", "financial engineering", "stochastic calculus", "Monte Carlo", "VaR modeling", "credit risk", "hedge fund", "quantitative strategies"],
     "bankers": ["investment banker", "commercial banker", "banking analyst", "loan officer", "credit analyst", "wealth management"],
     "mechanical_engineers": ["mechanical engineer", "mechanical design", "manufacturing engineer", "PE license", "HVAC engineer", "automotive engineer"]
   },
@@ -114,8 +124,8 @@
     },
     "radiology": {
       "must_have": ["MD", "doctor", "physician", "medical", "radiology", "radiologist"],
-      "preferred": ["CT", "MRI", "X-ray", "ultrasound", "DICOM", "imaging", "diagnostic", "board certified"],
-      "exclude": ["nurse", "technician", "student", "undergraduate"]
+      "preferred": ["CT", "MRI", "X-ray", "ultrasound", "DICOM", "imaging", "diagnostic", "board certified", "fellowship", "residency", "interventional", "neuroradiology", "PACS"],
+      "exclude": ["nurse", "technician", "student", "undergraduate", "radiologic technologist"]
     },
     "doctors_md": {
       "must_have": ["MD", "doctor", "physician", "medical", "clinical", "practice"],
@@ -124,8 +134,8 @@
     },
     "biology_expert": {
       "must_have": ["PhD", "biology", "research", "university", "doctorate"],
-      "preferred": ["molecular biology", "genetics", "cell biology", "CRISPR", "PCR", "sequencing", "publications", "peer-reviewed"],
-      "exclude": ["undergraduate", "bachelor", "student", "masters"]
+      "preferred": ["molecular biology", "genetics", "cell biology", "CRISPR", "PCR", "sequencing", "publications", "peer-reviewed", "postdoc", "bioinformatics", "biochemistry", "neuroscience", "computational biology", "biotechnology", "Nature", "Science", "Cell", "laboratory"],
+      "exclude": ["undergraduate", "bachelor", "student", "masters", "high school"]
     },
     "anthropology": {
       "must_have": ["PhD", "anthropology", "sociology", "research", "doctorate"],
@@ -138,9 +148,9 @@
       "exclude": ["undergraduate", "bachelor", "student", "masters"]
     },
     "quantitative_finance": {
-      "must_have": ["MBA", "finance", "quantitative", "financial"],
-      "preferred": ["risk modeling", "algorithmic trading", "Python", "portfolio optimization", "derivatives", "investment", "financial engineering"],
-      "exclude": ["undergraduate", "bachelor", "student"]
+      "must_have": ["quantitative", "financial", "mathematics", "modeling"],
+      "preferred": ["PhD", "quant", "derivatives", "risk modeling", "algorithmic trading", "Python", "R", "portfolio optimization", "financial engineering", "stochastic", "Monte Carlo", "VaR", "hedge fund", "investment", "CQF", "FRM", "CFA"],
+      "exclude": ["undergraduate", "bachelor", "student", "sales", "retail banking"]
     },
     "bankers": {
       "must_have": ["MBA", "banking", "investment", "finance"],

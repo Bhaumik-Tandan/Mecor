@@ -1,0 +1,2 @@
+config_name,average_final_score,num_candidates,strategy,gpt_enhancement
+mechanical_engineers.yml,35.0,10,hybrid,False
