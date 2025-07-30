@@ -136,9 +136,9 @@ class SafeEnhancedCriteriaAgent:
         with SafeOperationContext(f"search_{category}", wait_for_safe=True) as tracker:
             logger.info(f"🔍 Starting safe parallel search for {category}")
             
-            search_terms_list = self.search_terms[category]
-            all_candidates = []
-            
+        search_terms_list = self.search_terms[category]
+        all_candidates = []
+        
             def single_search(search_terms: str, strategy: SearchStrategy) -> List[str]:
                 """Execute a single search query safely."""
                 thread_id = threading.get_ident()
@@ -151,13 +151,13 @@ class SafeEnhancedCriteriaAgent:
                 logger.debug(f"🧵 Thread {thread_id}: Safe searching with strategy {strategy.value}")
                 
                 try:
-                    query = SearchQuery(
-                        query_text=search_terms,
-                        job_category=category,
+            query = SearchQuery(
+                query_text=search_terms,
+                job_category=category,
                         strategy=strategy,
                         max_candidates=20 if strategy == SearchStrategy.VECTOR_ONLY else 15  # Reduced for safety
-                    )
-                    candidates = self.search_service.search_candidates(query)
+            )
+            candidates = self.search_service.search_candidates(query)
                     candidate_ids = [c.id for c in candidates]
                     logger.debug(f"🧵 Thread {thread_id}: Found {len(candidate_ids)} candidates safely")
                     return candidate_ids
@@ -196,13 +196,13 @@ class SafeEnhancedCriteriaAgent:
                     time.sleep(0.1)
             
             # Deduplicate and limit results
-            unique_candidates = list(dict.fromkeys(all_candidates))
-            
-            # Ensure exactly 10 candidates
-            while len(unique_candidates) < 10 and unique_candidates:
-                unique_candidates.extend(unique_candidates[:min(5, 10-len(unique_candidates))])
-                unique_candidates = list(dict.fromkeys(unique_candidates))
-            
+        unique_candidates = list(dict.fromkeys(all_candidates))
+        
+        # Ensure exactly 10 candidates
+        while len(unique_candidates) < 10 and unique_candidates:
+            unique_candidates.extend(unique_candidates[:min(5, 10-len(unique_candidates))])
+            unique_candidates = list(dict.fromkeys(unique_candidates))
+        
             final_candidates = unique_candidates[:10]
             logger.info(f"🎯 Safe search completed for {category}: {len(final_candidates)} candidates")
             
@@ -213,7 +213,7 @@ class SafeEnhancedCriteriaAgent:
         if not candidate_ids:
             logger.warning(f"⚠️ No candidates provided for evaluation of {category}")
             return 0.0
-        
+            
         with SafeOperationContext(f"evaluate_{category}", wait_for_safe=True) as tracker:
             thread_id = threading.get_ident()
             api_call_num = self.api_counter.increment()
@@ -227,21 +227,21 @@ class SafeEnhancedCriteriaAgent:
                         logger.warning(f"🧵 Thread {thread_id}: System overloaded before API call, waiting...")
                         time.sleep(3)
                     
-                    response = requests.post(
-                        "https://mercor-dev--search-eng-interview.modal.run/evaluate",
-                        headers={
-                            "Authorization": "bhaumik.tandan@gmail.com",
-                            "Content-Type": "application/json"
-                        },
-                        json={
-                            "config_path": category,
+            response = requests.post(
+                "https://mercor-dev--search-eng-interview.modal.run/evaluate",
+                headers={
+                    "Authorization": "bhaumik.tandan@gmail.com",
+                    "Content-Type": "application/json"
+                },
+                json={
+                    "config_path": category,
                             "object_ids": candidate_ids[:5]  # Limit to 5 for safety
-                        },
+                },
                         timeout=90  # Conservative timeout
-                    )
-                    
-                    if response.status_code == 200:
-                        data = response.json()
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
                         score = data.get('average_final_score', 0)
                         self.metrics.api_calls_made += 1
                         
@@ -252,7 +252,7 @@ class SafeEnhancedCriteriaAgent:
                         if attempt < 2:
                             time.sleep(3 ** attempt)  # Conservative backoff
                             
-                except Exception as e:
+        except Exception as e:
                     logger.error(f"❌ Thread {thread_id}: Safe API call #{api_call_num} attempt {attempt + 1} error: {e}")
                     if attempt < 2:
                         time.sleep(3 ** attempt)  # Conservative backoff
@@ -279,12 +279,12 @@ class SafeEnhancedCriteriaAgent:
                 
                 # Evaluation phase
                 score = self.safe_evaluate_candidates(category, candidate_ids)
-                
+        
                 self.metrics.categories_processed += 1
                 
                 result = {
-                    'category': category,
-                    'candidates': candidate_ids,
+            'category': category,
+            'candidates': candidate_ids,
                     'score': score,
                     'processing_time': tracker.duration,
                     'thread_id': thread_id,
@@ -304,7 +304,7 @@ class SafeEnhancedCriteriaAgent:
                     'thread_id': thread_id,
                     'error': str(e),
                     'success': False
-                }
+        }
 
 def main():
     """Main execution with comprehensive safety monitoring."""

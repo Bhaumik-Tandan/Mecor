@@ -177,9 +177,9 @@ class SafeEvaluationService:
                 # Small delay between evaluations to prevent overwhelming the API
                 time.sleep(0.5)
                 return self.evaluate_candidates_safe(
-                    eval_data["config_name"], 
-                    eval_data["candidate_ids"]
-                )
+                eval_data["config_name"], 
+                eval_data["candidate_ids"]
+            )
             except Exception as e:
                 logger.error(f"Safe evaluation wrapper failed for {eval_data['config_name']}: {e}")
                 return None

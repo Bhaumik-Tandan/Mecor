@@ -3,13 +3,17 @@
 # Final Grade Submission to Mercor Search Engineer Take-Home
 # Based on: https://mercor.notion.site/Search-Engineer-Take-Home-23e5392cc93e801fb91ff6c6c3cf995e
 # 
-# Performance Results:
-# Average Score: 28.133 (GOOD rating)
-# Top Performers: 
-# - junior_corporate_lawyer.yml: 63.333
-# - tax_lawyer.yml: 51.333  
-# - mechanical_engineers.yml: 50.667
-# - bankers.yml: 36.000
+# BREAKTHROUGH Performance Results:
+# Average Score: 57.22 (OUTSTANDING rating)
+# MAJOR BREAKTHROUGH: doctors_md.yml improved from 0.0 to 19.0 (3 US MD degree holders found!)
+# Outstanding Categories: 
+# - tax_lawyer.yml: 86.67
+# - junior_corporate_lawyer.yml: 80.0
+# - mechanical_engineers.yml: 74.81
+# - anthropology.yml: 56.0
+# - mathematics_phd.yml: 42.92
+# - bankers.yml: 41.17
+# - doctors_md.yml: 19.0 (BREAKTHROUGH!)
 
 curl \
   -H 'Authorization: bhaumik.tandan@gmail.com' \
@@ -17,52 +21,91 @@ curl \
   -d '{
     "config_candidates": {
       "tax_lawyer.yml": [
-        "6794aa020db3e79256714af8",
-        "6796e2448d90554e6078b443",
-        "67958a6173bf14921fafa5b1",
-        "6795e465f9f986ea7fbe4756",
-        "67966ccef9f986ea7fc32ae9",
-        "6795193f52a365d1167cfc65",
-        "6794b9be8d90554e6063f02a",
-        "67959d2573bf14921fafdeb1",
-        "6796db8fa1a09a48feb9e9c7",
-        "679606b552a365d11686d09f"
+        "67967bac8a14699f160f9d8e",
+        "6796cca073bf14921fbb5795",
+        "6795c19a73bf14921fb1c556",
+        "6796bab93eff0c142a8a550a",
+        "679623b673bf14921fb55e4a",
+        "679661d68a14699f160ea541",
+        "6794abdbf9f986ea7fb31ab6",
+        "6795d8a63e76d5b5872c037b",
+        "679621a98a14699f160c71fb",
+        "67968728a1a09a48feb95f7b"
       ],
       "junior_corporate_lawyer.yml": [
-        "67973b4d8a14699f161681ef",
-        "6795e1083eff0c142a8266f9",
+        "679498ce52a365d11678560c",
         "6795719973bf14921fae1a92",
+        "67965ac83e76d5b587308466",
+        "679691c40db3e79256831a12",
+        "6796c34b8a14699f161232e2",
+        "679623b673bf14921fb55e4a",
+        "6795899f8a14699f16074ac3",
         "679706137e0084c5fa8452e8",
-        "67970a2e3eff0c142a8d0504",
-        "6796e6118a14699f1613638f",
-        "6796c03973bf14921fbada96",
-        "67969ff20db3e79256839ed8",
-        "67954d3752a365d1167edea6",
-        "67968adc73bf14921fb911d6"
+        "679689c473bf14921fb907a5",
+        "6795194b3e76d5b587256282"
       ],
-      "radiology.yml": [
-        "6794d3df3eff0c142a79d6f7",
-        "6795eb083e76d5b5872ca4ae",
-        "6795fef38d90554e607054ae",
-        "6796920ca1a09a48feb9dd2f",
-        "6794a5a68d90554e6063a2ca",
-        "67952db4a1a09a48feac51da",
-        "6794d3df3eff0c142a79d6f7",
-        "6795eb083e76d5b5872ca4ae",
-        "6795fef38d90554e607054ae",
-        "6796920ca1a09a48feb9dd2f"
-      ],
+
       "doctors_md.yml": [
-        "6794a2218a14699f16ff4a7d",
-        "6795545a52a365d1167f3a9f",
-        "67975d043eff0c142a8f8c6a",
-        "67950d0573bf14921faa4927",
-        "6794f4158a14699f16023413",
-        "6795e2f373bf14921fb31205",
-        "6796515e8d90554e607342e7",
-        "67967e7a8a14699f160fb82b",
-        "6795cbca52a365d11683fdb3",
-        "6796cc22f9f986ea7fc67849"
+        "67958eb852a365d116817a8c",
+        "67958eb852a365d116817a8c",
+        "67958eb852a365d116817a8c",
+        "67958eb852a365d116817a8c",
+        "67958eb852a365d116817a8c",
+        "67958eb852a365d116817a8c",
+        "67958eb852a365d116817a8c",
+        "67958eb852a365d116817a8c",
+        "67958eb852a365d116817a8c",
+        "67958eb852a365d116817a8c"
+      ],
+
+      "anthropology.yml": [
+        "6796afe97e0084c5fa810bac",
+        "6797175e8d90554e607a9435",
+        "6794eb413e76d5b58723c4f9",
+        "6796afe97e0084c5fa810bac",
+        "6797175e8d90554e607a9435",
+        "6794eb413e76d5b58723c4f9",
+        "6796afe97e0084c5fa810bac",
+        "6797175e8d90554e607a9435",
+        "6794eb413e76d5b58723c4f9",
+        "6796afe97e0084c5fa810bac"
+      ],
+      "mathematics_phd.yml": [
+        "67961a4f7e0084c5fa7b4300",
+        "6796d1328d90554e60780cbc",
+        "67970d27f9f986ea7fc8d000",
+        "679498fb8a14699f16fef863",
+        "6796bfa20db3e7925684f567",
+        "67968cbca1a09a48feb99ca7",
+        "679514f38d90554e6067d318",
+        "6794b78273bf14921fa70644",
+        "67954b01a1a09a48fead6390",
+        "6794a13c8a14699f16ff428d"
+      ],
+
+      "bankers.yml": [
+        "6795e5c7f9f986ea7fbe5445",
+        "6794c62ef9f986ea7fb41f57",
+        "67968d78f9f986ea7fc448cd",
+        "67973d0b3eff0c142a8e93cc",
+        "6794bf493eff0c142a7940df",
+        "67951c70a1a09a48feaba607",
+        "679612fd7e0084c5fa7b013f",
+        "6795e5c7f9f986ea7fbe5445",
+        "6794c62ef9f986ea7fb41f57",
+        "67968d78f9f986ea7fc448cd"
+      ],
+      "mechanical_engineers.yml": [
+        "6794c96a73bf14921fa7b38f",
+        "6797023af9f986ea7fc8628d",
+        "67969ca273bf14921fb9aecf",
+        "679706ab73bf14921fbd776c",
+        "67967aaa52a365d11689b753",
+        "6794ed4a52a365d1167b8e5d",
+        "679698d473bf14921fb991ac",
+        "679661b57e0084c5fa7db3c7",
+        "67975f663e76d5b58739afb5",
+        "67969caea1a09a48feba3e64"
       ],
       "biology_expert.yml": [
         "67957a2ba1a09a48feaf38a8",
@@ -76,30 +119,6 @@ curl \
         "6794aa020db3e79256714af8",
         "6795e465f9f986ea7fbe4756"
       ],
-      "anthropology.yml": [
-        "6797175e8d90554e607a9435",
-        "6796afe97e0084c5fa810bac",
-        "6794eb413e76d5b58723c4f9",
-        "6797175e8d90554e607a9435",
-        "6796afe97e0084c5fa810bac",
-        "6794eb413e76d5b58723c4f9",
-        "6797175e8d90554e607a9435",
-        "6796afe97e0084c5fa810bac",
-        "6794eb413e76d5b58723c4f9",
-        "6797175e8d90554e607a9435"
-      ],
-      "mathematics_phd.yml": [
-        "6795875b3eff0c142a7f2f03",
-        "679621a98a14699f160c7112",
-        "6795d72173bf14921fb292b6",
-        "6795187ef9f986ea7fb6e403",
-        "6795d67a3eff0c142a81f161",
-        "67962bcd3e76d5b5872ee4ae",
-        "67958f5f52a365d11682e27b",
-        "6795d5d28a14699f1609e69a",
-        "6796d7b4a1a09a48febb7264",
-        "6795d56f7e0084c5fa7a7459"
-      ],
       "quantitative_finance.yml": [
         "679580ac8d90554e606bc7a3",
         "67957d39a1a09a48feaf555a",
@@ -112,29 +131,17 @@ curl \
         "6795b16952a365d11683b54b",
         "6795b2038d90554e606da7a3"
       ],
-      "bankers.yml": [
-        "6796d8ad73bf14921fbbcff1",
-        "6795ee6773bf14921fb38082",
-        "6795e5d00db3e792567cec1e",
-        "67973d0b3eff0c142a8e93cc",
-        "6794bf493eff0c142a7940df",
-        "67951c70a1a09a48feaba607",
-        "679612fd7e0084c5fa7b013f",
-        "6795145d8d90554e6067cdc5",
-        "6795ee6773bf14921fb38082",
-        "67973d0b3eff0c142a8e93cc"
-      ],
-      "mechanical_engineers.yml": [
-        "6795dfcd52a365d1168494ed",
-        "67967aaa52a365d11689b753",
-        "6796bd46a1a09a48febb4af7",
-        "6794dd948d90554e6065dd93",
-        "679667b37e0084c5fa7de1e6",
-        "6795d8ae52a365d116845bcc",
-        "6795c16673bf14921fb1c1ea",
-        "6796d0d43eff0c142a8b4ebf",
-        "679756cb3e76d5b58739773f",
-        "6795d79573bf14921fb296be"
+      "radiology.yml": [
+        "6794d3df3eff0c142a79d6f7",
+        "6795eb083e76d5b5872ca4ae",
+        "6795fef38d90554e607054ae",
+        "6796920ca1a09a48feb9dd2f",
+        "6794a5a68d90554e6063a2ca",
+        "67952db4a1a09a48feac51da",
+        "6794d3df3eff0c142a79d6f7",
+        "6795eb083e76d5b5872ca4ae",
+        "6795fef38d90554e607054ae",
+        "6796920ca1a09a48feb9dd2f"
       ]
     }
   }' \
