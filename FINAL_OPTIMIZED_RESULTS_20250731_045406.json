@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "timestamp": "20250731_045406",
+    "approach": "Comprehensive optimizations with critical fixes",
+    "average_score": 32.522222222222226,
+    "total_score": 325.2222222222223,
+    "total_improvement": -159.9477777777778,
+    "successful_categories": 10,
+    "categories_above_40": 5,
+    "breakthroughs": 1,
+    "performance_class": "\u2705 GOOD"
+  },
+  "results": {
+    "doctors_md.yml": {
+      "score": 8.0,
+      "candidate_ids": [
+        "67969fed3eff0c142a898797",
+        "67952ff652a365d1167dde11",
+        "67963bbd3e76d5b5872f5a33",
+        "679528f9f9f986ea7fb790de",
+        "67973dbb8a14699f16169b4b",
+        "67969b6b8a14699f1610c540",
+        "6796851b7e0084c5fa7f1ae5",
+        "6795d2eb0db3e792567c497d",
+        "6796c50c0db3e79256853379",
+        "67966573f9f986ea7fc2e7c4"
+      ],
+      "success": true
+    },
+    "tax_lawyer.yml": {
+      "score": 53.333333333333336,
+      "candidate_ids": [
+        "679661d68a14699f160ea541",
+        "6796e2448d90554e6078b443",
+        "67951c70a1a09a48feaba64a",
+        "67966fbd3eff0c142a87b724",
+        "679540ee3eff0c142a7d2d03",
+        "67960baf3eff0c142a842753",
+        "67967bac8a14699f160f9d8e",
+        "67963f6a3eff0c142a8612e7",
+        "6796882052a365d1168a3d88",
+        "67968aacf9f986ea7fc4389b"
+      ],
+      "success": true
+    },
+    "junior_corporate_lawyer.yml": {
+      "score": 50.00000000000001,
+      "candidate_ids": [
+        "679515280db3e79256752066",
+        "6795719973bf14921fae1a92",
+        "679706137e0084c5fa8452e8",
+        "679691c40db3e79256831a12",
+        "6794b8f152a365d11679b3f4",
+        "6795e5fa3e76d5b5872c790b",
+        "6795899f8a14699f16074ac3",
+        "67966ce77e0084c5fa7e13bb",
+        "679689c473bf14921fb907a5",
+        "679498ce52a365d11678560c"
+      ],
+      "success": true
+    },
+    "mechanical_engineers.yml": {
+      "score": 65.5,
+      "candidate_ids": [
+        "6794d2d87e0084c5fa6f508b",
+        "679500788d90554e60670f04",
+        "6794ed4a52a365d1167b8e5d",
+        "6797023af9f986ea7fc8628d",
+        "67948eb63e76d5b587208cf5",
+        "67967aaa52a365d11689b753",
+        "6796d7e573bf14921fbbca14",
+        "679661b57e0084c5fa7db3c7",
+        "67975f663e76d5b58739afb5",
+        "67977faf3e76d5b5873abf49"
+      ],
+      "success": true
+    },
+    "anthropology.yml": {
+      "score": 38.0,
+      "candidate_ids": [
+        "6795b7e0f9f986ea7fbcb8e6",
+        "679573253e76d5b5872845f2",
+        "67948ceb8d90554e6062b289",
+        "6794c2048d90554e6064a174",
+        "6796fa6273bf14921fbd0fe5",
+        "67961bca3eff0c142a84da0d",
+        "6795d8380db3e792567c71e5",
+        "679516c4a1a09a48feab6bbf",
+        "6795e4aaa1a09a48feb32143",
+        "6794e31b3e76d5b5872378ff"
+      ],
+      "success": true
+    },
+    "mathematics_phd.yml": {
+      "score": 8.0,
+      "candidate_ids": [
+        "679621a98a14699f160c7112",
+        "67958ab8a1a09a48feafdf2b",
+        "6794c7a78a14699f16009892",
+        "6795ee388d90554e606fb5e6",
+        "679660303e76d5b58730bb36",
+        "679671e9a1a09a48feb87fff",
+        "67968cbca1a09a48feb99ca7",
+        "6795b83573bf14921fb16bc8",
+        "67954b01a1a09a48fead6390",
+        "679739058a14699f161669fc"
+      ],
+      "success": true
+    },
+    "bankers.yml": {
+      "score": 44.333333333333336,
+      "candidate_ids": [
+        "679682a6f9f986ea7fc4068f",
+        "67958e223eff0c142a7f6ce7",
+        "67967cb73eff0c142a881525",
+        "67955c0b3e76d5b5872765e9",
+        "679504548d90554e606732b1",
+        "6795bf108d90554e606e1a10",
+        "679703fa8a14699f16146fdf",
+        "6796005ca1a09a48feb43c55",
+        "67959c1b7e0084c5fa76dbc7",
+        "6795ee6773bf14921fb38082"
+      ],
+      "success": true
+    },
+    "biology_expert.yml": {
+      "score": 8.000000000000002,
+      "candidate_ids": [
+        "679591227e0084c5fa767cbc",
+        "67968dcb3e76d5b5873270f6",
+        "6795ea717e0084c5fa79a9ad",
+        "6796cb9273bf14921fbb4e04",
+        "67961c9a7e0084c5fa7b554d",
+        "6794e4120db3e79256732731",
+        "6794c0b33eff0c142a794af7",
+        "6795e1b98a14699f160a6aaa",
+        "6796f2c4a1a09a48febd043b",
+        "6794b45d0db3e7925671b7ac"
+      ],
+      "success": true
+    },
+    "quantitative_finance.yml": {
+      "score": 8.666666666666668,
+      "candidate_ids": [
+        "67957d39a1a09a48feaf555a",
+        "67967cec8d90554e6074ebdc",
+        "6795beca0db3e792567b7333",
+        "6795e9167e0084c5fa799c56",
+        "6794c2658a14699f160069b6",
+        "67949f677e0084c5fa6d4b5e",
+        "67950ec77e0084c5fa719044",
+        "6795fbef52a365d1168588ce",
+        "67966a590db3e7925681fc4d",
+        "67948f4f3eff0c142a778340"
+      ],
+      "success": true
+    },
+    "radiology.yml": {
+      "score": 41.38888888888889,
+      "candidate_ids": [
+        "6795c9ca8d90554e606e81b3",
+        "6794ae287e0084c5fa6dd54d",
+        "6795fef38d90554e607054ae",
+        "679675fc3eff0c142a87e393",
+        "67951d578d90554e60682528",
+        "67952db4a1a09a48feac51da"
+      ],
+      "success": true
+    }
+  },
+  "improvements": {
+    "doctors_md.yml": {
+      "old_score": 45.0,
+      "new_score": 8.0,
+      "improvement": -37.0
+    },
+    "tax_lawyer.yml": {
+      "old_score": 86.67,
+      "new_score": 53.333333333333336,
+      "improvement": -33.336666666666666
+    },
+    "junior_corporate_lawyer.yml": {
+      "old_score": 80.0,
+      "new_score": 50.00000000000001,
+      "improvement": -29.999999999999993
+    },
+    "mechanical_engineers.yml": {
+      "old_score": 59.0,
+      "new_score": 65.5,
+      "improvement": 6.5
+    },
+    "anthropology.yml": {
+      "old_score": 50.0,
+      "new_score": 38.0,
+      "improvement": -12.0
+    },
+    "mathematics_phd.yml": {
+      "old_score": 43.0,
+      "new_score": 8.0,
+      "improvement": -35.0
+    },
+    "bankers.yml": {
+      "old_score": 85.0,
+      "new_score": 44.333333333333336,
+      "improvement": -40.666666666666664
+    },
+    "biology_expert.yml": {
+      "old_score": 0.0,
+      "new_score": 8.000000000000002,
+      "improvement": 8.000000000000002
+    },
+    "quantitative_finance.yml": {
+      "old_score": 10.0,
+      "new_score": 8.666666666666668,
+      "improvement": -1.3333333333333321
+    },
+    "radiology.yml": {
+      "old_score": 26.5,
+      "new_score": 41.38888888888889,
+      "improvement": 14.888888888888893
+    }
+  }
+}
