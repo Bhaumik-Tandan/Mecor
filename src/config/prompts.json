@@ -40,11 +40,16 @@
       "radiology consultant physician"
     ],
     "doctors_md": [
-      "physician MD medical doctor",
-      "doctor medicine licensed",
-      "medical physician practicing",
-      "MD clinical practice",
-      "healthcare physician doctor"
+      "Harvard Medical School MD physician US clinical practice",
+      "Johns Hopkins Medical School MD physician US clinical",
+      "Stanford Medical School MD physician US practice",
+      "UCSF Medical School MD physician US clinical practice",
+      "Yale Medical School MD physician US clinical",
+      "Columbia Medical School MD physician US practice",
+      "Mayo Clinic Medical School MD physician US clinical",
+      "top US medical school MD physician clinical practice",
+      "US medical school MD physician US clinical experience",
+      "American medical school MD US clinical practice experience"
     ],
     "biology_expert": [
       "Harvard University PhD biology molecular research scientist",
@@ -78,18 +83,28 @@
       "mathematics PhD professor US university research publications"
     ],
     "quantitative_finance": [
-      "quantitative analyst finance",
-      "quant researcher financial",
-      "quantitative finance analyst",
-      "financial modeling expert",
-      "risk analyst quantitative"
+      "Harvard Business School MBA quantitative finance analyst",
+      "Wharton School MBA quantitative finance analyst Goldman Sachs",
+      "Stanford Graduate School Business MBA quantitative analyst",
+      "Chicago Booth MBA quantitative finance analyst",
+      "MIT Sloan MBA quantitative finance analyst",
+      "Columbia Business School MBA quantitative analyst",
+      "Northwestern Kellogg MBA quantitative finance analyst",
+      "M7 MBA quantitative finance analyst investment banking",
+      "top MBA quantitative analyst hedge fund private equity",
+      "MBA quantitative finance Goldman Sachs Morgan Stanley JPMorgan"
     ],
     "bankers": [
-      "investment banker finance",
-      "commercial banker professional",
-      "banking analyst finance",
-      "financial banker experienced",
-      "corporate banker specialist"
+      "healthcare investment banker finance MBA",
+      "healthcare investment banking M&A transactions", 
+      "healthcare banking analyst finance MBA",
+      "investment banker healthcare sector experience",
+      "healthcare private equity investment banker",
+      "healthcare M&A investment banking analyst",
+      "healthcare finance investment banker MBA",
+      "medical device healthcare investment banker",
+      "biotech healthcare investment banking analyst",
+      "healthcare sector investment banker finance"
     ],
     "mechanical_engineers": [
       "mechanical engineer professional",
@@ -131,14 +146,18 @@
       "diagnostic"
     ],
     "doctors_md": [
-      "physician",
-      "doctor",
-      "MD",
-      "medical",
-      "medicine",
-      "clinical",
-      "healthcare",
-      "professional"
+      "Harvard Medical School MD",
+      "Johns Hopkins Medical School MD",
+      "Stanford Medical School MD",
+      "UCSF Medical School MD",
+      "Yale Medical School MD",
+      "Columbia Medical School MD",
+      "Mayo Clinic Medical School MD",
+      "top US medical school MD",
+      "US medical school physician",
+      "MD physician US clinical practice",
+      "American medical school MD",
+      "US clinical practice physician"
     ],
     "biology_expert": [
       "Harvard University PhD biology",
@@ -179,24 +198,32 @@
       "mathematics professor research"
     ],
     "quantitative_finance": [
-      "quantitative",
-      "quant",
-      "finance",
-      "analyst",
-      "financial",
-      "modeling",
-      "risk",
-      "investment"
+      "Harvard Business School MBA",
+      "Wharton School MBA",
+      "Stanford Graduate School Business MBA",
+      "Chicago Booth MBA", 
+      "MIT Sloan MBA",
+      "Columbia Business School MBA",
+      "Northwestern Kellogg MBA",
+      "M7 MBA",
+      "quantitative finance analyst",
+      "Goldman Sachs MBA",
+      "Morgan Stanley MBA",
+      "JPMorgan MBA"
     ],
     "bankers": [
-      "banker",
-      "banking",
-      "finance",
-      "financial",
-      "investment",
-      "commercial",
-      "analyst",
-      "professional"
+      "healthcare investment banker",
+      "healthcare investment banking", 
+      "healthcare M&A",
+      "healthcare finance",
+      "healthcare banking",
+      "medical device investment",
+      "biotech investment banking",
+      "healthcare private equity",
+      "healthcare sector banking",
+      "healthcare transactions",
+      "investment banker healthcare",
+      "MBA healthcare finance"
     ],
     "mechanical_engineers": [
       "mechanical engineer",
@@ -263,19 +290,32 @@
     },
     "doctors_md": {
       "must_have": [
+        "MD",
         "physician",
         "doctor",
-        "MD"
+        "medical school"
       ],
       "preferred": [
-        "medical",
-        "clinical",
-        "licensed",
-        "healthcare"
+        "Harvard Medical School",
+        "Johns Hopkins Medical School",
+        "Stanford Medical School",
+        "UCSF Medical School",
+        "Yale Medical School",
+        "Columbia Medical School",
+        "Mayo Clinic Medical School",
+        "top US medical school",
+        "US clinical practice",
+        "clinical experience",
+        "US medical school",
+        "American medical school"
       ],
       "exclude": [
         "student",
-        "nurse"
+        "nurse",
+        "MBA",
+        "business",
+        "finance",
+        "non-medical degree"
       ]
     },
     "biology_expert": {
@@ -357,36 +397,54 @@
     },
     "quantitative_finance": {
       "must_have": [
+        "MBA",
+        "graduate",
         "quantitative",
-        "finance",
-        "analyst"
+        "finance"
       ],
       "preferred": [
-        "quant",
-        "financial",
-        "modeling",
-        "investment"
+        "Harvard Business School MBA",
+        "Wharton School MBA",
+        "Stanford Graduate School Business MBA",
+        "Chicago Booth MBA", 
+        "MIT Sloan MBA",
+        "Columbia Business School MBA",
+        "Northwestern Kellogg MBA",
+        "M7 MBA",
+        "MBA graduate",
+        "MBA degree",
+        "Goldman Sachs",
+        "Morgan Stanley",
+        "investment banking"
       ],
       "exclude": [
-        "student",
-        "entry level"
+        "MBA candidate",
+        "MBA student",
+        "PhD only",
+        "bachelor only"
       ]
     },
     "bankers": {
       "must_have": [
-        "banker",
-        "banking",
-        "finance"
+        "investment banking",
+        "healthcare",
+        "MBA"
       ],
       "preferred": [
-        "financial",
-        "investment",
-        "commercial",
-        "analyst"
+        "healthcare investment banking",
+        "healthcare M&A",
+        "healthcare finance",
+        "medical device",
+        "biotech",
+        "healthcare private equity",
+        "healthcare sector",
+        "US university MBA"
       ],
       "exclude": [
         "teller",
-        "customer service"
+        "customer service",
+        "retail banking",
+        "commercial banking"
       ]
     },
     "mechanical_engineers": {

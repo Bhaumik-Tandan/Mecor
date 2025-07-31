@@ -426,7 +426,7 @@ class SearchService:
         logger.info(f"Starting search for: {query.job_category}")
         
         # Use ultra-targeted search for the most challenging categories
-        ultra_strict_categories = ['biology_expert.yml', 'mathematics_phd.yml']
+        ultra_strict_categories = ['biology_expert.yml', 'mathematics_phd.yml', 'quantitative_finance.yml', 'doctors_md.yml']
         if query.job_category in ultra_strict_categories:
             logger.info(f"Using ultra-targeted search for {query.job_category}")
             candidates = self._ultra_targeted_search(query, search_config)
@@ -527,6 +527,32 @@ class SearchService:
                 "US undergraduate degree PhD mathematics Harvard MIT Stanford Princeton Yale",
                 "American Canadian British undergraduate PhD mathematics top US university"
             ]
+        elif "quantitative_finance" in job_category:
+            return [
+                "MBA graduate Harvard Business School quantitative finance analyst",
+                "MBA graduate Wharton School quantitative finance Goldman Sachs",
+                "MBA graduate Stanford Graduate School Business quantitative analyst",
+                "MBA graduate Chicago Booth quantitative finance analyst",
+                "MBA graduate MIT Sloan quantitative finance analyst",
+                "MBA graduate Columbia Business School quantitative analyst",
+                "MBA graduate Northwestern Kellogg quantitative finance",
+                "M7 MBA graduate quantitative finance analyst Goldman Sachs",
+                "MBA completed Harvard Wharton Stanford quantitative finance",
+                "MBA degree graduate quantitative analyst investment banking"
+            ]
+        elif "doctors_md" in job_category:
+            return [
+                "MD degree Harvard Medical School physician US clinical practice",
+                "MD degree Johns Hopkins Medical School physician US clinical",
+                "MD degree Stanford Medical School physician US practice",
+                "MD degree UCSF Medical School physician US clinical practice",
+                "MD degree Yale Medical School physician US clinical",
+                "MD degree Columbia Medical School physician US practice",
+                "Doctor Medicine MD degree US medical school clinical practice",
+                "MD physician degree US medical school US clinical experience",
+                "Medical Doctor MD US medical school US clinical practice",
+                "physician MD degree top US medical school clinical practice"
+            ]
         else:
             return []
 
@@ -548,6 +574,22 @@ class SearchService:
                 "PhD mathematics research US undergraduate",
                 "mathematics Harvard Yale Stanford",
                 "mathematics professor top university"
+            ]
+        elif "quantitative_finance" in job_category:
+            return [
+                "MBA graduate Harvard Wharton Stanford quantitative",
+                "M7 MBA graduate quantitative finance",
+                "MBA graduate quantitative finance Goldman Sachs",
+                "MBA degree quantitative analyst",
+                "business school MBA graduate quantitative"
+            ]
+        elif "doctors_md" in job_category:
+            return [
+                "MD degree Harvard Medical Johns Hopkins",
+                "MD physician US medical school clinical",
+                "Doctor Medicine US clinical practice",
+                "MD degree US clinical experience",
+                "physician MD US medical school"
             ]
         else:
             return []
