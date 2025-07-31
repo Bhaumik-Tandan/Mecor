@@ -47,11 +47,16 @@
       "healthcare physician doctor"
     ],
     "biology_expert": [
-      "biology PhD research scientist",
-      "molecular biology researcher",
-      "biotechnology scientist PhD",
-      "biological sciences expert",
-      "life sciences researcher"
+      "Harvard University PhD biology molecular research scientist",
+      "MIT PhD biology biotechnology researcher scientist",
+      "Stanford University PhD biology molecular scientist researcher",
+      "UC Berkeley PhD biology research scientist molecular",
+      "Yale University PhD biology research molecular scientist",
+      "Columbia University PhD biology molecular research scientist",
+      "University Toronto PhD biology research scientist molecular",
+      "Oxford University PhD biology molecular research scientist",
+      "Cambridge University PhD biology research molecular scientist",
+      "biology PhD researcher US university scientist molecular"
     ],
     "anthropology": [
       "anthropologist PhD research",
@@ -61,11 +66,16 @@
       "anthropology professor"
     ],
     "mathematics_phd": [
-      "mathematics PhD professor",
-      "mathematician research academic",
-      "mathematical sciences PhD",
-      "applied mathematics researcher",
-      "mathematics academic expert"
+      "Harvard University PhD mathematics professor research publications",
+      "MIT PhD mathematics professor research academic",
+      "Stanford University PhD mathematics professor researcher",
+      "Princeton University PhD mathematics professor research",
+      "UC Berkeley PhD mathematics professor research academic",
+      "Yale University PhD mathematics professor researcher",
+      "Columbia University PhD mathematics professor research",
+      "University Chicago PhD mathematics professor research",
+      "Cornell University PhD mathematics professor researcher",
+      "mathematics PhD professor US university research publications"
     ],
     "quantitative_finance": [
       "quantitative analyst finance",
@@ -131,14 +141,18 @@
       "professional"
     ],
     "biology_expert": [
-      "biology",
-      "biologist",
-      "research",
-      "scientist",
-      "molecular",
-      "biotechnology",
-      "life sciences",
-      "PhD"
+      "Harvard University PhD biology",
+      "MIT PhD biology",
+      "Stanford University PhD biology",
+      "UC Berkeley PhD biology",
+      "Yale University PhD biology",
+      "Columbia University PhD biology",
+      "University Toronto PhD biology",
+      "Oxford University PhD biology",
+      "Cambridge University PhD biology",
+      "PhD biology molecular",
+      "biology researcher scientist",
+      "molecular biology PhD"
     ],
     "anthropology": [
       "anthropologist",
@@ -151,14 +165,18 @@
       "PhD"
     ],
     "mathematics_phd": [
-      "mathematics",
-      "mathematician",
-      "math",
-      "PhD",
-      "research",
-      "academic",
-      "professor",
-      "mathematical"
+      "Harvard University PhD mathematics",
+      "MIT PhD mathematics",
+      "Stanford University PhD mathematics",
+      "Princeton University PhD mathematics",
+      "UC Berkeley PhD mathematics",
+      "Yale University PhD mathematics",
+      "Columbia University PhD mathematics",
+      "University Chicago PhD mathematics",
+      "Cornell University PhD mathematics",
+      "PhD mathematics professor",
+      "mathematics research academic",
+      "mathematics professor research"
     ],
     "quantitative_finance": [
       "quantitative",
@@ -262,19 +280,32 @@
     },
     "biology_expert": {
       "must_have": [
+        "PhD",
         "biology",
-        "scientist",
-        "research"
+        "research",
+        "scientist"
       ],
       "preferred": [
-        "PhD",
-        "molecular",
+        "Harvard University",
+        "MIT",
+        "Stanford University",
+        "UC Berkeley",
+        "Yale University",
+        "Columbia University",
+        "University Toronto",
+        "Oxford University",
+        "Cambridge University",
+        "molecular biology",
         "biotechnology",
-        "biologist"
+        "US university",
+        "UK university",
+        "Canadian university"
       ],
       "exclude": [
-        "student",
-        "undergraduate"
+        "undergraduate only",
+        "bachelor only",
+        "high school",
+        "non-western university"
       ]
     },
     "anthropology": {
@@ -296,19 +327,32 @@
     },
     "mathematics_phd": {
       "must_have": [
+        "PhD",
         "mathematics",
-        "mathematician",
-        "PhD"
+        "professor",
+        "research"
       ],
       "preferred": [
-        "research",
-        "academic",
-        "professor",
-        "mathematical"
+        "Harvard University",
+        "MIT",
+        "Stanford University",
+        "Princeton University",
+        "UC Berkeley",
+        "Yale University",
+        "Columbia University",
+        "University Chicago",
+        "Cornell University",
+        "top US university",
+        "publications",
+        "academic research",
+        "pure mathematics",
+        "applied mathematics"
       ],
       "exclude": [
-        "student",
-        "undergraduate"
+        "undergraduate only",
+        "bachelor only",
+        "high school",
+        "non-US university PhD"
       ]
     },
     "quantitative_finance": {

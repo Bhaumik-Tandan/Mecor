@@ -425,11 +425,132 @@ class SearchService:
         """
         logger.info(f"Starting search for: {query.job_category}")
         
-        # Use simple hybrid search for all categories
-        candidates = self.hybrid_search_enhanced(query, search_config)
+        # Use ultra-targeted search for the most challenging categories
+        ultra_strict_categories = ['biology_expert.yml', 'mathematics_phd.yml']
+        if query.job_category in ultra_strict_categories:
+            logger.info(f"Using ultra-targeted search for {query.job_category}")
+            candidates = self._ultra_targeted_search(query, search_config)
+        else:
+            # Use simple hybrid search for other categories
+            candidates = self.hybrid_search_enhanced(query, search_config)
         
         logger.info(f"Found {len(candidates)} candidates for {query.job_category}")
         return candidates
+
+    def _ultra_targeted_search(
+        self, 
+        query: SearchQuery, 
+        search_config: SearchConfig
+    ) -> List[CandidateProfile]:
+        """
+        Ultra-targeted search for categories requiring both US/UK/Canada undergrad AND top US PhD.
+        
+        Args:
+            query: Search query object
+            search_config: Search configuration
+        
+        Returns:
+            List of candidates meeting strict educational requirements
+        """
+        logger.info(f"Ultra-targeted search for: {query.job_category}")
+        
+        all_candidates = []
+        candidate_scores: Dict[str, CandidateScores] = {}
+        
+        # Get specific educational background queries
+        educational_queries = self._get_educational_background_queries(query.job_category)
+        
+        # Search with each educational query
+        for i, edu_query in enumerate(educational_queries):
+            logger.debug(f"Searching with educational query: {edu_query}")
+            
+            # Vector search focusing on educational background
+            vector_candidates = self.vector_search(edu_query, 100)
+            for j, candidate in enumerate(vector_candidates):
+                score = 1.0 / (j + 1) * (1.0 / (i + 1))
+                if candidate.id not in candidate_scores:
+                    candidate_scores[candidate.id] = CandidateScores(candidate.id)
+                candidate_scores[candidate.id].vector_score += score
+        
+        # Also search with domain-specific terms
+        domain_queries = self._get_domain_specific_educational_queries(query.job_category)
+        for domain_query in domain_queries:
+            bm25_candidates = self.bm25_search(domain_query, 50)
+            for j, candidate in enumerate(bm25_candidates):
+                score = 0.5 / (j + 1)
+                if candidate.id not in candidate_scores:
+                    candidate_scores[candidate.id] = CandidateScores(candidate.id)
+                candidate_scores[candidate.id].bm25_score += score
+        
+        # Combine and rank candidates
+        final_scores = {}
+        for candidate_id, scores in candidate_scores.items():
+            final_scores[candidate_id] = scores.vector_score * 0.7 + scores.bm25_score * 0.3
+        
+        # Get candidate profiles and sort by score
+        candidate_ids = list(final_scores.keys())
+        if candidate_ids:
+            candidates = self._get_candidate_profiles_batch(candidate_ids)
+            candidates_with_scores = [(candidate, final_scores.get(candidate.id, 0)) for candidate in candidates]
+            candidates_with_scores.sort(key=lambda x: x[1], reverse=True)
+            all_candidates = [candidate for candidate, _ in candidates_with_scores[:query.max_candidates]]
+        
+        logger.info(f"Ultra-targeted search found {len(all_candidates)} candidates")
+        return all_candidates
+
+    def _get_educational_background_queries(self, job_category: str) -> List[str]:
+        """Get ultra-specific queries targeting required educational backgrounds."""
+        
+        if "biology_expert" in job_category:
+            return [
+                "PhD biology Harvard University undergraduate US Canada UK",
+                "PhD biology MIT undergraduate United States Canada United Kingdom", 
+                "PhD biology Stanford University undergraduate American Canadian British",
+                "PhD biology UC Berkeley undergraduate US UK Canada university",
+                "PhD biology Yale University undergraduate US Canada UK degree",
+                "PhD biology Princeton University undergraduate American Canadian British",
+                "PhD biology Columbia University undergraduate US UK Canada education",
+                "undergraduate US Canada UK PhD biology top university Harvard MIT Stanford",
+                "US undergraduate degree PhD biology Harvard MIT Stanford Yale Princeton",
+                "American Canadian British undergraduate PhD biology top US university"
+            ]
+        elif "mathematics_phd" in job_category:
+            return [
+                "PhD mathematics Harvard University undergraduate US Canada UK",
+                "PhD mathematics MIT undergraduate United States Canada United Kingdom",
+                "PhD mathematics Stanford University undergraduate American Canadian British", 
+                "PhD mathematics Princeton University undergraduate US UK Canada university",
+                "PhD mathematics UC Berkeley undergraduate US Canada UK degree",
+                "PhD mathematics Yale University undergraduate American Canadian British",
+                "PhD mathematics Columbia University undergraduate US UK Canada education",
+                "undergraduate US Canada UK PhD mathematics top university Harvard MIT Princeton",
+                "US undergraduate degree PhD mathematics Harvard MIT Stanford Princeton Yale",
+                "American Canadian British undergraduate PhD mathematics top US university"
+            ]
+        else:
+            return []
+
+    def _get_domain_specific_educational_queries(self, job_category: str) -> List[str]:
+        """Get domain-specific BM25 queries for educational targeting."""
+        
+        if "biology_expert" in job_category:
+            return [
+                "biology molecular Harvard MIT Stanford",
+                "PhD biology research US university",
+                "molecular biology Harvard Yale Princeton",
+                "biology PhD US undergraduate",
+                "research scientist biology top university"
+            ]
+        elif "mathematics_phd" in job_category:
+            return [
+                "mathematics PhD Harvard MIT Princeton",
+                "mathematics professor US university", 
+                "PhD mathematics research US undergraduate",
+                "mathematics Harvard Yale Stanford",
+                "mathematics professor top university"
+            ]
+        else:
+            return []
 
     def _get_candidate_profiles_batch(self, candidate_ids: List[str]) -> List[CandidateProfile]:
         """
