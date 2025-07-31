@@ -426,7 +426,7 @@ class SearchService:
         logger.info(f"Starting search for: {query.job_category}")
         
         # Use ultra-targeted search for the most challenging categories
-        ultra_strict_categories = ['biology_expert.yml', 'mathematics_phd.yml', 'quantitative_finance.yml', 'doctors_md.yml', 'anthropology.yml']
+        ultra_strict_categories = ['biology_expert.yml', 'mathematics_phd.yml', 'quantitative_finance.yml', 'doctors_md.yml']
         if query.job_category in ultra_strict_categories:
             logger.info(f"Using ultra-targeted search for {query.job_category}")
             candidates = self._ultra_targeted_search(query, search_config)
@@ -529,37 +529,29 @@ class SearchService:
             ]
         elif "quantitative_finance" in job_category:
             return [
-                "MBA graduate Harvard Business School quantitative analyst Goldman Sachs",
-                "MBA graduate Wharton School quantitative finance Morgan Stanley",
-                "MBA graduate Stanford GSB quantitative analyst JPMorgan",
-                "MBA graduate Chicago Booth quantitative finance Citadel",
-                "MBA graduate MIT Sloan quantitative analyst Two Sigma",
-                "MBA graduate Columbia Business School quantitative finance",
-                "MBA graduate Northwestern Kellogg quantitative analyst",
-                "M7 MBA graduate finance quantitative analyst investment banking",
-                "business school MBA graduate Wall Street quantitative finance",
-                "finance MBA graduate quantitative analyst hedge fund"
+                "MBA graduate Harvard Business School quantitative finance analyst",
+                "MBA graduate Wharton School quantitative finance Goldman Sachs",
+                "MBA graduate Stanford Graduate School Business quantitative analyst",
+                "MBA graduate Chicago Booth quantitative finance analyst",
+                "MBA graduate MIT Sloan quantitative finance analyst",
+                "MBA graduate Columbia Business School quantitative analyst",
+                "MBA graduate Northwestern Kellogg quantitative finance",
+                "M7 MBA graduate quantitative finance analyst Goldman Sachs",
+                "MBA completed Harvard Wharton Stanford quantitative finance",
+                "MBA degree graduate quantitative analyst investment banking"
             ]
         elif "doctors_md" in job_category:
             return [
-                "MD degree Harvard Medical School general practitioner US clinical practice",
-                "MD degree Johns Hopkins family medicine physician US clinical",
-                "MD degree Stanford Medical School internal medicine US clinical practice",
-                "MD degree UCSF general practitioner physician US clinical",
-                "MD degree Yale Medical School family medicine US clinical practice",
-                "MD degree Columbia Medical School general practice US physician",
-                "MD physician US medical school general practitioner clinical practice",
-                "family medicine MD US medical school clinical practice",
-                "general practitioner MD US physician clinical experience",
-                "primary care physician MD US medical school practice"
-            ]
-        elif "anthropology" in job_category:
-            return [
-                "PhD student anthropology current dissertation",
-                "anthropology PhD candidate dissertation student",
-                "current PhD anthropology dissertation research",
-                "anthropology student PhD dissertation current",
-                "PhD candidate anthropology current student"
+                "MD degree Harvard Medical School physician US clinical practice",
+                "MD degree Johns Hopkins Medical School physician US clinical",
+                "MD degree Stanford Medical School physician US practice",
+                "MD degree UCSF Medical School physician US clinical practice",
+                "MD degree Yale Medical School physician US clinical",
+                "MD degree Columbia Medical School physician US practice",
+                "Doctor Medicine MD degree US medical school clinical practice",
+                "MD physician degree US medical school US clinical experience",
+                "Medical Doctor MD US medical school US clinical practice",
+                "physician MD degree top US medical school clinical practice"
             ]
         else:
             return []
@@ -585,27 +577,19 @@ class SearchService:
             ]
         elif "quantitative_finance" in job_category:
             return [
-                "MBA graduate finance Goldman Sachs Morgan Stanley",
-                "M7 MBA quantitative analyst Wall Street",
-                "business school MBA finance quantitative",
-                "MBA finance quantitative analyst",
-                "investment banking MBA quantitative"
+                "MBA graduate Harvard Wharton Stanford quantitative",
+                "M7 MBA graduate quantitative finance",
+                "MBA graduate quantitative finance Goldman Sachs",
+                "MBA degree quantitative analyst",
+                "business school MBA graduate quantitative"
             ]
         elif "doctors_md" in job_category:
             return [
-                "MD general practitioner US clinical practice",
-                "family medicine MD US physician",
-                "internal medicine MD US clinical",
-                "primary care MD US practice",
-                "MD US medical school general practice"
-            ]
-        elif "anthropology" in job_category:
-            return [
-                "PhD student anthropology current dissertation",
-                "anthropology PhD candidate dissertation student",
-                "current PhD anthropology dissertation research",
-                "anthropology student PhD dissertation current",
-                "PhD candidate anthropology current student"
+                "MD degree Harvard Medical Johns Hopkins",
+                "MD physician US medical school clinical",
+                "Doctor Medicine US clinical practice",
+                "MD degree US clinical experience",
+                "physician MD US medical school"
             ]
         else:
             return []
