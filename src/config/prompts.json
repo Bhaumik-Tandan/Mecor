@@ -19,11 +19,16 @@
   },
   "domain_specific_queries": {
     "tax_lawyer": [
-      "tax attorney JD taxation law",
-      "tax lawyer professional licensed",
-      "tax counsel legal practice",
-      "taxation attorney experienced",
-      "tax law specialist lawyer"
+      "M&A tax attorney JD corporate transactions tax implications",
+      "transactional tax lawyer JD M&A tax advice corporate deals",
+      "corporate tax attorney JD M&A transactions tax planning",
+      "tax attorney JD advising corporate transactions M&A tax",
+      "M&A tax counsel attorney corporate transactions tax implications",
+      "transactional tax attorney JD corporate M&A tax planning deals",
+      "corporate transactions tax lawyer JD M&A tax advice",
+      "tax attorney M&A corporate transactions tax implications advice",
+      "M&A tax specialist attorney JD corporate transactions counsel",
+      "corporate M&A tax attorney JD transactional tax advice"
     ],
     "junior_corporate_lawyer": [
       "corporate attorney JD business law",
@@ -40,16 +45,16 @@
       "radiology consultant physician"
     ],
     "doctors_md": [
-      "Harvard Medical School MD physician US clinical practice",
-      "Johns Hopkins Medical School MD physician US clinical",
-      "Stanford Medical School MD physician US practice",
-      "UCSF Medical School MD physician US clinical practice",
-      "Yale Medical School MD physician US clinical",
-      "Columbia Medical School MD physician US practice",
-      "Mayo Clinic Medical School MD physician US clinical",
-      "top US medical school MD physician clinical practice",
-      "US medical school MD physician US clinical experience",
-      "American medical school MD US clinical practice experience"
+      "MD Harvard Medical School general practitioner US clinical",
+      "MD Johns Hopkins family medicine US clinical practice",
+      "MD Stanford Medical School internal medicine US physician",
+      "MD UCSF general practitioner US clinical practice",
+      "MD Yale Medical School family physician US clinical",
+      "MD Columbia Medical School general practice US physician",
+      "general practitioner MD US medical school clinical practice",
+      "family medicine physician MD US clinical practice",
+      "internal medicine MD US physician clinical experience",
+      "primary care physician MD US medical school clinical"
     ],
     "biology_expert": [
       "Harvard University PhD biology molecular research scientist",
@@ -64,11 +69,21 @@
       "biology PhD researcher US university scientist molecular"
     ],
     "anthropology": [
-      "anthropologist PhD research",
-      "anthropology researcher academic",
-      "cultural anthropologist",
-      "social anthropology expert",
-      "anthropology professor"
+      "PhD student anthropology",
+      "PhD candidate anthropology",
+      "anthropology dissertation",
+      "current PhD anthropology",
+      "anthropology PhD student",
+      "dissertation anthropology",
+      "PhD anthropology 2023",
+      "PhD anthropology 2024",
+      "PhD anthropology 2025",
+      "anthropology PhD candidate",
+      "current anthropology PhD",
+      "anthropology graduate 2023",
+      "anthropology graduate 2024",
+      "PhD student dissertation",
+      "ethnography PhD student"
     ],
     "mathematics_phd": [
       "Harvard University PhD mathematics professor research publications",
@@ -83,16 +98,16 @@
       "mathematics PhD professor US university research publications"
     ],
     "quantitative_finance": [
-      "Harvard Business School MBA quantitative finance analyst",
-      "Wharton School MBA quantitative finance analyst Goldman Sachs",
-      "Stanford Graduate School Business MBA quantitative analyst",
-      "Chicago Booth MBA quantitative finance analyst",
-      "MIT Sloan MBA quantitative finance analyst",
-      "Columbia Business School MBA quantitative analyst",
-      "Northwestern Kellogg MBA quantitative finance analyst",
-      "M7 MBA quantitative finance analyst investment banking",
-      "top MBA quantitative analyst hedge fund private equity",
-      "MBA quantitative finance Goldman Sachs Morgan Stanley JPMorgan"
+      "MBA Harvard Business School Goldman Sachs quantitative analyst",
+      "MBA Wharton School Morgan Stanley quantitative finance",
+      "MBA Stanford GSB JPMorgan quantitative analyst",
+      "MBA Chicago Booth Citadel quantitative finance",
+      "MBA MIT Sloan Two Sigma quantitative analyst",
+      "MBA Columbia Business School quantitative finance Goldman",
+      "MBA Kellogg Northwestern quantitative analyst finance",
+      "M7 MBA investment banking quantitative analyst",
+      "business school MBA quantitative finance Wall Street",
+      "finance MBA quantitative analyst hedge fund"
     ],
     "bankers": [
       "healthcare investment banker finance MBA",
@@ -116,14 +131,20 @@
   },
   "bm25_keywords": {
     "tax_lawyer": [
-      "tax attorney",
-      "tax lawyer",
-      "taxation",
-      "tax law",
-      "lawyer",
-      "attorney",
-      "legal",
-      "professional"
+      "M&A tax attorney",
+      "transactional tax lawyer", 
+      "M&A tax counsel",
+      "corporate transactions tax",
+      "M&A tax specialist",
+      "transactional tax counsel",
+      "corporate M&A tax",
+      "M&A tax advice",
+      "tax attorney M&A",
+      "corporate deals tax",
+      "M&A tax planning",
+      "transactional tax advice",
+      "corporate M&A attorney",
+      "tax implications M&A"
     ],
     "junior_corporate_lawyer": [
       "corporate attorney",
@@ -146,18 +167,16 @@
       "diagnostic"
     ],
     "doctors_md": [
-      "Harvard Medical School MD",
-      "Johns Hopkins Medical School MD",
-      "Stanford Medical School MD",
-      "UCSF Medical School MD",
-      "Yale Medical School MD",
-      "Columbia Medical School MD",
-      "Mayo Clinic Medical School MD",
-      "top US medical school MD",
-      "US medical school physician",
-      "MD physician US clinical practice",
-      "American medical school MD",
-      "US clinical practice physician"
+      "MD Harvard Medical School physician US clinical",
+      "MD Johns Hopkins physician US clinical practice",
+      "MD Stanford Medical School US clinical",
+      "MD UCSF physician US clinical practice",
+      "MD Yale Medical School US clinical",
+      "MD Columbia Medical School US physician",
+      "physician MD US medical school clinical practice",
+      "general practitioner MD US clinical",
+      "family medicine MD US clinical practice",
+      "internal medicine MD US physician"
     ],
     "biology_expert": [
       "Harvard University PhD biology",
@@ -174,14 +193,21 @@
       "molecular biology PhD"
     ],
     "anthropology": [
-      "anthropologist",
-      "anthropology",
-      "research",
-      "cultural",
-      "social",
-      "academic",
-      "professor",
-      "PhD"
+      "PhD student anthropology",
+      "PhD candidate anthropology",
+      "anthropology dissertation",
+      "current PhD anthropology",
+      "anthropology PhD student",
+      "dissertation anthropology",
+      "PhD anthropology 2023",
+      "PhD anthropology 2024",
+      "PhD anthropology 2025",
+      "anthropology PhD candidate",
+      "current anthropology PhD",
+      "anthropology graduate 2023",
+      "anthropology graduate 2024",
+      "PhD student dissertation",
+      "ethnography PhD student"
     ],
     "mathematics_phd": [
       "Harvard University PhD mathematics",
@@ -198,18 +224,18 @@
       "mathematics professor research"
     ],
     "quantitative_finance": [
-      "Harvard Business School MBA",
-      "Wharton School MBA",
-      "Stanford Graduate School Business MBA",
-      "Chicago Booth MBA", 
-      "MIT Sloan MBA",
-      "Columbia Business School MBA",
-      "Northwestern Kellogg MBA",
-      "M7 MBA",
-      "quantitative finance analyst",
+      "MBA Harvard Business School",
+      "MBA Wharton School",
+      "MBA Stanford GSB",
+      "MBA Chicago Booth", 
+      "MBA MIT Sloan",
+      "MBA Columbia Business School",
+      "MBA Northwestern Kellogg",
+      "M7 MBA finance",
+      "quantitative analyst MBA",
       "Goldman Sachs MBA",
       "Morgan Stanley MBA",
-      "JPMorgan MBA"
+      "investment banking MBA"
     ],
     "bankers": [
       "healthcare investment banker",
@@ -240,18 +266,33 @@
     "tax_lawyer": {
       "must_have": [
         "lawyer",
-        "attorney",
-        "legal"
+        "attorney", 
+        "JD",
+        "tax",
+        "M&A OR transactional OR corporate transactions"
       ],
       "preferred": [
-        "tax",
-        "taxation",
-        "licensed",
-        "JD"
+        "M&A tax",
+        "transactional tax",
+        "corporate transactions tax",
+        "M&A tax attorney",
+        "transactional tax lawyer",
+        "M&A tax counsel",
+        "corporate M&A tax",
+        "tax implications",
+        "M&A tax advice",
+        "corporate deals",
+        "M&A tax planning",
+        "transactional tax advice"
       ],
       "exclude": [
         "student",
-        "paralegal"
+        "paralegal",
+        "non-attorney",
+        "personal tax only",
+        "individual tax only",
+        "no corporate experience",
+        "no M&A experience"
       ]
     },
     "junior_corporate_lawyer": {
@@ -292,8 +333,9 @@
       "must_have": [
         "MD",
         "physician",
-        "doctor",
-        "medical school"
+        "US medical school",
+        "US clinical practice",
+        "general practitioner"
       ],
       "preferred": [
         "Harvard Medical School",
@@ -303,11 +345,12 @@
         "Yale Medical School",
         "Columbia Medical School",
         "Mayo Clinic Medical School",
-        "top US medical school",
-        "US clinical practice",
-        "clinical experience",
-        "US medical school",
-        "American medical school"
+        "family medicine",
+        "internal medicine",
+        "primary care",
+        "general practice",
+        "clinical experience US",
+        "US physician"
       ],
       "exclude": [
         "student",
@@ -315,7 +358,10 @@
         "MBA",
         "business",
         "finance",
-        "non-medical degree"
+        "non-medical degree",
+        "foreign medical school",
+        "international medical",
+        "non-US clinical"
       ]
     },
     "biology_expert": {
@@ -350,19 +396,33 @@
     },
     "anthropology": {
       "must_have": [
+        "PhD",
         "anthropology",
-        "anthropologist",
-        "research"
+        "student OR graduate OR candidate"
       ],
       "preferred": [
-        "PhD",
-        "academic",
-        "cultural",
-        "professor"
+        "PhD student",
+        "PhD candidate", 
+        "current PhD",
+        "dissertation",
+        "2023",
+        "2024",
+        "2025",
+        "recent PhD",
+        "PhD graduate",
+        "completing dissertation",
+        "current anthropology",
+        "anthropology student",
+        "ethnography",
+        "cultural anthropology",
+        "social anthropology"
       ],
       "exclude": [
-        "student",
-        "undergraduate"
+        "undergraduate",
+        "masters only",
+        "high school",
+        "pre-2020 PhD",
+        "old PhD"
       ]
     },
     "mathematics_phd": {
