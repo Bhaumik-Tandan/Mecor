@@ -40,11 +40,24 @@ class SearchService:
 
     def get_domain_queries(self, job_category: str) -> List[str]:
         """Get domain-specific queries for a job category."""
-        # DISABLED GPT for faster performance
         category_name = job_category.replace("_", " ").replace(".yml", "")
         domain_queries = self.prompts_config.get("domain_specific_queries", {})
         static_queries = domain_queries.get(category_name, [f"professional {category_name}"])
-        logger.debug(f"Using {len(static_queries)} static queries for {job_category}")
+        
+        # For failed categories, use GPT enhancement if available
+        failed_categories = ['biology_expert', 'anthropology', 'quantitative_finance', 'bankers']
+        if any(cat in job_category for cat in failed_categories):
+            from ..services.gpt_service import gpt_service
+            if gpt_service.is_available():
+                try:
+                    gpt_queries = gpt_service.generate_enhanced_domain_queries(job_category)
+                    if gpt_queries:
+                        static_queries = gpt_queries  # Use GPT queries for failed categories
+                        logger.info(f"Using GPT-enhanced queries for {job_category}")
+                except Exception as e:
+                    logger.warning(f"GPT query enhancement failed for {job_category}: {e}")
+        
+        logger.debug(f"Using {len(static_queries)} queries for {job_category}")
         return static_queries
 
     def get_bm25_keywords(self, job_category: str) -> List[str]:
@@ -395,6 +408,29 @@ class SearchService:
         """
         return self.hybrid_search_enhanced(query, search_config)
 
+    def enhanced_domain_search(
+        self, 
+        query: SearchQuery, 
+        search_config: SearchConfig
+    ) -> List[CandidateProfile]:
+        """
+        Simple domain-specific search using hybrid approach.
+        
+        Args:
+            query: Search query object
+            search_config: Search configuration
+        
+        Returns:
+            List of ranked candidates
+        """
+        logger.info(f"Starting search for: {query.job_category}")
+        
+        # Use simple hybrid search for all categories
+        candidates = self.hybrid_search_enhanced(query, search_config)
+        
+        logger.info(f"Found {len(candidates)} candidates for {query.job_category}")
+        return candidates
+
     def _get_candidate_profiles_batch(self, candidate_ids: List[str]) -> List[CandidateProfile]:
         """
         Retrieve full candidate profiles for given IDs with batch processing.
@@ -476,27 +512,43 @@ class SearchService:
         strategy: SearchStrategy = SearchStrategy.HYBRID
     ) -> List[CandidateProfile]:
         """
-        Main entry point for candidate search.
+        Search for candidates using the specified strategy.
+        
         Args:
             query: Search query object
             strategy: Search strategy to use
+            
         Returns:
-            List of ranked candidates
+            List of candidate profiles
         """
         search_config = SearchConfig(
             strategy=strategy,
             max_candidates=query.max_candidates,
             vector_weight=config.search.vector_search_weight,
-            bm25_weight=config.search.bm25_search_weight
+            bm25_weight=config.search.bm25_search_weight,
+            use_hard_filters=True
         )
+        
         if strategy == SearchStrategy.VECTOR_ONLY:
             return self.vector_search(query.query_text, query.max_candidates)
         elif strategy == SearchStrategy.BM25_ONLY:
-            keywords = self.get_bm25_keywords(query.job_category)
-            return self.bm25_search(keywords, query.max_candidates)
+            return self.bm25_search(query.job_category, query.max_candidates)
         elif strategy == SearchStrategy.HYBRID:
-            return self.hybrid_search(query, search_config)
+            # Use enhanced domain search for better precision
+            return self.enhanced_domain_search(query, search_config)
+        elif strategy == SearchStrategy.GPT_ENHANCED:
+            # For GPT enhanced, use both enhanced search and GPT reranking
+            candidates = self.enhanced_domain_search(query, search_config)
+            from ..services.gpt_service import gpt_service
+            if gpt_service.is_available() and candidates:
+                try:
+                    candidates = gpt_service.rerank_candidates(
+                        query.job_category, candidates, query.max_candidates
+                    )
+                except Exception as e:
+                    logger.warning(f"GPT reranking failed: {e}")
+            return candidates
         else:
-            logger.warning(f"Unsupported search strategy: {strategy}")
-            return self.hybrid_search(query, search_config)
+            # Default to enhanced hybrid search
+            return self.enhanced_domain_search(query, search_config)
 search_service = SearchService() 

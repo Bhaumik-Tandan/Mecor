@@ -110,46 +110,83 @@ class GPTService:
         if not self.client or not candidates:
             logger.warning("GPT service not available or no candidates to rerank")
             return candidates[:top_k]
+        
         logger.info(f"Reranking {len(candidates)} candidates using GPT for {job_category}")
+        
         try:
+            # Limit to top 20 for token efficiency and better processing
+            candidates_to_process = candidates[:20]
             candidates_text = ""
-            for i, candidate in enumerate(candidates[:20]):  # Limit to top 20 for token efficiency
+            candidate_ids = []
+            
+            for i, candidate in enumerate(candidates_to_process, 1):
                 summary = (candidate.summary or "")[:200]  # Truncate for token efficiency
-                candidates_text += f"{i+1}. ID: {candidate.id} | Name: {candidate.name} | Summary: {summary}\n"
+                candidates_text += f"{i}. ID: {candidate.id}\n   Name: {candidate.name}\n   Summary: {summary}\n\n"
+                candidate_ids.append(candidate.id)
+            
             prompt_config = self.prompts_config.get("candidate_reranking", {})
             system_prompt = prompt_config.get("system_prompt", "You are a recruiter.")
-            user_prompt_template = prompt_config.get("user_prompt_template", "Rank these candidates: {candidates_text}")
-            user_prompt = user_prompt_template.format(
-                job_category=job_category,
-                candidates_text=candidates_text
-            )
+            
+            # Create the user prompt without template substitution issues
+            user_prompt = f"""Analyze these candidates for the role: {job_category}
+
+Evaluate based on:
+1. Genuine domain expertise and specialization
+2. Relevant educational background and credentials  
+3. Field-specific experience and achievements
+4. Professional certifications and licenses
+5. Actual work in this specific domain (not just keywords)
+
+Candidates:
+{candidates_text}
+
+Return ONLY a JSON array of candidate IDs in BEST to WORST order:
+{json.dumps(candidate_ids[:3])}  (example format - include ALL candidate IDs)
+
+Include all provided candidate IDs, reordered by relevance."""
+            
             messages = [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
             ]
+            
             response = self._make_gpt_request(
                 messages,
                 temperature=prompt_config.get("temperature", 0.1),
                 max_tokens=prompt_config.get("max_tokens", 800)
             )
+            
             try:
                 reranked_ids = json.loads(response)
-                if isinstance(reranked_ids, list):
-                    id_to_candidate = {c.id: c for c in candidates}
+                if isinstance(reranked_ids, list) and len(reranked_ids) > 0:
+                    # Create mapping for quick lookup
+                    id_to_candidate = {c.id: c for c in candidates_to_process}
                     reranked_candidates = []
+                    
+                    # Add candidates in the order specified by GPT
                     for candidate_id in reranked_ids:
                         if candidate_id in id_to_candidate:
                             reranked_candidates.append(id_to_candidate[candidate_id])
+                    
+                    # Add any missing candidates at the end
                     reranked_ids_set = set(reranked_ids)
-                    for candidate in candidates:
+                    for candidate in candidates_to_process:
                         if candidate.id not in reranked_ids_set:
                             reranked_candidates.append(candidate)
+                    
+                    # Add remaining candidates that weren't processed
+                    if len(candidates) > 20:
+                        reranked_candidates.extend(candidates[20:])
+                    
                     logger.info(f"Successfully reranked candidates using GPT")
                     return reranked_candidates[:top_k]
+                    
             except json.JSONDecodeError:
                 logger.warning("GPT reranking response was not valid JSON")
+                
         except Exception as e:
             logger.error(f"Failed to rerank candidates using GPT: {e}")
+        
         return candidates[:top_k]
     def extract_hard_filters(self, job_category: str) -> Dict[str, List[str]]:
         """

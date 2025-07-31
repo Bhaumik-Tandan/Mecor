@@ -1,13 +1,13 @@
 {
   "query_enhancement": {
     "system_prompt": "You are an expert recruiter and search specialist. Your job is to generate highly effective search queries for finding the best candidates.",
-    "user_prompt_template": "Generate 5 highly effective search queries to find the best candidates for: \"{job_category}\"\n\nConsider:\n- Specific job titles and roles\n- Required qualifications and certifications\n- Industry-specific keywords\n- Experience levels and specializations\n- Professional credentials\n\nReturn ONLY a JSON array of 5 optimized search queries, no explanation:\n[\"query1\", \"query2\", \"query3\", \"query4\", \"query5\"]",
+    "user_prompt_template": "Generate 5 highly effective search queries to find the best candidates for: \"{job_category}\"\n\nConsider:\n- Specific job titles and roles\n- Required qualifications and certifications\n- Industry-specific keywords\n- Experience levels and specializations\n- Professional credentials\n\nReturn ONLY a JSON array of 5 optimized search queries:\n[\"query1\", \"query2\", \"query3\", \"query4\", \"query5\"]",
     "temperature": 0.3,
     "max_tokens": 500
   },
   "candidate_reranking": {
     "system_prompt": "You are an expert recruiter evaluating candidates. Your job is to rerank candidates from BEST FIT to WORST FIT based on job requirements.",
-    "user_prompt_template": "Analyze these candidates for the role: \"{job_category}\"\n\nEvaluate based on:\n1. Relevant experience and qualifications\n2. Required certifications/licenses\n3. Industry expertise\n4. Career progression\n5. Specialization alignment\n\nCandidates:\n{candidates_text}\n\nReturn ONLY a JSON array of candidate IDs in BEST to WORST order:\n[\"{example_id_1}\", \"{example_id_2}\", ...]\n\nInclude all provided candidate IDs, reordered by relevance.",
+    "user_prompt_template": "Analyze these candidates for the role: \"{job_category}\"\n\nEvaluate based on:\n1. Relevant experience and qualifications\n2. Required certifications/licenses\n3. Industry expertise\n4. Career progression\n5. Specialization alignment\n\nCandidates:\n{candidates_text}\n\nReturn ONLY a JSON array of candidate IDs in BEST to WORST order:\n[\"id1\", \"id2\", \"id3\", ...]\n\nInclude all provided candidate IDs, reordered by relevance.",
     "temperature": 0.1,
     "max_tokens": 800
   },
@@ -19,344 +19,347 @@
   },
   "domain_specific_queries": {
     "tax_lawyer": [
-      "experienced tax lawyer professional certified",
-      "senior tax lawyer expert qualified",
-      "licensed tax lawyer specialist",
-      "tax lawyer professional degree certified",
-      "qualified tax lawyer experienced"
+      "tax attorney JD taxation law",
+      "tax lawyer professional licensed",
+      "tax counsel legal practice",
+      "taxation attorney experienced",
+      "tax law specialist lawyer"
     ],
     "junior_corporate_lawyer": [
-      "experienced junior corporate lawyer professional certified",
-      "senior junior corporate lawyer expert qualified",
-      "licensed junior corporate lawyer specialist",
-      "junior corporate lawyer professional degree certified",
-      "qualified junior corporate lawyer experienced"
+      "corporate attorney JD business law",
+      "corporate lawyer licensed professional",
+      "business attorney legal counsel",
+      "corporate legal advisor",
+      "commercial lawyer experienced"
     ],
     "radiology": [
-      "top radiology professional expert",
-      "elite radiology specialist leader",
-      "premier radiology consultant senior",
-      "distinguished radiology professional",
-      "exceptional radiology expert leader"
+      "radiologist MD board certified",
+      "radiology physician medical imaging",
+      "diagnostic radiology doctor",
+      "medical imaging specialist",
+      "radiology consultant physician"
     ],
     "doctors_md": [
-      "experienced doctors md professional certified",
-      "senior doctors md expert qualified",
-      "licensed doctors md specialist",
-      "doctors md professional degree certified",
-      "qualified doctors md experienced"
+      "physician MD medical doctor",
+      "doctor medicine licensed",
+      "medical physician practicing",
+      "MD clinical practice",
+      "healthcare physician doctor"
     ],
     "biology_expert": [
-      "PhD molecular biology research scientist Nature Science publications",
-      "biotechnology pharmaceutical research scientist PhD",
-      "computational biology bioinformatics data scientist PhD",
-      "medical research scientist biology PhD clinical trials",
-      "academic biology professor PhD university research"
+      "biology PhD research scientist",
+      "molecular biology researcher",
+      "biotechnology scientist PhD",
+      "biological sciences expert",
+      "life sciences researcher"
     ],
     "anthropology": [
-      "experienced anthropology professional certified",
-      "senior anthropology expert qualified",
-      "licensed anthropology specialist",
-      "anthropology professional degree certified",
-      "qualified anthropology experienced"
+      "anthropologist PhD research",
+      "anthropology researcher academic",
+      "cultural anthropologist",
+      "social anthropology expert",
+      "anthropology professor"
     ],
     "mathematics_phd": [
-      "experienced mathematics phd professional certified",
-      "senior mathematics phd expert qualified",
-      "licensed mathematics phd specialist",
-      "mathematics phd professional degree certified",
-      "qualified mathematics phd experienced"
+      "mathematics PhD professor",
+      "mathematician research academic",
+      "mathematical sciences PhD",
+      "applied mathematics researcher",
+      "mathematics academic expert"
     ],
     "quantitative_finance": [
-      "quantitative analyst hedge fund derivatives mathematical modeling",
-      "financial engineer PhD mathematics algorithmic trading",
-      "risk analyst quantitative modeling statistical analysis",
-      "portfolio manager quantitative strategies financial markets",
-      "data scientist finance PhD statistics machine learning"
+      "quantitative analyst finance",
+      "quant researcher financial",
+      "quantitative finance analyst",
+      "financial modeling expert",
+      "risk analyst quantitative"
     ],
     "bankers": [
-      "experienced bankers professional certified",
-      "senior bankers expert qualified",
-      "licensed bankers specialist",
-      "bankers professional degree certified",
-      "qualified bankers experienced"
+      "investment banker finance",
+      "commercial banker professional",
+      "banking analyst finance",
+      "financial banker experienced",
+      "corporate banker specialist"
     ],
     "mechanical_engineers": [
-      "experienced mechanical engineers professional certified",
-      "senior mechanical engineers expert qualified",
-      "licensed mechanical engineers specialist",
-      "mechanical engineers professional degree certified",
-      "qualified mechanical engineers experienced"
+      "mechanical engineer professional",
+      "engineering mechanical design",
+      "mechanical engineering expert",
+      "engineer mechanical systems",
+      "mechanical design engineer"
     ]
   },
   "bm25_keywords": {
     "tax_lawyer": [
+      "tax attorney",
       "tax lawyer",
-      "professional",
-      "certified",
-      "licensed",
-      "experienced",
-      "qualified",
-      "expert",
-      "senior"
+      "taxation",
+      "tax law",
+      "lawyer",
+      "attorney",
+      "legal",
+      "professional"
     ],
     "junior_corporate_lawyer": [
-      "junior corporate lawyer",
-      "professional",
-      "certified",
-      "licensed",
-      "experienced",
-      "qualified",
-      "expert",
-      "senior"
+      "corporate attorney",
+      "corporate lawyer",
+      "business law",
+      "lawyer",
+      "attorney",
+      "legal",
+      "corporate",
+      "professional"
     ],
     "radiology": [
+      "radiologist",
       "radiology",
-      "top",
-      "elite",
-      "premier",
-      "distinguished",
-      "exceptional",
-      "professional",
-      "expert",
-      "leader"
+      "medical imaging",
+      "physician",
+      "doctor",
+      "medical",
+      "imaging",
+      "diagnostic"
     ],
     "doctors_md": [
-      "doctors md",
-      "professional",
-      "certified",
-      "licensed",
-      "experienced",
-      "qualified",
-      "expert",
-      "senior"
+      "physician",
+      "doctor",
+      "MD",
+      "medical",
+      "medicine",
+      "clinical",
+      "healthcare",
+      "professional"
     ],
     "biology_expert": [
-      "PhD biology",
-      "research scientist",
+      "biology",
+      "biologist",
+      "research",
+      "scientist",
+      "molecular",
       "biotechnology",
-      "pharmaceutical",
-      "molecular biology",
-      "bioinformatics",
-      "computational biology"
+      "life sciences",
+      "PhD"
     ],
     "anthropology": [
+      "anthropologist",
       "anthropology",
-      "professional",
-      "certified",
-      "licensed",
-      "experienced",
-      "qualified",
-      "expert",
-      "senior"
+      "research",
+      "cultural",
+      "social",
+      "academic",
+      "professor",
+      "PhD"
     ],
     "mathematics_phd": [
-      "mathematics phd",
-      "professional",
-      "certified",
-      "licensed",
-      "experienced",
-      "qualified",
-      "expert",
-      "senior"
+      "mathematics",
+      "mathematician",
+      "math",
+      "PhD",
+      "research",
+      "academic",
+      "professor",
+      "mathematical"
     ],
     "quantitative_finance": [
-      "quantitative analyst",
-      "financial engineer",
-      "hedge fund",
-      "algorithmic trading",
-      "mathematical modeling",
-      "derivatives"
+      "quantitative",
+      "quant",
+      "finance",
+      "analyst",
+      "financial",
+      "modeling",
+      "risk",
+      "investment"
     ],
     "bankers": [
-      "bankers",
-      "professional",
-      "certified",
-      "licensed",
-      "experienced",
-      "qualified",
-      "expert",
-      "senior"
+      "banker",
+      "banking",
+      "finance",
+      "financial",
+      "investment",
+      "commercial",
+      "analyst",
+      "professional"
     ],
     "mechanical_engineers": [
-      "mechanical engineers",
+      "mechanical engineer",
+      "engineering",
+      "engineer",
+      "mechanical",
+      "design",
+      "technical",
       "professional",
-      "certified",
-      "licensed",
-      "experienced",
-      "qualified",
-      "expert",
-      "senior"
+      "systems"
     ]
   },
   "hard_filters": {
     "tax_lawyer": {
       "must_have": [
-        "professional",
-        "certified",
-        "licensed"
+        "lawyer",
+        "attorney",
+        "legal"
       ],
       "preferred": [
-        "experienced",
-        "senior",
-        "expert"
+        "tax",
+        "taxation",
+        "licensed",
+        "JD"
       ],
       "exclude": [
         "student",
-        "intern",
-        "entry level"
+        "paralegal"
       ]
     },
     "junior_corporate_lawyer": {
       "must_have": [
-        "professional",
-        "certified",
-        "licensed"
+        "lawyer",
+        "attorney",
+        "legal"
       ],
       "preferred": [
-        "experienced",
-        "senior",
-        "expert"
+        "corporate",
+        "business",
+        "licensed",
+        "JD"
       ],
       "exclude": [
         "student",
-        "intern",
-        "entry level"
+        "paralegal"
       ]
     },
     "radiology": {
       "must_have": [
-        "professional",
-        "expert"
+        "radiologist",
+        "physician",
+        "doctor"
       ],
       "preferred": [
-        "top",
-        "elite",
-        "premier",
-        "senior"
+        "radiology",
+        "medical",
+        "MD",
+        "imaging"
       ],
       "exclude": [
-        "junior",
-        "entry level"
+        "student",
+        "technician"
       ]
     },
     "doctors_md": {
       "must_have": [
-        "professional",
-        "certified",
-        "licensed"
+        "physician",
+        "doctor",
+        "MD"
       ],
       "preferred": [
-        "experienced",
-        "senior",
-        "expert"
+        "medical",
+        "clinical",
+        "licensed",
+        "healthcare"
       ],
       "exclude": [
         "student",
-        "intern",
-        "entry level"
+        "nurse"
       ]
     },
     "biology_expert": {
       "must_have": [
-        "PhD",
+        "biology",
+        "scientist",
         "research"
       ],
       "preferred": [
-        "professor",
-        "scientist",
-        "expert",
-        "publications"
+        "PhD",
+        "molecular",
+        "biotechnology",
+        "biologist"
       ],
       "exclude": [
         "student",
-        "undergraduate",
-        "bachelor"
+        "undergraduate"
       ]
     },
     "anthropology": {
       "must_have": [
-        "professional",
-        "certified",
-        "licensed"
+        "anthropology",
+        "anthropologist",
+        "research"
       ],
       "preferred": [
-        "experienced",
-        "senior",
-        "expert"
+        "PhD",
+        "academic",
+        "cultural",
+        "professor"
       ],
       "exclude": [
         "student",
-        "intern",
-        "entry level"
+        "undergraduate"
       ]
     },
     "mathematics_phd": {
       "must_have": [
-        "professional",
-        "certified",
-        "licensed"
+        "mathematics",
+        "mathematician",
+        "PhD"
       ],
       "preferred": [
-        "experienced",
-        "senior",
-        "expert"
+        "research",
+        "academic",
+        "professor",
+        "mathematical"
       ],
       "exclude": [
         "student",
-        "intern",
-        "entry level"
+        "undergraduate"
       ]
     },
     "quantitative_finance": {
       "must_have": [
-        "PhD",
-        "research"
+        "quantitative",
+        "finance",
+        "analyst"
       ],
       "preferred": [
-        "professor",
-        "scientist",
-        "expert",
-        "publications"
+        "quant",
+        "financial",
+        "modeling",
+        "investment"
       ],
       "exclude": [
         "student",
-        "undergraduate",
-        "bachelor"
+        "entry level"
       ]
     },
     "bankers": {
       "must_have": [
-        "professional",
-        "certified",
-        "licensed"
+        "banker",
+        "banking",
+        "finance"
       ],
       "preferred": [
-        "experienced",
-        "senior",
-        "expert"
+        "financial",
+        "investment",
+        "commercial",
+        "analyst"
       ],
       "exclude": [
-        "student",
-        "intern",
-        "entry level"
+        "teller",
+        "customer service"
       ]
     },
     "mechanical_engineers": {
       "must_have": [
-        "professional",
-        "certified",
-        "licensed"
+        "engineer",
+        "engineering",
+        "mechanical"
       ],
       "preferred": [
-        "experienced",
-        "senior",
-        "expert"
+        "design",
+        "technical",
+        "professional",
+        "systems"
       ],
       "exclude": [
         "student",
-        "intern",
-        "entry level"
+        "intern"
       ]
     }
   }
