@@ -1,0 +1,37 @@
+{
+  "timestamp": "20250802_022955",
+  "total_categories": 5,
+  "successful_submissions": 0,
+  "results": [
+    {
+      "category": "biology_expert.yml",
+      "score": null,
+      "success": false,
+      "error": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"config_candidates\"],\"msg\":\"Field required\",\"input\":{\"config_path\":\"biology_expert.yml\",\"object_ids\":[\"6794f2c052a365d1167bc13e\",\"6795987d8d90554e606cabab\",\"6795ba37a1a09a48feb1918b\",\"6794b3213e76d5b58721c1e2\",\"6794930e3eff0c142a77b1c6\",\"6794b3ab0db3e7925671aefa\",\"67961dd27e0084c5fa7b5a0a\",\"679591df0db3e7925679c82e\",\"67973061f9f986ea7fc9cd58\",\"6794cc27f9f986ea7fb45e51\"]}}]}"
+    },
+    {
+      "category": "quantitative_finance.yml",
+      "score": null,
+      "success": false,
+      "error": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"config_candidates\"],\"msg\":\"Field required\",\"input\":{\"config_path\":\"quantitative_finance.yml\",\"object_ids\":[\"6794bc650db3e79256720bfa\",\"6794ddbba1a09a48fea926dd\",\"6796ac22f9f986ea7fc54b6d\",\"6796af71a1a09a48febad1f4\",\"6795d00e3e76d5b5872bc1a7\",\"67961f268d90554e60716ca2\",\"6795570f7e0084c5fa745b13\",\"6796af6f73bf14921fba4515\",\"6795be5f73bf14921fb1a15b\",\"67968f6a0db3e79256830af3\"]}}]}"
+    },
+    {
+      "category": "doctors_md.yml",
+      "score": null,
+      "success": false,
+      "error": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"config_candidates\"],\"msg\":\"Field required\",\"input\":{\"config_path\":\"doctors_md.yml\",\"object_ids\":[\"6795c8133e76d5b5872b79b5\",\"6796bb3ea1a09a48febb383a\",\"679602e90db3e792567df659\",\"6794bd658a14699f16003a64\",\"6795cfc40db3e792567c2c04\",\"67953d2d73bf14921fac0f9c\",\"6794a9773e76d5b58721734a\",\"6794bf4973bf14921fa756e4\",\"6796e4627e0084c5fa82febc\",\"6795132f8d90554e6067c1cd\"]}}]}"
+    },
+    {
+      "category": "anthropology.yml",
+      "score": null,
+      "success": false,
+      "error": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"config_candidates\"],\"msg\":\"Field required\",\"input\":{\"config_path\":\"anthropology.yml\",\"object_ids\":[\"6795760a52a365d11680943b\",\"67966e203e76d5b587313e3d\",\"6794d91b73bf14921fa85694\",\"6794bd238d90554e606473fb\",\"6794964652a365d116783b51\",\"6796a4f27e0084c5fa807f8e\",\"6796f8580db3e792568728ac\",\"6795f22fa1a09a48feb3ad1a\",\"679512d13e76d5b5872520a3\",\"6794cff18a14699f1600e54b\"]}}]}"
+    },
+    {
+      "category": "tax_lawyer.yml",
+      "score": null,
+      "success": false,
+      "error": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"config_candidates\"],\"msg\":\"Field required\",\"input\":{\"config_path\":\"tax_lawyer.yml\",\"object_ids\":[\"679717a30db3e792568820d8\",\"67950d8473bf14921faa4f78\",\"67951c0352a365d1167d180f\",\"6796fba20db3e79256874df7\",\"67955a7a52a365d1167f83a0\",\"6795fda28a14699f160b583e\",\"6796ebd63e76d5b587359938\",\"6794b3d78d90554e60641bf0\",\"6795f2743e76d5b5872cea8b\",\"67958f3a3eff0c142a7f768f\"]}}]}"
+    }
+  ]
+}

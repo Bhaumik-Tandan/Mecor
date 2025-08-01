@@ -1,0 +1,96 @@
+{
+  "timestamp": "20250802_011126",
+  "target_categories": {
+    "biology_expert.yml": {
+      "current": 19.333333333333336,
+      "deficit": 10.666666666666664
+    },
+    "quantitative_finance.yml": {
+      "current": 0.0,
+      "deficit": 30.0
+    },
+    "doctors_md.yml": {
+      "current": 15.0,
+      "deficit": 15.0
+    }
+  },
+  "results": [
+    {
+      "category": "biology_expert.yml",
+      "score": 19.333333333333336,
+      "success": false
+    },
+    {
+      "category": "biology_expert.yml",
+      "score": 19.333333333333336,
+      "success": false
+    },
+    {
+      "category": "biology_expert.yml",
+      "score": 19.333333333333336,
+      "success": false
+    },
+    {
+      "category": "biology_expert.yml",
+      "score": 19.333333333333336,
+      "success": false
+    },
+    {
+      "category": "biology_expert.yml",
+      "score": 19.333333333333336,
+      "success": false
+    },
+    {
+      "category": "quantitative_finance.yml",
+      "score": 0.0,
+      "success": false
+    },
+    {
+      "category": "quantitative_finance.yml",
+      "score": 0.0,
+      "success": false
+    },
+    {
+      "category": "quantitative_finance.yml",
+      "score": 0.0,
+      "success": false
+    },
+    {
+      "category": "quantitative_finance.yml",
+      "score": 0.0,
+      "success": false
+    },
+    {
+      "category": "quantitative_finance.yml",
+      "score": 0.0,
+      "success": false
+    },
+    {
+      "category": "doctors_md.yml",
+      "score": 15.0,
+      "success": false
+    },
+    {
+      "category": "doctors_md.yml",
+      "score": 15.0,
+      "success": false
+    },
+    {
+      "category": "doctors_md.yml",
+      "score": 15.0,
+      "success": false
+    },
+    {
+      "category": "doctors_md.yml",
+      "score": 15.0,
+      "success": false
+    },
+    {
+      "category": "doctors_md.yml",
+      "score": 15.0,
+      "success": false
+    }
+  ],
+  "successes": 0,
+  "total_attempts": 15
+}
