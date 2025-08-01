@@ -45,16 +45,16 @@
       "radiology consultant physician"
     ],
     "doctors_md": [
-      "Harvard Medical School MD physician US medical degree general practitioner",
-      "Johns Hopkins Medical School MD physician US medical degree family medicine",
-      "Stanford Medical School MD physician US medical degree primary care", 
-      "UCSF Medical School MD physician US medical degree general practice",
-      "Yale Medical School MD physician US medical degree family medicine",
-      "Columbia Medical School MD physician US medical degree primary care",
-      "University of Pennsylvania Medical School MD physician US medical degree",
-      "Washington University Medical School MD physician US medical degree",
-      "Northwestern Medical School MD physician US medical degree family medicine",
-      "US medical school MD physician American medical degree general practitioner"
+      "Harvard Medical School MD physician EHR telemedicine family medicine",
+      "Johns Hopkins Medical School MD physician EHR electronic health records",
+      "Stanford Medical School MD physician telemedicine family medicine EHR", 
+      "UCSF Medical School MD physician EHR telemedicine primary care",
+      "Yale Medical School MD physician telemedicine EHR family medicine",
+      "Columbia Medical School MD physician EHR electronic health records",
+      "University of Pennsylvania Medical School MD physician EHR telemedicine",
+      "Washington University Medical School MD physician telemedicine EHR",
+      "Northwestern Medical School MD physician EHR family medicine telemedicine",
+      "top US medical school MD physician EHR telemedicine experience"
     ],
     "biology_expert": [
       "Harvard University PhD biology molecular research scientist",
@@ -88,16 +88,16 @@
       "mathematics PhD professor US university research publications"
     ],
     "quantitative_finance": [
-      "Harvard Business School MBA quantitative analyst finance Goldman Sachs",
-      "Wharton School MBA quantitative finance Morgan Stanley JPMorgan",
-      "Stanford Graduate School Business MBA quantitative analyst hedge fund",
-      "University of Chicago Booth MBA quantitative finance Two Sigma Citadel",
-      "MIT Sloan School Management MBA quantitative analyst investment banking",
-      "Columbia Business School MBA quantitative finance Wall Street",
-      "Northwestern Kellogg MBA quantitative analyst hedge fund private equity",
-      "M7 MBA quantitative finance analyst Goldman Sachs Morgan Stanley",
-      "Harvard Wharton Stanford MBA quantitative finance hedge fund",
-      "top business school MBA quantitative analyst Wall Street finance"
+      "Harvard Business School MBA Goldman Sachs quantitative analyst",
+      "Wharton School MBA Morgan Stanley quantitative finance analyst",
+      "Stanford Graduate School Business MBA Two Sigma quantitative analyst", 
+      "University of Chicago Booth MBA Citadel quantitative finance analyst",
+      "MIT Sloan School Management MBA Jane Street quantitative analyst",
+      "Columbia Business School MBA BlackRock quantitative finance analyst",
+      "Northwestern Kellogg MBA DE Shaw quantitative analyst hedge fund",
+      "M7 MBA Goldman Sachs Morgan Stanley quantitative finance analyst",
+      "Harvard Wharton Stanford MBA Wall Street quantitative analyst",
+      "top MBA Goldman Morgan Stanley JPMorgan quantitative finance"
     ],
     "bankers": [
       "healthcare investment banker finance MBA",
