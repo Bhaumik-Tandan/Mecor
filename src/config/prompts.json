@@ -19,11 +19,16 @@
   },
   "domain_specific_queries": {
     "tax_lawyer": [
-      "tax attorney JD taxation law",
-      "tax lawyer professional licensed",
-      "tax counsel legal practice",
-      "taxation attorney experienced",
-      "tax law specialist lawyer"
+      "M&A tax attorney transaction tax advice deal structure",
+      "transaction tax lawyer M&A deal tax implications advisory",
+      "corporate M&A tax counsel transaction structure tax advice",
+      "deal tax attorney M&A transaction tax implications counsel",
+      "M&A transaction tax advisor corporate deal structure",
+      "transaction tax counsel M&A deal advisory tax implications",
+      "corporate deal tax attorney M&A transaction structure",
+      "M&A deal tax lawyer transaction advisory tax counsel",
+      "transaction structure tax attorney M&A deal implications",
+      "M&A advisory tax attorney transaction deal structure counsel"
     ],
     "junior_corporate_lawyer": [
       "corporate attorney JD business law",
@@ -40,16 +45,16 @@
       "radiology consultant physician"
     ],
     "doctors_md": [
-      "Harvard Medical School MD physician US clinical practice",
-      "Johns Hopkins Medical School MD physician US clinical",
-      "Stanford Medical School MD physician US practice",
-      "UCSF Medical School MD physician US clinical practice",
-      "Yale Medical School MD physician US clinical",
-      "Columbia Medical School MD physician US practice",
-      "Mayo Clinic Medical School MD physician US clinical",
-      "top US medical school MD physician clinical practice",
-      "US medical school MD physician US clinical experience",
-      "American medical school MD US clinical practice experience"
+      "Harvard Medical School MD physician US medical degree general practitioner",
+      "Johns Hopkins Medical School MD physician US medical degree family medicine",
+      "Stanford Medical School MD physician US medical degree primary care", 
+      "UCSF Medical School MD physician US medical degree general practice",
+      "Yale Medical School MD physician US medical degree family medicine",
+      "Columbia Medical School MD physician US medical degree primary care",
+      "University of Pennsylvania Medical School MD physician US medical degree",
+      "Washington University Medical School MD physician US medical degree",
+      "Northwestern Medical School MD physician US medical degree family medicine",
+      "US medical school MD physician American medical degree general practitioner"
     ],
     "biology_expert": [
       "Harvard University PhD biology molecular research scientist",
@@ -83,16 +88,16 @@
       "mathematics PhD professor US university research publications"
     ],
     "quantitative_finance": [
-      "Harvard Business School MBA quantitative finance analyst",
-      "Wharton School MBA quantitative finance analyst Goldman Sachs",
-      "Stanford Graduate School Business MBA quantitative analyst",
-      "Chicago Booth MBA quantitative finance analyst",
-      "MIT Sloan MBA quantitative finance analyst",
-      "Columbia Business School MBA quantitative analyst",
-      "Northwestern Kellogg MBA quantitative finance analyst",
-      "M7 MBA quantitative finance analyst investment banking",
-      "top MBA quantitative analyst hedge fund private equity",
-      "MBA quantitative finance Goldman Sachs Morgan Stanley JPMorgan"
+      "Harvard Business School MBA quantitative analyst finance Goldman Sachs",
+      "Wharton School MBA quantitative finance Morgan Stanley JPMorgan",
+      "Stanford Graduate School Business MBA quantitative analyst hedge fund",
+      "University of Chicago Booth MBA quantitative finance Two Sigma Citadel",
+      "MIT Sloan School Management MBA quantitative analyst investment banking",
+      "Columbia Business School MBA quantitative finance Wall Street",
+      "Northwestern Kellogg MBA quantitative analyst hedge fund private equity",
+      "M7 MBA quantitative finance analyst Goldman Sachs Morgan Stanley",
+      "Harvard Wharton Stanford MBA quantitative finance hedge fund",
+      "top business school MBA quantitative analyst Wall Street finance"
     ],
     "bankers": [
       "healthcare investment banker finance MBA",
@@ -116,14 +121,20 @@
   },
   "bm25_keywords": {
     "tax_lawyer": [
-      "tax attorney",
-      "tax lawyer",
-      "taxation",
-      "tax law",
-      "lawyer",
-      "attorney",
-      "legal",
-      "professional"
+      "M&A tax attorney",
+      "transaction tax lawyer",
+      "M&A tax counsel",
+      "deal tax attorney",
+      "transaction tax counsel",
+      "M&A deal tax",
+      "corporate M&A tax",
+      "deal structure tax",
+      "M&A transaction tax",
+      "deal advisory tax",
+      "transaction tax advice",
+      "M&A tax implications",
+      "deal tax counsel",
+      "transaction attorney"
     ],
     "junior_corporate_lawyer": [
       "corporate attorney",
@@ -152,12 +163,14 @@
       "UCSF Medical School MD",
       "Yale Medical School MD",
       "Columbia Medical School MD",
-      "Mayo Clinic Medical School MD",
-      "top US medical school MD",
-      "US medical school physician",
-      "MD physician US clinical practice",
+      "University of Pennsylvania Medical School MD",
+      "Washington University Medical School MD",
+      "Northwestern Medical School MD",
+      "US medical school MD",
       "American medical school MD",
-      "US clinical practice physician"
+      "US medical degree physician",
+      "American medical degree physician",
+      "US medical school physician"
     ],
     "biology_expert": [
       "Harvard University PhD biology",
@@ -201,15 +214,17 @@
       "Harvard Business School MBA",
       "Wharton School MBA",
       "Stanford Graduate School Business MBA",
-      "Chicago Booth MBA", 
+      "University of Chicago Booth MBA",
       "MIT Sloan MBA",
       "Columbia Business School MBA",
       "Northwestern Kellogg MBA",
       "M7 MBA",
-      "quantitative finance analyst",
-      "Goldman Sachs MBA",
-      "Morgan Stanley MBA",
-      "JPMorgan MBA"
+      "Harvard MBA quantitative",
+      "Wharton MBA quantitative",
+      "Stanford MBA quantitative",
+      "Chicago Booth MBA quantitative",
+      "MIT Sloan MBA quantitative",
+      "Columbia MBA quantitative"
     ],
     "bankers": [
       "healthcare investment banker",
@@ -241,17 +256,27 @@
       "must_have": [
         "lawyer",
         "attorney",
-        "legal"
+        "tax"
       ],
       "preferred": [
-        "tax",
-        "taxation",
-        "licensed",
+        "M&A",
+        "transaction",
+        "deal",
+        "M&A tax",
+        "transaction tax",
+        "deal tax",
+        "corporate M&A",
+        "M&A attorney",
+        "transaction attorney",
+        "deal attorney",
+        "M&A counsel",
+        "transaction counsel",
         "JD"
       ],
       "exclude": [
         "student",
-        "paralegal"
+        "paralegal",
+        "non-attorney"
       ]
     },
     "junior_corporate_lawyer": {
@@ -292,30 +317,30 @@
       "must_have": [
         "MD",
         "physician",
-        "doctor",
-        "medical school"
+        "doctor"
       ],
       "preferred": [
-        "Harvard Medical School",
-        "Johns Hopkins Medical School",
-        "Stanford Medical School",
-        "UCSF Medical School",
-        "Yale Medical School",
-        "Columbia Medical School",
-        "Mayo Clinic Medical School",
-        "top US medical school",
-        "US clinical practice",
-        "clinical experience",
-        "US medical school",
-        "American medical school"
+        "Harvard Medical School MD",
+        "Johns Hopkins Medical School MD",
+        "Stanford Medical School MD",
+        "UCSF Medical School MD",
+        "Yale Medical School MD",
+        "Columbia Medical School MD",
+        "University of Pennsylvania Medical School MD",
+        "Washington University Medical School MD",
+        "Northwestern Medical School MD",
+        "US medical school MD",
+        "American medical school MD",
+        "family medicine",
+        "general practitioner",
+        "primary care",
+        "EHR",
+        "telemedicine"
       ],
       "exclude": [
         "student",
         "nurse",
-        "MBA",
-        "business",
-        "finance",
-        "non-medical degree"
+        "foreign medical school"
       ]
     },
     "biology_expert": {
@@ -398,7 +423,6 @@
     "quantitative_finance": {
       "must_have": [
         "MBA",
-        "graduate",
         "quantitative",
         "finance"
       ],
@@ -406,22 +430,24 @@
         "Harvard Business School MBA",
         "Wharton School MBA",
         "Stanford Graduate School Business MBA",
-        "Chicago Booth MBA", 
+        "University of Chicago Booth MBA",
         "MIT Sloan MBA",
         "Columbia Business School MBA",
         "Northwestern Kellogg MBA",
         "M7 MBA",
-        "MBA graduate",
-        "MBA degree",
+        "Harvard MBA quantitative",
+        "Wharton MBA quantitative",
+        "Stanford MBA quantitative",
+        "Chicago Booth MBA quantitative",
+        "MIT Sloan MBA quantitative",
+        "Columbia MBA quantitative",
         "Goldman Sachs",
         "Morgan Stanley",
-        "investment banking"
+        "quantitative analyst"
       ],
       "exclude": [
-        "MBA candidate",
-        "MBA student",
-        "PhD only",
-        "bachelor only"
+        "student",
+        "intern"
       ]
     },
     "bankers": {

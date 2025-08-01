@@ -426,7 +426,7 @@ class SearchService:
         logger.info(f"Starting search for: {query.job_category}")
         
         # Use ultra-targeted search for the most challenging categories
-        ultra_strict_categories = ['biology_expert.yml', 'mathematics_phd.yml', 'quantitative_finance.yml', 'doctors_md.yml']
+        ultra_strict_categories = ['biology_expert.yml', 'mathematics_phd.yml']
         if query.job_category in ultra_strict_categories:
             logger.info(f"Using ultra-targeted search for {query.job_category}")
             candidates = self._ultra_targeted_search(query, search_config)
@@ -529,29 +529,33 @@ class SearchService:
             ]
         elif "quantitative_finance" in job_category:
             return [
-                "MBA graduate Harvard Business School quantitative finance analyst",
-                "MBA graduate Wharton School quantitative finance Goldman Sachs",
-                "MBA graduate Stanford Graduate School Business quantitative analyst",
-                "MBA graduate Chicago Booth quantitative finance analyst",
-                "MBA graduate MIT Sloan quantitative finance analyst",
-                "MBA graduate Columbia Business School quantitative analyst",
-                "MBA graduate Northwestern Kellogg quantitative finance",
-                "M7 MBA graduate quantitative finance analyst Goldman Sachs",
-                "MBA completed Harvard Wharton Stanford quantitative finance",
-                "MBA degree graduate quantitative analyst investment banking"
+                "Harvard Business School MBA finance quantitative",
+                "Wharton School MBA finance quantitative analyst",
+                "Stanford Graduate School Business MBA finance",
+                "Chicago Booth MBA finance quantitative trader",
+                "MIT Sloan MBA finance quantitative researcher",
+                "Columbia Business School MBA finance quantitative",
+                "Northwestern Kellogg MBA finance quantitative analyst",
+                "M7 MBA finance Wall Street quantitative analyst",
+                "business school MBA finance quantitative hedge fund",
+                "MBA finance Goldman Sachs Morgan Stanley quantitative",
+                "finance MBA quantitative analyst investment banking",
+                "business school finance MBA quantitative trader"
             ]
         elif "doctors_md" in job_category:
             return [
-                "MD degree Harvard Medical School physician US clinical practice",
-                "MD degree Johns Hopkins Medical School physician US clinical",
-                "MD degree Stanford Medical School physician US practice",
-                "MD degree UCSF Medical School physician US clinical practice",
-                "MD degree Yale Medical School physician US clinical",
-                "MD degree Columbia Medical School physician US practice",
-                "Doctor Medicine MD degree US medical school clinical practice",
-                "MD physician degree US medical school US clinical experience",
-                "Medical Doctor MD US medical school US clinical practice",
-                "physician MD degree top US medical school clinical practice"
+                "Medical Doctor MD Harvard Medical School EHR",
+                "Medical Doctor MD Johns Hopkins Medical School telemedicine",
+                "Medical Doctor MD Stanford Medical School electronic health records",
+                "Medical Doctor MD UCSF Medical School EHR telemedicine",
+                "Medical Doctor MD Yale Medical School electronic health records", 
+                "Medical Doctor MD Columbia Medical School EHR telemedicine",
+                "physician Medical Doctor MD EHR electronic health records",
+                "family medicine physician Medical Doctor MD telemedicine",
+                "general practitioner Medical Doctor MD EHR telemedicine",
+                "primary care physician Medical Doctor MD electronic health records",
+                "Medical Doctor physician EHR telemedicine family medicine",
+                "physician MD EHR electronic health records telemedicine experience"
             ]
         else:
             return []
