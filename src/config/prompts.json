@@ -19,16 +19,16 @@
   },
   "domain_specific_queries": {
     "tax_lawyer": [
-      "M&A tax attorney transaction tax advice deal structure",
-      "transaction tax lawyer M&A deal tax implications advisory",
-      "corporate M&A tax counsel transaction structure tax advice",
-      "deal tax attorney M&A transaction tax implications counsel",
-      "M&A transaction tax advisor corporate deal structure",
-      "transaction tax counsel M&A deal advisory tax implications",
-      "corporate deal tax attorney M&A transaction structure",
-      "M&A deal tax lawyer transaction advisory tax counsel",
-      "transaction structure tax attorney M&A deal implications",
-      "M&A advisory tax attorney transaction deal structure counsel"
+      "M&A tax attorney corporate transactions deal structure tax advice",
+      "mergers acquisitions tax attorney transaction tax counsel advice",
+      "corporate M&A tax lawyer transaction structure tax implications", 
+      "transaction tax attorney M&A deal structure tax counsel advice",
+      "M&A transaction tax counsel corporate deal structure advice",
+      "deal tax attorney M&A corporate transaction structure counsel",
+      "corporate deal tax lawyer M&A transaction tax implications",
+      "M&A deal structure tax attorney transaction counsel advice",
+      "transaction structure tax lawyer M&A deal tax implications",
+      "M&A corporate transaction tax attorney deal structure counsel"
     ],
     "junior_corporate_lawyer": [
       "corporate attorney JD business law",
@@ -122,19 +122,19 @@
   "bm25_keywords": {
     "tax_lawyer": [
       "M&A tax attorney",
-      "transaction tax lawyer",
+      "transaction tax lawyer", 
       "M&A tax counsel",
       "deal tax attorney",
+      "corporate M&A tax",
       "transaction tax counsel",
       "M&A deal tax",
-      "corporate M&A tax",
       "deal structure tax",
+      "transaction structure tax",
       "M&A transaction tax",
-      "deal advisory tax",
+      "corporate deal tax",
+      "M&A tax advice",
       "transaction tax advice",
-      "M&A tax implications",
-      "deal tax counsel",
-      "transaction attorney"
+      "deal tax counsel"
     ],
     "junior_corporate_lawyer": [
       "corporate attorney",
