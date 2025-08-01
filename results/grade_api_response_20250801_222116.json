@@ -1,0 +1,25 @@
+{
+  "timestamp": "20250801_222116",
+  "status_code": 200,
+  "response_text": "{\"error\":\"Request validation failed\",\"details\":[\"Config 'radiology.yml' must have exactly 10 candidates, but has 9\",\"Config 'anthropology.yml' must have exactly 10 candidates, but has 9\"]}",
+  "submitted_categories": [
+    "tax_lawyer.yml",
+    "junior_corporate_lawyer.yml",
+    "radiology.yml",
+    "doctors_md.yml",
+    "biology_expert.yml",
+    "anthropology.yml",
+    "mathematics_phd.yml",
+    "quantitative_finance.yml",
+    "bankers.yml",
+    "mechanical_engineers.yml"
+  ],
+  "total_candidates": 98,
+  "response_json": {
+    "error": "Request validation failed",
+    "details": [
+      "Config 'radiology.yml' must have exactly 10 candidates, but has 9",
+      "Config 'anthropology.yml' must have exactly 10 candidates, but has 9"
+    ]
+  }
+}

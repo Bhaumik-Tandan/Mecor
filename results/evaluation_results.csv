@@ -1,11 +1,11 @@
 config_name,average_final_score,num_candidates,strategy
-junior_corporate_lawyer.yml,50.66666666666667,10,optimized_elite_search
-tax_lawyer.yml,32.666666666666664,10,optimized_elite_search
 doctors_md.yml,16.0,10,optimized_elite_search
-radiology.yml,30.333333333333336,10,optimized_elite_search
+junior_corporate_lawyer.yml,48.66666666666667,10,optimized_elite_search
+tax_lawyer.yml,29.333333333333325,10,optimized_elite_search
 biology_expert.yml,32.0,10,optimized_elite_search
-anthropology.yml,32.666666666666664,10,optimized_elite_search
+radiology.yml,30.333333333333336,10,optimized_elite_search
 mathematics_phd.yml,51.000000000000014,10,optimized_elite_search
 quantitative_finance.yml,17.333333333333336,10,optimized_elite_search
-bankers.yml,81.33333333333334,10,optimized_elite_search
-mechanical_engineers.yml,69.0,10,optimized_elite_search
+mechanical_engineers.yml,66.00000000000001,10,optimized_elite_search
+bankers.yml,82.0,10,optimized_elite_search
+anthropology.yml,17.333333333333336,10,optimized_elite_search

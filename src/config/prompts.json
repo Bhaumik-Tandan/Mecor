@@ -45,16 +45,20 @@
       "radiology consultant physician"
     ],
     "doctors_md": [
-      "Harvard Medical School MD physician EHR telemedicine family medicine",
-      "Johns Hopkins Medical School MD physician EHR electronic health records",
-      "Stanford Medical School MD physician telemedicine family medicine EHR", 
-      "UCSF Medical School MD physician EHR telemedicine primary care",
-      "Yale Medical School MD physician telemedicine EHR family medicine",
-      "Columbia Medical School MD physician EHR electronic health records",
-      "University of Pennsylvania Medical School MD physician EHR telemedicine",
-      "Washington University Medical School MD physician telemedicine EHR",
-      "Northwestern Medical School MD physician EHR family medicine telemedicine",
-      "top US medical school MD physician EHR telemedicine experience"
+      "MD physician",
+      "family medicine",
+      "primary care",
+      "clinical practice",
+      "family physician",
+      "medical doctor",
+      "outpatient care",
+      "EHR telemedicine",
+      "clinical experience",
+      "general practitioner",
+      "physician practice",
+      "medical practice",
+      "clinical medicine",
+      "family practice"
     ],
     "biology_expert": [
       "Harvard University PhD biology molecular research scientist",
@@ -69,11 +73,16 @@
       "biology PhD researcher US university scientist molecular"
     ],
     "anthropology": [
-      "anthropologist PhD research",
-      "anthropology researcher academic",
-      "cultural anthropologist",
-      "social anthropology expert",
-      "anthropology professor"
+      "anthropology PhD student graduate recent doctorate degree researcher",
+      "cultural anthropology PhD academic research ethnographic methods", 
+      "social anthropology PhD research ethnography fieldwork academic",
+      "anthropology doctoral student PhD candidate academic research",
+      "PhD anthropology recent graduate academic researcher ethnography",
+      "anthropology PhD research academic cultural social ethnographic",
+      "anthropology graduate student PhD recent academic researcher",
+      "cultural social anthropology PhD academic research methods",
+      "anthropology PhD academic research graduate student recent",
+      "ethnographic research anthropology PhD academic cultural social"
     ],
     "mathematics_phd": [
       "Harvard University PhD mathematics professor research publications",
@@ -88,16 +97,20 @@
       "mathematics PhD professor US university research publications"
     ],
     "quantitative_finance": [
-      "Harvard Business School MBA Goldman Sachs quantitative analyst",
-      "Wharton School MBA Morgan Stanley quantitative finance analyst",
-      "Stanford Graduate School Business MBA Two Sigma quantitative analyst", 
-      "University of Chicago Booth MBA Citadel quantitative finance analyst",
-      "MIT Sloan School Management MBA Jane Street quantitative analyst",
-      "Columbia Business School MBA BlackRock quantitative finance analyst",
-      "Northwestern Kellogg MBA DE Shaw quantitative analyst hedge fund",
-      "M7 MBA Goldman Sachs Morgan Stanley quantitative finance analyst",
-      "Harvard Wharton Stanford MBA Wall Street quantitative analyst",
-      "top MBA Goldman Morgan Stanley JPMorgan quantitative finance"
+      "MBA quantitative",
+      "quantitative finance",
+      "quantitative analyst",
+      "finance MBA",
+      "mathematical modeling",
+      "portfolio management",
+      "derivatives trading",
+      "investment banking",
+      "hedge fund",
+      "Wall Street",
+      "trading algorithms",
+      "risk management",
+      "financial modeling",
+      "Python programming"
     ],
     "bankers": [
       "healthcare investment banker finance MBA",
@@ -157,20 +170,20 @@
       "diagnostic"
     ],
     "doctors_md": [
-      "Harvard Medical School MD",
-      "Johns Hopkins Medical School MD",
-      "Stanford Medical School MD",
-      "UCSF Medical School MD",
-      "Yale Medical School MD",
-      "Columbia Medical School MD",
-      "University of Pennsylvania Medical School MD",
-      "Washington University Medical School MD",
-      "Northwestern Medical School MD",
-      "US medical school MD",
-      "American medical school MD",
-      "US medical degree physician",
-      "American medical degree physician",
-      "US medical school physician"
+      "MD physician",
+      "family medicine",
+      "primary care",
+      "clinical practice",
+      "family physician",
+      "medical doctor",
+      "outpatient care",
+      "EHR telemedicine",
+      "clinical experience",
+      "general practitioner",
+      "physician practice",
+      "medical practice",
+      "clinical medicine",
+      "family practice"
     ],
     "biology_expert": [
       "Harvard University PhD biology",
@@ -187,14 +200,16 @@
       "molecular biology PhD"
     ],
     "anthropology": [
-      "anthropologist",
-      "anthropology",
-      "research",
-      "cultural",
-      "social",
-      "academic",
-      "professor",
-      "PhD"
+      "anthropology PhD student graduate recent doctorate degree researcher",
+      "cultural anthropology PhD academic research ethnographic methods", 
+      "social anthropology PhD research ethnography fieldwork academic",
+      "anthropology doctoral student PhD candidate academic research",
+      "PhD anthropology recent graduate academic researcher ethnography",
+      "anthropology PhD research academic cultural social ethnographic",
+      "anthropology graduate student PhD recent academic researcher",
+      "cultural social anthropology PhD academic research methods",
+      "anthropology PhD academic research graduate student recent",
+      "ethnographic research anthropology PhD academic cultural social"
     ],
     "mathematics_phd": [
       "Harvard University PhD mathematics",
@@ -211,20 +226,20 @@
       "mathematics professor research"
     ],
     "quantitative_finance": [
-      "Harvard Business School MBA",
-      "Wharton School MBA",
-      "Stanford Graduate School Business MBA",
-      "University of Chicago Booth MBA",
-      "MIT Sloan MBA",
-      "Columbia Business School MBA",
-      "Northwestern Kellogg MBA",
-      "M7 MBA",
-      "Harvard MBA quantitative",
-      "Wharton MBA quantitative",
-      "Stanford MBA quantitative",
-      "Chicago Booth MBA quantitative",
-      "MIT Sloan MBA quantitative",
-      "Columbia MBA quantitative"
+      "MBA quantitative",
+      "quantitative finance",
+      "quantitative analyst",
+      "finance MBA",
+      "mathematical modeling",
+      "portfolio management",
+      "derivatives trading",
+      "investment banking",
+      "hedge fund",
+      "Wall Street",
+      "trading algorithms",
+      "risk management",
+      "financial modeling",
+      "Python programming"
     ],
     "bankers": [
       "healthcare investment banker",
@@ -253,31 +268,9 @@
   },
   "hard_filters": {
     "tax_lawyer": {
-      "must_have": [
-        "lawyer",
-        "attorney",
-        "tax"
-      ],
-      "preferred": [
-        "M&A",
-        "transaction",
-        "deal",
-        "M&A tax",
-        "transaction tax",
-        "deal tax",
-        "corporate M&A",
-        "M&A attorney",
-        "transaction attorney",
-        "deal attorney",
-        "M&A counsel",
-        "transaction counsel",
-        "JD"
-      ],
-      "exclude": [
-        "student",
-        "paralegal",
-        "non-attorney"
-      ]
+      "must_have": ["JD", "tax", "M&A OR acquisition OR merger OR corporate transaction"],
+      "preferred": ["M&A tax counsel", "acquisition tax", "merger tax", "transaction tax attorney", "corporate deal structure", "tax structuring"],
+      "exclude": ["non-attorney", "personal tax only", "individual tax only", "no corporate experience", "no M&A experience", "no transaction experience"]
     },
     "junior_corporate_lawyer": {
       "must_have": [
@@ -320,22 +313,16 @@
         "doctor"
       ],
       "preferred": [
-        "Harvard Medical School MD",
-        "Johns Hopkins Medical School MD",
-        "Stanford Medical School MD",
-        "UCSF Medical School MD",
-        "Yale Medical School MD",
-        "Columbia Medical School MD",
-        "University of Pennsylvania Medical School MD",
-        "Washington University Medical School MD",
-        "Northwestern Medical School MD",
-        "US medical school MD",
-        "American medical school MD",
-        "family medicine",
-        "general practitioner",
-        "primary care",
-        "EHR",
-        "telemedicine"
+        "MD physician family medicine primary care clinical practice",
+        "medical doctor family physician primary care EHR telemedicine",
+        "physician MD clinical practice family medicine outpatient care",
+        "family medicine physician MD primary care clinical experience",
+        "medical doctor primary care family physician clinical practice",
+        "MD family medicine physician clinical practice telemedicine EHR",
+        "physician family medicine MD primary care outpatient clinical",
+        "family physician MD clinical practice primary care experience",
+        "medical doctor family medicine physician primary care clinical",
+        "MD physician primary care family medicine clinical telemedicine"
       ],
       "exclude": [
         "student",

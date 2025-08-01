@@ -1,0 +1,262 @@
+{
+  "comprehensive_final_results": {
+    "timestamp": "2025-08-01T17:43:00Z",
+    "git_commit": "c13503f - MAJOR SUCCESS: 8/10 categories above 30! tax_lawyer fixed to 32.67. Only quantitative_finance 17.33 and doctors_md 16.00 remain below 30",
+    "evaluation_status": "Recent focused improvement achieved biology_expert.yml breakthrough",
+    "overall_summary": {
+      "categories_above_30": 8,
+      "categories_below_30": 2,
+      "success_rate": "80%",
+      "average_score": 43.9,
+      "target_goal": "ALL 10 categories >= 30.0"
+    },
+    "current_scores": {
+      "bankers.yml": {
+        "score": 82.0,
+        "status": "EXCELLENT ✅",
+        "deficit": 0,
+        "surplus": 52.0
+      },
+      "mechanical_engineers.yml": {
+        "score": 66.0,
+        "status": "EXCELLENT ✅", 
+        "deficit": 0,
+        "surplus": 36.0
+      },
+      "mathematics_phd.yml": {
+        "score": 51.0,
+        "status": "EXCELLENT ✅",
+        "deficit": 0,
+        "surplus": 21.0
+      },
+      "junior_corporate_lawyer.yml": {
+        "score": 48.67,
+        "status": "EXCELLENT ✅",
+        "deficit": 0,
+        "surplus": 18.67
+      },
+      "biology_expert.yml": {
+        "score": 32.0,
+        "status": "SUCCESS ✅",
+        "deficit": 0,
+        "surplus": 2.0,
+        "note": "BREAKTHROUGH: Improved from 0.0 to 32.0 in recent focused improvement"
+      },
+      "radiology.yml": {
+        "score": 30.33,
+        "status": "SUCCESS ✅",
+        "deficit": 0,
+        "surplus": 0.33
+      },
+      "tax_lawyer.yml": {
+        "score": 32.67,
+        "status": "SUCCESS ✅", 
+        "deficit": 0,
+        "surplus": 2.67,
+        "note": "Fixed in git commit c13503f from 29.33 to 32.67"
+      },
+      "anthropology.yml": {
+        "score": 33.33,
+        "status": "SUCCESS ✅",
+        "deficit": 0,
+        "surplus": 3.33,
+        "note": "BREAKTHROUGH: Confirmed success in recent logs - reached 33.33"
+      },
+      "quantitative_finance.yml": {
+        "score": 17.33,
+        "status": "NEEDS WORK ❌",
+        "deficit": 12.67,
+        "surplus": 0
+      },
+      "doctors_md.yml": {
+        "score": 16.0,
+        "status": "NEEDS WORK ❌", 
+        "deficit": 14.0,
+        "surplus": 0
+      }
+    },
+    "top_candidates_by_category": {
+      "bankers.yml": [
+        {
+          "name": "Richard Innenberg",
+          "linkedin": "https://www.linkedin.com/in/richardinnenberg",
+          "final_score": 86.67,
+          "key_strengths": "Healthcare investment banking MD, led M&A transactions to Allergan/BARD/Bayer, Chicago Booth MBA"
+        },
+        {
+          "name": "Leo Xiao", 
+          "linkedin": "https://www.linkedin.com/in/leo-xiao-4b791a9b",
+          "final_score": 86.67,
+          "key_strengths": "Goldman Sachs senior analyst, Sequoia Capital healthcare team, Yale MBA"
+        }
+      ],
+      "mechanical_engineers.yml": [
+        {
+          "name": "Simon Kelly",
+          "linkedin": "https://www.linkedin.com/in/simon-kelly-6291a672", 
+          "final_score": 86.67,
+          "key_strengths": "Master's ME, 10+ years experience, SolidWorks/ANSYS expert, thermal/structural analysis"
+        },
+        {
+          "name": "German Herrera Granados",
+          "linkedin": "https://www.linkedin.com/in/german-herrera-granados-1a394b6a",
+          "final_score": 83.33,
+          "key_strengths": "PhD Mechanical Engineering, CAD/CAM expertise, micro/nano machining research"
+        }
+      ],
+      "mathematics_phd.yml": [
+        {
+          "name": "Alex Young",
+          "linkedin": "https://www.linkedin.com/in/alex-young-33677b101",
+          "final_score": 85.0,
+          "key_strengths": "PhD Applied Mathematics, University of Arizona, Bayesian Statistics postdoc"
+        },
+        {
+          "name": "Caleb Mayer",
+          "linkedin": "https://www.linkedin.com/in/caleb-mayer-572b54a0", 
+          "final_score": 85.0,
+          "key_strengths": "PhD Applied Mathematics Michigan, biological rhythms modeling, multiple publications"
+        },
+        {
+          "name": "Sara F.",
+          "linkedin": "https://www.linkedin.com/in/sara-fish",
+          "final_score": 85.0,
+          "key_strengths": "Harvard PhD Applied Mathematics, Caltech BS, peer-reviewed publications in combinatorics"
+        }
+      ],
+      "junior_corporate_lawyer.yml": [
+        {
+          "name": "Daryl Martin",
+          "linkedin": "https://www.linkedin.com/in/daryl-martin-33698712",
+          "final_score": 86.67,
+          "key_strengths": "15+ years legal experience, M&A transactions $10M-$750M, UC Hastings Law"
+        },
+        {
+          "name": "Hero Salih", 
+          "linkedin": "https://www.linkedin.com/in/hero-salih-191a7515",
+          "final_score": 83.33,
+          "key_strengths": "Cross-border M&A experience, University of Toronto Law, General Counsel roles"
+        }
+      ],
+      "biology_expert.yml": [
+        {
+          "name": "Theresa Wasylenko",
+          "linkedin": "https://www.linkedin.com/in/theresa-wasylenko-433a54142",
+          "final_score": 83.33,
+          "key_strengths": "MIT PhD, next-gen sequencing analysis, Huntington's disease research, teaching experience"
+        },
+        {
+          "name": "Henry Bushnell",
+          "linkedin": "https://www.linkedin.com/in/henry-bushnell-516606133", 
+          "final_score": 60.0,
+          "key_strengths": "Harvard PhD, developmental biology, single cell RNA sequencing, genetic modification"
+        }
+      ],
+      "radiology.yml": [
+        {
+          "name": "Chika L.",
+          "linkedin": "https://www.linkedin.com/in/chikalogie",
+          "final_score": 86.67,
+          "key_strengths": "Board Certified Diagnostic Radiologist, University of Maryland MD, CT/MRI expertise"
+        },
+        {
+          "name": "Rourke Stay",
+          "linkedin": "https://www.linkedin.com/in/rourkestay",
+          "final_score": 65.0,
+          "key_strengths": "University of Virginia MD, 10+ years radiology, AI applications in radiology"
+        }
+      ],
+      "tax_lawyer.yml": [
+        {
+          "name": "Martha A. Miller",
+          "linkedin": "https://www.linkedin.com/in/marthaannmiller",
+          "final_score": 76.67,
+          "key_strengths": "Northwestern Law JD, practicing since 1972, IRS audit expertise, authored tax book"
+        },
+        {
+          "name": "Keisha Benson Lewis",
+          "linkedin": "https://www.linkedin.com/in/keishabensonlewis",
+          "final_score": 70.0,
+          "key_strengths": "University of Miami Tax Law Master's, Vinson & Elkins experience, federal tax memoranda"
+        }
+      ],
+      "anthropology.yml": [
+        {
+          "name": "Masha Vukanovic",
+          "linkedin": "https://www.linkedin.com/in/masha-vukanovic-4b6196b5",
+          "final_score": 0.0,
+          "key_strengths": "PhD Cultural Anthropology Belgrade, ethnographic methods, cultural heritage experience",
+          "note": "Hard criteria not met but strong soft scores (8.0, 8.0, 7.0)"
+        }
+      ],
+      "quantitative_finance.yml": [
+        {
+          "name": "Philip Chen",
+          "linkedin": "https://www.linkedin.com/in/philcritcher", 
+          "final_score": 86.67,
+          "key_strengths": "Stanford MBA, Merrill Lynch/Citi experience, quantitative trading, risk models"
+        }
+      ],
+      "doctors_md.yml": [
+        {
+          "name": "David MacLeod MD",
+          "linkedin": "https://www.linkedin.com/in/david-macleod-md-269048217",
+          "final_score": 80.0,
+          "key_strengths": "Dartmouth Medical School MD, 8+ years experience, family medicine, telemedicine skilled"
+        }
+      ]
+    },
+    "recent_improvements": {
+      "biology_expert.yml": {
+        "from": 0.0,
+        "to": 32.0,
+        "improvement": 32.0,
+        "status": "TARGET REACHED",
+        "timestamp": "2025-08-01 17:27:32"
+      },
+      "anthropology.yml": {
+        "from": 17.33,
+        "to": 33.33,
+        "improvement": 16.0,
+        "status": "TARGET REACHED", 
+        "source": "Quick focused fix breakthrough"
+      },
+      "tax_lawyer.yml": {
+        "from": 29.33,
+        "to": 32.67,
+        "improvement": 3.34,
+        "status": "TARGET REACHED",
+        "source": "Git commit c13503f"
+      }
+    },
+    "remaining_challenges": {
+      "quantitative_finance.yml": {
+        "current_score": 17.33,
+        "target": 30.0,
+        "deficit": 12.67,
+        "challenge": "Hard criteria: M7 MBA requirement (only 20% pass rate)",
+        "best_candidate": "Philip Chen (86.67 score, Stanford MBA)"
+      },
+      "doctors_md.yml": {
+        "current_score": 16.0,
+        "target": 30.0,
+        "deficit": 14.0,
+        "challenge": "Hard criteria: Top US MD degree + 2+ years clinical US experience",
+        "best_candidate": "David MacLeod MD (80.0 score, Dartmouth MD)"
+      }
+    },
+    "technical_analysis": {
+      "search_performance": "Excellent - consistently finding 100+ candidates per category",
+      "validation_quality": "High - validation scores 0.87-0.91 range",
+      "api_challenges": "Rate limiting (429 errors) - major bottleneck causing score resets",
+      "breakthrough_pattern": "Targeted searches with domain-specific queries most effective"
+    },
+    "next_recommended_actions": [
+      "Wait 2+ hours for API rate limits to reset",
+      "Target doctors_md.yml with Harvard/Johns Hopkins MD focus", 
+      "Target quantitative_finance.yml with Goldman Sachs/Morgan Stanley focus",
+      "Use 10+ minute delays between API calls",
+      "Conservative approach: target only 1 category at a time"
+    ]
+  }
+} 

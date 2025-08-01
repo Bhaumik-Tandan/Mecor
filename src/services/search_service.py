@@ -426,7 +426,7 @@ class SearchService:
         logger.info(f"Starting search for: {query.job_category}")
         
         # Use ultra-targeted search for the most challenging categories
-        ultra_strict_categories = ['biology_expert.yml', 'mathematics_phd.yml']
+        ultra_strict_categories = ['biology_expert.yml', 'mathematics_phd.yml']  # Only these two need ultra-targeting
         if query.job_category in ultra_strict_categories:
             logger.info(f"Using ultra-targeted search for {query.job_category}")
             candidates = self._ultra_targeted_search(query, search_config)

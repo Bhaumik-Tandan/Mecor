@@ -1,0 +1,11 @@
+Category,Final_Score,Grade,Meets_Requirement,Status
+junior_corporate_lawyer.yml,34.0,D,True,PASS
+doctors_md.yml,16.0,F,False,FAIL
+tax_lawyer.yml,26.666666666666668,F,False,FAIL
+biology_expert.yml,32.0,D,True,PASS
+radiology.yml,30.333333333333336,D,True,PASS
+mathematics_phd.yml,51.000000000000014,C,True,PASS
+quantitative_finance.yml,0.0,F,False,FAIL
+bankers.yml,81.33333333333334,A,True,PASS
+mechanical_engineers.yml,69.0,B,True,PASS
+anthropology.yml,17.333333333333336,F,False,FAIL

@@ -1,0 +1,78 @@
+{
+  "timestamp": "20250801_174206",
+  "preservation_reason": "Rate limit crisis - preserving before emergency recovery",
+  "current_scores": {
+    "junior_corporate_lawyer.yml": 77.33333333333334,
+    "doctors_md.yml": 16.0,
+    "tax_lawyer.yml": 55.333333333333336,
+    "radiology.yml": 30.333333333333336,
+    "biology_expert.yml": 32.0,
+    "anthropology.yml": 0.0,
+    "mathematics_phd.yml": 0.0,
+    "quantitative_finance.yml": 0.0,
+    "bankers.yml": 0.0,
+    "mechanical_engineers.yml": 0.0
+  },
+  "achievements_found": {
+    "biology_expert_success": true,
+    "total_categories_found": 10
+  },
+  "analysis": {
+    "passing_categories": [
+      {
+        "category": "junior_corporate_lawyer.yml",
+        "score": 77.33333333333334,
+        "surplus": 47.33333333333334
+      },
+      {
+        "category": "tax_lawyer.yml",
+        "score": 55.333333333333336,
+        "surplus": 25.333333333333336
+      },
+      {
+        "category": "radiology.yml",
+        "score": 30.333333333333336,
+        "surplus": 0.3333333333333357
+      },
+      {
+        "category": "biology_expert.yml",
+        "score": 32.0,
+        "surplus": 2.0
+      }
+    ],
+    "failing_categories": [
+      {
+        "category": "doctors_md.yml",
+        "score": 16.0,
+        "deficit": 14.0
+      },
+      {
+        "category": "anthropology.yml",
+        "score": 0.0,
+        "deficit": 30.0
+      },
+      {
+        "category": "mathematics_phd.yml",
+        "score": 0.0,
+        "deficit": 30.0
+      },
+      {
+        "category": "quantitative_finance.yml",
+        "score": 0.0,
+        "deficit": 30.0
+      },
+      {
+        "category": "bankers.yml",
+        "score": 0.0,
+        "deficit": 30.0
+      },
+      {
+        "category": "mechanical_engineers.yml",
+        "score": 0.0,
+        "deficit": 30.0
+      }
+    ],
+    "total_passing": 4,
+    "success_rate": 40.0
+  }
+}

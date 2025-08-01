@@ -1,0 +1,57 @@
+{
+  "attempt": 2,
+  "timestamp": 1754049373.033493,
+  "target_score": 30.0,
+  "current_scores": {
+    "junior_corporate_lawyer.yml": 77.33333333333334,
+    "doctors_md.yml": 16.0,
+    "tax_lawyer.yml": 55.333333333333336,
+    "radiology.yml": 30.333333333333336,
+    "biology_expert.yml": 0.0,
+    "anthropology.yml": 0.0,
+    "mathematics_phd.yml": 0.0,
+    "quantitative_finance.yml": 0.0,
+    "bankers.yml": 0.0,
+    "mechanical_engineers.yml": 0.0
+  },
+  "problem_categories": [
+    {
+      "category": "biology_expert.yml",
+      "current_score": 0.0,
+      "deficit": 30.0
+    },
+    {
+      "category": "anthropology.yml",
+      "current_score": 0.0,
+      "deficit": 30.0
+    },
+    {
+      "category": "mathematics_phd.yml",
+      "current_score": 0.0,
+      "deficit": 30.0
+    },
+    {
+      "category": "quantitative_finance.yml",
+      "current_score": 0.0,
+      "deficit": 30.0
+    },
+    {
+      "category": "bankers.yml",
+      "current_score": 0.0,
+      "deficit": 30.0
+    },
+    {
+      "category": "mechanical_engineers.yml",
+      "current_score": 0.0,
+      "deficit": 30.0
+    },
+    {
+      "category": "doctors_md.yml",
+      "current_score": 16.0,
+      "deficit": 14.0
+    }
+  ],
+  "categories_above_target": 3,
+  "total_categories": 10,
+  "success_rate": 30.0
+}
