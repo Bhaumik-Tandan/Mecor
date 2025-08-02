@@ -26,7 +26,7 @@ from src.main import SearchAgent
 from src.agents.validation_agent import IntelligentValidationAgent
 from src.services.evaluation_service import SafeEvaluationService
 from src.services.search_service import SearchService
-from src.config.settings import MERCOR_API_KEY
+from src.config.settings import config
 
 class ComprehensiveOptimizer:
     def __init__(self):
@@ -34,10 +34,7 @@ class ComprehensiveOptimizer:
         self.search_agent = SearchAgent()
         self.evaluation_service = SafeEvaluationService()
         self.search_service = SearchService()
-        self.intelligent_validator = IntelligentValidationAgent(
-            search_service=self.search_service,
-            evaluation_service=self.evaluation_service
-        )
+        self.intelligent_validator = IntelligentValidationAgent()
         
         self.target_categories = [
             "tax_lawyer.yml",
@@ -190,14 +187,17 @@ class ComprehensiveOptimizer:
                 if i > 0:
                     time.sleep(30)  # 30s between strategies
                 
-                search_config = {
-                    "search_term": search_term,
-                    "max_candidates": 50,
-                    "search_strategy": "HYBRID"
-                }
+                from src.models.candidate import SearchQuery, SearchStrategy
+                
+                search_query = SearchQuery(
+                    query_text=search_term,
+                    job_category=category,
+                    strategy=SearchStrategy.HYBRID,
+                    max_candidates=50
+                )
                 
                 # Run orchestrated search
-                result = self.intelligent_validator.orchestrate_search(category, search_config)
+                result = self.intelligent_validator.orchestrate_search(search_query)
                 
                 if result:
                     # Get updated score
