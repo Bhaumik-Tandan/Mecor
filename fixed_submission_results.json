@@ -1,0 +1,26 @@
+{
+  "submission_time": "2025-08-03T06:48:16.840921",
+  "submission_email": "bhaumik.tandan@gmail.com",
+  "submission_endpoint": "https://mercor-dev--search-eng-interview.modal.run/grade",
+  "submission_type": "Fixed Format Submission - 7/10 Above 30",
+  "format_fix": "Changed from objects to LinkedIn URL strings",
+  "reference_url": "https://mercor.notion.site/Search-Engineer-Take-Home-23e5392cc93e801fb91ff6c6c3cf995e",
+  "summary": {
+    "categories_above_30": 7,
+    "total_categories": 10,
+    "success_rate": "70.0%",
+    "average_score": "36.70"
+  },
+  "detailed_scores": {
+    "bankers.yml": 54.0,
+    "biology_expert.yml": 32.0,
+    "junior_corporate_lawyer.yml": 50.67,
+    "mathematics_phd.yml": 51.0,
+    "mechanical_engineers.yml": 69.0,
+    "radiology.yml": 30.33,
+    "tax_lawyer.yml": 46.67,
+    "anthropology.yml": 17.33,
+    "doctors_md.yml": 16.0,
+    "quantitative_finance.yml": 0.0
+  }
+}

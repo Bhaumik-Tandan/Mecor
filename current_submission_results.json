@@ -1,0 +1,31 @@
+{
+  "submission_time": "2025-08-03T06:13:46.783862",
+  "submission_type": "Current Results - 8/10 Above 30",
+  "major_achievements": {
+    "anthropology_improvement": "17.33 \u2192 34.00 (+16.67)",
+    "tax_lawyer_improvement": "29.33 \u2192 46.00 (+16.67)",
+    "success_rate_improvement": "6/10 \u2192 8/10 (60% \u2192 80%)"
+  },
+  "summary": {
+    "categories_above_30": 8,
+    "total_categories": 10,
+    "success_rate": "80.0%",
+    "average_score": "39.77"
+  },
+  "detailed_scores": {
+    "tax_lawyer.yml": 46.0,
+    "junior_corporate_lawyer.yml": 85.33,
+    "radiology.yml": 30.33,
+    "doctors_md.yml": 0.0,
+    "biology_expert.yml": 32.0,
+    "anthropology.yml": 34.0,
+    "mathematics_phd.yml": 51.0,
+    "quantitative_finance.yml": 0.0,
+    "bankers.yml": 84.0,
+    "mechanical_engineers.yml": 35.0
+  },
+  "issues_to_fix": {
+    "doctors_md.yml": "0.00 - needs search configuration fix",
+    "quantitative_finance.yml": "0.00 - needs search configuration fix"
+  }
+}

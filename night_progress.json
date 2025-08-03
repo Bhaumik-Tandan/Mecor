@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-08-03T03:54:31.656801",
+  "iteration": 5,
+  "runtime_minutes": 231.28949368333332,
+  "current_scores": {
+    "doctors_md.yml": 16.0,
+    "anthropology.yml": 34.0,
+    "quantitative_finance.yml": 17.333333333333336,
+    "tax_lawyer.yml": 32.666666666666664,
+    "junior_corporate_lawyer.yml": 50.66666666666667,
+    "biology_expert.yml": 32.0,
+    "radiology.yml": 30.333333333333336,
+    "mathematics_phd.yml": 51.000000000000014,
+    "bankers.yml": 84.00000000000001,
+    "mechanical_engineers.yml": 69.0
+  },
+  "target_categories": {
+    "doctors_md.yml": 16.0,
+    "anthropology.yml": 17.33,
+    "quantitative_finance.yml": 17.33,
+    "tax_lawyer.yml": 29.33
+  },
+  "categories_above_30": 8,
+  "total_categories": 10
+}
