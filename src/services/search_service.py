@@ -679,7 +679,7 @@ class SearchService:
         strategy: SearchStrategy = SearchStrategy.HYBRID
     ) -> List[CandidateProfile]:
         """
-        Search for candidates using the specified strategy.
+        Search for candidates using the specified strategy with enhanced GPT support.
         
         Args:
             query: Search query object
@@ -709,13 +709,125 @@ class SearchService:
             from ..services.gpt_service import gpt_service
             if gpt_service.is_available() and candidates:
                 try:
+                    # Use GPT for enhanced reranking with category-specific criteria
                     candidates = gpt_service.rerank_candidates(
                         query.job_category, candidates, query.max_candidates
                     )
+                    
+                    # Apply category-specific quality filters
+                    candidates = self._apply_category_specific_filters(candidates, query.job_category)
+                    
+                    # Sort by category relevance
+                    candidates = self._sort_by_category_relevance(candidates, query.job_category)
+                    
                 except Exception as e:
                     logger.warning(f"GPT reranking failed: {e}")
             return candidates
         else:
             # Default to enhanced hybrid search
             return self.enhanced_domain_search(query, search_config)
+    
+    def _apply_category_specific_filters(self, candidates: List[CandidateProfile], job_category: str) -> List[CandidateProfile]:
+        """Apply category-specific quality filters."""
+        if not candidates or not job_category:
+            return candidates
+        
+        # Get category-specific filters from prompts config
+        try:
+            from ..utils.helpers import load_json_file
+            prompts_config = load_json_file("src/config/prompts.json")
+            hard_filters = prompts_config.get("hard_filters", {}).get(job_category, {})
+        except:
+            hard_filters = {}
+        
+        filtered_candidates = []
+        
+        for candidate in candidates:
+            if self._passes_category_filters(candidate, hard_filters, job_category):
+                filtered_candidates.append(candidate)
+        
+        return filtered_candidates
+    
+    def _passes_category_filters(self, candidate: CandidateProfile, hard_filters: Dict, job_category: str) -> bool:
+        """Check if candidate passes category-specific filters."""
+        if not candidate.summary:
+            return False
+        
+        summary_lower = candidate.summary.lower()
+        
+        # Check must-have requirements
+        must_have = hard_filters.get("must_have", [])
+        for requirement in must_have:
+            if requirement.lower() not in summary_lower:
+                return False
+        
+        # Check exclude requirements
+        exclude = hard_filters.get("exclude", [])
+        for exclusion in exclude:
+            if exclusion.lower() in summary_lower:
+                return False
+        
+        return True
+    
+    def _sort_by_category_relevance(self, candidates: List[CandidateProfile], job_category: str) -> List[CandidateProfile]:
+        """Sort candidates by category relevance score."""
+        if not candidates or not job_category:
+            return candidates
+        
+        # Calculate relevance scores
+        candidates_with_scores = []
+        for candidate in candidates:
+            relevance_score = self._calculate_category_relevance(candidate, job_category)
+            candidates_with_scores.append((candidate, relevance_score))
+        
+        # Sort by relevance score (highest first)
+        candidates_with_scores.sort(key=lambda x: x[1], reverse=True)
+        
+        return [candidate for candidate, _ in candidates_with_scores]
+    
+    def _calculate_category_relevance(self, candidate: CandidateProfile, job_category: str) -> float:
+        """Calculate category relevance score for a candidate."""
+        if not candidate.summary or not job_category:
+            return 0.0
+        
+        score = 0.0
+        summary_lower = candidate.summary.lower()
+        
+        # Get category-specific keywords
+        try:
+            from ..utils.helpers import load_json_file
+            prompts_config = load_json_file("src/config/prompts.json")
+            
+            # Check preferred keywords (higher weight)
+            hard_filters = prompts_config.get("hard_filters", {}).get(job_category, {})
+            preferred_keywords = hard_filters.get("preferred", [])
+            
+            for keyword in preferred_keywords:
+                if keyword.lower() in summary_lower:
+                    score += 0.3  # High weight for preferred keywords
+            
+            # Check domain-specific queries
+            domain_queries = prompts_config.get("domain_specific_queries", {}).get(job_category, [])
+            for query in domain_queries[:5]:  # Check top 5 queries
+                query_keywords = query.lower().split()
+                matches = sum(1 for keyword in query_keywords if keyword in summary_lower)
+                if matches > 0:
+                    score += min(0.2, matches * 0.05)
+            
+            # Check BM25 keywords
+            bm25_keywords = prompts_config.get("bm25_keywords", {}).get(job_category, [])
+            for keyword in bm25_keywords[:10]:  # Check top 10 keywords
+                if keyword.lower() in summary_lower:
+                    score += 0.1
+            
+        except Exception as e:
+            logger.warning(f"Error calculating category relevance: {e}")
+        
+        # Basic category keyword matching
+        category_keywords = job_category.lower().replace("_", " ").replace(".yml", "").split()
+        for keyword in category_keywords:
+            if keyword in summary_lower:
+                score += 0.05
+        
+        return min(score, 1.0)
 search_service = SearchService() 
