@@ -1,0 +1,185 @@
+{
+  "cycle_count": 16,
+  "timestamp": "2025-08-04T11:48:30.807834",
+  "total_evaluations": 636,
+  "total_improvements": 24,
+  "recent_results": [
+    {
+      "query": "experienced software engineer",
+      "response_time": 6.685343027114868,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant software engineering experience and technical skills.",
+        "Refine the search algorithm to better match keywords like 'software engineer' rather than unrelated roles such as legal or medical professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T11:47:44.832072"
+    },
+    {
+      "query": "biology researcher",
+      "response_time": 6.9473350048065186,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit 'biologist' or 'researcher' roles rather than general practitioners or unrelated legal professionals.",
+        "Enhance the candidate quality assessment by incorporating more detailed professional backgrounds, publications, or research experience related to biology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T11:47:45.404264"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 4.9922051429748535,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Include more specialized psychology researcher profiles rather than general practitioners to improve relevance.",
+        "Enhance the search algorithm to prioritize candidates with explicit psychology research experience and academic credentials."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T11:47:49.251987"
+    },
+    {
+      "query": "tax lawyer",
+      "response_time": 8.204478979110718,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize legal professionals with explicit experience or specialization in tax law.",
+        "Enhance the relevance of search results by refining keywords and ensuring candidate bios clearly indicate tax law expertise."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T11:47:50.757645"
+    },
+    {
+      "query": "biology researcher",
+      "response_time": 8.81745719909668,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords to specifically target biology researchers rather than general practitioners or legal professionals.",
+        "Enhance candidate quality filtering to prioritize individuals with explicit experience or publications in biology research, ensuring more accurate matches to the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T11:48:00.866237"
+    },
+    {
+      "query": "neurologist",
+      "response_time": 9.994401931762695,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.72,
+      "gpt_suggestions": [
+        "Increase the number of highly relevant neurologist profiles to improve candidate quality scoring.",
+        "Refine search algorithms to prioritize detailed professional credentials and specialties related specifically to neurology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T11:48:11.367471"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 7.071444988250732,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant mobile development experience.",
+        "Enhance candidate profiles to include specific skills and projects related to mobile development for better relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T11:48:11.769520"
+    },
+    {
+      "query": "neurologist",
+      "response_time": 6.013307809829712,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.72,
+      "gpt_suggestions": [
+        "Prioritize candidates with explicit 'neurologist' titles or specialties to improve relevance scoring.",
+        "Include more detailed candidate profiles or summaries to better assess candidate quality and relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T11:48:13.825777"
+    },
+    {
+      "query": "devops engineer",
+      "response_time": 5.419050931930542,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve candidate relevance by filtering for candidates with 'DevOps Engineer' experience or skills.",
+        "Enhance candidate quality by including more detailed professional profiles and technical skills related to DevOps."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T11:48:25.804439"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 6.985570907592773,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic or professional profiles related to chemistry.",
+        "Enhance keyword matching to ensure candidates' expertise aligns specifically with 'chemistry professor' rather than general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T11:48:27.249916"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:35:34.899401",
+      "avg_response_time": 9.883701980113983,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.34550000000000003
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T11:42:19.879027",
+      "avg_response_time": 11.999284446239471,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33999999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:42:19.879053",
+      "avg_response_time": 11.999284446239471,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33999999999999997
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T11:48:30.807195",
+      "avg_response_time": 9.55218596458435,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.387
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:48:30.807232",
+      "avg_response_time": 9.55218596458435,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.387
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "cycle_count": 17,
+  "timestamp": "2025-08-04T18:10:04.497366",
+  "total_evaluations": 637,
+  "total_improvements": 51,
+  "recent_results": [
+    {
+      "query": "computer science professor",
+      "response_time": 18.72818374633789,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit expertise or titles related to 'computer science professor'.",
+        "Enhance the candidate quality assessment by incorporating more detailed professional backgrounds and academic credentials relevant to computer science academia."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T18:08:57.118906"
+    },
+    {
+      "query": "pediatrician",
+      "response_time": 12.857355117797852,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each pediatrician's specialties, certifications, and practice locations to improve relevance and candidate quality.",
+        "Reduce response time or optimize search algorithms to provide faster results, enhancing overall user experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T18:09:00.820151"
+    },
+    {
+      "query": "mathematics professor",
+      "response_time": 11.986452102661133,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Improve filtering to prioritize candidates with clear academic titles and relevant expertise in mathematics.",
+        "Enhance the relevance scoring to better distinguish between actual mathematics professors and unrelated professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T18:09:10.382359"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 14.95116114616394,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant technical skills and experience in mobile development.",
+        "Enhance candidate profiles with specific mobile development expertise and project examples to increase relevance and quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T18:09:18.969645"
+    },
+    {
+      "query": "history professor",
+      "response_time": 14.716248035430908,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the search algorithm to prioritize candidates with relevant academic or teaching experience related to history.",
+        "Refine filtering criteria to exclude candidates whose bios are unrelated to the query, such as medical or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T18:09:26.383944"
+    },
+    {
+      "query": "M&A attorney",
+      "response_time": 12.759881258010864,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate\u2019s experience in M&A law to better assess their relevance.",
+        "Prioritize candidates with explicit titles or experience directly related to M&A transactions, and ensure the response time is optimized for quicker results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T18:09:30.714127"
+    },
+    {
+      "query": "machine learning engineer",
+      "response_time": 10.734679937362671,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Increase the number of relevant machine learning engineer candidates to improve relevance.",
+        "Refine search filters to prioritize candidates with explicit experience in machine learning engineering roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T18:09:38.973966"
+    },
+    {
+      "query": "tax lawyer",
+      "response_time": 15.008888721466064,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.78,
+      "gpt_suggestions": [
+        "Include more detailed and specific candidate profiles that clearly mention tax law expertise to improve relevance scoring.",
+        "Reduce response time to under 10 seconds to enhance overall candidate evaluation and user experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T18:09:40.717839"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 12.815348863601685,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's clinical experience and specialties to better assess relevance.",
+        "Improve search filtering to prioritize licensed or board-certified radiologists and reduce duplicate entries for the same individual."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T18:09:59.468141"
+    },
+    {
+      "query": "experienced software engineer",
+      "response_time": 14.534873723983765,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve filtering to prioritize candidates with relevant software engineering experience and titles.",
+        "Enhance candidate profiles to include detailed skills, project experience, and relevant keywords related to software engineering."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T18:10:00.128604"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T18:03:18.772477",
+      "avg_response_time": 13.958858013153076,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4215
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T18:03:18.772485",
+      "avg_response_time": 13.958858013153076,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4215
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T18:10:04.486577",
+      "avg_response_time": 15.589934313297272,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4915
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T18:10:04.486591",
+      "avg_response_time": 15.589934313297272,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4915
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T18:10:04.486593",
+      "avg_response_time": 15.589934313297272,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4915
+    }
+  ]
+}

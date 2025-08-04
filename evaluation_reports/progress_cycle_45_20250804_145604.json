@@ -1,0 +1,185 @@
+{
+  "cycle_count": 45,
+  "timestamp": "2025-08-04T14:56:04.990667",
+  "total_evaluations": 1786,
+  "total_improvements": 79,
+  "recent_results": [
+    {
+      "query": "security engineer",
+      "response_time": 15.044144868850708,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant technical backgrounds in security engineering.",
+        "Refine the search algorithm to better match keywords like 'security' and 'engineer' in candidate bios and titles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T14:55:03.637630"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 7.383048057556152,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant technical or development experience.",
+        "Refine the query or use keywords specific to mobile development to yield more targeted results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T14:55:15.875448"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 6.857409954071045,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Prioritize candidates with explicit radiology or imaging specialties to improve relevance.",
+        "Enhance candidate profiles with detailed experience and credentials related to radiology to better assess quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T14:55:25.178573"
+    },
+    {
+      "query": "neurologist",
+      "response_time": 16.70154619216919,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more specialized neurologist profiles with clear credentials and practice details.",
+        "Improve relevance filtering to prioritize candidates explicitly identified as neurologists or neuro-specialists."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T14:55:25.180230"
+    },
+    {
+      "query": "financial analyst",
+      "response_time": 11.968416929244995,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Refine search keywords to include 'financial' or 'analyst' explicitly to improve relevance.",
+        "Implement more advanced filtering or ranking algorithms that prioritize candidates with finance or analyst experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T14:55:25.181315"
+    },
+    {
+      "query": "computer science professor",
+      "response_time": 12.259764909744263,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic and university-affiliated profiles related to computer science.",
+        "Enhance candidate metadata to include professional titles, research interests, or institutional affiliations for better relevance assessment."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T14:55:43.830025"
+    },
+    {
+      "query": "security engineer",
+      "response_time": 10.28675103187561,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant technical backgrounds in security engineering.",
+        "Refine the query or use more specific keywords related to security engineering to enhance relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T14:55:48.858868"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 7.537639141082764,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic and research-focused profiles related to anthropology PhD programs.",
+        "Enhance candidate relevance by including more detailed academic backgrounds and research experience related to anthropology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T14:55:48.861419"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 9.398926973342896,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve relevance filtering to prioritize candidates with direct risk management experience, especially those like David Belmont.",
+        "Enhance candidate profiling to better distinguish between general practitioners and risk management professionals, ensuring higher candidate quality for the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T14:55:59.987272"
+    },
+    {
+      "query": "surgeon",
+      "response_time": 14.615856170654297,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize actual surgeons over general practitioners and unrelated professionals.",
+        "Enhance the search algorithm to better match the query 'surgeon' with candidates' specialties and titles, reducing unrelated results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T14:56:00.614940"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:42:55.636081",
+      "avg_response_time": 11.071344327926635,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.315
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:49:31.080198",
+      "avg_response_time": 11.805038702487945,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.357
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:49:31.080236",
+      "avg_response_time": 11.805038702487945,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.357
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:56:04.989999",
+      "avg_response_time": 10.974626123905182,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3115
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:56:04.990036",
+      "avg_response_time": 10.974626123905182,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3115
+    }
+  ]
+}

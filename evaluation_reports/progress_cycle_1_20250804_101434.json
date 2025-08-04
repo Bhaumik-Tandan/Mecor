@@ -1,0 +1,157 @@
+{
+  "cycle_count": 1,
+  "timestamp": "2025-08-04T10:14:34.064086",
+  "total_evaluations": 11,
+  "total_improvements": 1,
+  "recent_results": [
+    {
+      "query": "risk manager",
+      "response_time": 5.498955965042114,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Prioritize candidates with relevant risk management experience, such as the top candidate David Belmont, over general practitioners.",
+        "Refine search parameters to filter out unrelated professions like medical practitioners, ensuring more relevant risk management profiles appear."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:13:39.975914"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 5.6171369552612305,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of candidate profiles by filtering for mobile development experience or related technical skills.",
+        "Enhance the search algorithm to prioritize candidates with specific expertise in mobile app development, rather than general or unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:13:40.493180"
+    },
+    {
+      "query": "pediatrician",
+      "response_time": 14.97065806388855,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.78,
+      "gpt_suggestions": [
+        "Include more detailed information about each candidate's pediatric specialization and experience to improve relevance scoring.",
+        "Reduce response time to under 10 seconds to enhance overall candidate relevance and quality perception."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:13:49.593565"
+    },
+    {
+      "query": "data scientist",
+      "response_time": 5.825470924377441,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit data science or related technical experience.",
+        "Enhance the candidate selection process to include more data scientists or analytics professionals rather than general practitioners or unrelated roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T10:13:51.335253"
+    },
+    {
+      "query": "mathematics professor",
+      "response_time": 5.885526180267334,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with direct expertise or academic titles related to mathematics.",
+        "Enhance the search algorithm to better distinguish between professional roles (e.g., general practitioners, legal professionals) and academic or teaching positions relevant to mathematics."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:13:59.889436"
+    },
+    {
+      "query": "investment banker",
+      "response_time": 5.1401448249816895,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords and ensuring candidate profiles match the 'investment banker' role more closely.",
+        "Enhance candidate filtering to prioritize finance and investment banking experience over unrelated fields like medicine or law."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T10:14:02.622468"
+    },
+    {
+      "query": "pediatrician",
+      "response_time": 6.393107175827026,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Improve the filtering process to exclude unrelated professions such as legal and general practitioners, ensuring all candidates are relevant to pediatric care.",
+        "Enhance candidate ranking algorithms to prioritize more experienced and specialized pediatricians, increasing overall relevance and quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:14:12.548535"
+    },
+    {
+      "query": "economics professor",
+      "response_time": 6.1494059562683105,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.2,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with academic or research backgrounds in economics.",
+        "Enhance keyword matching to include relevant academic titles, publications, or university affiliations related to economics."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T10:14:14.684764"
+    },
+    {
+      "query": "experienced software engineer",
+      "response_time": 5.661456823348999,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Ensure candidate profiles explicitly highlight relevant software engineering experience and skills, not just general medical or legal backgrounds.",
+        "Improve search filtering to prioritize technical software engineering expertise over unrelated professions like medical practitioners or attorneys."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:14:21.191544"
+    },
+    {
+      "query": "biology researcher",
+      "response_time": 7.381533145904541,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Refine search keywords to specifically include 'biologist' or 'biology researcher' to improve relevance.",
+        "Prioritize candidates with explicit research experience or academic backgrounds related to biology rather than general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T10:14:29.060942"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:14:34.063470",
+      "avg_response_time": 6.675523627888072,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4027272727272727
+    }
+  ]
+}

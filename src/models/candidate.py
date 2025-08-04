@@ -145,22 +145,26 @@ class CandidateScores:
     bm25_score: float = 0.0
     gpt_score: float = 0.0
     soft_filter_score: float = 0.0
+    filter_score: float = 0.0  # New filter-based score
     combined_score: float = 0.0
     def calculate_combined_score(
         self, 
         vector_weight: float = 0.6, 
         bm25_weight: float = 0.4, 
-        soft_filter_weight: float = 0.2
+        soft_filter_weight: float = 0.2,
+        filter_weight: float = 0.3
     ) -> float:
-        """Calculate weighted combined score including soft filter boost."""
-        total_weight = vector_weight + bm25_weight + soft_filter_weight
+        """Calculate weighted combined score including soft filter boost and filter score."""
+        total_weight = vector_weight + bm25_weight + soft_filter_weight + filter_weight
         vector_weight = vector_weight / total_weight
         bm25_weight = bm25_weight / total_weight
         soft_filter_weight = soft_filter_weight / total_weight
+        filter_weight = filter_weight / total_weight
         self.combined_score = (
             self.vector_score * vector_weight + 
             self.bm25_score * bm25_weight +
-            self.soft_filter_score * soft_filter_weight
+            self.soft_filter_score * soft_filter_weight +
+            self.filter_score * filter_weight
         )
         return self.combined_score
     def __str__(self) -> str:

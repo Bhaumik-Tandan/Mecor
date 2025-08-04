@@ -1,0 +1,185 @@
+{
+  "cycle_count": 36,
+  "timestamp": "2025-08-04T13:56:59.906119",
+  "total_evaluations": 1427,
+  "total_improvements": 61,
+  "recent_results": [
+    {
+      "query": "computer science professor",
+      "response_time": 5.349837064743042,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit expertise or titles related to computer science or academia.",
+        "Enhance the candidate selection process to include more qualified computer science professors rather than general practitioners or unrelated roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T13:56:04.570181"
+    },
+    {
+      "query": "frontend developer",
+      "response_time": 5.794059991836548,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve relevance filtering to prioritize candidates explicitly matching 'frontend developer' skills and experience.",
+        "Enhance candidate evaluation to better assess quality, such as including portfolio links or specific frontend development experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T13:56:16.560930"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 6.756097078323364,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles with relevant mobile development experience.",
+        "Refine search keywords to better match technical skills and roles related to mobile development."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T13:56:17.796250"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 5.92303991317749,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve relevance by filtering candidates specifically with risk management expertise or titles such as 'Risk Manager' or related roles.",
+        "Enhance candidate quality assessment by prioritizing candidates with relevant experience and certifications in risk management rather than unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T13:56:18.181230"
+    },
+    {
+      "query": "intellectual property lawyer",
+      "response_time": 4.609933137893677,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize professionals with explicit expertise in intellectual property law.",
+        "Enhance the relevance of candidate summaries to better reflect their experience related to the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T13:56:21.535798"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 15.142350673675537,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with direct risk management experience, such as those with titles like 'Risk Officer' or 'Risk Manager'.",
+        "Enhance the search algorithm to better distinguish between relevant professionals and unrelated roles, reducing the appearance of candidates with unrelated backgrounds like medical practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T13:56:39.174830"
+    },
+    {
+      "query": "devops engineer",
+      "response_time": 13.74665379524231,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords and filtering for technical DevOps roles rather than general or unrelated professions.",
+        "Enhance candidate quality filtering to prioritize candidates with explicit DevOps experience, certifications, or relevant technical backgrounds."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T13:56:48.158057"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 13.538910150527954,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with skills or experience related to mobile development.",
+        "Enhance candidate profiles to include specific technical skills, project experience, or roles related to mobile app development."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T13:56:49.286950"
+    },
+    {
+      "query": "devops engineer",
+      "response_time": 10.246979236602783,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Ensure the search results accurately match the 'DevOps Engineer' role by filtering candidates with relevant technical skills and experience in DevOps.",
+        "Improve candidate profiling to include specific skills, certifications, and experience related to DevOps practices to enhance relevance and quality scoring."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T13:56:49.457127"
+    },
+    {
+      "query": "machine learning engineer",
+      "response_time": 9.54076600074768,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant machine learning or engineering experience rather than general practitioners or unrelated professions.",
+        "Enhance the relevance scoring algorithm to better distinguish between candidates' professional backgrounds and the specific skills related to 'machine learning engineer'."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T13:56:54.901740"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:44:12.672765",
+      "avg_response_time": 10.911374843120575,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.275
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:50:32.907865",
+      "avg_response_time": 8.470514953136444,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.355
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:50:32.907896",
+      "avg_response_time": 8.470514953136444,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.355
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:56:59.905420",
+      "avg_response_time": 9.172020864486694,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.28500000000000003
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:56:59.905469",
+      "avg_response_time": 9.172020864486694,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.28500000000000003
+    }
+  ]
+}

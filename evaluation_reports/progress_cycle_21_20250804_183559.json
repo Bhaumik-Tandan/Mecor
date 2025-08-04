@@ -1,0 +1,185 @@
+{
+  "cycle_count": 21,
+  "timestamp": "2025-08-04T18:35:59.704236",
+  "total_evaluations": 805,
+  "total_improvements": 63,
+  "recent_results": [
+    {
+      "query": "quantitative finance expert",
+      "response_time": 11.22456407546997,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit expertise in quantitative finance, such as those with relevant experience or publications.",
+        "Enhance the candidate quality assessment by incorporating more detailed professional backgrounds and verifying their direct involvement in quantitative finance roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T18:34:31.487977"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 14.47174072265625,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve relevance by filtering candidates specifically with 'cloud architect' experience or titles.",
+        "Enhance candidate quality by prioritizing profiles with demonstrated cloud architecture expertise and relevant certifications."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T18:34:36.315902"
+    },
+    {
+      "query": "history professor",
+      "response_time": 12.409181118011475,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Increase the number of relevant candidates by refining search filters or keywords related to academic history professionals.",
+        "Improve ranking algorithms to prioritize candidates with explicit expertise or experience in history or academia."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T18:34:43.437804"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 10.987952947616577,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more detailed and specific candidate profiles to better assess their relevance and expertise.",
+        "Improve search filtering to prioritize candidates with direct clinical experience or specialized radiology fields aligned with the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T18:34:48.656230"
+    },
+    {
+      "query": "cardiologist",
+      "response_time": 8.332754850387573,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance by filtering candidates specifically with 'cardiologist' expertise rather than general practitioners.",
+        "Enhance candidate quality by including more detailed professional credentials and specialization areas related to cardiology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T18:35:19.970175"
+    },
+    {
+      "query": "portfolio manager",
+      "response_time": 27.11743187904358,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining the query to specify 'portfolio manager' roles or related financial positions.",
+        "Enhance candidate filtering to prioritize professionals with experience or titles related to portfolio management or finance rather than unrelated fields like general practice or legal services."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T18:35:20.117638"
+    },
+    {
+      "query": "frontend developer",
+      "response_time": 31.048434019088745,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by filtering candidates specifically with frontend development experience.",
+        "Enhance candidate quality by including more detailed profiles or portfolios related to frontend development."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T18:35:28.163175"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 34.514021158218384,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant technical skills and experience in mobile development.",
+        "Refine keyword matching to better align candidate bios and experience with 'mobile developer' roles, reducing unrelated profiles like general practitioners and legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T18:35:30.347036"
+    },
+    {
+      "query": "biology researcher",
+      "response_time": 16.888453722000122,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with explicit expertise in biology research, such as PhDs or research-focused roles.",
+        "Enhance relevance by refining the query to specify 'biology researcher' roles rather than general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T18:35:49.034442"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 17.6496741771698,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize professionals with explicit cloud architecture experience.",
+        "Enhance relevance scoring by analyzing keywords related to 'cloud architect' in candidate bios and skills."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T18:35:54.701927"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T18:28:57.287533",
+      "avg_response_time": 9.599938547611236,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.507
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T18:28:57.287545",
+      "avg_response_time": 9.599938547611236,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.507
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T18:35:59.703467",
+      "avg_response_time": 15.218243336677551,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4495
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T18:35:59.703507",
+      "avg_response_time": 15.218243336677551,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4495
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T18:35:59.703517",
+      "avg_response_time": 15.218243336677551,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4495
+    }
+  ]
+}

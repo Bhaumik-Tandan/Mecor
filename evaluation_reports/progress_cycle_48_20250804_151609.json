@@ -1,0 +1,185 @@
+{
+  "cycle_count": 48,
+  "timestamp": "2025-08-04T15:16:09.501079",
+  "total_evaluations": 1897,
+  "total_improvements": 85,
+  "recent_results": [
+    {
+      "query": "backend developer",
+      "response_time": 25.22027277946472,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant technical skills and job titles related to backend development.",
+        "Refine the query processing to better match keywords like 'backend developer' rather than general medical or legal profiles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T15:15:10.154035"
+    },
+    {
+      "query": "history professor",
+      "response_time": 11.557283878326416,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit academic or teaching backgrounds in history.",
+        "Enhance candidate profiling to include more detailed information about their expertise in history to better match the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T15:15:14.452363"
+    },
+    {
+      "query": "financial analyst",
+      "response_time": 7.397028923034668,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles explicitly related to financial analysis or finance roles.",
+        "Enhance the search algorithm to better match keywords like 'financial analyst' with relevant professional experience and titles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T15:15:19.888764"
+    },
+    {
+      "query": "intellectual property lawyer",
+      "response_time": 9.469507694244385,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by filtering candidates specifically with legal or intellectual property expertise.",
+        "Enhance candidate quality by including detailed profiles or credentials related to IP law, rather than general practitioners or unrelated professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T15:15:35.579158"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 5.027165174484253,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search relevance by refining keywords to specifically target academic or university-affiliated chemistry professors.",
+        "Enhance candidate filtering to prioritize individuals with explicit expertise or titles related to chemistry or academia, rather than general legal or medical professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T15:15:40.493364"
+    },
+    {
+      "query": "M&A attorney",
+      "response_time": 22.901697158813477,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.78,
+      "gpt_suggestions": [
+        "Include more detailed candidate profiles highlighting specific M&A experience and successful deals to improve relevance scoring.",
+        "Reduce response time to under 15 seconds to enhance candidate quality perception and overall score."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T15:15:44.387314"
+    },
+    {
+      "query": "corporate lawyer",
+      "response_time": 9.30541205406189,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize relevant professional backgrounds, such as legal experience for 'corporate lawyer'.",
+        "Enhance search algorithms to better match keywords and professional profiles related to corporate law rather than general practitioners."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T15:15:51.053682"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 6.6815690994262695,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic and research-focused profiles related to anthropology PhD programs.",
+        "Refine candidate ranking to emphasize relevant educational backgrounds and research experience in anthropology rather than unrelated professional roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T15:15:51.254882"
+    },
+    {
+      "query": "financial analyst",
+      "response_time": 6.822667121887207,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant finance or analytical experience.",
+        "Refine the query to include keywords like 'financial,' 'analyst,' or related skills to better match candidate profiles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T15:16:04.494200"
+    },
+    {
+      "query": "data scientist",
+      "response_time": 8.81253695487976,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search algorithms to prioritize candidates with relevant professional backgrounds in data science or related fields.",
+        "Enhance filtering criteria to exclude candidates whose bios are unrelated to data science, such as legal or general medical professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T15:16:05.687947"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:03:11.055474",
+      "avg_response_time": 17.67539813518524,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.39849999999999997
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:09:54.110639",
+      "avg_response_time": 11.289762151241302,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3885
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:09:54.110684",
+      "avg_response_time": 11.289762151241302,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3885
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:16:09.500468",
+      "avg_response_time": 10.553666877746583,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3565
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:16:09.500499",
+      "avg_response_time": 10.553666877746583,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3565
+    }
+  ]
+}

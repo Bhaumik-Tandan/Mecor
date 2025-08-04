@@ -1,0 +1,185 @@
+{
+  "cycle_count": 21,
+  "timestamp": "2025-08-04T12:19:17.374484",
+  "total_evaluations": 845,
+  "total_improvements": 31,
+  "recent_results": [
+    {
+      "query": "computer science professor",
+      "response_time": 9.438109159469604,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with academic or teaching backgrounds in computer science.",
+        "Enhance the candidate selection process to include more qualified computer science professors rather than professionals from unrelated fields."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T12:18:20.586067"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 6.6780359745025635,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit psychology or research backgrounds.",
+        "Enhance candidate profiling to include research experience or academic credentials related to psychology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T12:18:26.263253"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 7.676210165023804,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with academic or research backgrounds related to anthropology.",
+        "Enhance relevance scoring to better distinguish candidates with PhDs or academic experience in anthropology rather than general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T12:18:30.588880"
+    },
+    {
+      "query": "history professor",
+      "response_time": 9.203943014144897,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize individuals with explicit expertise or experience in history or academia.",
+        "Enhance search algorithms to better match keywords like 'history professor' with relevant professional profiles, reducing irrelevant results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T12:18:36.243965"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 6.4057769775390625,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic and research-related profiles related to anthropology PhD.",
+        "Enhance candidate relevance scoring to better distinguish between medical professionals and anthropology scholars."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T12:18:38.716759"
+    },
+    {
+      "query": "mechanical engineer",
+      "response_time": 5.08207106590271,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with mechanical engineering backgrounds rather than medical professionals.",
+        "Enhance the search algorithm to better match keywords like 'mechanical engineer' with candidate bios and experience, reducing unrelated results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T12:18:41.075958"
+    },
+    {
+      "query": "corporate lawyer",
+      "response_time": 12.39234471321106,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more detailed and specific professional profiles to better assess candidate quality.",
+        "Improve search filtering to prioritize candidates with verified legal experience and relevant specialization in corporate law."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T12:18:57.064905"
+    },
+    {
+      "query": "psychiatrist",
+      "response_time": 6.1590940952301025,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more specific keywords related to psychiatry, such as 'psychiatrist,' 'psychiatric services,' or 'mental health specialist,' to improve relevance.",
+        "Enhance candidate profiles with detailed credentials, specialties, and practice locations to better assess candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T12:19:01.683518"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 6.6273109912872314,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic and research-focused profiles related to anthropology PhD programs.",
+        "Refine candidate ranking algorithms to better match educational background and expertise relevant to anthropology PhD."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T12:19:03.468117"
+    },
+    {
+      "query": "intellectual property lawyer",
+      "response_time": 8.783320665359497,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize professionals explicitly specializing in intellectual property law.",
+        "Enhance search algorithms to better match relevant keywords and professional backgrounds related to IP law."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T12:19:12.370805"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:00:53.326323",
+      "avg_response_time": 8.746613562107086,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3485
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:06:59.810579",
+      "avg_response_time": 6.5206410646438595,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.2835
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:13:04.482477",
+      "avg_response_time": 6.428521072864532,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.325
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T12:19:17.373758",
+      "avg_response_time": 8.378670024871827,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.395
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:19:17.373800",
+      "avg_response_time": 8.378670024871827,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.395
+    }
+  ]
+}

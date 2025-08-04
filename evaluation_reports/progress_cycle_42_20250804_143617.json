@@ -1,0 +1,185 @@
+{
+  "cycle_count": 42,
+  "timestamp": "2025-08-04T14:36:17.829985",
+  "total_evaluations": 1670,
+  "total_improvements": 73,
+  "recent_results": [
+    {
+      "query": "neurologist",
+      "response_time": 7.9737629890441895,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Increase the number of highly relevant candidates specifically identified as neurologists or neuro-specialists.",
+        "Improve the relevance filtering to prioritize candidates with clear expertise and experience in neurology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T14:35:11.116243"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 7.659569025039673,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with direct psychology research experience, such as Kennedy Ariel Millward.",
+        "Enhance candidate profiling to include specific research activities or publications related to psychology to better match the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T14:35:12.726786"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 7.927545070648193,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize candidates with relevant mobile development experience or titles.",
+        "Enhance search query specificity to better match candidates with mobile development skills rather than unrelated roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T14:35:18.941733"
+    },
+    {
+      "query": "physics researcher",
+      "response_time": 6.6972270011901855,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search algorithm to prioritize profiles explicitly related to physics research, such as academic or research positions in physics.",
+        "Refine keyword matching to filter out candidates with unrelated backgrounds (e.g., legal, medical) and focus on those with physics or scientific research experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T14:35:31.968250"
+    },
+    {
+      "query": "cardiologist",
+      "response_time": 6.913051128387451,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more specific information about each candidate\u2019s specialization in cardiology to improve relevance.",
+        "Provide additional details on candidate qualifications, certifications, or experience directly related to cardiology to enhance candidate quality assessment."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T14:35:33.198748"
+    },
+    {
+      "query": "intellectual property lawyer",
+      "response_time": 27.799354076385498,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize professionals with relevant legal expertise in intellectual property law.",
+        "Enhance search algorithms to better match keywords related to legal services and IP law specifically, rather than general practitioners or unrelated fields."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T14:35:51.680325"
+    },
+    {
+      "query": "security engineer",
+      "response_time": 16.386670112609863,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search query specificity to better target security engineering roles, such as including keywords like 'cybersecurity' or 'security architecture'.",
+        "Enhance candidate filtering to prioritize profiles with relevant security engineering experience and certifications."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T14:35:53.782063"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 14.71680212020874,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Increase the relevance of search results by filtering for candidates with PhD or academic research experience in anthropology.",
+        "Improve candidate quality by prioritizing profiles with academic credentials, publications, or research in anthropology rather than general practitioners."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T14:35:53.782962"
+    },
+    {
+      "query": "quantitative finance expert",
+      "response_time": 6.7396628856658936,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with expertise in quantitative finance, such as quant analysts or financial engineers.",
+        "Enhance the candidate selection process to exclude unrelated professions like general practitioners or legal professionals, ensuring the results align with the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T14:36:09.773994"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 10.997817039489746,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with direct risk management experience, such as David Belmont.",
+        "Enhance the search algorithm to better distinguish between relevant risk management professionals and unrelated profiles like general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T14:36:12.826852"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:23:28.404471",
+      "avg_response_time": 9.683371484279633,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.347
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:29:49.841754",
+      "avg_response_time": 9.73351355791092,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3875
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:29:49.841800",
+      "avg_response_time": 9.73351355791092,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3875
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:36:17.829461",
+      "avg_response_time": 13.544813203811646,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.32
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:36:17.829490",
+      "avg_response_time": 13.544813203811646,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.32
+    }
+  ]
+}

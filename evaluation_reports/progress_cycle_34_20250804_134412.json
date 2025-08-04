@@ -1,0 +1,185 @@
+{
+  "cycle_count": 34,
+  "timestamp": "2025-08-04T13:44:12.673420",
+  "total_evaluations": 1345,
+  "total_improvements": 57,
+  "recent_results": [
+    {
+      "query": "anthropology PhD",
+      "response_time": 15.301301002502441,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Include more candidates with explicit academic backgrounds or research experience in anthropology or related fields.",
+        "Refine the search criteria to filter for candidates with PhD qualifications or academic research experience relevant to anthropology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T13:43:13.671854"
+    },
+    {
+      "query": "biology researcher",
+      "response_time": 17.963326930999756,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the search algorithm to prioritize candidates with explicit research experience in biology.",
+        "Refine keyword matching to filter out general practitioners and legal professionals, focusing on research-related profiles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T13:43:13.793740"
+    },
+    {
+      "query": "tax lawyer",
+      "response_time": 8.89156198501587,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with legal expertise related to tax law rather than general practitioners.",
+        "Enhance the search algorithm to better match keywords like 'tax' and 'law' in candidate bios and experience to increase relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T13:43:18.698140"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 7.00070595741272,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve relevance filtering to prioritize candidates with direct risk management experience rather than general practitioners or unrelated professions.",
+        "Enhance candidate quality assessment by incorporating specific risk management credentials or roles, such as risk officers or risk analysts."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T13:43:28.832603"
+    },
+    {
+      "query": "computer science professor",
+      "response_time": 11.918567895889282,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant academic or teaching experience in computer science rather than general practitioners.",
+        "Refine the query to specify 'computer science professor' explicitly, and ensure search results focus on academic professionals in that field."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T13:43:30.635367"
+    },
+    {
+      "query": "computer science professor",
+      "response_time": 9.20885682106018,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords to target academic or university-affiliated computer science professors.",
+        "Enhance candidate filtering to prioritize individuals with academic titles or university affiliations related to computer science."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T13:43:39.601372"
+    },
+    {
+      "query": "data scientist",
+      "response_time": 6.0894529819488525,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining the query to better match 'data scientist' roles, as most candidates are general practitioners.",
+        "Enhance candidate filtering to prioritize professionals with data science or related technical experience, ensuring higher candidate quality for the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T13:43:41.400826"
+    },
+    {
+      "query": "machine learning engineer",
+      "response_time": 19.753051042556763,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate relevance by prioritizing profiles explicitly related to machine learning engineering, such as data scientists or ML engineers.",
+        "Enhance candidate quality assessment by including more detailed qualifications, certifications, or project experience relevant to machine learning."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T13:44:06.697959"
+    },
+    {
+      "query": "intellectual property lawyer",
+      "response_time": 20.119373083114624,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize professionals with explicit expertise in intellectual property law.",
+        "Enhance search algorithms to better match keywords related to legal specialties, especially IP law."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T13:44:07.670240"
+    },
+    {
+      "query": "computer science professor",
+      "response_time": 9.211893796920776,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by filtering out non-academic or non-technical professions such as general practitioners and lawyers.",
+        "Enhance candidate quality by prioritizing verified university faculty profiles or published researchers in computer science."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T13:44:09.599864"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:30:57.310679",
+      "avg_response_time": 8.924559152126312,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3375
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:37:34.616983",
+      "avg_response_time": 10.430621981620789,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3885
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:37:34.617030",
+      "avg_response_time": 10.430621981620789,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3885
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:44:12.672723",
+      "avg_response_time": 10.911374843120575,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.275
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:44:12.672765",
+      "avg_response_time": 10.911374843120575,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.275
+    }
+  ]
+}

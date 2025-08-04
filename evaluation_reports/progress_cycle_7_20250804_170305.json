@@ -1,0 +1,185 @@
+{
+  "cycle_count": 7,
+  "timestamp": "2025-08-04T17:03:05.068775",
+  "total_evaluations": 241,
+  "total_improvements": 21,
+  "recent_results": [
+    {
+      "query": "anthropology PhD",
+      "response_time": 23.583428144454956,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic and research-oriented profiles related to anthropology PhDs.",
+        "Enhance relevance scoring to better distinguish candidates with actual anthropology PhDs from unrelated medical or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T17:01:58.867404"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 12.87338900566101,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize individuals with explicit academic or teaching roles in chemistry.",
+        "Enhance search algorithms to better match keywords like 'professor' and 'chemistry' rather than general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T17:02:01.036989"
+    },
+    {
+      "query": "mechanical engineer",
+      "response_time": 10.975120067596436,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's mechanical engineering expertise to improve relevance scoring.",
+        "Prioritize candidates with direct mechanical engineering experience over those with unrelated roles or general legal/biotech backgrounds to enhance candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T17:02:05.680517"
+    },
+    {
+      "query": "history professor",
+      "response_time": 6.53676700592041,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate relevance by filtering for academic or historical expertise rather than medical professionals.",
+        "Enhance search algorithms to better match keywords like 'history' with relevant academic or scholarly profiles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T17:02:05.846551"
+    },
+    {
+      "query": "physics researcher",
+      "response_time": 19.05041813850403,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Improve relevance by filtering candidates specifically with 'researcher' or 'research' in their titles or descriptions.",
+        "Enhance candidate quality assessment by prioritizing candidates with explicit research experience in physics, such as research positions, publications, or academic roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T17:02:24.202201"
+    },
+    {
+      "query": "economics professor",
+      "response_time": 9.120593309402466,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic and university-affiliated profiles related to economics.",
+        "Enhance keyword matching to include terms like 'professor,' 'economics,' 'faculty,' or 'academic' to better identify relevant candidates."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T17:02:34.103164"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 14.455621719360352,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant cloud architecture experience.",
+        "Enhance candidate profiles to include specific skills and projects related to cloud architecture for better relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T17:02:40.493253"
+    },
+    {
+      "query": "mechanical engineer",
+      "response_time": 10.101852178573608,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve filtering and ranking algorithms to prioritize candidates with relevant mechanical engineering experience.",
+        "Enhance keyword matching to ensure search results accurately reflect the query, reducing irrelevant profiles like general practitioners."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T17:02:40.642250"
+    },
+    {
+      "query": "economics professor",
+      "response_time": 10.625646114349365,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining the query to specify 'economics' instead of 'general practitioner' or related medical roles.",
+        "Enhance candidate filtering to prioritize professionals with backgrounds in economics, academia, or related fields rather than medical practitioners."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T17:02:46.007239"
+    },
+    {
+      "query": "cardiologist",
+      "response_time": 12.616863012313843,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of top candidates by prioritizing licensed cardiologists over general practitioners.",
+        "Enhance filtering criteria to ensure candidates' specialties explicitly match 'cardiologist' rather than general medical roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T17:03:00.066766"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T16:56:19.147952",
+      "avg_response_time": 15.65502346754074,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.495
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T16:56:19.147960",
+      "avg_response_time": 15.65502346754074,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.495
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T17:03:05.068421",
+      "avg_response_time": 12.290092086791992,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.41500000000000004
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T17:03:05.068442",
+      "avg_response_time": 12.290092086791992,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.41500000000000004
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T17:03:05.068446",
+      "avg_response_time": 12.290092086791992,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.41500000000000004
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "cycle_count": 40,
+  "timestamp": "2025-08-04T14:23:28.406141",
+  "total_evaluations": 1592,
+  "total_improvements": 69,
+  "recent_results": [
+    {
+      "query": "computer science professor",
+      "response_time": 8.903058290481567,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit expertise or titles related to computer science or academia.",
+        "Enhance the candidate quality assessment by including factors such as academic background, publications, or teaching experience in computer science."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T14:22:27.344010"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 5.8080761432647705,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with cloud architecture experience rather than general practitioners.",
+        "Enhance the candidate scoring criteria to better distinguish technical expertise related to cloud architecture."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T14:22:31.799386"
+    },
+    {
+      "query": "experienced software engineer",
+      "response_time": 15.989751815795898,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant software engineering experience.",
+        "Refine keyword matching to exclude unrelated roles such as general practitioners and legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T14:22:49.501750"
+    },
+    {
+      "query": "mechanical engineer",
+      "response_time": 9.935656309127808,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant professional backgrounds related to mechanical engineering.",
+        "Enhance the relevance of search results by refining keywords and ensuring candidate profiles match the 'mechanical engineer' query more closely."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T14:22:49.532016"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 7.18614387512207,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Ensure candidate profiles are directly related to mobile development roles rather than general or medical backgrounds.",
+        "Improve search filtering to prioritize technical skills and experience relevant to mobile app development."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T14:22:49.652811"
+    },
+    {
+      "query": "financial analyst",
+      "response_time": 6.202898025512695,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with direct experience or titles related to financial analysis.",
+        "Enhance candidate profiling to include specific skills, certifications, or roles pertinent to financial analysis to better match the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T14:23:09.509396"
+    },
+    {
+      "query": "quantitative finance expert",
+      "response_time": 6.017996788024902,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles explicitly related to quantitative finance, such as those with relevant titles or keywords.",
+        "Enhance the search algorithm to better distinguish between relevant finance experts and unrelated professionals, reducing irrelevant results like medical or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T14:23:09.511482"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 11.888611793518066,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic and research-focused profiles related to anthropology PhD programs.",
+        "Refine candidate selection to include individuals with relevant educational backgrounds or research experience in anthropology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T14:23:09.512235"
+    },
+    {
+      "query": "cardiologist",
+      "response_time": 6.954462289810181,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.72,
+      "gpt_suggestions": [
+        "Increase the relevance of top candidates by prioritizing those explicitly identified as cardiologists rather than general practitioners or unrelated professions.",
+        "Improve response time efficiency to better reflect the search's promptness, possibly by optimizing search algorithms or indexing."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T14:23:23.401375"
+    },
+    {
+      "query": "history professor",
+      "response_time": 7.248552083969116,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with titles or backgrounds directly related to 'history professor'.",
+        "Enhance the candidate quality assessment by incorporating more detailed profile information and verifying professional credentials."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T14:23:24.689508"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:10:04.550788",
+      "avg_response_time": 9.688867938518523,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3715
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:16:59.527665",
+      "avg_response_time": 10.913851606845856,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.315
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:16:59.527705",
+      "avg_response_time": 10.913851606845856,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.315
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:23:28.404423",
+      "avg_response_time": 9.683371484279633,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.347
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:23:28.404471",
+      "avg_response_time": 9.683371484279633,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.347
+    }
+  ]
+}

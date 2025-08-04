@@ -1,0 +1,157 @@
+{
+  "cycle_count": 1,
+  "timestamp": "2025-08-04T10:14:06.644382",
+  "total_evaluations": 13,
+  "total_improvements": 1,
+  "recent_results": [
+    {
+      "query": "biology researcher",
+      "response_time": 6.955790042877197,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates explicitly labeled as 'biologists' or 'researchers' in the field of biology.",
+        "Enhance the relevance of search results by incorporating keywords related to research activities, publications, or academic experience in biology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:13:14.054984"
+    },
+    {
+      "query": "history professor",
+      "response_time": 6.883116006851196,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic or educational professionals with 'professor' in their titles or bios.",
+        "Enhance candidate relevance by refining keywords to better match 'history professor' rather than general practitioners or unrelated legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T10:13:26.539691"
+    },
+    {
+      "query": "corporate lawyer",
+      "response_time": 5.088464975357056,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.78,
+      "gpt_suggestions": [
+        "Include more detailed and specific professional backgrounds to better assess candidate relevance and quality.",
+        "Incorporate additional metrics such as client reviews or case histories to enhance candidate quality evaluation."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:13:35.953181"
+    },
+    {
+      "query": "neurologist",
+      "response_time": 5.930589914321899,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Increase the relevance of top candidates by prioritizing those explicitly identified as neurologists or neuro-specialists.",
+        "Improve candidate quality by filtering out unrelated profiles such as general practitioners and legal professionals, focusing on verified medical specialists in neurology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T10:13:38.421290"
+    },
+    {
+      "query": "mathematics professor",
+      "response_time": 4.576844215393066,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by prioritizing academic or professional profiles explicitly related to mathematics professors.",
+        "Refine the search algorithm to better filter out unrelated medical and legal professionals, ensuring candidate quality aligns with the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:13:41.621407"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 7.1473708152771,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.7,
+      "gpt_suggestions": [
+        "Include more detailed professional profiles or specialties to better match the 'radiology doctor' query.",
+        "Prioritize candidates with explicit radiology specialization and relevant experience over general practitioners."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:13:41.622359"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 5.206582069396973,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords to specifically target academic or university-affiliated chemistry professors.",
+        "Enhance candidate filtering to prioritize professionals with explicit chemistry or academic backgrounds rather than general practitioners or unrelated fields."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T10:13:49.941820"
+    },
+    {
+      "query": "mathematics professor",
+      "response_time": 5.4858763217926025,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit academic or professorial titles related to mathematics.",
+        "Enhance candidate quality assessment by incorporating metrics such as academic publications, teaching experience, or recognized contributions to mathematics."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T10:14:01.642526"
+    },
+    {
+      "query": "devops engineer",
+      "response_time": 7.898600339889526,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant DevOps experience and titles.",
+        "Enhance candidate profiling to include specific skills, certifications, and project experience related to DevOps engineering."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:14:04.291977"
+    },
+    {
+      "query": "devops engineer",
+      "response_time": 4.871728897094727,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles explicitly related to DevOps engineering, such as technical skills and relevant experience.",
+        "Enhance the search algorithm to better understand and match technical roles rather than general or unrelated professions like medical practitioners or legal services."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:14:06.335320"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:14:06.644050",
+      "avg_response_time": 5.9146788120269775,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4253846153846154
+    }
+  ]
+}

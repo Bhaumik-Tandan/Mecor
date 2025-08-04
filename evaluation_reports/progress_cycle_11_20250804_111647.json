@@ -1,0 +1,185 @@
+{
+  "cycle_count": 11,
+  "timestamp": "2025-08-04T11:16:47.620743",
+  "total_evaluations": 434,
+  "total_improvements": 15,
+  "recent_results": [
+    {
+      "query": "psychiatrist",
+      "response_time": 9.098993062973022,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.78,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's psychiatric expertise to improve relevance scoring.",
+        "Prioritize candidates with clear psychiatric qualifications (e.g., MD, DO, PMHNP-BC) over those with less relevant titles or incomplete descriptions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T11:15:54.963159"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 8.149874925613403,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize licensed radiologists with relevant specialties.",
+        "Enhance the relevance scoring to better distinguish candidates with direct radiology experience from general practitioners or unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T11:15:58.205372"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 8.455852031707764,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.2,
+      "gpt_suggestions": [
+        "Improve search relevance by refining keywords to specifically target anthropology PhD programs or related academic profiles.",
+        "Enhance candidate quality by filtering out unrelated professional roles and focusing on academic or research-oriented candidates in anthropology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T11:16:05.466625"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 7.338732719421387,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant cloud architecture experience.",
+        "Enhance candidate profiles to include specific skills and titles related to cloud architecture."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T11:16:10.619215"
+    },
+    {
+      "query": "tax lawyer",
+      "response_time": 6.901864767074585,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Include more specialized legal professionals in the results, such as licensed tax attorneys.",
+        "Improve filtering to prioritize candidates with legal or tax law experience rather than general practitioners."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T11:16:11.738093"
+    },
+    {
+      "query": "cardiologist",
+      "response_time": 7.396575212478638,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by filtering candidates specifically with cardiology expertise.",
+        "Enhance candidate quality metrics to prioritize verified medical professionals in cardiology over general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T11:16:25.214299"
+    },
+    {
+      "query": "neurologist",
+      "response_time": 6.385560989379883,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Prioritize candidates with explicit titles or experience related to neurology or neurologists to improve relevance.",
+        "Include more detailed professional backgrounds or specialties to better assess candidate quality and relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T11:16:31.090528"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 6.955859899520874,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance by filtering candidates specifically with 'cloud architect' experience or titles.",
+        "Enhance candidate quality by prioritizing profiles with relevant cloud architecture skills or certifications."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T11:16:41.019499"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 10.972373008728027,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Refine search parameters to prioritize candidates with relevant mobile development experience.",
+        "Improve filtering to exclude unrelated professions such as medical practitioners and lawyers."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T11:16:42.617405"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 6.481863975524902,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Prioritize candidates with specific radiology expertise and relevant medical titles to improve relevance.",
+        "Include additional details such as certifications, specialties, or professional experience related to radiology to enhance candidate quality assessment."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T11:16:46.311284"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T11:04:17.905418",
+      "avg_response_time": 8.777509868144989,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3085
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:04:17.905439",
+      "avg_response_time": 8.777509868144989,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3085
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T11:10:34.737710",
+      "avg_response_time": 8.08486807346344,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.346
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:10:34.737754",
+      "avg_response_time": 8.08486807346344,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.346
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:16:47.620119",
+      "avg_response_time": 7.978292238712311,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.34900000000000003
+    }
+  ]
+}

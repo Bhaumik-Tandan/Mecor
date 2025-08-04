@@ -1,0 +1,185 @@
+{
+  "cycle_count": 30,
+  "timestamp": "2025-08-04T13:18:16.401981",
+  "total_evaluations": 1185,
+  "total_improvements": 49,
+  "recent_results": [
+    {
+      "query": "psychology researcher",
+      "response_time": 9.544770956039429,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant psychology research experience.",
+        "Enhance the query processing to better match keywords related to academic or research roles in psychology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T13:17:26.781654"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 7.6592490673065186,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search algorithm to prioritize candidates with relevant cloud architecture experience.",
+        "Refine keyword matching to filter out unrelated professions like medical and legal fields."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T13:17:33.485500"
+    },
+    {
+      "query": "mechanical engineer",
+      "response_time": 7.978165864944458,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance of candidates by filtering for those specifically titled 'mechanical engineer' rather than general practitioners or unrelated roles.",
+        "Enhance candidate quality assessment by prioritizing candidates with relevant engineering experience and technical skills related to mechanical engineering."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T13:17:39.664960"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 7.88653302192688,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve relevance by filtering candidates specifically with a PhD or academic background in anthropology.",
+        "Enhance candidate quality assessment to prioritize academic qualifications and research experience related to anthropology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T13:17:41.396862"
+    },
+    {
+      "query": "mechanical engineer",
+      "response_time": 6.869611024856567,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Increase the relevance of search results by filtering candidates specifically with mechanical engineering backgrounds, rather than general practitioners.",
+        "Improve candidate quality by prioritizing profiles with detailed mechanical engineering experience and relevant skills."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T13:17:53.857100"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 10.154186010360718,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of candidate profiles by filtering for cloud architecture or IT-specific roles.",
+        "Enhance candidate quality by prioritizing profiles with relevant cloud or IT experience and certifications."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T13:17:58.486992"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 7.064773321151733,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.52,
+      "gpt_suggestions": [
+        "Improve the relevance of top candidates by filtering for verified radiologists or specialists in radiology.",
+        "Enhance candidate quality by including more detailed professional credentials, certifications, or specific radiology experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T13:17:59.936814"
+    },
+    {
+      "query": "tax lawyer",
+      "response_time": 8.467613935470581,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize legal professionals with specific expertise in tax law.",
+        "Enhance the relevance of candidate descriptions to clearly highlight their experience with tax-related legal services."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T13:18:06.478629"
+    },
+    {
+      "query": "experienced software engineer",
+      "response_time": 6.173318147659302,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve relevance filtering to prioritize candidates with software engineering experience rather than unrelated roles like general practitioners or legal professionals.",
+        "Enhance candidate profiling to include specific software engineering skills, projects, or titles to better match the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T13:18:11.397858"
+    },
+    {
+      "query": "backend developer",
+      "response_time": 5.2853710651397705,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles explicitly related to backend development, such as technical skills and relevant experience.",
+        "Enhance the search algorithm to better distinguish between medical professionals and software developers, ensuring more relevant results for 'backend developer'."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T13:18:14.658919"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:05:26.586753",
+      "avg_response_time": 13.053585922718048,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.40499999999999997
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:11:59.676296",
+      "avg_response_time": 10.62953964471817,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3275
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:11:59.676341",
+      "avg_response_time": 10.62953964471817,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3275
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:18:16.401255",
+      "avg_response_time": 9.674782311916351,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.36350000000000005
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:18:16.401296",
+      "avg_response_time": 9.674782311916351,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.36350000000000005
+    }
+  ]
+}

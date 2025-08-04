@@ -1,0 +1,185 @@
+{
+  "cycle_count": 5,
+  "timestamp": "2025-08-04T16:49:34.529742",
+  "total_evaluations": 166,
+  "total_improvements": 15,
+  "recent_results": [
+    {
+      "query": "tax lawyer",
+      "response_time": 17.207342863082886,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize legal professionals specifically related to tax law.",
+        "Enhance candidate profiling to clearly distinguish between medical and legal professionals, ensuring relevance to 'tax lawyer'."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T16:48:29.165474"
+    },
+    {
+      "query": "mechanical engineer",
+      "response_time": 13.922487735748291,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more detailed and specific summaries highlighting relevant mechanical engineering skills and experience for each candidate.",
+        "Prioritize candidates with direct mechanical engineering roles and relevant industry experience to improve relevance and quality scores."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T16:48:40.194675"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 12.005596160888672,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles with relevant academic backgrounds in anthropology, especially those with PhDs in the field.",
+        "Enhance the relevance scoring to better distinguish between medical practitioners and anthropology researchers, ensuring top results align with the 'anthropology PhD' query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T16:48:49.324976"
+    },
+    {
+      "query": "backend developer",
+      "response_time": 13.057095766067505,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles explicitly mentioning 'backend developer' skills and experience.",
+        "Include more detailed candidate profiles or summaries to better assess relevance and quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T16:48:50.214468"
+    },
+    {
+      "query": "corporate lawyer",
+      "response_time": 9.462258100509644,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve filtering to prioritize candidates with explicit experience in corporate law.",
+        "Enhance the relevance scoring to better distinguish specialized legal professionals from general practitioners."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T16:48:54.278403"
+    },
+    {
+      "query": "surgeon",
+      "response_time": 9.33193588256836,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate relevance by filtering for medical professionals explicitly labeled as surgeons or surgeons-in-training.",
+        "Enhance candidate quality by prioritizing verified medical practitioners with specialized surgical experience rather than general corporate or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T16:48:57.866062"
+    },
+    {
+      "query": "mathematics professor",
+      "response_time": 7.037213087081909,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize academic or professional profiles explicitly related to mathematics professors.",
+        "Enhance candidate quality assessment by incorporating more detailed criteria such as academic credentials, publications, or teaching experience related to mathematics."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T16:49:13.987656"
+    },
+    {
+      "query": "investment banker",
+      "response_time": 10.119356155395508,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by filtering candidates specifically with 'investment banker' experience or titles.",
+        "Enhance candidate quality assessment by prioritizing profiles with clear finance or banking backgrounds rather than unrelated professions like medical practitioners or lawyers."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T16:49:14.156861"
+    },
+    {
+      "query": "psychiatrist",
+      "response_time": 9.912262201309204,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.72,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's psychiatric expertise to improve relevance scoring.",
+        "Prioritize candidates with explicit psychiatric qualifications or board certifications to enhance candidate quality assessment."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T16:49:21.441982"
+    },
+    {
+      "query": "investment banker",
+      "response_time": 8.40976095199585,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize professionals explicitly in investment banking or finance-related roles.",
+        "Enhance search algorithms to better match industry-specific keywords and titles relevant to investment banking."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T16:49:29.526299"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T16:43:04.749290",
+      "avg_response_time": 14.539764511585236,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.49000000000000005
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T16:43:04.749301",
+      "avg_response_time": 14.539764511585236,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.49000000000000005
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T16:49:34.529091",
+      "avg_response_time": 12.008767366409302,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.52
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T16:49:34.529134",
+      "avg_response_time": 12.008767366409302,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.52
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T16:49:34.529141",
+      "avg_response_time": 12.008767366409302,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.52
+    }
+  ]
+}

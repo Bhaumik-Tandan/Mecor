@@ -1,0 +1,185 @@
+{
+  "cycle_count": 9,
+  "timestamp": "2025-08-04T11:04:17.905902",
+  "total_evaluations": 350,
+  "total_improvements": 12,
+  "recent_results": [
+    {
+      "query": "machine learning engineer",
+      "response_time": 5.481176853179932,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords and filtering for roles specifically related to machine learning engineering.",
+        "Enhance candidate quality assessment by prioritizing profiles with relevant technical skills, experience in machine learning, or related fields rather than general practitioners or unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T11:03:28.299963"
+    },
+    {
+      "query": "neurologist",
+      "response_time": 5.810600757598877,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate\u2019s specialization and credentials related to neurology to improve relevance.",
+        "Prioritize candidates with explicit titles or experience in neurology or neurosurgery to enhance candidate quality scoring."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T11:03:35.884491"
+    },
+    {
+      "query": "portfolio manager",
+      "response_time": 6.154360055923462,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of candidate profiles by filtering for finance or investment-related experience related to portfolio management.",
+        "Enhance the candidate selection process to prioritize professionals with explicit experience or titles in portfolio management or related financial roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T11:03:38.075825"
+    },
+    {
+      "query": "experienced software engineer",
+      "response_time": 8.481333017349243,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles explicitly related to software engineering rather than unrelated professions like general practitioners or legal services.",
+        "Enhance search algorithms to better match technical skills, job titles, and relevant experience for software engineering roles to increase relevance and candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T11:03:43.662957"
+    },
+    {
+      "query": "quantitative finance expert",
+      "response_time": 7.246440172195435,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles with explicit expertise or experience in quantitative finance.",
+        "Enhance search query specificity by including keywords like 'quantitative analyst,' 'financial modeling,' or 'quantitative research' to yield more relevant results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T11:03:56.953310"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 6.58221697807312,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant mobile development experience.",
+        "Enhance candidate profiles to clearly highlight technical skills and projects related to mobile development."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T11:03:58.844280"
+    },
+    {
+      "query": "neurologist",
+      "response_time": 9.20431399345398,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.72,
+      "gpt_suggestions": [
+        "Increase the number of highly relevant candidates specifically with 'neurologist' titles or specialties to improve relevance scoring.",
+        "Enhance filtering or ranking algorithms to prioritize medical professionals with verified clinical experience in neurology for better candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T11:04:05.696282"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 10.002064228057861,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate relevance by filtering for actual chemistry professors or academic professionals in chemistry.",
+        "Enhance candidate quality metrics by including academic credentials, publications, or teaching experience related to chemistry."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T11:04:12.903963"
+    },
+    {
+      "query": "frontend developer",
+      "response_time": 7.161176919937134,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Ensure candidate profiles are relevant to frontend development roles, avoiding unrelated professions like general practitioners or lawyers.",
+        "Improve search filtering to prioritize candidates with frontend development experience or skills, and include relevant keywords in candidate bios."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T11:04:13.978118"
+    },
+    {
+      "query": "corporate lawyer",
+      "response_time": 4.465083837509155,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize highly relevant legal professionals with specific experience in corporate law.",
+        "Enhance the relevance scoring to better distinguish between candidates with direct corporate law expertise and those with unrelated backgrounds."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T11:04:16.159768"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:51:38.155259",
+      "avg_response_time": 10.169972205162049,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3865
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T10:58:01.676507",
+      "avg_response_time": 11.211048078536987,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.359
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:58:01.676547",
+      "avg_response_time": 11.211048078536987,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.359
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T11:04:17.905418",
+      "avg_response_time": 8.777509868144989,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3085
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:04:17.905439",
+      "avg_response_time": 8.777509868144989,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3085
+    }
+  ]
+}

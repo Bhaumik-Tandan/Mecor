@@ -1,0 +1,185 @@
+{
+  "cycle_count": 49,
+  "timestamp": "2025-08-04T15:22:35.850435",
+  "total_evaluations": 1935,
+  "total_improvements": 87,
+  "recent_results": [
+    {
+      "query": "anthropology PhD",
+      "response_time": 23.30818009376526,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic and research-focused profiles related to anthropology PhD programs.",
+        "Enhance candidate relevance by including more specialized or academic profiles rather than general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T15:21:30.994882"
+    },
+    {
+      "query": "mechanical engineer",
+      "response_time": 5.707452297210693,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles explicitly related to mechanical engineering rather than unrelated professions like medicine or law.",
+        "Enhance search algorithms to better match keywords such as 'mechanical engineer' with relevant experience and job titles, reducing irrelevant results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T15:21:37.590463"
+    },
+    {
+      "query": "psychiatrist",
+      "response_time": 5.270794868469238,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Increase the prominence of candidates explicitly labeled as psychiatrists or psychiatric professionals to improve relevance.",
+        "Include more detailed experience and credentials related to psychiatry to better assess candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T15:21:38.942582"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 23.503055095672607,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords to target cloud architecture roles specifically.",
+        "Enhance candidate filtering to prioritize professionals with cloud computing or IT architecture experience rather than general practitioners or unrelated fields."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T15:21:44.685285"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 5.448217153549194,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize candidates with relevant technical skills and experience in mobile development.",
+        "Enhance the search algorithm to better match the query 'mobile developer' with candidates whose bios explicitly mention mobile app development or related technologies."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T15:21:51.636571"
+    },
+    {
+      "query": "security engineer",
+      "response_time": 13.143864870071411,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve relevance by filtering candidates specifically with 'security engineer' experience or titles.",
+        "Enhance candidate quality by prioritizing profiles with relevant security or engineering backgrounds rather than general practitioners or unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T15:22:12.962739"
+    },
+    {
+      "query": "physics researcher",
+      "response_time": 11.425236940383911,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.2,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by filtering candidates specifically with a background or research experience in physics.",
+        "Enhance candidate quality by prioritizing profiles with academic or research credentials related to physics rather than general practitioners or unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T15:22:12.963831"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 14.001522779464722,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by filtering candidates specifically with academic or teaching experience in chemistry.",
+        "Enhance candidate quality by prioritizing profiles with formal chemistry or university teaching backgrounds rather than general practitioners or unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T15:22:12.964660"
+    },
+    {
+      "query": "portfolio manager",
+      "response_time": 9.849516153335571,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords to better match 'portfolio manager' roles, as most candidates are medical professionals unrelated to the query.",
+        "Enhance candidate quality filtering to prioritize profiles with direct experience or titles related to portfolio management or finance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T15:22:13.981134"
+    },
+    {
+      "query": "neurologist",
+      "response_time": 9.459968090057373,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.72,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate\u2019s expertise and experience related to neurology to improve relevance scoring.",
+        "Ensure all candidates have consistent and complete profiles that clearly indicate their specialization in neurology to enhance candidate quality assessment."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T15:22:30.846482"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:09:54.110684",
+      "avg_response_time": 11.289762151241302,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3885
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:16:09.500468",
+      "avg_response_time": 10.553666877746583,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3565
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:16:09.500499",
+      "avg_response_time": 10.553666877746583,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3565
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:22:35.849597",
+      "avg_response_time": 13.269582796096802,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.356
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:22:35.849641",
+      "avg_response_time": 13.269582796096802,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.356
+    }
+  ]
+}

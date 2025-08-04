@@ -1,0 +1,185 @@
+{
+  "cycle_count": 22,
+  "timestamp": "2025-08-04T12:25:59.744740",
+  "total_evaluations": 885,
+  "total_improvements": 33,
+  "recent_results": [
+    {
+      "query": "security engineer",
+      "response_time": 7.709774017333984,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates explicitly labeled as 'Security Engineer' or related cybersecurity roles.",
+        "Enhance candidate profiling to include specific skills, certifications, or experience relevant to security engineering to better match the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T12:24:44.582823"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 11.864258050918579,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with academic or research experience in anthropology, rather than general practitioners or unrelated professions.",
+        "Enhance relevance by including keywords related to anthropology, such as 'PhD in Anthropology', 'anthropology researcher', or 'anthropology faculty', to better match the query intent."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T12:25:02.893547"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 7.554044961929321,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant cloud architecture experience or titles.",
+        "Enhance candidate profiling to include specific skills and certifications related to cloud architecture."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T12:25:11.312497"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 7.607895135879517,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles with relevant technical skills and experience related to mobile development.",
+        "Refine search parameters to focus on candidates with specific mobile development expertise rather than general practitioners or unrelated roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T12:25:11.313475"
+    },
+    {
+      "query": "psychiatrist",
+      "response_time": 20.22415781021118,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's psychiatric specialization to improve relevance.",
+        "Reduce response time to under 10 seconds to enhance overall candidate quality and user experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T12:25:11.314032"
+    },
+    {
+      "query": "portfolio manager",
+      "response_time": 12.25809383392334,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance of candidates by filtering for roles specifically related to portfolio management or investment management.",
+        "Enhance candidate quality by including more detailed professional backgrounds, certifications, or experience directly related to portfolio management."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T12:25:30.060301"
+    },
+    {
+      "query": "quantitative finance expert",
+      "response_time": 13.966771841049194,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with expertise specifically in quantitative finance rather than general practitioners.",
+        "Enhance the search algorithm to better understand and match domain-specific keywords related to quantitative finance, such as 'financial modeling,' 'quantitative analysis,' or 'risk management.'"
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T12:25:34.202698"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 6.621565818786621,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Refine search keywords to specify 'chemistry professor' rather than general medical or legal roles.",
+        "Implement better filtering or ranking algorithms to prioritize academic or teaching-related profiles over unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T12:25:42.160024"
+    },
+    {
+      "query": "frontend developer",
+      "response_time": 6.891982078552246,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Ensure search results are directly related to frontend development roles, including relevant skills and experience.",
+        "Improve filtering or ranking algorithms to prioritize candidates with frontend development expertise over unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T12:25:44.954752"
+    },
+    {
+      "query": "corporate lawyer",
+      "response_time": 9.784734964370728,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.78,
+      "gpt_suggestions": [
+        "Include more detailed and specific profiles to better assess candidate expertise and relevance.",
+        "Reduce response time to improve overall relevance and user experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T12:25:54.741357"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:13:04.482477",
+      "avg_response_time": 6.428521072864532,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.325
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T12:19:17.373758",
+      "avg_response_time": 8.378670024871827,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.395
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:19:17.373800",
+      "avg_response_time": 8.378670024871827,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.395
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T12:25:59.744014",
+      "avg_response_time": 11.467372262477875,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.344
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:25:59.744050",
+      "avg_response_time": 11.467372262477875,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.344
+    }
+  ]
+}

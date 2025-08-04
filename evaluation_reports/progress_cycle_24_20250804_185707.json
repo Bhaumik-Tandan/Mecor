@@ -1,0 +1,185 @@
+{
+  "cycle_count": 24,
+  "timestamp": "2025-08-04T18:57:07.065787",
+  "total_evaluations": 919,
+  "total_improvements": 72,
+  "recent_results": [
+    {
+      "query": "biology researcher",
+      "response_time": 13.064521074295044,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Include more candidates with explicit research experience or academic backgrounds in biology.",
+        "Improve relevance filtering to prioritize candidates with titles or bios indicating active research roles in biology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T18:56:05.568182"
+    },
+    {
+      "query": "corporate lawyer",
+      "response_time": 7.7619359493255615,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more detailed and specific professional experience related to corporate law to improve relevance scoring.",
+        "Ensure candidate bios clearly highlight their expertise and roles specifically in corporate law to enhance candidate quality assessment."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T18:56:17.613324"
+    },
+    {
+      "query": "intellectual property lawyer",
+      "response_time": 10.742482900619507,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize explicitly relevant legal expertise, especially in intellectual property law.",
+        "Enhance the search algorithm to better rank candidates with clear IP law backgrounds over general practitioners or unrelated profiles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T18:56:22.521931"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 11.818854093551636,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant technical skills or job titles related to mobile development.",
+        "Refine the query to include specific keywords such as 'mobile developer', 'iOS', 'Android', or 'mobile app developer' to enhance relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T18:56:23.365344"
+    },
+    {
+      "query": "computer science professor",
+      "response_time": 10.41602873802185,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates explicitly identified as computer science professors or with academic roles in computer science departments.",
+        "Enhance candidate quality assessment by including more detailed academic credentials, publication records, or university affiliations to better match the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T18:56:27.475573"
+    },
+    {
+      "query": "biology researcher",
+      "response_time": 11.894960880279541,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit research experience in biology, rather than general practitioners or unrelated legal professionals.",
+        "Enhance the candidate ranking algorithm to better weigh candidate quality, such as academic credentials and research publications, over superficial or unrelated profiles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T18:56:43.291473"
+    },
+    {
+      "query": "neurologist",
+      "response_time": 7.703185081481934,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's specialization and experience related to neurology.",
+        "Prioritize candidates with verified medical credentials and direct neurology expertise to improve relevance and quality scoring."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T18:56:44.744390"
+    },
+    {
+      "query": "neurologist",
+      "response_time": 7.308897018432617,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.72,
+      "gpt_suggestions": [
+        "Prioritize candidates with explicit titles or roles directly related to neurology or neurologists to improve relevance scoring.",
+        "Include additional context or filtering to better distinguish highly relevant medical professionals from unrelated roles or general practitioners."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T18:56:57.018415"
+    },
+    {
+      "query": "economics professor",
+      "response_time": 7.283253908157349,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic or research-oriented profiles labeled explicitly as 'professor' in the bio or titles.",
+        "Enhance candidate relevance by refining keywords to distinguish between medical practitioners and academic professionals in economics."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T18:56:57.114125"
+    },
+    {
+      "query": "biology researcher",
+      "response_time": 12.497530937194824,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles explicitly related to biological research, such as molecular biology, biochemistry, or neuroscience.",
+        "Enhance search algorithms to better match keywords like 'biologist,' 'researcher,' or specific biology subfields, reducing irrelevant results like legal or general corporate profiles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T18:57:02.063764"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T18:50:35.376191",
+      "avg_response_time": 15.97450088262558,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.40149999999999997
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T18:50:35.376200",
+      "avg_response_time": 15.97450088262558,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.40149999999999997
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T18:57:07.065432",
+      "avg_response_time": 10.56944500207901,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.45
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T18:57:07.065450",
+      "avg_response_time": 10.56944500207901,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.45
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T18:57:07.065453",
+      "avg_response_time": 10.56944500207901,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.45
+    }
+  ]
+}

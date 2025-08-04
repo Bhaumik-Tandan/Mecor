@@ -1,0 +1,164 @@
+{
+  "cycle_count": 2,
+  "timestamp": "2025-08-04T10:20:32.090854",
+  "total_evaluations": 52,
+  "total_improvements": 2,
+  "recent_results": [
+    {
+      "query": "data scientist",
+      "response_time": 4.956129789352417,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with direct experience as data scientists rather than general practitioners or unrelated roles.",
+        "Enhance candidate quality assessment by incorporating skills, education, or project experience related to data science to better match the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_0",
+      "timestamp": "2025-08-04T10:19:40.942077"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 3.983088970184326,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize individuals with explicit expertise or research experience in psychology.",
+        "Enhance search algorithms to better match keywords related to psychology research rather than general practitioners or unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:19:43.221748"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 5.19066596031189,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Refine the search query to specify 'mobile developer' skills or experience to improve relevance.",
+        "Implement better filtering or ranking algorithms to prioritize candidates with relevant technical backgrounds over unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T10:19:52.456746"
+    },
+    {
+      "query": "investment banker",
+      "response_time": 4.708611726760864,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords to specifically target investment banking roles.",
+        "Enhance candidate filtering to prioritize finance and banking professionals over unrelated fields like medicine and law."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:19:57.095906"
+    },
+    {
+      "query": "pediatrician",
+      "response_time": 4.731939792633057,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.78,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's pediatric specialties and experience to improve relevance.",
+        "Prioritize candidates with verified board certification and clear pediatric practice backgrounds to enhance candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T10:20:03.157167"
+    },
+    {
+      "query": "machine learning engineer",
+      "response_time": 5.381799936294556,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining the query to include specific skills or titles related to 'machine learning engineer'.",
+        "Enhance candidate filtering to prioritize profiles with relevant technical expertise, certifications, or experience in machine learning and AI."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T10:20:14.798968"
+    },
+    {
+      "query": "portfolio manager",
+      "response_time": 5.212306261062622,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize professionals with explicit experience or titles related to portfolio management.",
+        "Enhance search algorithms to better understand the context of 'portfolio manager' and return more relevant candidates, such as financial or investment professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:20:14.884148"
+    },
+    {
+      "query": "physics researcher",
+      "response_time": 5.320586919784546,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with expertise in physics or related research fields.",
+        "Enhance the candidate selection process to include more specialized researchers rather than general practitioners or unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:20:20.034481"
+    },
+    {
+      "query": "frontend developer",
+      "response_time": 5.252539157867432,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.2,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with frontend development experience.",
+        "Enhance the candidate screening process to include skills and roles aligned with frontend development."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T10:20:27.087224"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 10.74301266670227,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Include more specialized psychology researchers rather than general practitioners to improve relevance.",
+        "Provide detailed academic or research-focused profiles to better assess candidate quality related to psychology research."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:20:28.660545"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:14:34.063470",
+      "avg_response_time": 6.675523627888072,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4027272727272727
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:20:32.090093",
+      "avg_response_time": 6.499505186080933,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33649999999999997
+    }
+  ]
+}

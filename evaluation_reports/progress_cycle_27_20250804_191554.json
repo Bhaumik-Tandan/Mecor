@@ -1,0 +1,185 @@
+{
+  "cycle_count": 27,
+  "timestamp": "2025-08-04T19:15:54.418232",
+  "total_evaluations": 1032,
+  "total_improvements": 81,
+  "recent_results": [
+    {
+      "query": "neurologist",
+      "response_time": 8.4616060256958,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Prioritize candidates with explicit titles or experience related to neurology or neurologists, such as Adam Kenji Yamamoto and Scott Hirsch.",
+        "Improve search filtering to exclude general practitioners and focus on specialized neurologists to increase relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T19:15:03.040667"
+    },
+    {
+      "query": "data scientist",
+      "response_time": 12.423875093460083,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search algorithms to prioritize candidates with relevant data science experience or skills.",
+        "Refine filtering criteria to exclude profiles primarily related to law, anthropology, or unrelated fields, ensuring higher relevance to 'data scientist'."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T19:15:06.126383"
+    },
+    {
+      "query": "economics professor",
+      "response_time": 6.2605979442596436,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords to better match academic or teaching-focused profiles of economics professors.",
+        "Enhance candidate quality filtering to prioritize academic credentials, research experience, or university affiliations over general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T19:15:15.415969"
+    },
+    {
+      "query": "data scientist",
+      "response_time": 10.096235036849976,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant data science experience or titles.",
+        "Refine the query to specify 'data scientist' roles explicitly, reducing irrelevant results like medical or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T19:15:16.498550"
+    },
+    {
+      "query": "mechanical engineer",
+      "response_time": 9.36572003364563,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles explicitly related to mechanical engineering, avoiding unrelated professions like general practitioners or legal roles.",
+        "Enhance the relevance scoring to better distinguish candidates with direct mechanical engineering experience, ensuring top results align closely with the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T19:15:26.868902"
+    },
+    {
+      "query": "corporate lawyer",
+      "response_time": 9.674521923065186,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.78,
+      "gpt_suggestions": [
+        "Include more detailed and specific candidate profiles to better assess relevance and quality.",
+        "Improve search filtering to prioritize candidates with direct corporate law experience and notable credentials."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T19:15:27.752685"
+    },
+    {
+      "query": "financial analyst",
+      "response_time": 9.316173076629639,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant finance or analytical backgrounds.",
+        "Enhance the relevance of candidate profiles by refining keywords and ensuring they match the 'financial analyst' role more closely."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T19:15:30.802979"
+    },
+    {
+      "query": "backend developer",
+      "response_time": 12.555503845214844,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize relevant experience and skills related to backend development.",
+        "Enhance the search algorithm to better match keywords like 'backend' with candidate profiles, reducing irrelevant results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T19:15:49.415132"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 10.473526000976562,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve relevance by filtering candidates specifically with mobile development experience or related technical skills.",
+        "Enhance candidate quality by prioritizing profiles with relevant job titles, portfolios, or demonstrated mobile development projects."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T19:15:50.031483"
+    },
+    {
+      "query": "neurologist",
+      "response_time": 6.994381904602051,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.68,
+      "gpt_suggestions": [
+        "Include more specialized neurologist profiles or clinics to improve relevance.",
+        "Prioritize candidates with clear medical credentials and direct neurologist experience for higher quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T19:15:51.631048"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T19:09:37.518939",
+      "avg_response_time": 10.609701156616211,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.44349999999999995
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T19:09:37.518954",
+      "avg_response_time": 10.609701156616211,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.44349999999999995
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T19:15:54.417551",
+      "avg_response_time": 9.481826615333556,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.418
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T19:15:54.417585",
+      "avg_response_time": 9.481826615333556,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.418
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T19:15:54.417595",
+      "avg_response_time": 9.481826615333556,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.418
+    }
+  ]
+}

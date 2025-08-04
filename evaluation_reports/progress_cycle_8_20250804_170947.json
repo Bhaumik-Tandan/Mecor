@@ -1,0 +1,185 @@
+{
+  "cycle_count": 8,
+  "timestamp": "2025-08-04T17:09:47.697938",
+  "total_evaluations": 278,
+  "total_improvements": 24,
+  "recent_results": [
+    {
+      "query": "physics researcher",
+      "response_time": 14.207523822784424,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve relevance by prioritizing candidates explicitly identified as physics researchers or with physics-related backgrounds.",
+        "Enhance candidate quality assessment by filtering out irrelevant profiles (e.g., general practitioners, attorneys) and highlighting those with specific physics expertise or academic credentials."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T17:08:40.701234"
+    },
+    {
+      "query": "portfolio manager",
+      "response_time": 13.286167860031128,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords to better match 'portfolio manager' roles, such as including financial or investment-related terms.",
+        "Enhance candidate quality filtering to prioritize professionals with direct experience or titles related to portfolio management, finance, or asset management."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T17:08:40.937664"
+    },
+    {
+      "query": "computer science professor",
+      "response_time": 11.881748914718628,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve candidate relevance by prioritizing individuals explicitly identified as computer science professors, especially those affiliated with academic institutions.",
+        "Enhance candidate quality by including more detailed academic credentials, research areas, and publication records to better assess expertise."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T17:08:59.244555"
+    },
+    {
+      "query": "investment banker",
+      "response_time": 7.8107078075408936,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant finance or banking experience rather than medical backgrounds.",
+        "Refine the query to specify 'investment banker' roles explicitly, ensuring the results focus on finance professionals rather than unrelated fields."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T17:09:01.781012"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 14.291982173919678,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles explicitly mentioning 'cloud architect' or related cloud architecture experience.",
+        "Enhance candidate profiles with more detailed professional summaries and relevant certifications to better assess quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T17:09:09.118887"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 15.791499853134155,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by filtering candidates specifically with a background or expertise in chemistry or academia related to chemistry.",
+        "Enhance candidate quality metrics by including more detailed professional credentials, publications, or teaching experience relevant to chemistry."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T17:09:24.114945"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 13.735440969467163,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.78,
+      "gpt_suggestions": [
+        "Include more detailed candidate profiles emphasizing their radiology expertise and certifications.",
+        "Improve search filtering to prioritize candidates with specific radiology specialties relevant to the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T17:09:25.907105"
+    },
+    {
+      "query": "investment banker",
+      "response_time": 12.436495065689087,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search query specificity to target finance or banking professionals rather than medical practitioners.",
+        "Enhance candidate filtering to prioritize individuals with relevant finance or investment banking experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T17:09:35.849670"
+    },
+    {
+      "query": "pediatrician",
+      "response_time": 8.819156885147095,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize explicitly listed pediatricians with relevant experience.",
+        "Enhance search algorithms to better match the query with candidates' specialties and titles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T17:09:42.693855"
+    },
+    {
+      "query": "data scientist",
+      "response_time": 14.403785943984985,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve filtering to prioritize candidates with relevant medical or data science backgrounds rather than general practitioners or unrelated profiles.",
+        "Enhance search algorithms to better match keywords like 'data scientist' with candidate bios and experience, reducing irrelevant results such as anthropologists or dermatology professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T17:09:43.905491"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T17:03:05.068442",
+      "avg_response_time": 12.290092086791992,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.41500000000000004
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T17:03:05.068446",
+      "avg_response_time": 12.290092086791992,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.41500000000000004
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T17:09:47.697265",
+      "avg_response_time": 14.522494995594025,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4365
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T17:09:47.697303",
+      "avg_response_time": 14.522494995594025,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4365
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T17:09:47.697310",
+      "avg_response_time": 14.522494995594025,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4365
+    }
+  ]
+}

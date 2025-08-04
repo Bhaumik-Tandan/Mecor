@@ -1,0 +1,185 @@
+{
+  "cycle_count": 36,
+  "timestamp": "2025-08-04T20:12:59.875524",
+  "total_evaluations": 1408,
+  "total_improvements": 107,
+  "recent_results": [
+    {
+      "query": "psychiatrist",
+      "response_time": 9.129522800445557,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's psychiatric specialization and experience to improve relevance.",
+        "Prioritize candidates with explicit credentials or titles related to psychiatry, such as 'psychiatrist,' 'psychiatric nurse practitioner,' or 'psychiatrist' in their profiles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T20:12:00.140774"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 8.03884220123291,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with direct risk management experience.",
+        "Enhance the search algorithm to better distinguish between relevant risk management professionals and unrelated profiles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T20:12:14.709480"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 10.685661792755127,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more detailed professional profiles or specialties related specifically to radiology to improve relevance scoring.",
+        "Prioritize candidates with explicit radiology credentials and relevant experience to enhance candidate quality assessment."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T20:12:17.885653"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 10.701561212539673,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles with explicit cloud architecture experience.",
+        "Enhance search algorithms to better match relevant skills and job titles related to cloud architecture."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T20:12:20.036691"
+    },
+    {
+      "query": "backend developer",
+      "response_time": 10.547372102737427,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Refine search parameters to prioritize candidates with relevant backend development experience rather than general or unrelated roles.",
+        "Improve candidate filtering to include specific technical skills, programming languages, or project experience related to backend development."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T20:12:25.511312"
+    },
+    {
+      "query": "mechanical engineer",
+      "response_time": 10.48740005493164,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize relevant mechanical engineering experience over unrelated roles like general practitioners or legal professionals.",
+        "Enhance search algorithms to better match keywords and skills specific to mechanical engineering, reducing irrelevant results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T20:12:35.165868"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 8.572378158569336,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve relevance filtering to prioritize candidates with psychology backgrounds or research experience related to psychology.",
+        "Enhance candidate descriptions to clearly highlight research expertise in psychology rather than general medical or unrelated fields."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T20:12:47.779501"
+    },
+    {
+      "query": "physics researcher",
+      "response_time": 10.44838285446167,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Increase the number of highly relevant candidates by refining search parameters or keywords related to physics research.",
+        "Improve candidate filtering to prioritize individuals with explicit research experience in physics, rather than general or unrelated roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T20:12:54.858044"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 10.22911286354065,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Prioritize candidates with explicit academic or university affiliations related to chemistry.",
+        "Include more detailed bios or keywords indicating chemistry expertise to improve relevance scoring."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T20:12:55.489661"
+    },
+    {
+      "query": "cardiologist",
+      "response_time": 8.841599941253662,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates explicitly related to cardiology, such as cardiologists or specialists in heart health.",
+        "Enhance candidate quality assessment by incorporating more detailed professional credentials and experience specific to cardiology to better match the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T20:12:56.807189"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T20:06:33.613383",
+      "avg_response_time": 9.135950469970703,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.45149999999999996
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T20:06:33.613387",
+      "avg_response_time": 9.135950469970703,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.45149999999999996
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T20:12:59.866910",
+      "avg_response_time": 10.165444839000703,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4965
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T20:12:59.867326",
+      "avg_response_time": 10.165444839000703,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4965
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T20:12:59.867415",
+      "avg_response_time": 10.165444839000703,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4965
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "cycle_count": 4,
+  "timestamp": "2025-08-04T10:32:45.776369",
+  "total_evaluations": 138,
+  "total_improvements": 4,
+  "recent_results": [
+    {
+      "query": "tax lawyer",
+      "response_time": 8.848150968551636,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize legal professionals with explicit experience or specialization in tax law.",
+        "Enhance search algorithms to better match keywords like 'tax lawyer' with relevant legal expertise rather than general practitioners or unrelated profiles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:31:49.242615"
+    },
+    {
+      "query": "economics professor",
+      "response_time": 5.881639003753662,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.2,
+      "gpt_suggestions": [
+        "Improve the search algorithm to prioritize academic and professional profiles related to economics, such as university faculty or researchers.",
+        "Enhance keyword filtering to exclude unrelated medical, legal, or general practitioner profiles and focus on relevant economics expertise."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:31:59.145996"
+    },
+    {
+      "query": "portfolio manager",
+      "response_time": 6.9746057987213135,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize professionals with explicit experience or titles related to portfolio management.",
+        "Refine search parameters to better match the specific role of 'portfolio manager' rather than general practitioners or unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:32:00.258055"
+    },
+    {
+      "query": "intellectual property lawyer",
+      "response_time": 5.425985097885132,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with direct experience in intellectual property law.",
+        "Enhance the candidate ranking algorithm to better distinguish between general practitioners and specialized IP lawyers."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T10:32:00.372090"
+    },
+    {
+      "query": "corporate lawyer",
+      "response_time": 10.567580223083496,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Prioritize candidates with relevant legal experience specifically in corporate law.",
+        "Improve search filtering to exclude general practitioners and focus on specialized corporate lawyers."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:32:16.620613"
+    },
+    {
+      "query": "machine learning engineer",
+      "response_time": 11.098780870437622,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize professionals with relevant machine learning or engineering backgrounds.",
+        "Enhance search algorithms to better match keywords like 'machine learning engineer' rather than general or unrelated roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T10:32:17.683025"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 5.412254810333252,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve relevance filtering to prioritize candidates with specific cloud architecture experience.",
+        "Enhance candidate profiles to include detailed skills and certifications related to cloud architecture."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:32:22.068908"
+    },
+    {
+      "query": "pediatrician",
+      "response_time": 4.70658802986145,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.78,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate\u2019s pediatric expertise and certifications to improve relevance and candidate quality.",
+        "Prioritize candidates with explicit pediatric specialization and relevant experience, and provide more consistent formatting for easier comparison."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T10:32:28.649525"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 5.25626802444458,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic and research-focused profiles related to anthropology PhD programs.",
+        "Refine candidate ranking to emphasize educational background and relevant research experience over general professional roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:32:30.033569"
+    },
+    {
+      "query": "investment banker",
+      "response_time": 6.0631701946258545,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords to target finance and banking roles rather than medical or legal professions.",
+        "Enhance candidate filtering to prioritize profiles with finance or investment banking experience, reducing unrelated professions like general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T10:32:40.773930"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:14:34.063470",
+      "avg_response_time": 6.675523627888072,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4027272727272727
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:20:32.090093",
+      "avg_response_time": 6.499505186080933,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33649999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:26:41.204218",
+      "avg_response_time": 7.406437480449677,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.36
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:32:45.776095",
+      "avg_response_time": 7.659779715538025,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.34900000000000003
+    }
+  ]
+}

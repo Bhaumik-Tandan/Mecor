@@ -1,0 +1,164 @@
+{
+  "cycle_count": 2,
+  "timestamp": "2025-08-04T10:20:15.605908",
+  "total_evaluations": 57,
+  "total_improvements": 2,
+  "recent_results": [
+    {
+      "query": "chemistry professor",
+      "response_time": 4.4825873374938965,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by prioritizing candidates with academic or teaching experience in chemistry or related fields.",
+        "Refine the search query to specify 'chemistry professor' explicitly, possibly including keywords like 'professor,' 'faculty,' or 'university' to filter out general practitioners and legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:19:25.062713"
+    },
+    {
+      "query": "backend developer",
+      "response_time": 5.97812294960022,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles explicitly related to backend development, avoiding unrelated professions like general practitioners.",
+        "Enhance search algorithms to better match keywords such as 'backend' and 'developer' in candidate bios and experience summaries."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T10:19:28.540039"
+    },
+    {
+      "query": "experienced software engineer",
+      "response_time": 6.7846519947052,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize candidates with relevant software engineering experience rather than unrelated roles like general practitioners or lawyers.",
+        "Enhance search algorithms to better match keywords such as 'software engineer' and relevant skills, ensuring more accurate and relevant candidate results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:19:38.114249"
+    },
+    {
+      "query": "devops engineer",
+      "response_time": 4.844839811325073,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles with relevant DevOps experience and technical skills.",
+        "Enhance search algorithms to better match keywords related to DevOps engineering rather than unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T10:19:39.321051"
+    },
+    {
+      "query": "physics researcher",
+      "response_time": 5.814134120941162,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates explicitly related to physics research rather than general practitioners.",
+        "Enhance the candidate selection process to include more specialized researchers or academics in physics to better match the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:19:42.453860"
+    },
+    {
+      "query": "quantitative finance expert",
+      "response_time": 4.926951169967651,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit expertise in quantitative finance, such as quantitative analysts or financial modelers.",
+        "Enhance candidate profiling to include specific skills, certifications, or experience related to quantitative finance to better match the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T10:19:50.265113"
+    },
+    {
+      "query": "security engineer",
+      "response_time": 7.793686151504517,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of candidates by filtering for roles specifically related to security engineering.",
+        "Enhance candidate quality by including more detailed professional profiles or verified security expertise."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:19:51.119970"
+    },
+    {
+      "query": "frontend developer",
+      "response_time": 4.721609115600586,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with frontend development experience.",
+        "Enhance the candidate screening process to include skills and roles aligned with frontend development."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:19:57.438182"
+    },
+    {
+      "query": "psychiatrist",
+      "response_time": 3.979322671890259,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's psychiatric qualifications and experience to improve relevance.",
+        "Prioritize candidates explicitly identified as psychiatrists or with relevant psychiatric specialties to enhance candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T10:20:10.604166"
+    },
+    {
+      "query": "security engineer",
+      "response_time": 12.03607988357544,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant technical or security engineering experience rather than general practitioners.",
+        "Refine the query to specify 'security engineer' skills or experience to enhance relevance and reduce unrelated results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:20:13.603127"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:14:06.644050",
+      "avg_response_time": 5.9146788120269775,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4253846153846154
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:20:15.605494",
+      "avg_response_time": 6.6149951934814455,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3125
+    }
+  ]
+}

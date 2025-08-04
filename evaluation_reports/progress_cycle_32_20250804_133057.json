@@ -1,0 +1,185 @@
+{
+  "cycle_count": 32,
+  "timestamp": "2025-08-04T13:30:57.311372",
+  "total_evaluations": 1262,
+  "total_improvements": 53,
+  "recent_results": [
+    {
+      "query": "intellectual property lawyer",
+      "response_time": 9.363884925842285,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize professionals with explicit experience or specialization in intellectual property law.",
+        "Enhance search algorithms to better match keywords like 'intellectual property' and 'lawyer' to relevant candidates, reducing irrelevant results such as medical professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T13:30:01.434440"
+    },
+    {
+      "query": "mechanical engineer",
+      "response_time": 6.7419469356536865,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with specific mechanical engineering expertise.",
+        "Enhance the candidate selection process to exclude unrelated professions such as general practitioners and legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T13:30:01.435231"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 10.126235246658325,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Ensure search results are directly related to 'cloud architect' roles, skills, or profiles to improve relevance.",
+        "Filter out candidates with unrelated backgrounds (e.g., medical or legal professionals) to enhance candidate quality and relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T13:30:05.901708"
+    },
+    {
+      "query": "experienced software engineer",
+      "response_time": 6.624406814575195,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by filtering candidates specifically with software engineering experience.",
+        "Enhance candidate profiles to include detailed technical skills and project experience related to software engineering."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T13:30:18.547009"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 7.197774887084961,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with direct risk management experience, such as the first candidate, over unrelated roles.",
+        "Enhance the candidate ranking algorithm to better assess candidate quality based on specific risk management credentials and professional background."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T13:30:19.772411"
+    },
+    {
+      "query": "investment banker",
+      "response_time": 6.006464004516602,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with finance or banking backgrounds rather than medical professionals.",
+        "Enhance the search algorithm to better match keywords like 'investment' and 'banker' with relevant industry experience, reducing unrelated results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T13:30:27.056749"
+    },
+    {
+      "query": "financial analyst",
+      "response_time": 9.954790830612183,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.2,
+      "gpt_suggestions": [
+        "Improve the relevance of candidates by filtering for roles specifically titled 'Financial Analyst' or related finance positions.",
+        "Enhance candidate quality by including more detailed professional experience, skills, and achievements relevant to financial analysis."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T13:30:29.620445"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 6.988425016403198,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search query specificity to better target psychology researchers rather than general practitioners.",
+        "Enhance candidate filtering to prioritize professionals with explicit psychology or research backgrounds."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T13:30:34.621498"
+    },
+    {
+      "query": "M&A attorney",
+      "response_time": 6.943964004516602,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Increase the number of highly specialized M&A attorneys in the top candidates list to improve relevance.",
+        "Include more detailed profiles or links to their professional profiles to better assess candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T13:30:49.713424"
+    },
+    {
+      "query": "economics professor",
+      "response_time": 10.008377075195312,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance by filtering candidates specifically with academic or teaching experience in economics, rather than general practitioners or legal professionals.",
+        "Enhance candidate quality by prioritizing profiles with academic credentials, research publications, or university affiliations related to economics."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T13:30:52.308007"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:18:16.401296",
+      "avg_response_time": 9.674782311916351,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.36350000000000005
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:24:36.282960",
+      "avg_response_time": 12.11975085735321,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.35
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:24:36.283002",
+      "avg_response_time": 12.11975085735321,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.35
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:30:57.310634",
+      "avg_response_time": 8.924559152126312,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3375
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:30:57.310679",
+      "avg_response_time": 8.924559152126312,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3375
+    }
+  ]
+}

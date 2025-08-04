@@ -1,0 +1,185 @@
+{
+  "cycle_count": 14,
+  "timestamp": "2025-08-04T11:35:34.900094",
+  "total_evaluations": 561,
+  "total_improvements": 20,
+  "recent_results": [
+    {
+      "query": "investment banker",
+      "response_time": 10.247037887573242,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with finance or banking experience rather than medical professionals.",
+        "Refine keyword matching to ensure the results are directly related to investment banking roles, such as including 'investment banker,' 'finance,' or 'banking' in candidate profiles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T11:34:34.964404"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 8.821287870407104,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of candidates by filtering for roles specifically related to cloud architecture or IT infrastructure.",
+        "Enhance candidate quality by including more specialized or relevant profiles with cloud or IT expertise rather than general practitioners or unrelated legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T11:34:42.310884"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 8.373247146606445,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Include more specialized psychology researchers or academics with explicit focus on psychology to improve relevance.",
+        "Refine search parameters to prioritize candidates with formal psychology research experience rather than general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T11:34:47.334203"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 10.070449829101562,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve relevance filtering to prioritize candidates with skills and experience directly related to mobile development.",
+        "Refine search criteria to exclude unrelated professions such as legal, medical, or general corporate roles, ensuring more targeted results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T11:34:58.746621"
+    },
+    {
+      "query": "M&A attorney",
+      "response_time": 7.474624156951904,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize explicitly relevant M&A attorneys over general practitioners or unrelated profiles.",
+        "Enhance the search algorithm to better match specific keywords like 'M&A attorney' with candidate bios and experience descriptions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T11:34:59.494683"
+    },
+    {
+      "query": "security engineer",
+      "response_time": 9.179975986480713,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of candidate profiles by filtering for actual security engineering experience.",
+        "Enhance the search algorithm to better match the query keywords with candidate bios and titles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T11:35:11.659254"
+    },
+    {
+      "query": "pediatrician",
+      "response_time": 7.738084077835083,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more detailed and consistent professional profiles for each candidate to better assess relevance and quality.",
+        "Prioritize candidates with verified credentials and clear specialization in pediatrics to improve relevance and candidate quality scores."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T11:35:13.060174"
+    },
+    {
+      "query": "cardiologist",
+      "response_time": 11.482247352600098,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize medical professionals specifically specialized in cardiology.",
+        "Enhance the relevance of search results by including more detailed profiles or keywords related to cardiology expertise."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T11:35:19.371978"
+    },
+    {
+      "query": "pediatrician",
+      "response_time": 7.353073835372925,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.78,
+      "gpt_suggestions": [
+        "Include more detailed and comprehensive bios to better assess candidate expertise.",
+        "Improve search relevance by filtering for pediatricians with specific specialties or locations relevant to the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T11:35:29.895968"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 9.815931797027588,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with direct risk management experience, such as the top candidate David Belmont.",
+        "Enhance the search algorithm to better distinguish between relevant risk management professionals and unrelated roles like medical practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T11:35:32.757977"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:22:55.241824",
+      "avg_response_time": 7.458092796802521,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.36350000000000005
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T11:29:08.474184",
+      "avg_response_time": 8.297168016433716,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.315
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:29:08.474224",
+      "avg_response_time": 8.297168016433716,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.315
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T11:35:34.899359",
+      "avg_response_time": 9.883701980113983,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.34550000000000003
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:35:34.899401",
+      "avg_response_time": 9.883701980113983,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.34550000000000003
+    }
+  ]
+}

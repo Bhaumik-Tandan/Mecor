@@ -1,0 +1,185 @@
+{
+  "cycle_count": 38,
+  "timestamp": "2025-08-04T14:10:04.551538",
+  "total_evaluations": 1509,
+  "total_improvements": 65,
+  "recent_results": [
+    {
+      "query": "biology researcher",
+      "response_time": 8.624311923980713,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance by ensuring candidate profiles explicitly mention expertise or research experience in biology.",
+        "Enhance candidate quality by including profiles of recognized biology researchers or academics rather than general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T14:08:59.854786"
+    },
+    {
+      "query": "biology researcher",
+      "response_time": 6.586160898208618,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize individuals with explicit expertise or research experience in biology.",
+        "Enhance the relevance of search results by including keywords related to research, academia, or biological sciences rather than general practitioners."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T14:09:09.539543"
+    },
+    {
+      "query": "machine learning engineer",
+      "response_time": 17.191200017929077,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant machine learning or data science experience.",
+        "Enhance candidate profiles to include specific skills, projects, or roles related to machine learning engineering."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T14:09:14.539868"
+    },
+    {
+      "query": "psychiatrist",
+      "response_time": 6.483352184295654,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize explicitly psychiatric roles over general practitioners.",
+        "Enhance the relevance scoring to better distinguish specialized psychiatric professionals from related but less relevant roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T14:09:15.706905"
+    },
+    {
+      "query": "experienced software engineer",
+      "response_time": 15.432605743408203,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant software engineering experience rather than unrelated roles like general practitioners or legal professionals.",
+        "Enhance the relevance scoring algorithm to better match keywords such as 'software engineer' and related technical skills, ensuring more suitable candidates appear at the top."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T14:09:24.543690"
+    },
+    {
+      "query": "history professor",
+      "response_time": 10.217385053634644,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit expertise or experience in history or academia, rather than general practitioners or unrelated professions.",
+        "Enhance the candidate scoring algorithm to better distinguish between relevant history professionals and unrelated profiles, possibly by analyzing keywords and context in bios."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T14:09:41.372151"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 15.043009996414185,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with academic or research backgrounds in anthropology rather than medical or legal fields.",
+        "Enhance the search algorithm to better match keywords like 'PhD' and 'anthropology' to relevant academic profiles, reducing the prominence of unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T14:09:42.709076"
+    },
+    {
+      "query": "pediatrician",
+      "response_time": 5.174778938293457,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's pediatric experience and qualifications to improve relevance.",
+        "Filter out unrelated candidates (e.g., general practitioners or attorneys) to enhance candidate quality and relevance to the pediatrician query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T14:09:46.435816"
+    },
+    {
+      "query": "neurologist",
+      "response_time": 6.440473794937134,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.78,
+      "gpt_suggestions": [
+        "Increase the number of highly relevant candidates, such as practicing neurologists or specialists in neurology clinics.",
+        "Improve filtering to prioritize candidates with explicit neurologist titles or certifications to enhance relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T14:09:52.604782"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 11.855423927307129,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with direct risk management experience, such as the top candidate, David Belmont.",
+        "Enhance the candidate ranking algorithm to better distinguish between risk management professionals and unrelated roles like general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T14:09:59.547534"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:56:59.905469",
+      "avg_response_time": 9.172020864486694,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.28500000000000003
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:03:33.581140",
+      "avg_response_time": 10.776928985118866,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.32999999999999996
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:03:33.581180",
+      "avg_response_time": 10.776928985118866,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.32999999999999996
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:10:04.550756",
+      "avg_response_time": 9.688867938518523,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3715
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:10:04.550788",
+      "avg_response_time": 9.688867938518523,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3715
+    }
+  ]
+}

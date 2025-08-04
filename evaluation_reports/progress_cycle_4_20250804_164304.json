@@ -1,0 +1,185 @@
+{
+  "cycle_count": 4,
+  "timestamp": "2025-08-04T16:43:04.750034",
+  "total_evaluations": 127,
+  "total_improvements": 12,
+  "recent_results": [
+    {
+      "query": "frontend developer",
+      "response_time": 18.44758129119873,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve filtering to prioritize candidates with relevant frontend development experience and clear frontend-specific bios.",
+        "Reduce response time to ensure more timely results, ideally under 10 seconds for better user experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T16:41:54.314068"
+    },
+    {
+      "query": "mathematics professor",
+      "response_time": 18.905107021331787,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Increase the prominence of candidates with explicit titles or roles related to professorship in mathematics.",
+        "Improve filtering or ranking to prioritize candidates with formal academic positions or extensive research credentials in mathematics."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T16:41:55.444663"
+    },
+    {
+      "query": "quantitative finance expert",
+      "response_time": 13.34688687324524,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve search algorithm to prioritize candidates with explicit expertise in quantitative finance, such as those with relevant experience or titles.",
+        "Refine filtering criteria to exclude unrelated profiles (e.g., general practitioners, legal professionals) and focus on candidates with demonstrated quantitative finance skills."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T16:42:15.397533"
+    },
+    {
+      "query": "experienced software engineer",
+      "response_time": 20.578316926956177,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Improve candidate relevance by prioritizing profiles explicitly mentioning 'software engineer' with relevant skills and experience.",
+        "Enhance candidate quality assessment by including more detailed qualifications, certifications, or project highlights to better differentiate top candidates."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T16:42:17.576269"
+    },
+    {
+      "query": "biology researcher",
+      "response_time": 8.458195924758911,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with explicit 'biologist' or 'researcher' roles rather than general practitioners.",
+        "Enhance the relevance by incorporating keywords related to research activities, publications, or academic experience in the candidate profiles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T16:42:29.199872"
+    },
+    {
+      "query": "quantitative finance expert",
+      "response_time": 12.924022912979126,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more detailed profiles or summaries to better assess candidate expertise in quantitative finance.",
+        "Prioritize candidates with explicit experience or publications in quantitative finance to improve relevance scoring."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T16:42:29.393258"
+    },
+    {
+      "query": "history professor",
+      "response_time": 9.469289064407349,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Improve filtering to prioritize candidates with relevant academic or historical backgrounds.",
+        "Include more detailed summaries or keywords indicating expertise specifically in history to better assess relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T16:42:39.175845"
+    },
+    {
+      "query": "M&A attorney",
+      "response_time": 15.029666900634766,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more detailed candidate profiles to better assess expertise in M&A law.",
+        "Improve search filtering to prioritize candidates with explicit M&A legal experience and relevant credentials."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T16:42:39.176905"
+    },
+    {
+      "query": "portfolio manager",
+      "response_time": 13.961962938308716,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining the query to specify 'portfolio manager' roles rather than general practitioners or unrelated professions.",
+        "Enhance candidate filtering to prioritize professionals with direct experience or titles related to portfolio management, finance, or investment management."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T16:42:59.747533"
+    },
+    {
+      "query": "pediatrician",
+      "response_time": 10.489320278167725,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate\u2019s pediatric expertise and certifications to improve relevance.",
+        "Prioritize candidates with explicit pediatric practice experience and clear professional titles related to pediatrics to enhance candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T16:43:04.178242"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T16:36:19.631347",
+      "avg_response_time": 13.878594267368317,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.534
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T16:36:19.631353",
+      "avg_response_time": 13.878594267368317,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.534
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T16:43:04.749255",
+      "avg_response_time": 14.539764511585236,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.49000000000000005
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T16:43:04.749290",
+      "avg_response_time": 14.539764511585236,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.49000000000000005
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T16:43:04.749301",
+      "avg_response_time": 14.539764511585236,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.49000000000000005
+    }
+  ]
+}

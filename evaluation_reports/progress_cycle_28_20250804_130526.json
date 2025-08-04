@@ -1,0 +1,185 @@
+{
+  "cycle_count": 28,
+  "timestamp": "2025-08-04T13:05:26.588698",
+  "total_evaluations": 1107,
+  "total_improvements": 45,
+  "recent_results": [
+    {
+      "query": "corporate lawyer",
+      "response_time": 8.813636779785156,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize professionals with explicit legal expertise in corporate law.",
+        "Enhance search algorithms to better match relevant keywords and professional backgrounds related to corporate law."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T13:04:19.724738"
+    },
+    {
+      "query": "neurologist",
+      "response_time": 8.758212804794312,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.72,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate\u2019s expertise related to neurology to improve relevance scoring.",
+        "Ensure all candidates have complete and consistent profiles that clearly demonstrate their qualifications and experience in neurology to enhance candidate quality assessment."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T13:04:26.865962"
+    },
+    {
+      "query": "corporate lawyer",
+      "response_time": 17.85093092918396,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize relevant legal professionals with explicit experience in corporate law.",
+        "Enhance the response time to under 10 seconds for quicker results, possibly by optimizing search algorithms or indexing."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T13:04:48.039438"
+    },
+    {
+      "query": "security engineer",
+      "response_time": 9.9395010471344,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Refine the search query to include specific keywords like 'security' or 'cybersecurity' to improve relevance.",
+        "Implement better filtering or ranking algorithms to prioritize candidates with relevant security engineering experience over unrelated roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T13:04:49.504535"
+    },
+    {
+      "query": "security engineer",
+      "response_time": 17.78337001800537,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve relevance filtering to prioritize candidates with explicit experience or titles related to 'security engineer'.",
+        "Enhance candidate profiling to include specific skills, certifications, or projects related to security engineering for better candidate quality assessment."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T13:04:51.796098"
+    },
+    {
+      "query": "data scientist",
+      "response_time": 16.133891105651855,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining the query to better match profiles specifically labeled as 'data scientist' or related roles.",
+        "Enhance candidate quality filtering to prioritize profiles with relevant experience and skills aligned with data science, rather than unrelated medical or anthropological backgrounds."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T13:05:04.148481"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 8.430235147476196,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize individuals with explicit 'professor' or academic titles related to chemistry.",
+        "Enhance search algorithms to better match professional backgrounds and titles relevant to academia and chemistry specifically."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T13:05:06.849574"
+    },
+    {
+      "query": "investment banker",
+      "response_time": 6.864487171173096,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords to better match 'investment banker' roles, such as including finance or banking-specific terms.",
+        "Enhance candidate filtering to prioritize professionals with finance, banking, or investment experience, reducing unrelated medical or legal profiles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T13:05:12.536445"
+    },
+    {
+      "query": "biology researcher",
+      "response_time": 8.368849754333496,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search query specificity to target researchers explicitly in biology, avoiding general professionals like legal or medical practitioners.",
+        "Enhance the filtering criteria to prioritize candidates with explicit research experience or academic backgrounds in biology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T13:05:21.082142"
+    },
+    {
+      "query": "surgeon",
+      "response_time": 7.855090141296387,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize medical professionals specifically labeled as surgeons rather than general practitioners.",
+        "Enhance search algorithms to better match the query intent, possibly including specialization keywords like 'surgeon' or related medical fields."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T13:05:21.583828"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:52:23.379524",
+      "avg_response_time": 11.197282302379609,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.325
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T12:58:54.703568",
+      "avg_response_time": 12.088140487670898,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.40149999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:58:54.703616",
+      "avg_response_time": 12.088140487670898,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.40149999999999997
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:05:26.586713",
+      "avg_response_time": 13.053585922718048,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.40499999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:05:26.586753",
+      "avg_response_time": 13.053585922718048,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.40499999999999997
+    }
+  ]
+}

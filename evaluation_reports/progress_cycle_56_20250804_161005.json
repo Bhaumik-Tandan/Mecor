@@ -1,0 +1,185 @@
+{
+  "cycle_count": 56,
+  "timestamp": "2025-08-04T16:10:05.658186",
+  "total_evaluations": 2208,
+  "total_improvements": 101,
+  "recent_results": [
+    {
+      "query": "radiology doctor",
+      "response_time": 8.698426008224487,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize candidates with explicit radiology specialization and relevant experience.",
+        "Enhance search query understanding to better match candidates' bios with 'radiology doctor' intent, reducing irrelevant results like general practitioners and attorneys."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T16:08:49.375288"
+    },
+    {
+      "query": "mechanical engineer",
+      "response_time": 27.14204692840576,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of candidates by filtering for actual mechanical engineers rather than general practitioners or unrelated professions.",
+        "Enhance candidate quality assessment by considering specific mechanical engineering skills, certifications, or project experience rather than vague or unrelated bios."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T16:08:50.272689"
+    },
+    {
+      "query": "machine learning engineer",
+      "response_time": 10.102340936660767,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Ensure the search results include candidates with relevant experience or titles related to machine learning engineering, such as data scientists, AI specialists, or software engineers with ML expertise.",
+        "Improve filtering or ranking algorithms to prioritize candidates whose profiles explicitly mention machine learning, AI, or related technical skills, rather than unrelated professions like legal or medical fields."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T16:09:01.764640"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 9.09253215789795,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance by filtering results to include actual psychology researchers or academics in psychology.",
+        "Enhance candidate quality by prioritizing profiles with academic credentials, research publications, or university affiliations related to psychology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T16:09:16.920100"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 7.870575904846191,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with direct risk management experience.",
+        "Enhance the search algorithm to better distinguish between relevant risk management professionals and unrelated roles like medical practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T16:09:29.986111"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 6.835236072540283,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Include more candidates with explicit risk management experience or titles to improve relevance.",
+        "Enhance filtering to prioritize candidates with direct risk management roles rather than general practitioners or unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T16:09:30.170919"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 10.599050045013428,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates explicitly identified as radiologists or with radiology-specific experience.",
+        "Enhance candidate profiling to include detailed qualifications, certifications, and specific radiology expertise to better assess quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T16:09:32.831454"
+    },
+    {
+      "query": "data scientist",
+      "response_time": 31.108333110809326,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve relevance by filtering candidates specifically with 'Data Scientist' experience or related skills.",
+        "Enhance candidate quality by prioritizing profiles with clear data science backgrounds and relevant project experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T16:09:34.854701"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 13.599790096282959,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Ensure candidate profiles are directly related to mobile development roles, focusing on relevant technical skills and experience.",
+        "Improve search filtering to prioritize candidates with mobile development expertise, rather than unrelated professions like general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T16:10:00.204484"
+    },
+    {
+      "query": "portfolio manager",
+      "response_time": 23.888734102249146,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize professionals explicitly titled as 'Portfolio Managers' or related roles in finance and investment.",
+        "Enhance search algorithms to better interpret context and match relevant industries, reducing irrelevant results like general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T16:10:00.654911"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:56:19.585508",
+      "avg_response_time": 13.604511892795562,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.42300000000000004
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T16:02:58.056861",
+      "avg_response_time": 12.270486629009246,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.35150000000000003
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T16:02:58.056909",
+      "avg_response_time": 12.270486629009246,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.35150000000000003
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T16:10:05.657487",
+      "avg_response_time": 13.822272682189942,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4415
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T16:10:05.657523",
+      "avg_response_time": 13.822272682189942,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4415
+    }
+  ]
+}

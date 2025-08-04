@@ -114,15 +114,15 @@ class SimpleSearchAgent:
         
         try:
             # Use GPT-enhanced search
-            search_query = SearchQuery(
-                query_text=query_text,
+                search_query = SearchQuery(
+                    query_text=query_text,
                 job_category="general",
                 strategy=SearchStrategy.GPT_ENHANCED,
                 max_candidates=20
-            )
-            
-            candidates = self.search_service.search_candidates(
-                search_query, 
+                )
+                
+                candidates = self.search_service.search_candidates(
+                    search_query, 
                 SearchStrategy.GPT_ENHANCED
             )
             

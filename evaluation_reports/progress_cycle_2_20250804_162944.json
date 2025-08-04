@@ -1,0 +1,185 @@
+{
+  "cycle_count": 2,
+  "timestamp": "2025-08-04T16:29:44.216869",
+  "total_evaluations": 53,
+  "total_improvements": 6,
+  "recent_results": [
+    {
+      "query": "mobile developer",
+      "response_time": 12.047410249710083,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve relevance by filtering candidates specifically with 'mobile developer' experience or skills.",
+        "Enhance candidate quality by highlighting candidates with direct mobile development expertise or relevant technical backgrounds."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T16:28:34.585801"
+    },
+    {
+      "query": "surgeon",
+      "response_time": 10.589585781097412,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate\u2019s surgical experience or specialties to improve relevance for the query 'surgeon'.",
+        "Prioritize candidates with explicit surgical backgrounds or titles indicating surgical expertise to enhance candidate quality scoring."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T16:28:44.215685"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 25.5653018951416,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant technical skills and titles related to mobile development.",
+        "Enhance candidate profiles to include specific experience in mobile app development, programming languages, or related projects for better relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T16:28:59.230847"
+    },
+    {
+      "query": "experienced software engineer",
+      "response_time": 13.761121034622192,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve filtering to prioritize candidates with relevant software engineering experience and clear professional backgrounds.",
+        "Enhance search algorithms to better match keywords like 'software engineer' and exclude unrelated roles such as medical professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T16:29:02.521877"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 8.79737401008606,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize professionals with risk management experience rather than general practitioners.",
+        "Enhance search algorithms to better match keywords like 'risk manager' with relevant job titles or roles, reducing irrelevant results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T16:29:04.209317"
+    },
+    {
+      "query": "psychiatrist",
+      "response_time": 9.988442182540894,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's expertise in psychiatry to improve relevance scoring.",
+        "Reduce response time to under 5 seconds to enhance overall candidate quality and user experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T16:29:09.581973"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 19.990537881851196,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more detailed professional credentials and specializations to better assess candidate relevance.",
+        "Improve response time to under 10 seconds for faster results without compromising quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T16:29:25.517178"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 12.120018243789673,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve search query specificity to target mobile development roles more directly.",
+        "Enhance filtering or ranking algorithms to prioritize candidates with relevant technical skills and experience in mobile development."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T16:29:35.172989"
+    },
+    {
+      "query": "machine learning engineer",
+      "response_time": 14.994724035263062,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with direct experience or titles related to 'machine learning engineer'.",
+        "Enhance the search algorithm to better distinguish between unrelated roles (e.g., general counsel, general practitioner) and relevant machine learning professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T16:29:39.213750"
+    },
+    {
+      "query": "M&A attorney",
+      "response_time": 6.699187278747559,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's M&A experience to improve relevance scoring.",
+        "Prioritize candidates with direct M&A transactional experience and relevant legal expertise to enhance candidate quality assessment."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T16:29:39.214755"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T16:22:46.488452",
+      "avg_response_time": 10.570139970098223,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4321428571428571
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T16:22:46.488457",
+      "avg_response_time": 10.570139970098223,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4321428571428571
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T16:29:44.216537",
+      "avg_response_time": 15.152972257137298,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.538
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T16:29:44.216557",
+      "avg_response_time": 15.152972257137298,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.538
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T16:29:44.216561",
+      "avg_response_time": 15.152972257137298,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.538
+    }
+  ]
+}

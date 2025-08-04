@@ -1,0 +1,185 @@
+{
+  "cycle_count": 28,
+  "timestamp": "2025-08-04T19:22:10.024860",
+  "total_evaluations": 1073,
+  "total_improvements": 84,
+  "recent_results": [
+    {
+      "query": "quantitative finance expert",
+      "response_time": 11.106833934783936,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit expertise in quantitative finance, such as those with relevant experience or titles.",
+        "Enhance candidate quality assessment by including more detailed qualifications or publications related to quantitative finance to better distinguish top experts."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T19:21:26.768455"
+    },
+    {
+      "query": "pediatrician",
+      "response_time": 8.70417308807373,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.78,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's pediatric specialties and experience to improve relevance and candidate quality scores.",
+        "Reduce response time to under 5 seconds to enhance overall responsiveness and user experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T19:21:26.905237"
+    },
+    {
+      "query": "security engineer",
+      "response_time": 8.184264898300171,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant technical backgrounds in security engineering.",
+        "Refine keyword matching to exclude candidates with unrelated professions such as medical practitioners or generalists."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T19:21:35.119147"
+    },
+    {
+      "query": "machine learning engineer",
+      "response_time": 10.983718156814575,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Prioritize candidates with relevant titles and experience directly related to machine learning engineering to improve relevance scoring.",
+        "Include more detailed candidate profiles or summaries to better assess candidate quality and relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T19:21:37.126161"
+    },
+    {
+      "query": "economics professor",
+      "response_time": 5.466279745101929,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic and teaching professionals in economics.",
+        "Enhance keyword matching to ensure candidates' profiles explicitly mention 'economics' or related academic roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T19:21:39.093799"
+    },
+    {
+      "query": "data scientist",
+      "response_time": 10.36283278465271,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with data science or related technical expertise.",
+        "Enhance the search algorithm to better match keywords like 'data scientist' with candidate bios and experiences."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T19:21:50.349948"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 5.792433023452759,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining the query to specify 'risk manager' roles or titles, reducing unrelated candidates.",
+        "Enhance candidate filtering to prioritize professionals with direct experience or titles related to risk management, such as 'Risk Manager,' 'Chief Risk Officer,' or similar roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T19:21:50.877506"
+    },
+    {
+      "query": "biology researcher",
+      "response_time": 7.48396110534668,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords to specifically target biology researchers rather than general practitioners or legal professionals.",
+        "Enhance candidate filtering to prioritize profiles with explicit experience or research in biology or related scientific fields."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T19:22:01.147744"
+    },
+    {
+      "query": "cardiologist",
+      "response_time": 11.538360834121704,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the search algorithm to prioritize medical professionals, specifically cardiologists, over unrelated fields like legal services.",
+        "Enhance keyword matching and filtering criteria to ensure candidate relevance aligns more closely with the query 'cardiologist'."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T19:22:03.124413"
+    },
+    {
+      "query": "data scientist",
+      "response_time": 8.07648491859436,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant data science or analytics experience.",
+        "Enhance candidate profiles to include specific skills, projects, or titles related to data science to increase relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T19:22:05.021390"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T19:15:54.417585",
+      "avg_response_time": 9.481826615333556,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.418
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T19:15:54.417595",
+      "avg_response_time": 9.481826615333556,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.418
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T19:22:10.023117",
+      "avg_response_time": 9.290003085136414,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.383
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T19:22:10.023169",
+      "avg_response_time": 9.290003085136414,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.383
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T19:22:10.023177",
+      "avg_response_time": 9.290003085136414,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.383
+    }
+  ]
+}

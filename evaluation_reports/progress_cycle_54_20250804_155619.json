@@ -1,0 +1,185 @@
+{
+  "cycle_count": 54,
+  "timestamp": "2025-08-04T15:56:19.586154",
+  "total_evaluations": 2128,
+  "total_improvements": 97,
+  "recent_results": [
+    {
+      "query": "anthropology PhD",
+      "response_time": 11.443994998931885,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic and research-focused profiles related to anthropology PhD programs.",
+        "Enhance candidate relevance by refining algorithms to better match educational background and research experience with the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T15:55:16.450687"
+    },
+    {
+      "query": "experienced software engineer",
+      "response_time": 6.118136644363403,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate relevance by filtering for software engineering experience rather than medical or legal roles.",
+        "Enhance candidate quality signals by including detailed technical skills, project experience, or professional achievements related to software engineering."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T15:55:16.500001"
+    },
+    {
+      "query": "financial analyst",
+      "response_time": 8.153388023376465,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles with explicit experience or titles related to financial analysis.",
+        "Enhance search algorithms to better match keywords like 'financial analyst' with relevant professional backgrounds, reducing irrelevant results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T15:55:32.452124"
+    },
+    {
+      "query": "computer science professor",
+      "response_time": 9.51975393295288,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by prioritizing candidates with explicit academic or teaching experience in computer science.",
+        "Refine the search algorithm to filter out candidates with unrelated backgrounds, such as medical practitioners or lawyers, to better match the 'computer science professor' query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T15:55:32.464119"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 8.883397102355957,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Include more specialized psychology researchers in the results.",
+        "Improve search filtering to prioritize academic or research-focused profiles over general practitioners."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T15:55:44.865195"
+    },
+    {
+      "query": "neurologist",
+      "response_time": 15.793863773345947,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more specialized neurologists with clear clinical practice focus to improve relevance.",
+        "Enhance candidate descriptions with specific credentials or areas of expertise to better assess candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T15:55:56.950528"
+    },
+    {
+      "query": "history professor",
+      "response_time": 19.492114067077637,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search query specificity to target academic professionals or historians rather than general practitioners.",
+        "Enhance the search algorithm to prioritize academic titles, educational backgrounds, or university affiliations related to history."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T15:55:59.721351"
+    },
+    {
+      "query": "corporate lawyer",
+      "response_time": 8.08566403388977,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.78,
+      "gpt_suggestions": [
+        "Include more detailed and specific profiles of candidates with relevant legal expertise and experience in corporate law.",
+        "Improve search filtering to prioritize candidates with verified credentials and extensive corporate law backgrounds."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T15:56:14.578399"
+    },
+    {
+      "query": "cardiologist",
+      "response_time": 8.843586683273315,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates explicitly identified as cardiologists rather than general practitioners or unrelated professionals.",
+        "Enhance candidate quality assessment by incorporating more detailed professional credentials or specialization details related to cardiology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T15:56:14.582834"
+    },
+    {
+      "query": "surgeon",
+      "response_time": 11.441434860229492,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve relevance by prioritizing candidates with explicit medical or surgical expertise related to 'surgeon'.",
+        "Enhance candidate quality by filtering out profiles that are not directly related to surgical practice or medical professionals with surgical specialization."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T15:56:14.583809"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:42:57.852825",
+      "avg_response_time": 17.096915972232818,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33999999999999997
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:49:35.950440",
+      "avg_response_time": 14.02212518453598,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33999999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:49:35.950474",
+      "avg_response_time": 14.02212518453598,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33999999999999997
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:56:19.585462",
+      "avg_response_time": 13.604511892795562,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.42300000000000004
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:56:19.585508",
+      "avg_response_time": 13.604511892795562,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.42300000000000004
+    }
+  ]
+}

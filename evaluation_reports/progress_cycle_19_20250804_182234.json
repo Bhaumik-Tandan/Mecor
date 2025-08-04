@@ -1,0 +1,185 @@
+{
+  "cycle_count": 19,
+  "timestamp": "2025-08-04T18:22:34.189625",
+  "total_evaluations": 718,
+  "total_improvements": 57,
+  "recent_results": [
+    {
+      "query": "M&A attorney",
+      "response_time": 6.480238676071167,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize attorneys with explicit M&A experience and relevant legal backgrounds.",
+        "Enhance search algorithms to better match professional titles and bios related to M&A law, reducing irrelevant general practitioners."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T18:21:37.173439"
+    },
+    {
+      "query": "investment banker",
+      "response_time": 7.438366174697876,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of candidates by filtering for finance or banking-related roles rather than medical or legal professions.",
+        "Enhance candidate quality by prioritizing profiles with direct experience or titles related to investment banking or finance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T18:21:37.611709"
+    },
+    {
+      "query": "surgeon",
+      "response_time": 6.91697096824646,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve relevance by filtering out candidates with unrelated titles (e.g., General Counsel) and emphasizing medical professionals.",
+        "Enhance candidate quality by providing more detailed profiles, including specialties, certifications, and specific experience in surgical procedures if applicable."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T18:21:47.673107"
+    },
+    {
+      "query": "neurologist",
+      "response_time": 8.199466943740845,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Increase the prominence of highly relevant neurologist profiles, such as those with specific titles like 'Consultant Neuroradiologist' or 'Neuropsychiatrist,' to improve relevance scoring.",
+        "Ensure all top candidates are directly related to neurology practice; currently, some profiles (e.g., general practitioners) are less relevant and may lower the overall candidate quality score."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T18:21:59.900665"
+    },
+    {
+      "query": "history professor",
+      "response_time": 7.063779830932617,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by filtering for academic or educational professionals rather than general practitioners.",
+        "Enhance candidate quality by including more detailed profiles of university-affiliated history professors, such as their publications, teaching experience, or institutional affiliation."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T18:22:01.536248"
+    },
+    {
+      "query": "mechanical engineer",
+      "response_time": 9.423496007919312,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Increase the diversity and relevance of candidate profiles to better match the specific skills and roles associated with 'mechanical engineer'.",
+        "Improve filtering to prioritize candidates with clear mechanical engineering expertise and relevant experience, reducing duplicates and irrelevant entries."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T18:22:05.145228"
+    },
+    {
+      "query": "M&A attorney",
+      "response_time": 6.454430103302002,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.78,
+      "gpt_suggestions": [
+        "Include more detailed and specific summaries highlighting each candidate's M&A experience to improve relevance scoring.",
+        "Prioritize candidates with explicit M&A titles or extensive M&A case histories to enhance candidate quality assessment."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T18:22:05.569035"
+    },
+    {
+      "query": "psychiatrist",
+      "response_time": 7.33796501159668,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's psychiatric expertise and specialties to improve relevance scoring.",
+        "Ensure all candidates' bios clearly indicate their primary focus on psychiatry to enhance candidate quality assessment."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T18:22:15.271879"
+    },
+    {
+      "query": "portfolio manager",
+      "response_time": 7.080080986022949,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Include more candidates with explicit experience or roles related to portfolio management to improve relevance.",
+        "Enhance candidate profiles with detailed skills and achievements directly related to portfolio management to better assess candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T18:22:19.351278"
+    },
+    {
+      "query": "cardiologist",
+      "response_time": 7.6082141399383545,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance of top candidates by prioritizing licensed cardiologists or specialists in cardiology rather than general practitioners or unrelated legal professionals.",
+        "Enhance search filtering to better match the query, such as including location, certifications, or specific cardiology expertise to increase candidate relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T18:22:29.180735"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T18:16:27.908319",
+      "avg_response_time": 10.117170512676239,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.45999999999999996
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T18:16:27.908324",
+      "avg_response_time": 10.117170512676239,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.45999999999999996
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T18:22:34.188467",
+      "avg_response_time": 8.088809669017792,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.591
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T18:22:34.188486",
+      "avg_response_time": 8.088809669017792,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.591
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T18:22:34.188489",
+      "avg_response_time": 8.088809669017792,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.591
+    }
+  ]
+}

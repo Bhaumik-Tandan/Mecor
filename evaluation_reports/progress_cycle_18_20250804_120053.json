@@ -1,0 +1,185 @@
+{
+  "cycle_count": 18,
+  "timestamp": "2025-08-04T12:00:53.326986",
+  "total_evaluations": 721,
+  "total_improvements": 27,
+  "recent_results": [
+    {
+      "query": "data scientist",
+      "response_time": 6.939100027084351,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant data science or analytics experience.",
+        "Enhance candidate profiles to include specific skills, projects, or roles related to data science to increase relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T11:59:48.309811"
+    },
+    {
+      "query": "machine learning engineer",
+      "response_time": 7.347738981246948,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize candidates with relevant technical backgrounds in machine learning or data science.",
+        "Enhance the relevance ranking by incorporating keywords related to machine learning engineering skills and experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T11:59:59.188492"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 6.090865850448608,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords to specifically target academic or university-related profiles of chemistry professors.",
+        "Enhance candidate filtering to prioritize individuals with explicit experience or titles related to chemistry or academia in the field of chemistry."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T12:00:06.570198"
+    },
+    {
+      "query": "frontend developer",
+      "response_time": 7.921921014785767,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Ensure the search results are aligned with the 'frontend developer' query by filtering out unrelated professions such as legal or medical roles.",
+        "Improve candidate relevance by prioritizing profiles with specific frontend development skills, experience, or related technical expertise."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T12:00:10.445553"
+    },
+    {
+      "query": "psychiatrist",
+      "response_time": 10.094349145889282,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's psychiatric specialization and experience to improve relevance.",
+        "Reduce response time to under 5 seconds to enhance overall candidate quality and user experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T12:00:16.175522"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 8.884764194488525,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic and research-focused profiles related to anthropology PhD programs.",
+        "Refine candidate ranking algorithms to better distinguish between medical/legal professionals and academic researchers relevant to anthropology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T12:00:24.357951"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 6.091206073760986,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve relevance by prioritizing candidates with explicit research experience in psychology rather than general practitioners or legal professionals.",
+        "Enhance candidate quality by filtering out unrelated profiles and including more specialized psychology researchers or academics."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T12:00:28.357530"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 8.994364023208618,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Include more detailed and specific radiology-related credentials and experience to better match the query.",
+        "Prioritize candidates with explicit radiology specialization and relevant certifications over general practitioners."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T12:00:34.813401"
+    },
+    {
+      "query": "devops engineer",
+      "response_time": 5.071227073669434,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate relevance by prioritizing profiles with specific DevOps experience or skills.",
+        "Enhance filtering to exclude unrelated professions such as general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T12:00:46.123325"
+    },
+    {
+      "query": "portfolio manager",
+      "response_time": 8.380706071853638,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve relevance by filtering candidates specifically with portfolio management experience or related financial roles.",
+        "Enhance candidate quality by prioritizing profiles with clear, relevant professional titles and detailed experience in portfolio management or finance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T12:00:48.323470"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T11:48:30.807195",
+      "avg_response_time": 9.55218596458435,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.387
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:48:30.807232",
+      "avg_response_time": 9.55218596458435,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.387
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:54:39.934775",
+      "avg_response_time": 7.834655272960663,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3415
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T12:00:53.326278",
+      "avg_response_time": 8.746613562107086,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3485
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:00:53.326323",
+      "avg_response_time": 8.746613562107086,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3485
+    }
+  ]
+}

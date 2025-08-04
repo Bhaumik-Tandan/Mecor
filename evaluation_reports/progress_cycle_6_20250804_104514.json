@@ -1,0 +1,185 @@
+{
+  "cycle_count": 6,
+  "timestamp": "2025-08-04T10:45:14.590168",
+  "total_evaluations": 224,
+  "total_improvements": 6,
+  "recent_results": [
+    {
+      "query": "portfolio manager",
+      "response_time": 5.947756052017212,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search algorithm to better match 'portfolio manager' roles, focusing on relevant job titles and professional profiles.",
+        "Enhance candidate filtering to prioritize individuals with experience or expertise directly related to portfolio management or investment roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T10:44:24.250767"
+    },
+    {
+      "query": "devops engineer",
+      "response_time": 5.408128976821899,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize professionals with DevOps or related technical experience.",
+        "Refine search keywords to better match DevOps engineering roles, avoiding unrelated professions like medical or legal fields."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:44:28.416828"
+    },
+    {
+      "query": "mathematics professor",
+      "response_time": 6.226279973983765,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search query specificity to target academic or professional mathematicians rather than general practitioners.",
+        "Enhance filtering to prioritize candidates with academic titles or publications related to mathematics."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:44:34.076404"
+    },
+    {
+      "query": "financial analyst",
+      "response_time": 4.990463972091675,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant professional backgrounds in finance or related fields.",
+        "Refine the query or include additional keywords to better target financial analyst roles, reducing irrelevant results like medical professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T10:44:35.369899"
+    },
+    {
+      "query": "economics professor",
+      "response_time": 7.5512309074401855,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize individuals with academic or teaching experience in economics.",
+        "Enhance search query specificity by including keywords like 'economics professor' or 'academic economist' to better match relevant candidates."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:44:35.944434"
+    },
+    {
+      "query": "history professor",
+      "response_time": 11.881765842437744,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance of top candidates by prioritizing individuals with explicit expertise or background in history or related academic fields.",
+        "Refine search parameters or keywords to better distinguish between medical professionals and historians, ensuring more accurate candidate matching."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T10:44:54.197021"
+    },
+    {
+      "query": "physics researcher",
+      "response_time": 7.8952319622039795,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords to specifically target 'physics researchers' rather than general practitioners or unrelated professions.",
+        "Enhance candidate filtering to prioritize individuals with explicit experience or research in physics, ensuring higher candidate quality for the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:44:55.091906"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 9.028344869613647,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with direct risk management experience.",
+        "Enhance the search algorithm to better distinguish between relevant risk management professionals and unrelated medical or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:44:55.219877"
+    },
+    {
+      "query": "neurologist",
+      "response_time": 4.545215845108032,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Increase diversity and specificity of candidate profiles to better match 'neurologist' roles.",
+        "Improve candidate descriptions for clarity and completeness to enhance relevance and quality assessment."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:45:05.665870"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 7.942077875137329,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with matching job titles or skills related to 'mobile developer'.",
+        "Enhance candidate profiling to include specific technical skills, project experience, or roles directly related to mobile development."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T10:45:09.586993"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:20:32.090093",
+      "avg_response_time": 6.499505186080933,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33649999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:26:41.204218",
+      "avg_response_time": 7.406437480449677,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.36
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:32:45.776095",
+      "avg_response_time": 7.659779715538025,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.34900000000000003
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:38:57.986728",
+      "avg_response_time": 7.150102829933166,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.32
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:45:14.589455",
+      "avg_response_time": 7.045353209972381,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.305
+    }
+  ]
+}

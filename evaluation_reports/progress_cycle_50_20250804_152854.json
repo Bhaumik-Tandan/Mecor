@@ -1,0 +1,185 @@
+{
+  "cycle_count": 50,
+  "timestamp": "2025-08-04T15:28:54.557116",
+  "total_evaluations": 1976,
+  "total_improvements": 89,
+  "recent_results": [
+    {
+      "query": "psychiatrist",
+      "response_time": 5.942922115325928,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's psychiatric expertise to improve relevance scoring.",
+        "Prioritize candidates with explicit psychiatric qualifications or experience directly related to psychiatry to enhance candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T15:27:57.629050"
+    },
+    {
+      "query": "backend developer",
+      "response_time": 6.598769903182983,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to ensure profiles are relevant to 'backend developer' roles, avoiding unrelated professions like medical practitioners.",
+        "Enhance search algorithms to prioritize technical experience and skills related to backend development, rather than general or unrelated backgrounds."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T15:28:00.138060"
+    },
+    {
+      "query": "corporate lawyer",
+      "response_time": 7.0769429206848145,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of candidates by filtering for legal professionals with explicit experience in corporate law.",
+        "Refine search parameters to prioritize legal expertise over medical or unrelated fields, ensuring candidate bios align more closely with 'corporate lawyer'."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T15:28:00.306711"
+    },
+    {
+      "query": "M&A attorney",
+      "response_time": 8.83320689201355,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit M&A or legal expertise in the search results.",
+        "Enhance the candidate ranking algorithm to better distinguish between specialized attorneys and unrelated professionals, ensuring more relevant top candidates."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T15:28:10.684456"
+    },
+    {
+      "query": "history professor",
+      "response_time": 8.061306715011597,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Increase the relevance of top candidates by prioritizing individuals with 'history' or related academic backgrounds over unrelated professions like general practitioners.",
+        "Improve filtering to exclude candidates whose bios and experience do not align with the 'history professor' query, ensuring more accurate and targeted results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T15:28:12.187992"
+    },
+    {
+      "query": "surgeon",
+      "response_time": 6.57934308052063,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Include more healthcare or surgical professionals directly related to the medical field to improve relevance.",
+        "Enhance candidate descriptions with specific surgical expertise or specialties to better match the 'surgeon' query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T15:28:18.403124"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 12.47159194946289,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Include more diverse and relevant psychology research profiles rather than primarily medical practitioners.",
+        "Improve ranking criteria to prioritize candidates explicitly identified as psychology researchers or with relevant research experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T15:28:30.823291"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 8.947311878204346,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with academic or teaching experience related to chemistry.",
+        "Enhance the relevance of results by including keywords like 'chemistry professor,' 'academic,' or 'researcher' in candidate profiles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T15:28:30.824227"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 8.1943039894104,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Refine search to include specific academic qualifications or research interests related to anthropology.",
+        "Improve candidate filtering to prioritize individuals with academic or research experience in anthropology or related fields."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T15:28:30.877115"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 12.262501955032349,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by prioritizing candidates with explicit psychology research experience rather than general practitioners.",
+        "Refine the search query or filtering criteria to better target psychology researchers, reducing the prominence of unrelated medical practitioners."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T15:28:49.552650"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:16:09.500499",
+      "avg_response_time": 10.553666877746583,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3565
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:22:35.849597",
+      "avg_response_time": 13.269582796096802,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.356
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:22:35.849641",
+      "avg_response_time": 13.269582796096802,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.356
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:28:54.556417",
+      "avg_response_time": 11.549888789653778,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.375
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:28:54.556450",
+      "avg_response_time": 11.549888789653778,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.375
+    }
+  ]
+}

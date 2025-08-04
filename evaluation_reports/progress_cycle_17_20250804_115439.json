@@ -1,0 +1,185 @@
+{
+  "cycle_count": 17,
+  "timestamp": "2025-08-04T11:54:39.935498",
+  "total_evaluations": 679,
+  "total_improvements": 25,
+  "recent_results": [
+    {
+      "query": "mechanical engineer",
+      "response_time": 7.657505035400391,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles explicitly related to mechanical engineering rather than general practitioners or unrelated professions.",
+        "Enhance search algorithms to better match keywords like 'mechanical engineer' with relevant technical experience and skills, reducing irrelevant results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T11:53:53.581861"
+    },
+    {
+      "query": "pediatrician",
+      "response_time": 5.6604297161102295,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.78,
+      "gpt_suggestions": [
+        "Include more detailed and consistent information about each candidate's pediatric specialization and experience to improve relevance and quality assessment.",
+        "Prioritize candidates with verified board certification and specific pediatric expertise to enhance candidate quality scoring."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T11:53:57.352535"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 10.11939811706543,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with cloud architecture or IT infrastructure experience rather than unrelated professions like medical or legal fields.",
+        "Enhance candidate profiling to include specific skills, certifications, or experience related to cloud architecture to better match the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T11:54:01.216039"
+    },
+    {
+      "query": "devops engineer",
+      "response_time": 5.639919281005859,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Ensure the search results are directly related to the 'DevOps Engineer' role, focusing on technical skills and experience in DevOps, rather than unrelated professions like general practitioners.",
+        "Improve the filtering or ranking algorithm to prioritize candidates with relevant DevOps experience, certifications, or skills to enhance relevance and candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T11:54:06.770681"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 13.73544692993164,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with cloud architecture experience rather than general practitioners or unrelated roles.",
+        "Enhance candidate profiling to include specific skills, certifications, or projects related to cloud architecture to better match the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T11:54:10.890474"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 6.687366247177124,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Prioritize candidates with relevant risk management experience and titles, such as 'Chief Risk Officer' or similar roles, to improve relevance.",
+        "Refine search parameters to filter out unrelated medical practitioners and focus on professional profiles related to risk management."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T11:54:19.714666"
+    },
+    {
+      "query": "frontend developer",
+      "response_time": 6.17296576499939,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with frontend development experience.",
+        "Enhance the search algorithm to better match keywords like 'frontend developer' rather than unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T11:54:20.897325"
+    },
+    {
+      "query": "M&A attorney",
+      "response_time": 8.691494941711426,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more detailed candidate profiles highlighting specific M&A experience and case history.",
+        "Prioritize candidates with explicit M&A transactional backgrounds and relevant legal expertise."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T11:54:33.676647"
+    },
+    {
+      "query": "devops engineer",
+      "response_time": 8.977056980133057,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate relevance by prioritizing profiles explicitly indicating DevOps or related technical experience.",
+        "Enhance candidate quality by filtering out unrelated professions (e.g., medical practitioners, legal professionals) to better match the DevOps engineer role."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T11:54:34.932176"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 6.151592969894409,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant psychology or research experience rather than general practitioners.",
+        "Enhance the relevance of candidate profiles by including keywords related to psychology research, academic background, or research publications."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T11:54:34.951933"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T11:42:19.879027",
+      "avg_response_time": 11.999284446239471,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33999999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:42:19.879053",
+      "avg_response_time": 11.999284446239471,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33999999999999997
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T11:48:30.807195",
+      "avg_response_time": 9.55218596458435,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.387
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:48:30.807232",
+      "avg_response_time": 9.55218596458435,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.387
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:54:39.934775",
+      "avg_response_time": 7.834655272960663,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3415
+    }
+  ]
+}

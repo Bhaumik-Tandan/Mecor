@@ -14,6 +14,7 @@ from ..utils.logger import get_logger
 from ..utils.helpers import (
     load_json_file, execute_parallel_tasks, calculate_weighted_score, PerformanceTimer
 )
+from ..services.filter_extraction_service import filter_extraction_service, QueryFilters
 
 logger = get_logger(__name__)
 
@@ -280,6 +281,20 @@ class SearchService:
         search_config: SearchConfig
     ) -> List[CandidateProfile]:
         """
+        Enhanced hybrid search with filter extraction and application.
+        """
+        # Extract filters from user query
+        extracted_filters = filter_extraction_service.extract_filters(query.query_text)
+        
+        # Create enhanced query with filters
+        enhanced_query = filter_extraction_service.create_enhanced_query(
+            query.query_text, extracted_filters
+        )
+        
+        logger.info(f"Original query: '{query.query_text}'")
+        logger.info(f"Enhanced query: '{enhanced_query}'")
+        logger.info(f"Extracted filters: {extracted_filters}")
+        """
         Perform enhanced hybrid search with better parallelization.
         
         Args:
@@ -332,6 +347,17 @@ class SearchService:
             bm25_start = time.time()
             
             keywords = self.get_bm25_keywords(query.job_category)
+            
+            # Enhance BM25 keywords with extracted filters
+            if extracted_filters.skill_filters:
+                keywords.extend(extracted_filters.skill_filters)
+            if extracted_filters.experience_filters:
+                keywords.extend(extracted_filters.experience_filters)
+            if extracted_filters.education_filters:
+                keywords.extend(extracted_filters.education_filters)
+            
+            logger.info(f"Enhanced BM25 keywords: {keywords}")
+            
             bm25_top_k = min(100, max(10, query.max_candidates))
             bm25_candidates = self.bm25_search_parallel(keywords, bm25_top_k)
             
@@ -345,12 +371,29 @@ class SearchService:
             bm25_time = time.time() - bm25_start
             logger.debug(f"🧵 Thread {thread_id}: BM25 search completed in {bm25_time:.2f}s")
             
-            # Phase 3: Soft filtering
-            logger.debug(f"🧵 Thread {thread_id}: Phase 3 - Soft filtering")
+            # Phase 3: Soft filtering and filter-based filtering
+            logger.debug(f"🧵 Thread {thread_id}: Phase 3 - Soft filtering and filter-based filtering")
             soft_filter_start = time.time()
             
             hard_filters = self.get_hard_filters(query.job_category)
             preferred_keywords = hard_filters.get("preferred", [])
+            
+            # Apply extracted filters to candidates
+            if any([extracted_filters.skill_filters, extracted_filters.experience_filters, 
+                   extracted_filters.education_filters, extracted_filters.exclude_filters]):
+                all_candidate_ids = list(candidate_scores.keys())
+                candidates_for_filtering = self._get_candidate_profiles_batch(all_candidate_ids)
+                
+                for candidate in candidates_for_filtering:
+                    if candidate.id in candidate_scores:
+                        # Apply filter-based scoring
+                        filter_score = self._calculate_filter_score(candidate, extracted_filters)
+                        candidate_scores[candidate.id].filter_score = filter_score
+                        
+                        # Apply exclude filters (negative scoring)
+                        if extracted_filters.exclude_filters:
+                            exclude_score = self._calculate_exclude_score(candidate, extracted_filters.exclude_filters)
+                            candidate_scores[candidate.id].filter_score -= exclude_score
             
             if preferred_keywords:
                 all_candidate_ids = list(candidate_scores.keys())
@@ -372,7 +415,8 @@ class SearchService:
                 candidate_score.calculate_combined_score(
                     config.search.vector_search_weight,
                     config.search.bm25_search_weight,
-                    config.search.soft_filter_weight
+                    config.search.soft_filter_weight,
+                    0.3  # Filter weight for extracted filters
                 )
             
             sorted_scores = sorted(
@@ -830,4 +874,67 @@ class SearchService:
                 score += 0.05
         
         return min(score, 1.0)
+    
+    def _calculate_filter_score(self, candidate: CandidateProfile, filters: QueryFilters) -> float:
+        """
+        Calculate filter-based score for a candidate.
+        
+        Args:
+            candidate: Candidate profile
+            filters: Extracted query filters
+            
+        Returns:
+            Filter score (0.0 to 1.0)
+        """
+        score = 0.0
+        candidate_text = f"{candidate.summary or ''} {candidate.name or ''}".lower()
+        
+        # Score skill filters
+        if filters.skill_filters:
+            skill_matches = sum(1 for skill in filters.skill_filters if skill.lower() in candidate_text)
+            if skill_matches > 0:
+                score += (skill_matches / len(filters.skill_filters)) * 0.4
+        
+        # Score experience filters
+        if filters.experience_filters:
+            exp_matches = sum(1 for exp in filters.experience_filters if exp.lower() in candidate_text)
+            if exp_matches > 0:
+                score += (exp_matches / len(filters.experience_filters)) * 0.3
+        
+        # Score education filters
+        if filters.education_filters:
+            edu_matches = sum(1 for edu in filters.education_filters if edu.lower() in candidate_text)
+            if edu_matches > 0:
+                score += (edu_matches / len(filters.education_filters)) * 0.2
+        
+        # Score location filters
+        if filters.location_filters:
+            loc_matches = sum(1 for loc in filters.location_filters if loc.lower() in candidate_text)
+            if loc_matches > 0:
+                score += (loc_matches / len(filters.location_filters)) * 0.1
+        
+        return min(score, 1.0)
+    
+    def _calculate_exclude_score(self, candidate: CandidateProfile, exclude_filters: List[str]) -> float:
+        """
+        Calculate exclude filter score (penalty for excluded terms).
+        
+        Args:
+            candidate: Candidate profile
+            exclude_filters: List of terms to exclude
+            
+        Returns:
+            Exclude penalty score (0.0 to 1.0)
+        """
+        if not exclude_filters:
+            return 0.0
+        
+        candidate_text = f"{candidate.summary or ''} {candidate.name or ''}".lower()
+        exclude_matches = sum(1 for term in exclude_filters if term.lower() in candidate_text)
+        
+        if exclude_matches > 0:
+            return (exclude_matches / len(exclude_filters)) * 0.5  # 50% penalty for excluded terms
+        
+        return 0.0
+
 search_service = SearchService() 

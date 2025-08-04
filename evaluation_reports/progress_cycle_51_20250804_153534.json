@@ -1,0 +1,185 @@
+{
+  "cycle_count": 51,
+  "timestamp": "2025-08-04T15:35:34.336730",
+  "total_evaluations": 2017,
+  "total_improvements": 91,
+  "recent_results": [
+    {
+      "query": "cloud architect",
+      "response_time": 21.463186979293823,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with cloud architecture experience or related IT roles.",
+        "Enhance candidate profiling to include specific skills, certifications, or experience related to cloud computing and architecture."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T15:34:40.574053"
+    },
+    {
+      "query": "security engineer",
+      "response_time": 6.341871976852417,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant security engineering experience or titles.",
+        "Refine keyword matching to better align candidate bios with 'security engineer' roles, such as including skills like cybersecurity, network security, or information security."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T15:34:41.837483"
+    },
+    {
+      "query": "backend developer",
+      "response_time": 12.498275995254517,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize relevant technical skills and experience related to backend development.",
+        "Enhance the search algorithm to better match keywords and professional profiles specific to backend engineering roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T15:34:50.158849"
+    },
+    {
+      "query": "financial analyst",
+      "response_time": 6.370728969573975,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize relevant professional backgrounds, such as finance or analytics roles, rather than unrelated professions like general practitioners or lawyers.",
+        "Enhance the search algorithm to better match keywords like 'financial analyst' with candidates' bios and experience, reducing irrelevant results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T15:35:07.034602"
+    },
+    {
+      "query": "surgeon",
+      "response_time": 8.763302326202393,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve relevance by filtering candidates specifically with 'surgeon' or surgical specialties in their profiles.",
+        "Enhance candidate quality by prioritizing verified medical professionals or those with specialized surgical experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T15:35:07.035565"
+    },
+    {
+      "query": "economics professor",
+      "response_time": 5.577795028686523,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords to better match academic or professional profiles related to economics.",
+        "Enhance candidate quality filtering to prioritize individuals with explicit expertise or experience in economics or related fields rather than general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T15:35:07.036193"
+    },
+    {
+      "query": "cardiologist",
+      "response_time": 9.112525224685669,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Increase the specificity of search results by prioritizing candidates with explicit cardiology experience or titles.",
+        "Improve filtering to exclude general practitioners or unrelated professionals, ensuring higher relevance to 'cardiologist'."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T15:35:07.037004"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 16.2877779006958,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve relevance filtering to prioritize candidates with explicit psychology research experience.",
+        "Enhance candidate profiling to better distinguish between medical practitioners and psychology researchers."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T15:35:29.333406"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 6.1074182987213135,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic and research-focused profiles related to anthropology PhD programs.",
+        "Enhance candidate relevance by including keywords such as 'anthropology,' 'PhD,' 'research,' or 'academia' in candidate profiles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T15:35:29.632833"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 6.761350154876709,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve relevance by filtering candidates specifically with backgrounds or expertise in anthropology or related academic fields.",
+        "Enhance candidate quality assessment to prioritize individuals with academic qualifications or research experience in anthropology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T15:35:30.544904"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:22:35.849641",
+      "avg_response_time": 13.269582796096802,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.356
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:28:54.556417",
+      "avg_response_time": 11.549888789653778,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.375
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:28:54.556450",
+      "avg_response_time": 11.549888789653778,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.375
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:35:34.336067",
+      "avg_response_time": 12.555823004245758,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.35
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:35:34.336100",
+      "avg_response_time": 12.555823004245758,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.35
+    }
+  ]
+}

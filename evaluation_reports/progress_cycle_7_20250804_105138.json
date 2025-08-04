@@ -1,0 +1,185 @@
+{
+  "cycle_count": 7,
+  "timestamp": "2025-08-04T10:51:38.155962",
+  "total_evaluations": 265,
+  "total_improvements": 8,
+  "recent_results": [
+    {
+      "query": "history professor",
+      "response_time": 9.19031310081482,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Increase the relevance of top candidates by filtering out unrelated professions such as medical practitioners and legal professionals.",
+        "Improve candidate quality by highlighting candidates with clear expertise or academic credentials in history or related fields."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_0",
+      "timestamp": "2025-08-04T10:50:25.003815"
+    },
+    {
+      "query": "quantitative finance expert",
+      "response_time": 11.994688987731934,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Refine the search query to specify 'quantitative finance' explicitly, as many top candidates are medical professionals or generalists.",
+        "Improve filtering to prioritize candidates with explicit experience or expertise in quantitative finance or related fields."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:50:36.333770"
+    },
+    {
+      "query": "economics professor",
+      "response_time": 5.508671998977661,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with academic or teaching experience in economics.",
+        "Enhance the candidate selection process to include more qualified economics professors rather than general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T10:50:38.429345"
+    },
+    {
+      "query": "mechanical engineer",
+      "response_time": 6.158483028411865,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize relevant mechanical engineering profiles over unrelated professions like medical practitioners.",
+        "Enhance search algorithms to better match keywords such as 'mechanical engineer' with candidate bios and experience details."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:50:43.453238"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 11.57528805732727,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by prioritizing candidates with explicit expertise or research experience in psychology.",
+        "Refine search filters to exclude general practitioners and legal professionals, focusing instead on academic or research-oriented profiles in psychology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T10:50:56.441746"
+    },
+    {
+      "query": "security engineer",
+      "response_time": 15.802533149719238,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search algorithm to better match keywords like 'security engineer' with relevant technical profiles.",
+        "Enhance filtering criteria to prioritize candidates with relevant security or engineering experience rather than unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:51:05.869927"
+    },
+    {
+      "query": "intellectual property lawyer",
+      "response_time": 4.56893515586853,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of candidates by filtering for legal professionals specializing in intellectual property law rather than general practitioners.",
+        "Enhance candidate quality by including detailed legal experience, certifications, or specific expertise in intellectual property law."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:51:09.595627"
+    },
+    {
+      "query": "security engineer",
+      "response_time": 9.347232103347778,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining the query to specify 'security engineer' roles rather than general engineering or unrelated professions.",
+        "Enhance candidate filtering to prioritize profiles with explicit experience or skills related to security engineering, such as cybersecurity, network security, or information security."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T10:51:17.594844"
+    },
+    {
+      "query": "surgeon",
+      "response_time": 10.411373138427734,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance by filtering candidates specifically with medical or surgical expertise related to 'surgeon'.",
+        "Enhance candidate quality by prioritizing verified medical professionals or surgeons over corporate or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:51:22.888316"
+    },
+    {
+      "query": "pediatrician",
+      "response_time": 9.369341850280762,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.78,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each pediatrician's specialties and practice locations to improve relevance.",
+        "Ensure all candidate bios are directly related to pediatric medicine and exclude unrelated profiles like the corporate attorney."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T10:51:33.152570"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:32:45.776095",
+      "avg_response_time": 7.659779715538025,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.34900000000000003
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:38:57.986728",
+      "avg_response_time": 7.150102829933166,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.32
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:45:14.589455",
+      "avg_response_time": 7.045353209972381,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.305
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T10:51:38.155214",
+      "avg_response_time": 10.169972205162049,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3865
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:51:38.155259",
+      "avg_response_time": 10.169972205162049,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3865
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "cycle_count": 33,
+  "timestamp": "2025-08-04T13:37:34.617705",
+  "total_evaluations": 1302,
+  "total_improvements": 55,
+  "recent_results": [
+    {
+      "query": "psychiatrist",
+      "response_time": 11.389544010162354,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve the relevance of top candidates by prioritizing verified psychiatrists or mental health specialists in the search results.",
+        "Enhance candidate quality signals, such as including credentials, specialties, or experience directly related to psychiatry, to better match the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T13:36:26.513318"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 7.695549964904785,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with explicit psychology or research experience.",
+        "Enhance the relevance of results by including keywords related to research, academia, or psychology-specific roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T13:36:29.678836"
+    },
+    {
+      "query": "corporate lawyer",
+      "response_time": 8.197405815124512,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles explicitly related to corporate law, reducing irrelevant entries like general practitioners.",
+        "Enhance the ranking algorithm to better weigh candidate relevance and quality, ensuring top candidates are more prominently featured."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T13:36:36.124391"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 11.41585922241211,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve candidate relevance by prioritizing profiles explicitly indicating radiology specialization.",
+        "Enhance candidate quality by including more detailed professional experience and credentials related to radiology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T13:36:44.613322"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 8.339087724685669,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve relevance filtering to prioritize candidates with mobile development experience.",
+        "Refine search keywords and criteria to better match the 'mobile developer' role, avoiding unrelated professions like general practitioners or lawyers."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T13:36:51.135917"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 15.236557006835938,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize verified radiologists with relevant specialties and experience.",
+        "Enhance search algorithms to better match the specific role of 'radiology doctor' rather than general medical or unrelated professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T13:37:11.323263"
+    },
+    {
+      "query": "machine learning engineer",
+      "response_time": 21.723024129867554,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant technical skills and experience in machine learning.",
+        "Refine the search algorithm to better match keywords related to machine learning engineering rather than general practitioners or unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T13:37:12.376934"
+    },
+    {
+      "query": "cardiologist",
+      "response_time": 9.778949975967407,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize professionals explicitly identified as cardiologists or with relevant cardiology experience.",
+        "Enhance search algorithms to better match specialized medical roles rather than general practitioners or unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T13:37:14.620175"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 10.622339725494385,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by prioritizing candidates with explicit academic or teaching experience in chemistry or related fields.",
+        "Refine the search query to specify 'chemistry professor' rather than general practitioners to filter out unrelated medical professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T13:37:17.391426"
+    },
+    {
+      "query": "cardiologist",
+      "response_time": 10.604298114776611,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Include more specialized cardiologist profiles rather than general practitioners to improve relevance.",
+        "Enhance candidate descriptions with specific cardiology expertise and credentials to better assess candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T13:37:29.614891"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:24:36.283002",
+      "avg_response_time": 12.11975085735321,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.35
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:30:57.310634",
+      "avg_response_time": 8.924559152126312,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3375
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:30:57.310679",
+      "avg_response_time": 8.924559152126312,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3375
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:37:34.616983",
+      "avg_response_time": 10.430621981620789,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3885
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:37:34.617030",
+      "avg_response_time": 10.430621981620789,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3885
+    }
+  ]
+}

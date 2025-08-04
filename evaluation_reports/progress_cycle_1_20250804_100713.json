@@ -1,0 +1,157 @@
+{
+  "cycle_count": 1,
+  "timestamp": "2025-08-04T10:07:13.680704",
+  "total_evaluations": 12,
+  "total_improvements": 1,
+  "recent_results": [
+    {
+      "query": "portfolio manager",
+      "response_time": 5.859318733215332,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit experience in portfolio management or related financial roles.",
+        "Enhance candidate profiling to include specific skills and experiences related to investment strategies, asset allocation, or financial advising."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:06:22.862240"
+    },
+    {
+      "query": "experienced software engineer",
+      "response_time": 6.428581237792969,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize software engineering experience over unrelated medical backgrounds.",
+        "Enhance search algorithms to better match technical skills and professional titles relevant to software engineering roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:06:22.958139"
+    },
+    {
+      "query": "M&A attorney",
+      "response_time": 5.694787979125977,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize attorneys with explicit M&A specialization and relevant experience.",
+        "Enhance search algorithms to better match legal practice areas, ensuring more relevant candidate profiles appear at the top."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T10:06:34.389762"
+    },
+    {
+      "query": "pediatrician",
+      "response_time": 7.759425163269043,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Increase the prominence of candidates with explicit pediatrician credentials and relevant clinical experience.",
+        "Improve search filtering to prioritize healthcare professionals specifically specializing in pediatrics over general practitioners or unrelated roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:06:42.535190"
+    },
+    {
+      "query": "tax lawyer",
+      "response_time": 5.489252805709839,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve relevance by filtering candidates specifically with legal or tax expertise rather than general practitioners.",
+        "Enhance candidate quality by including more qualified tax lawyers or legal professionals with relevant experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T10:06:46.094570"
+    },
+    {
+      "query": "cardiologist",
+      "response_time": 9.045477151870728,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Increase the number of relevant cardiologist candidates in the search results to improve relevance.",
+        "Enhance candidate profiles to clearly specify their specialization in cardiology to better match the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:06:51.242430"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 4.492059230804443,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance of top candidates by filtering for professionals with risk management expertise rather than general practitioners.",
+        "Enhance candidate quality by prioritizing candidates with direct experience or titles related to risk management or risk officers."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T10:06:56.706474"
+    },
+    {
+      "query": "devops engineer",
+      "response_time": 14.209255933761597,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize relevant DevOps experience and titles.",
+        "Enhance search algorithms to better match keywords related to DevOps engineering roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:07:01.168465"
+    },
+    {
+      "query": "history professor",
+      "response_time": 5.715100288391113,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve relevance filtering to prioritize candidates with clear expertise in history or academia.",
+        "Enhance candidate descriptions to better highlight their qualifications related to the 'history professor' role."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T10:07:08.678988"
+    },
+    {
+      "query": "psychiatrist",
+      "response_time": 4.996157169342041,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate\u2019s psychiatric specialization and experience to improve relevance.",
+        "Prioritize candidates with clear psychiatric credentials and direct experience in psychiatry to enhance candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:07:09.907667"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:07:13.679980",
+      "avg_response_time": 6.731817126274109,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.425
+    }
+  ]
+}

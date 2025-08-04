@@ -1,0 +1,185 @@
+{
+  "cycle_count": 23,
+  "timestamp": "2025-08-04T12:32:37.311216",
+  "total_evaluations": 907,
+  "total_improvements": 35,
+  "recent_results": [
+    {
+      "query": "security engineer",
+      "response_time": 9.982547998428345,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with titles or experience related to security engineering.",
+        "Enhance the candidate selection process to include more specialized security professionals rather than general practitioners or unrelated roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T12:30:08.717702"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 11.095778942108154,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords to specifically target academic or university-related profiles of chemistry professors.",
+        "Enhance candidate quality filtering to prioritize individuals with explicit experience or credentials in chemistry or academia, rather than unrelated professions like legal services or general practice."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T12:30:54.769257"
+    },
+    {
+      "query": "experienced software engineer",
+      "response_time": 17.333326816558838,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate relevance by filtering for software engineering experience rather than medical roles.",
+        "Enhance candidate quality by including more detailed technical skills and project experience related to software engineering."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_0",
+      "timestamp": "2025-08-04T12:31:19.201330"
+    },
+    {
+      "query": "tax lawyer",
+      "response_time": 10.391264915466309,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit legal expertise in tax law rather than general practitioners or unrelated roles.",
+        "Enhance candidate profiling to include specific experience or specialization in tax law to better match the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T12:31:35.754351"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 13.004776954650879,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by prioritizing candidates with explicit expertise or titles related to chemistry or academia.",
+        "Enhance candidate filtering to exclude general practitioners and legal professionals when searching for a chemistry professor."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T12:31:36.482513"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 9.021214008331299,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining the query to focus on cloud architecture roles rather than general practitioners or legal professionals.",
+        "Enhance candidate filtering to prioritize profiles with cloud computing, IT infrastructure, or architecture experience to better match the 'cloud architect' query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T12:31:54.765399"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 9.397819757461548,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with direct risk management experience, such as David Belmont, over unrelated profiles.",
+        "Refine search parameters to exclude or de-prioritize candidates with unrelated backgrounds (e.g., general practitioners or legal professionals) to enhance candidate relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T12:32:10.991154"
+    },
+    {
+      "query": "economics professor",
+      "response_time": 12.666359901428223,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant academic or teaching experience in economics.",
+        "Enhance keyword matching to ensure candidates' bios explicitly mention 'economics' or related academic roles rather than general medical or legal professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T12:32:10.991984"
+    },
+    {
+      "query": "frontend developer",
+      "response_time": 330.4020519256592,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with frontend development experience rather than unrelated medical roles.",
+        "Enhance candidate profiling to include specific skills and experience related to frontend development to better match the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T12:32:25.390833"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 13.274742126464844,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Include more specialized psychology researchers rather than general practitioners or unrelated professionals.",
+        "Improve the search algorithm to prioritize academic or research-focused profiles related to psychology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T12:32:32.307971"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:19:17.373800",
+      "avg_response_time": 8.378670024871827,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.395
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T12:25:59.744014",
+      "avg_response_time": 11.467372262477875,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.344
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:25:59.744050",
+      "avg_response_time": 11.467372262477875,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.344
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T12:32:37.310477",
+      "avg_response_time": 29.452939653396605,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.27999999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:32:37.310525",
+      "avg_response_time": 29.452939653396605,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.27999999999999997
+    }
+  ]
+}

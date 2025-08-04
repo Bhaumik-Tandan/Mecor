@@ -1,0 +1,185 @@
+{
+  "cycle_count": 12,
+  "timestamp": "2025-08-04T17:36:10.333144",
+  "total_evaluations": 439,
+  "total_improvements": 36,
+  "recent_results": [
+    {
+      "query": "economics professor",
+      "response_time": 6.322088241577148,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with academic or professional backgrounds in economics or related fields.",
+        "Refine the search query or include keywords like 'professor', 'economics', or 'academic' to better target relevant candidates."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T17:35:09.057004"
+    },
+    {
+      "query": "computer science professor",
+      "response_time": 10.199427843093872,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit computer science expertise and academic positions.",
+        "Enhance the search algorithm to better match keywords like 'professor' and 'computer science' in candidate bios and titles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T17:35:09.058939"
+    },
+    {
+      "query": "investment banker",
+      "response_time": 18.216683864593506,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining keywords to target finance and investment banking professionals.",
+        "Enhance candidate filtering to prioritize profiles with finance or banking experience rather than unrelated fields like medicine or law."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T17:35:24.221450"
+    },
+    {
+      "query": "frontend developer",
+      "response_time": 13.581307888031006,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles explicitly mentioning frontend development skills and technologies.",
+        "Enhance search algorithms to better match relevant keywords like 'frontend', 'React', 'JavaScript', or 'UI/UX' to increase relevance and candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T17:35:29.201110"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 11.606676816940308,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by filtering for academic or university-affiliated chemistry professors rather than general practitioners or legal professionals.",
+        "Enhance candidate quality by prioritizing profiles with explicit chemistry or higher education expertise, and ensure the search algorithm accurately matches the query intent."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T17:35:35.885824"
+    },
+    {
+      "query": "anthropology PhD",
+      "response_time": 14.384366035461426,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with direct academic backgrounds in anthropology or related fields.",
+        "Enhance the search algorithm to better distinguish between professional practitioners and academic researchers for more accurate results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T17:35:42.013007"
+    },
+    {
+      "query": "financial analyst",
+      "response_time": 13.139060974121094,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize relevant finance and analysis experience over unrelated roles.",
+        "Enhance search algorithms to better match keywords like 'financial analyst' with candidate bios and experience details."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T17:35:49.055159"
+    },
+    {
+      "query": "experienced software engineer",
+      "response_time": 16.019531965255737,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize relevant software engineering experience over unrelated roles like general practitioners or legal professionals.",
+        "Enhance search algorithms to better match keywords and titles specific to software engineering to increase relevance and candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T17:35:54.049387"
+    },
+    {
+      "query": "M&A attorney",
+      "response_time": 9.994619846343994,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Improve candidate descriptions to clearly highlight M&A-specific experience and credentials.",
+        "Include more detailed professional backgrounds or case examples to better assess candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T17:36:05.328492"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 10.732254028320312,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve relevance filtering to prioritize candidates with explicit chemistry expertise and academic roles.",
+        "Enhance candidate diversity by including more varied professional backgrounds related to chemistry academia."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T17:36:10.191146"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T17:29:39.070368",
+      "avg_response_time": 11.55024790763855,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4835
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T17:29:39.070373",
+      "avg_response_time": 11.55024790763855,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4835
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T17:36:10.332379",
+      "avg_response_time": 12.841201400756836,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.37
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T17:36:10.332418",
+      "avg_response_time": 12.841201400756836,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.37
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T17:36:10.332430",
+      "avg_response_time": 12.841201400756836,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.37
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "cycle_count": 46,
+  "timestamp": "2025-08-04T15:03:11.056119",
+  "total_evaluations": 1826,
+  "total_improvements": 81,
+  "recent_results": [
+    {
+      "query": "computer science professor",
+      "response_time": 5.95463228225708,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with titles or backgrounds in academia or computer science.",
+        "Expand the candidate pool to include verified university faculty profiles or professional networks related to computer science."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T15:01:53.516899"
+    },
+    {
+      "query": "corporate lawyer",
+      "response_time": 15.908674955368042,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more detailed and consistent bios to better assess candidate relevance and quality.",
+        "Reduce response time to improve overall search efficiency and user experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T15:01:54.697086"
+    },
+    {
+      "query": "mechanical engineer",
+      "response_time": 21.680120944976807,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with mechanical engineering backgrounds and relevant experience.",
+        "Enhance the candidate selection process to exclude profiles with unrelated professions such as medical practitioners."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T15:01:58.903990"
+    },
+    {
+      "query": "psychiatrist",
+      "response_time": 15.15074896812439,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Prioritize candidates with explicit psychiatric qualifications or titles (e.g., Psychiatrist, Psychiatric Nurse Practitioner) to improve relevance.",
+        "Include additional context or filters to better match candidates' specialties with the psychiatric field, reducing unrelated profiles like general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T15:02:27.895628"
+    },
+    {
+      "query": "portfolio manager",
+      "response_time": 25.537646770477295,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate relevance by filtering for professionals with explicit experience or titles related to portfolio management.",
+        "Enhance candidate quality by prioritizing profiles with clear, detailed summaries aligned with portfolio management roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T15:02:27.896998"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 19.559430360794067,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve relevance by filtering candidates specifically with radiology specialties and relevant medical expertise.",
+        "Enhance candidate quality by including more detailed professional credentials, certifications, and experience in radiology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T15:02:27.897514"
+    },
+    {
+      "query": "psychology researcher",
+      "response_time": 41.23703694343567,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with explicit psychology research experience.",
+        "Refine query keywords to better distinguish between general practitioners and psychology researchers."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T15:02:40.222756"
+    },
+    {
+      "query": "data scientist",
+      "response_time": 19.81718873977661,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates explicitly labeled as 'Data Scientist' or related roles in the tech/data field.",
+        "Enhance candidate profiling to include relevant skills, experience, and keywords aligned with data science to increase relevance and quality scoring."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T15:03:06.043571"
+    },
+    {
+      "query": "mathematics professor",
+      "response_time": 31.4644672870636,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve relevance filtering to prioritize profiles explicitly related to academia or mathematics teaching.",
+        "Enhance candidate quality assessment by incorporating more detailed academic credentials and professional achievements related to mathematics."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T15:03:06.053031"
+    },
+    {
+      "query": "devops engineer",
+      "response_time": 7.663471221923828,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by filtering candidates specifically with DevOps or related technical experience.",
+        "Enhance candidate quality metrics by including professional profiles, skills, or certifications relevant to DevOps engineering."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T15:03:10.056016"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:49:31.080236",
+      "avg_response_time": 11.805038702487945,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.357
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:56:04.989999",
+      "avg_response_time": 10.974626123905182,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3115
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:56:04.990036",
+      "avg_response_time": 10.974626123905182,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3115
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:03:11.055441",
+      "avg_response_time": 17.67539813518524,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.39849999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:03:11.055474",
+      "avg_response_time": 17.67539813518524,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.39849999999999997
+    }
+  ]
+}

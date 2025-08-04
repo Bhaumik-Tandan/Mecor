@@ -1,0 +1,171 @@
+{
+  "cycle_count": 3,
+  "timestamp": "2025-08-04T10:26:41.204527",
+  "total_evaluations": 97,
+  "total_improvements": 3,
+  "recent_results": [
+    {
+      "query": "devops engineer",
+      "response_time": 11.371632814407349,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles explicitly related to DevOps engineering, such as experience with cloud infrastructure, automation, and CI/CD tools.",
+        "Enhance the search algorithm to better match keywords like 'DevOps,' 'cloud,' 'automation,' and 'deployment' in candidate bios and experience sections."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:25:55.570779"
+    },
+    {
+      "query": "pediatrician",
+      "response_time": 5.701510190963745,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate\u2019s pediatric expertise and clinical focus areas.",
+        "Prioritize candidates with verified board certification and relevant pediatric practice experience to improve relevance and quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T10:25:57.235468"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 7.359273910522461,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more specific radiology-related keywords in candidate bios to improve relevance scoring.",
+        "Prioritize candidates with explicit radiology specialization and relevant experience to enhance candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:26:02.264105"
+    },
+    {
+      "query": "tax lawyer",
+      "response_time": 8.072905778884888,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize legal professionals with explicit experience or specialization in tax law.",
+        "Enhance search algorithms to better match legal expertise rather than general medical or corporate roles, ensuring more relevant results for 'tax lawyer'."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T10:26:11.584998"
+    },
+    {
+      "query": "experienced software engineer",
+      "response_time": 6.512715101242065,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the search algorithm to prioritize candidates with relevant software engineering experience rather than unrelated medical backgrounds.",
+        "Enhance filtering criteria to ensure candidate profiles match the specific role of an experienced software engineer, including technical skills and project history."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:26:13.861557"
+    },
+    {
+      "query": "tax lawyer",
+      "response_time": 8.257524013519287,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve filtering to prioritize candidates with legal or tax expertise rather than medical backgrounds.",
+        "Enhance the relevance of search results by including more specific keywords related to tax law and legal services."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:26:21.482052"
+    },
+    {
+      "query": "biology researcher",
+      "response_time": 7.655381917953491,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by filtering candidates specifically with 'biologist' or 'biology researcher' titles and experience.",
+        "Enhance candidate quality by prioritizing profiles with explicit research experience or academic credentials related to biology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T10:26:25.402340"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 6.632316827774048,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining the query to target 'cloud architect' roles specifically, rather than general practitioners or legal professionals.",
+        "Enhance candidate filtering to prioritize profiles with cloud architecture or IT infrastructure experience, ensuring higher candidate quality for the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:26:35.054619"
+    },
+    {
+      "query": "history professor",
+      "response_time": 4.6600341796875,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with clear academic or historical expertise.",
+        "Refine search parameters to exclude unrelated professions such as medical practitioners and legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T10:26:36.202381"
+    },
+    {
+      "query": "surgeon",
+      "response_time": 4.773343086242676,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve relevance by filtering candidates specifically with medical or surgical expertise rather than general or legal roles.",
+        "Enhance candidate quality by prioritizing verified medical professionals or surgeons with clear credentials and specialties related to surgery."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:26:36.203074"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:14:34.063470",
+      "avg_response_time": 6.675523627888072,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4027272727272727
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:20:32.090093",
+      "avg_response_time": 6.499505186080933,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33649999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:26:41.204218",
+      "avg_response_time": 7.406437480449677,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.36
+    }
+  ]
+}

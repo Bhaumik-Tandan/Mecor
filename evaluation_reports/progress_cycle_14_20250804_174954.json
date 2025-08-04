@@ -1,0 +1,185 @@
+{
+  "cycle_count": 14,
+  "timestamp": "2025-08-04T17:49:54.023721",
+  "total_evaluations": 523,
+  "total_improvements": 42,
+  "recent_results": [
+    {
+      "query": "computer science professor",
+      "response_time": 9.407175064086914,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic and university-affiliated profiles related to computer science.",
+        "Enhance candidate ranking algorithms to better distinguish between medical professionals and computer science experts."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T17:48:44.984666"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 14.787353754043579,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles with relevant mobile development experience and skills.",
+        "Refine search parameters to include keywords like 'mobile developer', 'React Native', 'iOS', 'Android', or related technical expertise."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T17:48:50.000776"
+    },
+    {
+      "query": "physics researcher",
+      "response_time": 11.987032890319824,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's research contributions in physics to improve relevance scoring.",
+        "Filter out or de-emphasize candidates whose profiles are unrelated to physics (e.g., Dan Zavadil) to enhance candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T17:49:04.246437"
+    },
+    {
+      "query": "risk manager",
+      "response_time": 8.796122074127197,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve the filtering process to prioritize candidates with relevant risk management experience, such as those with titles like 'Risk Officer' or 'Risk Manager'.",
+        "Enhance the relevance scoring to better distinguish candidates whose profiles directly match the 'risk manager' role, reducing the influence of unrelated profiles like medical practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T17:49:06.119233"
+    },
+    {
+      "query": "psychiatrist",
+      "response_time": 9.689424276351929,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Prioritize candidates explicitly labeled as 'Psychiatrist' or 'Psychiatric' to improve relevance.",
+        "Include more detailed professional credentials or specialties to better assess candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T17:49:10.429886"
+    },
+    {
+      "query": "frontend developer",
+      "response_time": 11.012401819229126,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Ensure candidate bios and about sections explicitly mention frontend development skills and experience to improve relevance scoring.",
+        "Include more candidates with clear frontend developer backgrounds to better match the query and enhance candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T17:49:24.022876"
+    },
+    {
+      "query": "intellectual property lawyer",
+      "response_time": 17.93318200111389,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.68,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's experience in intellectual property law to improve relevance scoring.",
+        "Reduce response time or optimize search to ensure faster retrieval, which could positively impact the overall score."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T17:49:26.861579"
+    },
+    {
+      "query": "chemistry professor",
+      "response_time": 15.207762002944946,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit chemistry expertise or academic positions related to chemistry.",
+        "Enhance candidate profiling to include specific research areas, publications, or teaching experience in chemistry to better match the query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T17:49:44.024196"
+    },
+    {
+      "query": "security engineer",
+      "response_time": 11.79192328453064,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve the relevance of candidate profiles by filtering for professionals with direct experience or titles related to security engineering.",
+        "Enhance the candidate selection process to prioritize candidates with relevant technical backgrounds and industry-specific expertise."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T17:49:44.025558"
+    },
+    {
+      "query": "security engineer",
+      "response_time": 13.031389951705933,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Increase the relevance of candidates by filtering for roles specifically related to security engineering or cybersecurity.",
+        "Improve candidate quality by prioritizing profiles with direct experience or expertise in security engineering, rather than general or unrelated roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T17:49:49.020395"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T17:43:00.579349",
+      "avg_response_time": 13.502684378623963,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.488
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T17:43:00.579356",
+      "avg_response_time": 13.502684378623963,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.488
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T17:49:54.023117",
+      "avg_response_time": 14.491668963432312,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.45499999999999996
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T17:49:54.023154",
+      "avg_response_time": 14.491668963432312,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.45499999999999996
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T17:49:54.023161",
+      "avg_response_time": 14.491668963432312,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.45499999999999996
+    }
+  ]
+}

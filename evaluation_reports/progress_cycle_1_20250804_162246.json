@@ -1,0 +1,171 @@
+{
+  "cycle_count": 1,
+  "timestamp": "2025-08-04T16:22:46.488819",
+  "total_evaluations": 14,
+  "total_improvements": 3,
+  "recent_results": [
+    {
+      "query": "risk manager",
+      "response_time": 8.665304899215698,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve filtering to prioritize candidates with direct risk management experience, especially those with relevant titles or certifications.",
+        "Enhance the search algorithm to better distinguish between relevant risk management professionals and unrelated roles like general practitioners or lawyers."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T16:21:46.389300"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 10.544494867324829,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Improve relevance filtering to prioritize candidates explicitly identified as radiologists or with radiology-specific experience.",
+        "Enhance candidate quality assessment by including more detailed professional credentials and specialization areas related to radiology."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T16:22:03.920561"
+    },
+    {
+      "query": "history professor",
+      "response_time": 7.245391845703125,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with clear expertise or experience related to history or academia.",
+        "Enhance candidate profiling to include more detailed qualifications and titles relevant to a 'history professor' to better assess candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T16:22:04.120960"
+    },
+    {
+      "query": "intellectual property lawyer",
+      "response_time": 12.745888710021973,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's experience with intellectual property law to improve relevance scoring.",
+        "Reduce response time or provide faster access to more comprehensive candidate data to enhance candidate quality and relevance."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T16:22:09.225739"
+    },
+    {
+      "query": "backend developer",
+      "response_time": 10.706279277801514,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize candidates with relevant technical skills and experience in backend development.",
+        "Enhance search algorithms to better match keywords related to backend development, such as 'software engineer,' 'backend,' 'API,' or 'server-side.'"
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T16:22:10.898430"
+    },
+    {
+      "query": "radiology doctor",
+      "response_time": 14.25874924659729,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.75,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's expertise and certifications to improve relevance and candidate quality.",
+        "Optimize search algorithms to reduce response time and enhance the speed of delivering relevant results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T16:22:24.565465"
+    },
+    {
+      "query": "financial analyst",
+      "response_time": 10.619470119476318,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve candidate relevance by filtering for professionals with finance or analytical expertise rather than unrelated fields like legal or medical.",
+        "Enhance candidate quality by including more detailed and targeted profiles specific to financial analysis roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T16:22:32.488295"
+    },
+    {
+      "query": "mathematics professor",
+      "response_time": 9.888789892196655,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit academic or professional titles related to mathematics.",
+        "Enhance candidate quality assessment by incorporating metrics such as publication record, academic positions, or recognized achievements in mathematics."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T16:22:33.457982"
+    },
+    {
+      "query": "neurologist",
+      "response_time": 7.114972352981567,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit neurologist experience or titles.",
+        "Enhance the candidate selection process to include more specialized medical professionals rather than general practitioners."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T16:22:35.128872"
+    },
+    {
+      "query": "computer science professor",
+      "response_time": 10.414835929870605,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Improve filtering to prioritize candidates explicitly identified as 'professors' in computer science, especially those affiliated with reputable institutions.",
+        "Enhance candidate descriptions to include clear academic roles, research areas, and institutional affiliations to better assess relevance and quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T16:22:41.487155"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T16:22:46.488427",
+      "avg_response_time": 10.570139970098223,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4321428571428571
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T16:22:46.488452",
+      "avg_response_time": 10.570139970098223,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4321428571428571
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T16:22:46.488457",
+      "avg_response_time": 10.570139970098223,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4321428571428571
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "cycle_count": 35,
+  "timestamp": "2025-08-04T20:06:33.614058",
+  "total_evaluations": 1368,
+  "total_improvements": 104,
+  "recent_results": [
+    {
+      "query": "economics professor",
+      "response_time": 7.556446075439453,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with explicit expertise or titles related to economics or academia.",
+        "Enhance candidate quality assessment by incorporating more detailed professional backgrounds, such as academic positions or research experience related to economics."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T20:05:38.977722"
+    },
+    {
+      "query": "psychiatrist",
+      "response_time": 7.3709588050842285,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more specialized psychiatric professionals in the top candidates to improve relevance.",
+        "Enhance candidate filtering to prioritize licensed psychiatrists over general practitioners for more accurate results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T20:05:43.203535"
+    },
+    {
+      "query": "frontend developer",
+      "response_time": 10.00558876991272,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize relevant frontend development experience, ensuring only candidates with relevant skills are ranked higher.",
+        "Enhance the search algorithm to better match keywords from the query with candidate bios and about sections, reducing irrelevant results like legal or medical professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T20:05:49.656322"
+    },
+    {
+      "query": "cloud architect",
+      "response_time": 10.982071876525879,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Increase the number of highly relevant candidates with explicit cloud architecture experience to improve relevance score.",
+        "Reduce response time to enhance user experience, especially for technical searches like 'cloud architect'."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T20:06:00.606208"
+    },
+    {
+      "query": "experienced software engineer",
+      "response_time": 11.048350095748901,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize profiles explicitly mentioning 'software engineer' or related technical skills.",
+        "Enhance search algorithms to better match candidate bios with the specific role of 'experienced software engineer' rather than broader or unrelated professions."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T20:06:04.036005"
+    },
+    {
+      "query": "cardiologist",
+      "response_time": 6.985703229904175,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.55,
+      "gpt_suggestions": [
+        "Improve the relevance by ensuring candidate profiles explicitly mention cardiology specialization or experience related to heart health.",
+        "Enhance candidate quality by including more detailed credentials, certifications, or specific cardiology expertise to better match the 'cardiologist' query."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T20:06:05.408625"
+    },
+    {
+      "query": "psychiatrist",
+      "response_time": 7.8814568519592285,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more detailed and specific information about each candidate's psychiatric expertise and credentials to improve relevance.",
+        "Prioritize candidates with explicit psychiatric qualifications or experience directly related to psychiatry to enhance candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T20:06:14.750472"
+    },
+    {
+      "query": "computer science professor",
+      "response_time": 10.968472003936768,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of candidates by filtering for those with explicit expertise or titles in computer science or academia.",
+        "Enhance candidate quality by prioritizing profiles with academic or research experience related to computer science rather than general practitioners or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T20:06:22.324028"
+    },
+    {
+      "query": "data scientist",
+      "response_time": 7.084283828735352,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant data science experience and titles.",
+        "Enhance the query understanding to better match keywords like 'data scientist' with candidate bios and roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T20:06:25.697562"
+    },
+    {
+      "query": "economics professor",
+      "response_time": 7.27604603767395,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic or professional profiles related to economics rather than medical or legal professionals.",
+        "Refine the search algorithm to better match the query 'economics professor' by including keywords like 'professor,' 'economics,' 'university,' or 'academic' in candidate profiles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T20:06:28.611332"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T20:00:18.501095",
+      "avg_response_time": 12.026377308368684,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4185
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T20:00:18.501103",
+      "avg_response_time": 12.026377308368684,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4185
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T20:06:33.613277",
+      "avg_response_time": 9.135950469970703,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.45149999999999996
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T20:06:33.613383",
+      "avg_response_time": 9.135950469970703,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.45149999999999996
+    },
+    {
+      "improvement": "Apply filter extraction from user queries for enhanced hybrid search",
+      "timestamp": "2025-08-04T20:06:33.613387",
+      "avg_response_time": 9.135950469970703,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.45149999999999996
+    }
+  ]
+}

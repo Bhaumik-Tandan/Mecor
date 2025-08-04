@@ -1,0 +1,185 @@
+{
+  "cycle_count": 5,
+  "timestamp": "2025-08-04T10:38:57.987481",
+  "total_evaluations": 180,
+  "total_improvements": 5,
+  "recent_results": [
+    {
+      "query": "chemistry professor",
+      "response_time": 5.277216196060181,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize academic or teaching professionals in chemistry rather than general practitioners or legal professionals.",
+        "Enhance keyword matching to include 'professor' and related academic titles, ensuring more relevant candidates appear at the top."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:37:57.209739"
+    },
+    {
+      "query": "portfolio manager",
+      "response_time": 9.60491394996643,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with direct experience or roles related to portfolio management.",
+        "Enhance the candidate selection criteria to include professional titles and skills aligned with portfolio management, rather than general practitioners or unrelated roles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_0",
+      "timestamp": "2025-08-04T10:37:57.211344"
+    },
+    {
+      "query": "data scientist",
+      "response_time": 5.749515056610107,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance of search results by refining the query to include specific skills or roles related to data science.",
+        "Enhance candidate filtering to prioritize profiles with explicit data science experience or related technical skills."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:38:08.345510"
+    },
+    {
+      "query": "security engineer",
+      "response_time": 6.121501922607422,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search algorithm to prioritize relevant roles like 'Security Engineer' over unrelated professions such as medical practitioners.",
+        "Enhance filtering and keyword matching to ensure candidates' profiles align more closely with the 'security engineer' role, including relevant skills and experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T10:38:09.575032"
+    },
+    {
+      "query": "frontend developer",
+      "response_time": 7.23626184463501,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to ensure candidates match the 'frontend developer' role more closely.",
+        "Enhance candidate screening to prioritize technical skills and experience related to frontend development."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T10:38:23.269543"
+    },
+    {
+      "query": "cardiologist",
+      "response_time": 5.586151123046875,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.45,
+      "gpt_suggestions": [
+        "Prioritize candidates with specific cardiology expertise and titles to improve relevance.",
+        "Include more detailed professional backgrounds and specialties to better assess candidate quality."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T10:38:27.351335"
+    },
+    {
+      "query": "quantitative finance expert",
+      "response_time": 5.1651129722595215,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates with expertise in quantitative finance rather than general practitioners.",
+        "Enhance the search algorithm to better understand and match specific keywords like 'quantitative finance' to relevant profiles."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T10:38:27.828643"
+    },
+    {
+      "query": "surgeon",
+      "response_time": 7.385301113128662,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve the relevance filtering to prioritize candidates explicitly identified as surgeons or with surgical specialties.",
+        "Enhance the candidate quality assessment by including more detailed professional credentials, specialties, and experience related to surgery."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T10:38:37.144134"
+    },
+    {
+      "query": "computer science professor",
+      "response_time": 6.2444748878479,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Ensure the search results prioritize candidates with relevant academic or teaching experience in computer science rather than general practitioners or unrelated professions.",
+        "Improve the filtering and ranking algorithms to better match the query intent, focusing on candidates with academic credentials, research, or teaching roles in computer science."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T10:38:38.853953"
+    },
+    {
+      "query": "backend developer",
+      "response_time": 8.494074821472168,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Ensure the search algorithm accurately filters candidates based on relevant skills and job titles related to 'backend developer'.",
+        "Improve candidate data validation to prevent irrelevant profiles, such as medical professionals or unrelated roles, from appearing in the results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T10:38:52.982971"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:14:34.063470",
+      "avg_response_time": 6.675523627888072,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4027272727272727
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:20:32.090093",
+      "avg_response_time": 6.499505186080933,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33649999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:26:41.204218",
+      "avg_response_time": 7.406437480449677,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.36
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:32:45.776095",
+      "avg_response_time": 7.659779715538025,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.34900000000000003
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:38:57.986728",
+      "avg_response_time": 7.150102829933166,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.32
+    }
+  ]
+}

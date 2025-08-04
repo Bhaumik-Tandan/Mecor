@@ -1,0 +1,778 @@
+{
+  "evaluation_summary": {
+    "start_time": "2025-08-04T10:13:39.111948",
+    "end_time": "2025-08-04T16:15:14.398185",
+    "total_evaluations": 2236,
+    "total_improvements": 101,
+    "avg_response_time": 10.686205202010536,
+    "avg_quality_score": 1.0,
+    "avg_gpt_evaluation_score": 0.35181574239713775,
+    "gpt_enhancement_rate": 1.0
+  },
+  "improvements_applied": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:14:34.063470",
+      "avg_response_time": 6.675523627888072,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4027272727272727
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:20:32.090093",
+      "avg_response_time": 6.499505186080933,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33649999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:26:41.204218",
+      "avg_response_time": 7.406437480449677,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.36
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:32:45.776095",
+      "avg_response_time": 7.659779715538025,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.34900000000000003
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:38:57.986728",
+      "avg_response_time": 7.150102829933166,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.32
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:45:14.589455",
+      "avg_response_time": 7.045353209972381,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.305
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T10:51:38.155214",
+      "avg_response_time": 10.169972205162049,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3865
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:51:38.155259",
+      "avg_response_time": 10.169972205162049,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3865
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T10:58:01.676507",
+      "avg_response_time": 11.211048078536987,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.359
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T10:58:01.676547",
+      "avg_response_time": 11.211048078536987,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.359
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T11:04:17.905418",
+      "avg_response_time": 8.777509868144989,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3085
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:04:17.905439",
+      "avg_response_time": 8.777509868144989,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3085
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T11:10:34.737710",
+      "avg_response_time": 8.08486807346344,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.346
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:10:34.737754",
+      "avg_response_time": 8.08486807346344,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.346
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:16:47.620119",
+      "avg_response_time": 7.978292238712311,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.34900000000000003
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:22:55.241824",
+      "avg_response_time": 7.458092796802521,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.36350000000000005
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T11:29:08.474184",
+      "avg_response_time": 8.297168016433716,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.315
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:29:08.474224",
+      "avg_response_time": 8.297168016433716,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.315
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T11:35:34.899359",
+      "avg_response_time": 9.883701980113983,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.34550000000000003
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:35:34.899401",
+      "avg_response_time": 9.883701980113983,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.34550000000000003
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T11:42:19.879027",
+      "avg_response_time": 11.999284446239471,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33999999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:42:19.879053",
+      "avg_response_time": 11.999284446239471,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33999999999999997
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T11:48:30.807195",
+      "avg_response_time": 9.55218596458435,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.387
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:48:30.807232",
+      "avg_response_time": 9.55218596458435,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.387
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T11:54:39.934775",
+      "avg_response_time": 7.834655272960663,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3415
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T12:00:53.326278",
+      "avg_response_time": 8.746613562107086,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3485
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:00:53.326323",
+      "avg_response_time": 8.746613562107086,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3485
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:06:59.810579",
+      "avg_response_time": 6.5206410646438595,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.2835
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:13:04.482477",
+      "avg_response_time": 6.428521072864532,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.325
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T12:19:17.373758",
+      "avg_response_time": 8.378670024871827,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.395
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:19:17.373800",
+      "avg_response_time": 8.378670024871827,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.395
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T12:25:59.744014",
+      "avg_response_time": 11.467372262477875,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.344
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:25:59.744050",
+      "avg_response_time": 11.467372262477875,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.344
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T12:32:37.310477",
+      "avg_response_time": 29.452939653396605,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.27999999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:32:37.310525",
+      "avg_response_time": 29.452939653396605,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.27999999999999997
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T12:39:21.405178",
+      "avg_response_time": 12.458940517902374,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3765
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:39:21.405215",
+      "avg_response_time": 12.458940517902374,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3765
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T12:45:56.524138",
+      "avg_response_time": 9.288895285129547,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3265
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:45:56.524171",
+      "avg_response_time": 9.288895285129547,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3265
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T12:52:23.379504",
+      "avg_response_time": 11.197282302379609,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.325
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:52:23.379524",
+      "avg_response_time": 11.197282302379609,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.325
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T12:58:54.703568",
+      "avg_response_time": 12.088140487670898,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.40149999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T12:58:54.703616",
+      "avg_response_time": 12.088140487670898,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.40149999999999997
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:05:26.586713",
+      "avg_response_time": 13.053585922718048,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.40499999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:05:26.586753",
+      "avg_response_time": 13.053585922718048,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.40499999999999997
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:11:59.676296",
+      "avg_response_time": 10.62953964471817,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3275
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:11:59.676341",
+      "avg_response_time": 10.62953964471817,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3275
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:18:16.401255",
+      "avg_response_time": 9.674782311916351,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.36350000000000005
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:18:16.401296",
+      "avg_response_time": 9.674782311916351,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.36350000000000005
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:24:36.282960",
+      "avg_response_time": 12.11975085735321,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.35
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:24:36.283002",
+      "avg_response_time": 12.11975085735321,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.35
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:30:57.310634",
+      "avg_response_time": 8.924559152126312,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3375
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:30:57.310679",
+      "avg_response_time": 8.924559152126312,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3375
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:37:34.616983",
+      "avg_response_time": 10.430621981620789,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3885
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:37:34.617030",
+      "avg_response_time": 10.430621981620789,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3885
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:44:12.672723",
+      "avg_response_time": 10.911374843120575,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.275
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:44:12.672765",
+      "avg_response_time": 10.911374843120575,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.275
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:50:32.907865",
+      "avg_response_time": 8.470514953136444,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.355
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:50:32.907896",
+      "avg_response_time": 8.470514953136444,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.355
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T13:56:59.905420",
+      "avg_response_time": 9.172020864486694,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.28500000000000003
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T13:56:59.905469",
+      "avg_response_time": 9.172020864486694,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.28500000000000003
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:03:33.581140",
+      "avg_response_time": 10.776928985118866,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.32999999999999996
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:03:33.581180",
+      "avg_response_time": 10.776928985118866,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.32999999999999996
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:10:04.550756",
+      "avg_response_time": 9.688867938518523,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3715
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:10:04.550788",
+      "avg_response_time": 9.688867938518523,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3715
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:16:59.527665",
+      "avg_response_time": 10.913851606845856,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.315
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:16:59.527705",
+      "avg_response_time": 10.913851606845856,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.315
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:23:28.404423",
+      "avg_response_time": 9.683371484279633,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.347
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:23:28.404471",
+      "avg_response_time": 9.683371484279633,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.347
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:29:49.841754",
+      "avg_response_time": 9.73351355791092,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3875
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:29:49.841800",
+      "avg_response_time": 9.73351355791092,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3875
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:36:17.829461",
+      "avg_response_time": 13.544813203811646,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.32
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:36:17.829490",
+      "avg_response_time": 13.544813203811646,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.32
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:42:55.636061",
+      "avg_response_time": 11.071344327926635,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.315
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:42:55.636081",
+      "avg_response_time": 11.071344327926635,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.315
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:49:31.080198",
+      "avg_response_time": 11.805038702487945,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.357
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:49:31.080236",
+      "avg_response_time": 11.805038702487945,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.357
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:56:04.989999",
+      "avg_response_time": 10.974626123905182,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3115
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:56:04.990036",
+      "avg_response_time": 10.974626123905182,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3115
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:03:11.055441",
+      "avg_response_time": 17.67539813518524,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.39849999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:03:11.055474",
+      "avg_response_time": 17.67539813518524,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.39849999999999997
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:09:54.110639",
+      "avg_response_time": 11.289762151241302,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3885
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:09:54.110684",
+      "avg_response_time": 11.289762151241302,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3885
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:16:09.500468",
+      "avg_response_time": 10.553666877746583,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3565
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:16:09.500499",
+      "avg_response_time": 10.553666877746583,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.3565
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:22:35.849597",
+      "avg_response_time": 13.269582796096802,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.356
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:22:35.849641",
+      "avg_response_time": 13.269582796096802,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.356
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:28:54.556417",
+      "avg_response_time": 11.549888789653778,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.375
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:28:54.556450",
+      "avg_response_time": 11.549888789653778,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.375
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:35:34.336067",
+      "avg_response_time": 12.555823004245758,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.35
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:35:34.336100",
+      "avg_response_time": 12.555823004245758,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.35
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:42:57.852781",
+      "avg_response_time": 17.096915972232818,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33999999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:42:57.852825",
+      "avg_response_time": 17.096915972232818,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33999999999999997
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:49:35.950440",
+      "avg_response_time": 14.02212518453598,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33999999999999997
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:49:35.950474",
+      "avg_response_time": 14.02212518453598,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.33999999999999997
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T15:56:19.585462",
+      "avg_response_time": 13.604511892795562,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.42300000000000004
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T15:56:19.585508",
+      "avg_response_time": 13.604511892795562,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.42300000000000004
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T16:02:58.056861",
+      "avg_response_time": 12.270486629009246,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.35150000000000003
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T16:02:58.056909",
+      "avg_response_time": 12.270486629009246,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.35150000000000003
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T16:10:05.657487",
+      "avg_response_time": 13.822272682189942,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4415
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T16:10:05.657523",
+      "avg_response_time": 13.822272682189942,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.4415
+    }
+  ],
+  "top_performing_queries": [
+    {
+      "query": "pediatrician",
+      "avg_score": 0.7365151515151515,
+      "count": 66
+    },
+    {
+      "query": "psychiatrist",
+      "avg_score": 0.649264705882353,
+      "count": 68
+    },
+    {
+      "query": "neurologist",
+      "avg_score": 0.6214084507042255,
+      "count": 71
+    },
+    {
+      "query": "M&A attorney",
+      "avg_score": 0.603,
+      "count": 60
+    },
+    {
+      "query": "corporate lawyer",
+      "avg_score": 0.5726666666666667,
+      "count": 60
+    },
+    {
+      "query": "radiology doctor",
+      "avg_score": 0.5660655737704918,
+      "count": 61
+    },
+    {
+      "query": "surgeon",
+      "avg_score": 0.5087301587301588,
+      "count": 63
+    },
+    {
+      "query": "cardiologist",
+      "avg_score": 0.46222222222222226,
+      "count": 63
+    },
+    {
+      "query": "risk manager",
+      "avg_score": 0.3984375,
+      "count": 64
+    },
+    {
+      "query": "psychology researcher",
+      "avg_score": 0.3801388888888889,
+      "count": 72
+    }
+  ],
+  "recommendations": [
+    "Continue optimizing search algorithms for faster response times",
+    "Further enhance GPT integration and prompt optimization",
+    "Continue monitoring and evaluation for ongoing optimization"
+  ]
+}

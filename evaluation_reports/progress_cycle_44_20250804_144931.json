@@ -1,0 +1,185 @@
+{
+  "cycle_count": 44,
+  "timestamp": "2025-08-04T14:49:31.080845",
+  "total_evaluations": 1748,
+  "total_improvements": 77,
+  "recent_results": [
+    {
+      "query": "radiology doctor",
+      "response_time": 15.449858903884888,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Include more detailed and specific information in candidate profiles to better assess relevance and quality.",
+        "Prioritize candidates with explicit radiology specialization and relevant experience to improve relevance scoring."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_1",
+      "timestamp": "2025-08-04T14:48:40.245267"
+    },
+    {
+      "query": "devops engineer",
+      "response_time": 19.846139907836914,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize relevant DevOps professionals over unrelated roles like general practitioners and attorneys.",
+        "Enhance search algorithms to better match keywords related to DevOps engineering, such as skills, experience, and job titles, for more relevant results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T14:48:45.271136"
+    },
+    {
+      "query": "mechanical engineer",
+      "response_time": 10.279506206512451,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant engineering backgrounds rather than general practitioners or legal professionals.",
+        "Enhance the relevance scoring algorithm to better match keywords like 'mechanical engineer' with candidate bios and experience, reducing unrelated results."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_2",
+      "timestamp": "2025-08-04T14:48:56.916139"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 6.792177200317383,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant mobile development experience rather than general practitioners.",
+        "Enhance the relevance algorithm to better match keywords like 'mobile developer' with candidate bios and experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T14:48:58.110497"
+    },
+    {
+      "query": "backend developer",
+      "response_time": 6.640794038772583,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.35,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant backend development experience.",
+        "Enhance candidate profiles to clearly specify technical skills and roles related to backend development."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T14:49:03.929188"
+    },
+    {
+      "query": "M&A attorney",
+      "response_time": 7.506994962692261,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.72,
+      "gpt_suggestions": [
+        "Include more detailed and specific professional profiles that explicitly mention M&A experience to improve relevance scoring.",
+        "Prioritize candidates with clear M&A specialization and higher relevance to the query, and ensure consistent formatting for easier assessment."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_0",
+      "timestamp": "2025-08-04T14:49:04.335856"
+    },
+    {
+      "query": "backend developer",
+      "response_time": 7.9480602741241455,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve candidate filtering to prioritize candidates with relevant technical skills and experience in backend development.",
+        "Enhance search algorithms to better match keywords related to backend development, such as 'backend,' 'server-side,' or specific technologies like 'Node.js,' 'Python,' etc."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_3",
+      "timestamp": "2025-08-04T14:49:11.905379"
+    },
+    {
+      "query": "mobile developer",
+      "response_time": 14.977796792984009,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.25,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with relevant experience in mobile development or related tech fields.",
+        "Refine the query to specify 'mobile developer' skills or experience to reduce unrelated results like medical or legal professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_2",
+      "timestamp": "2025-08-04T14:49:25.851616"
+    },
+    {
+      "query": "corporate lawyer",
+      "response_time": 9.95961308479309,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.65,
+      "gpt_suggestions": [
+        "Improve candidate relevance by filtering out unrelated professions such as general practitioners and unrelated roles.",
+        "Enhance candidate quality by including more detailed professional backgrounds and verified legal experience."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "thread_1",
+      "timestamp": "2025-08-04T14:49:26.028071"
+    },
+    {
+      "query": "quantitative finance expert",
+      "response_time": 7.8318846225738525,
+      "candidate_count": 10,
+      "quality_score": 1.0,
+      "gpt_evaluation_score": 0.15,
+      "gpt_suggestions": [
+        "Improve search filtering to prioritize candidates with finance or quantitative expertise rather than general practitioners.",
+        "Refine keyword matching to include terms like 'quantitative,' 'finance,' 'modeling,' or 'financial analyst' to better target relevant professionals."
+      ],
+      "gpt_enhanced": true,
+      "thread_id": "cycle_4",
+      "timestamp": "2025-08-04T14:49:26.077492"
+    }
+  ],
+  "recent_improvements": [
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:36:17.829490",
+      "avg_response_time": 13.544813203811646,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.32
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:42:55.636061",
+      "avg_response_time": 11.071344327926635,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.315
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:42:55.636081",
+      "avg_response_time": 11.071344327926635,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.315
+    },
+    {
+      "improvement": "Optimize search algorithms for faster response",
+      "timestamp": "2025-08-04T14:49:31.080198",
+      "avg_response_time": 11.805038702487945,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.357
+    },
+    {
+      "improvement": "Enhance GPT prompt optimization",
+      "timestamp": "2025-08-04T14:49:31.080236",
+      "avg_response_time": 11.805038702487945,
+      "avg_quality": 1.0,
+      "avg_gpt_score": 0.357
+    }
+  ]
+}
