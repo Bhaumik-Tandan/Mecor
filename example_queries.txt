@@ -1,0 +1,31 @@
+# Example queries for testing the interview script
+# Format: query_text or query_text|category
+
+# Tax and Legal
+experienced tax lawyer
+corporate lawyer with M&A experience
+tax_lawyer.yml|senior tax attorney
+
+# Medical
+radiologist with 5+ years experience
+doctors_md.yml|emergency medicine physician
+radiology.yml|interventional radiologist
+
+# Academic/Research
+biology researcher with PhD
+anthropology.yml|cultural anthropologist
+mathematics_phd.yml|applied mathematician
+
+# Finance
+quantitative finance expert
+quantitative_finance.yml|quantitative analyst
+bankers.yml|investment banker
+
+# Engineering
+mechanical engineer with automotive experience
+mechanical_engineers.yml|senior mechanical engineer
+
+# General queries (will auto-detect category)
+software engineer
+data scientist
+project manager 
