@@ -47,7 +47,7 @@ class InterviewSearchAgent:
         self.search_service = search_service
         logger.info("🚀 Interview Search Agent initialized with all improvements")
     
-    def search(self, query_text: str, output_format: str = "table") -> Dict:
+    def search(self, query_text: str, output_format: str = "table", hard_criteria: Dict = None, soft_criteria: Dict = None) -> Dict:
         """Search function with all improvements for interview testing."""
         start_time = time.time()
         
