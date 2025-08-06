@@ -12,7 +12,7 @@ import time
 import json
 import csv
 import requests
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
 from pathlib import Path
 from datetime import datetime
 
@@ -138,7 +138,6 @@ class PrivateEvaluationSubmission:
         print()
         
         all_results = {}
-        evaluation_configs = []
         
         for i, category in enumerate(self.categories, 1):
             print(f"{Colors.BLUE}[{i}/{len(self.categories)}] Evaluating: {category['title']}{Colors.END}")
@@ -161,19 +160,20 @@ class PrivateEvaluationSubmission:
                     # Take top 10 candidates for evaluation
                     candidate_ids = [c.id for c in candidates[:10]]
                     
-                    evaluation_configs.append({
-                        "config_name": category['yaml_file'],
-                        "candidate_ids": candidate_ids
-                    })
+                    # Evaluate this category individually using the evaluate endpoint
+                    evaluation_result = self._evaluate_single_category(category['yaml_file'], candidate_ids)
                     
                     all_results[category['yaml_file']] = {
                         'title': category['title'],
                         'candidates_found': len(candidates),
                         'candidate_ids': candidate_ids,
-                        'description': category['description']
+                        'description': category['description'],
+                        'evaluation_result': evaluation_result
                     }
                     
                     print(f"{Colors.GREEN}  ✅ Found {len(candidates)} candidates{Colors.END}")
+                    if evaluation_result:
+                        print(f"{Colors.GREEN}  📊 Evaluation Score: {evaluation_result.get('average_final_score', 0.0):.2f}{Colors.END}")
                 else:
                     print(f"{Colors.YELLOW}  ⚠️  No candidates found{Colors.END}")
                     all_results[category['yaml_file']] = {
@@ -194,29 +194,45 @@ class PrivateEvaluationSubmission:
                     'error': str(e)
                 }
         
-        print(f"\n{Colors.CYAN}{'=' * 80}{Colors.END}")
-        print(f"{Colors.GREEN}🎯 Running evaluations for {len(evaluation_configs)} categories{Colors.END}")
-        
-        # Run evaluations
-        if evaluation_configs:
-            try:
-                evaluation_results = self.evaluation_service.evaluate_multiple_configs(evaluation_configs)
-                
-                # Update results with scores
-                for result in evaluation_results:
-                    config_name = result.get('config_name', '')
-                    score = result.get('score', 0.0)
-                    if config_name in all_results:
-                        all_results[config_name]['score'] = score
-                        all_results[config_name]['evaluation_result'] = result
-                
-                print(f"{Colors.GREEN}✅ Evaluations completed successfully{Colors.END}")
-                
-            except Exception as e:
-                print(f"{Colors.RED}❌ Evaluation failed: {e}{Colors.END}")
-                logger.error(f"Evaluation failed: {e}")
-        
         return all_results
+    
+    def _evaluate_single_category(self, config_name: str, candidate_ids: List[str]) -> Optional[Dict]:
+        """Evaluate a single category using the evaluate endpoint."""
+        if not candidate_ids:
+            return None
+        
+        try:
+            headers = {
+                "Authorization": self.user_email,
+                "Content-Type": "application/json"
+            }
+            
+            payload = {
+                "config_path": config_name,
+                "object_ids": candidate_ids[:5]  # API accepts max 5 candidates
+            }
+            
+            print(f"    🌐 Evaluating {config_name} with {len(candidate_ids[:5])} candidates...")
+            
+            response = requests.post(
+                self.eval_endpoint,
+                headers=headers,
+                json=payload,
+                timeout=60
+            )
+            
+            if response.status_code == 200:
+                result = response.json()
+                print(f"    ✅ Evaluation successful: {result.get('average_final_score', 0.0):.2f}")
+                return result
+            else:
+                print(f"    ❌ Evaluation failed: {response.status_code} - {response.text}")
+                return None
+                
+        except Exception as e:
+            print(f"    ❌ Evaluation error: {e}")
+            logger.error(f"Evaluation error for {config_name}: {e}")
+            return None
     
     def submit_to_grade_api(self, results: Dict[str, Any]) -> Dict[str, Any]:
         """Submit results to the grade API."""
